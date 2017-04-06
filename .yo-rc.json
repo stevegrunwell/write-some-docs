@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "I'd Like to Write the World Some Docs",
+    "packageVersion": "0.1.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "stevegrunwell",
+    "githubRepository": "write-some-docs"
+  }
+}

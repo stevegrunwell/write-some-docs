@@ -1,0 +1,1 @@
+<!-- .slide: data-background-image="resources/phpdocumentor-clean.png" data-background-position="center center" data-background-size="contain" -->
