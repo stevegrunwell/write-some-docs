@@ -51,3 +51,13 @@ section.has-light-background {
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
 // ---------------------------------------------
+
+.reveal {
+	h1, h2, h3, h4, h5, h6, .has-background-image p {
+		text-shadow: 0 0 6px #222;
+	}
+
+	.slides-link {
+		margin-top: 2em;
+	}
+}
