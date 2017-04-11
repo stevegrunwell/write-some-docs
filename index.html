@@ -280,6 +280,7 @@
         <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
         <script src="bower_components/reveal.js/js/reveal.js"></script>
         <script>
+          var gaPropertyId = 'UA-72219675-9';
 
           // Full list of configuration options available at:
           // https://github.com/hakimel/reveal.js#configuration
@@ -300,7 +301,8 @@
               { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( '[data-html]' ) || !!document.querySelector( 'pre code' ) || !!document.querySelector( '[data-markdown]' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
               { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
               { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true },
-              { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+              { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } },
+              { src: 'js/reveal-ga.min.js' }
             ]
           });
 
