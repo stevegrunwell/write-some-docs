@@ -67,7 +67,7 @@ module.exports = (grunt) ->
             options:
                 jshintrc: '.jshintrc'
 
-            all: ['js/*.js']
+            all: ['js/*.js', '!js/reveal-ga.min.js']
 
         copy:
 
