@@ -11,7 +11,7 @@
  *
  * @param string $var A description of var.
  *
- * @return String A description of the output.
+ * @return string A description of the output.
  */
 ```
 
