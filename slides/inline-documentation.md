@@ -1,8 +1,8 @@
 ### Inline Documentation
 
-* Documentation within the code itself
-* Describes what everything does, function inputs/outputs, etc.
-* Written for a developer audience
+* Documentation within the code itself <!-- .element: class="fragment" -->
+* Describes what everything does, function inputs/outputs, etc. <!-- .element: class="fragment" -->
+* Written for a developer audience <!-- .element: class="fragment" -->
 
 Note:
 

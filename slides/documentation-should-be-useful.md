@@ -22,3 +22,7 @@ Not this:<!-- .element: class="fragment" data-fragment-index="1" -->
 // Ajax stuff.
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Note:
+
+We're not writing documentation for our health, it should have a purpose. Compare this documentation to what we often see, which tells us nothing.

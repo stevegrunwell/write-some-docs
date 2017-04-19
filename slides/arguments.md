@@ -10,3 +10,7 @@
 @param mixed        $data This argument could literally be anything.
                           Usually best to avoid.
 ```
+
+Note:
+
+The basic structure of function/method arguments in PHPDoc looks like this: @param, the type or types, the variable name, and a sentence or two describing what that argument represents.

@@ -1,6 +1,6 @@
 ### JSDoc
 
-```js
+```
 /**
  * This is the summary.
  *

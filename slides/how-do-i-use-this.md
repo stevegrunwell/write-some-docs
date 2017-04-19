@@ -7,4 +7,6 @@
 
 Note:
 
-Documentation should tell people how to use the code.
+When writing documentation, consider a developer asking "how do I use this?". Would he/she have an answer by reading your docs?
+
+4 items: arguments, output, global variables, and side effects

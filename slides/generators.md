@@ -23,3 +23,9 @@
 		</tr>
 	</tbody>
 </table>
+
+Note:
+
+In addition to PHPDocumentor, there are tools like ApiGen, Daux.io, and JSDoc that can compile docs locally — just point the tools at your source and let 'em go to work. These are often good to incorporate into a build tool like Jenkins or Travis, to ensure docs are built alongside your app.
+
+Hosted options: Read the Docs, ReadMe, and GitHub Pages, which can be great if you need a place to publish docs offsite.

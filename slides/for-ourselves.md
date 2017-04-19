@@ -1,8 +1,8 @@
 ### For Ourselves
 
-* Help ourselves remember how and why something works
-* Catch issues with our approach before writing any code
-* Better documentation => fewer questions
+* Help ourselves remember how and why something works <!-- .element: class="fragment" -->
+* Catch issues with our approach before writing any code <!-- .element: class="fragment" -->
+* Better documentation => fewer questions <!-- .element: class="fragment" -->
 
 
 Note:

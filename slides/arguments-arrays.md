@@ -15,3 +15,9 @@
  * }
  */
 ```
+
+Note:
+
+Again, not a standard, but a common convention: @param, array, variable name, then open curly braces, to contain the details about the array.
+
+Really useful when accepting arrays of arguments, like database query parameters.

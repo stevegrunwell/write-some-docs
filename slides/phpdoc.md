@@ -1,6 +1,6 @@
 ### PHPDoc
 
-```php
+```
 /**
  * This is the summary.
  *
