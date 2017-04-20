@@ -36,7 +36,8 @@
         "generating-documentation.md",
         "generate-allthethings.md",
         "generator-example.md",
-        "generators.md"
+        "generators.md",
+        "read-the-docs.md"
     ],
     [
         "writing-the-best-documentation.md",
