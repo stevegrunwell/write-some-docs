@@ -291,3 +291,9 @@ body {
 
 .reveal .slides-link {
   margin-top: 2em; }
+
+.reveal .poop img {
+  max-height: 50vh;
+  background: transparent;
+  border: none;
+  box-shadow: none; }

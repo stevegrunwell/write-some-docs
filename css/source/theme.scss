@@ -60,4 +60,13 @@ section.has-light-background {
 	.slides-link {
 		margin-top: 2em;
 	}
+
+	.poop {
+		img {
+			max-height: 50vh;
+			background: transparent;
+			border: none;
+			box-shadow: none;
+		}
+	}
 }
