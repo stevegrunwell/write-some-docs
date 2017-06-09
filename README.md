@@ -9,6 +9,7 @@ Luckily, good documentation lives on outside your codebase. By following common 
 
 ## Presentation History
 
+* [Beer City Code 2017](http://beercitycode.com/) — June 10, 2017
 * [Lone Star PHP 2017](http://lonestarphp.com/) - April 22, 2017 ([joind.in](https://joind.in/talk/b68e9))
 
 
