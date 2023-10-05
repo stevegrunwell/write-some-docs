@@ -1,31 +1,15 @@
 {
-  "name": "id-like-to-write-the-world-some-docs",
-  "version": "0.1.0",
-  "private": true,
-  "devDependencies": {
-    "grunt": "^1.0.0",
-    "grunt-sass": "^2.0.0",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^1.1.0",
-    "load-grunt-tasks": "^3.5.2",
-    "grunt-build-control": "^0.7.1",
-    "grunt-coffeelint": "0.0.16",
-    "coffeelint": "^1.16.0"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:stevegrunwell/write-some-docs.git"
-  },
-  "scripts": {
-    "install": "cp ./node_modules/reveal-ga/dist/reveal-ga.min.js ./js/reveal-ga.min.js",
-    "test": "grunt test"
-  },
-  "dependencies": {
-    "reveal-ga": "^0.1.0"
-  }
+    "name": "id-like-to-write-the-world-some-docs",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:stevegrunwell/write-some-docs.git"
+    },
+    "devDependencies": {
+        "reveal-md": "^5.5.1"
+    },
+    "scripts": {
+        "dev": "npm run start -- -w",
+        "start": "reveal-md slides.md"
+    }
 }

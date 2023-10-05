@@ -1,0 +1,19 @@
+{
+    "title": "I'd Like to Write the World Some Docs",
+    "theme": "white",
+    "highlightTheme": "github",
+    "css": [
+        "resources/styles.css"
+    ],
+    "scripts": [
+        "resources/scripts.js"
+    ],
+    "revealOptions": {
+        "controls": true,
+        "controlsTutorial": false,
+        "pause": true,
+        "progress": true,
+        "slideNumber": false,
+        "transition": "none"
+    }
+}

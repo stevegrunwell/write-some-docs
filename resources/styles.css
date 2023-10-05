@@ -1,0 +1,25 @@
+/**
+ * Custom styles for Reveal.js.
+ */
+
+.presentation-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 0 5em .5em 1em;
+    font-size: .5em;
+    color: #777;
+    transition: .2s;
+}
+
+.presentation-footer a {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    .presentation-footer {
+        font-size: .65em;
+    }
+}

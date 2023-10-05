@@ -1,8 +1,0 @@
-{
-  "name": "i-d-like-to-write-the-world-some-docs",
-  "version": "0.1.0",
-  "dependencies": {
-    "reveal.js": "~3.3.0",
-    "highlightjs": "~9.0.0"
-  }
-}

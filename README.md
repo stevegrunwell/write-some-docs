@@ -4,11 +4,12 @@ It takes a special kind of person to enjoy writing documentation; not only do I 
 
 Luckily, good documentation lives on outside your codebase. By following common documentation standards, we can generate comprehensive manuals that instruct others how to integrate with our software. After all, to code is human, but to document is divine.
 
-**[View slides](https://stevegrunwell.github.io/write-some-docs)**
+✨ **[View slides](https://stevegrunwell.github.io/write-some-docs)** ✨
 
 
 ## Presentation History
 
+* [Longhorn PHP 2023](https://longhornphp.com) — November 3, 2023 ([joind.in](https://joind.in/talk/a402b))
 * [Beer City Code 2017](http://beercitycode.com/) — June 10, 2017
 * [Lone Star PHP 2017](http://lonestarphp.com/) - April 22, 2017 ([joind.in](https://joind.in/talk/b68e9))
 
