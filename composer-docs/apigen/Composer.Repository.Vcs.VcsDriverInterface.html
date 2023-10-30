@@ -1,0 +1,949 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Composer\Repository\Vcs\VcsDriverInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Repository.Vcs.html">Vcs</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Repository.Vcs.FossilDriver.html">
+							FossilDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitBitbucketDriver.html">
+							GitBitbucketDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitDriver.html">
+							GitDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitHubDriver.html">
+							GitHubDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitLabDriver.html">
+							GitLabDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.HgDriver.html">
+							HgDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.PerforceDriver.html">
+							PerforceDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.SvnDriver.html">
+							SvnDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.VcsDriver.html">
+							VcsDriver
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Repository.Vcs.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Repository.Vcs.VcsDriverInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Repository.html">Repository</a>\<a href="namespace-Composer.Repository.Vcs.html">Vcs</a>\<a href="Composer.Repository.Vcs.VcsDriverInterface.html">VcsDriverInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Repository\Vcs\VcsDriverInterface</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html"><span>Composer\Repository\Vcs\VcsDriver</span></a>
+
+		implements
+			<b><span class="active" title="Composer\Repository\Vcs\VcsDriverInterface">VcsDriverInterface</span></b>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Repository.Vcs.GitDriver.html"><span>Composer\Repository\Vcs\GitDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html"><span>Composer\Repository\Vcs\GitBitbucketDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html"><span>Composer\Repository\Vcs\PerforceDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html"><span>Composer\Repository\Vcs\GitLabDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.HgDriver.html"><span>Composer\Repository\Vcs\HgDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html"><span>Composer\Repository\Vcs\FossilDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html"><span>Composer\Repository\Vcs\GitHubDriver</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html"><span>Composer\Repository\Vcs\SvnDriver</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="initialize" id="_initialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initialize(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Initializes the driver (git clone, svn checkout, fetch info etc)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initializes the driver (git clone, svn checkout, fetch info etc)</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_initialize">						<code>Composer\Repository\Vcs\GitDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_initialize">						<code>Composer\Repository\Vcs\GitBitbucketDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_initialize">						<code>Composer\Repository\Vcs\PerforceDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_initialize">						<code>Composer\Repository\Vcs\GitLabDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_initialize">						<code>Composer\Repository\Vcs\HgDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_initialize">						<code>Composer\Repository\Vcs\FossilDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_initialize">						<code>Composer\Repository\Vcs\GitHubDriver::initialize()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_initialize">						<code>Composer\Repository\Vcs\SvnDriver::initialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getComposerInformation" id="_getComposerInformation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getComposerInformation(<span>string <var>$identifier</var></span>): mixed[]|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the composer.json file information
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the composer.json file information</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Array containing all infos from the composer.json file, or null to denote that no file was present</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html#_getComposerInformation">						<code>Composer\Repository\Vcs\VcsDriver::getComposerInformation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getComposerInformation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFileContent" id="_getFileContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFileContent(<span>string <var>$file</var></span>, <span>string <var>$identifier</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the content of $file or null if the file does not exist.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the content of $file or null if the file does not exist.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\GitDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\PerforceDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\GitLabDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\HgDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\FossilDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\GitHubDriver::getFileContent()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getFileContent">						<code>Composer\Repository\Vcs\SvnDriver::getFileContent()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFileContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getChangeDate" id="_getChangeDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getChangeDate(<span>string <var>$identifier</var></span>): ?<a href="DateTimeImmutable.html"><span title="DateTimeImmutable">DateTimeImmutable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the changedate for $identifier.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the changedate for $identifier.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\GitDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\PerforceDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\GitLabDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\HgDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\FossilDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\GitHubDriver::getChangeDate()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getChangeDate">						<code>Composer\Repository\Vcs\SvnDriver::getChangeDate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getChangeDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRootIdentifier" id="_getRootIdentifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRootIdentifier(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the root identifier (trunk, master, default/tip ..)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the root identifier (trunk, master, default/tip ..)</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Identifier</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\GitDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\PerforceDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\GitLabDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\HgDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\FossilDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\GitHubDriver::getRootIdentifier()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\SvnDriver::getRootIdentifier()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRootIdentifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBranches" id="_getBranches">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBranches(): array&lt;int|string, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Return list of branches in the repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return list of branches in the repository</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Branch names as keys, identifiers as values</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getBranches">						<code>Composer\Repository\Vcs\GitDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getBranches">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getBranches">						<code>Composer\Repository\Vcs\PerforceDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getBranches">						<code>Composer\Repository\Vcs\GitLabDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getBranches">						<code>Composer\Repository\Vcs\HgDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getBranches">						<code>Composer\Repository\Vcs\FossilDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getBranches">						<code>Composer\Repository\Vcs\GitHubDriver::getBranches()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getBranches">						<code>Composer\Repository\Vcs\SvnDriver::getBranches()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBranches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTags" id="_getTags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTags(): array&lt;int|string, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Return list of tags in the repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return list of tags in the repository</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Tag names as keys, identifiers as values</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getTags">						<code>Composer\Repository\Vcs\GitDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getTags">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getTags">						<code>Composer\Repository\Vcs\PerforceDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getTags">						<code>Composer\Repository\Vcs\GitLabDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getTags">						<code>Composer\Repository\Vcs\HgDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getTags">						<code>Composer\Repository\Vcs\FossilDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getTags">						<code>Composer\Repository\Vcs\GitHubDriver::getTags()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getTags">						<code>Composer\Repository\Vcs\SvnDriver::getTags()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDist" id="_getDist">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDist(<span>string <var>$identifier</var></span>): array{type: string, url: string, reference: string, shasum: string}|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getDist">						<code>Composer\Repository\Vcs\GitDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getDist">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getDist">						<code>Composer\Repository\Vcs\PerforceDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getDist">						<code>Composer\Repository\Vcs\GitLabDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getDist">						<code>Composer\Repository\Vcs\HgDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getDist">						<code>Composer\Repository\Vcs\FossilDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getDist">						<code>Composer\Repository\Vcs\GitHubDriver::getDist()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getDist">						<code>Composer\Repository\Vcs\SvnDriver::getDist()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDist">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSource" id="_getSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSource(<span>string <var>$identifier</var></span>): array{type: string, url: string, reference: string}</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getSource">						<code>Composer\Repository\Vcs\GitDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getSource">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getSource">						<code>Composer\Repository\Vcs\PerforceDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getSource">						<code>Composer\Repository\Vcs\GitLabDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getSource">						<code>Composer\Repository\Vcs\HgDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getSource">						<code>Composer\Repository\Vcs\FossilDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getSource">						<code>Composer\Repository\Vcs\GitHubDriver::getSource()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getSource">						<code>Composer\Repository\Vcs\SvnDriver::getSource()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUrl" id="_getUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUrl(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the URL of the repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the URL of the repository</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_getUrl">						<code>Composer\Repository\Vcs\GitDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_getUrl">						<code>Composer\Repository\Vcs\GitBitbucketDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_getUrl">						<code>Composer\Repository\Vcs\PerforceDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_getUrl">						<code>Composer\Repository\Vcs\GitLabDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_getUrl">						<code>Composer\Repository\Vcs\HgDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_getUrl">						<code>Composer\Repository\Vcs\FossilDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_getUrl">						<code>Composer\Repository\Vcs\GitHubDriver::getUrl()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_getUrl">						<code>Composer\Repository\Vcs\SvnDriver::getUrl()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasComposerFile" id="_hasComposerFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasComposerFile(<span>string <var>$identifier</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Return true if the repository has a composer file for a given identifier,
+false otherwise.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return true if the repository has a composer file for a given identifier,
+false otherwise.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Whether the repository has a composer file for a given identifier.</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html#_hasComposerFile">						<code>Composer\Repository\Vcs\VcsDriver::hasComposerFile()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasComposerFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cleanup" id="_cleanup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cleanup(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Performs any cleanup necessary as the driver is not longer needed
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Performs any cleanup necessary as the driver is not longer needed</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html#_cleanup">						<code>Composer\Repository\Vcs\VcsDriver::cleanup()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cleanup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="supports" id="_supports">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>supports(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span>string <var>$url</var></span>, <span>bool <var>$deep</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if this driver can handle a given url
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if this driver can handle a given url</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>IO instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>current $config</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>URL to validate/check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$deep</var>&nbsp;&nbsp;</td>
+										<td><p>unless true, only shallow checks (url matching typically) should be done</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.GitDriver.html#_supports">						<code>Composer\Repository\Vcs\GitDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitBitbucketDriver.html#_supports">						<code>Composer\Repository\Vcs\GitBitbucketDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.PerforceDriver.html#_supports">						<code>Composer\Repository\Vcs\PerforceDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitLabDriver.html#_supports">						<code>Composer\Repository\Vcs\GitLabDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.HgDriver.html#_supports">						<code>Composer\Repository\Vcs\HgDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.FossilDriver.html#_supports">						<code>Composer\Repository\Vcs\FossilDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.GitHubDriver.html#_supports">						<code>Composer\Repository\Vcs\GitHubDriver::supports()</code></a>				</li>
+				<li>
+<a href="Composer.Repository.Vcs.SvnDriver.html#_supports">						<code>Composer\Repository\Vcs\SvnDriver::supports()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_supports">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,775 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\DependencyResolver\RuleSetGenerator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Decisions.html">
+							Decisions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.DefaultPolicy.html">
+							DefaultPolicy
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.GenericRule.html">
+							GenericRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.MultiConflictRule.html">
+							MultiConflictRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Pool.html">
+							Pool
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolBuilder.html">
+							PoolBuilder
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolOptimizer.html">
+							PoolOptimizer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Problem.html">
+							Problem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule.html">
+							Rule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule2Literals.html">
+							Rule2Literals
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.DependencyResolver.RuleSetGenerator.html">
+							RuleSetGenerator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetIterator.html">
+							RuleSetIterator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchChain.html">
+							RuleWatchChain
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchGraph.html">
+							RuleWatchGraph
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchNode.html">
+							RuleWatchNode
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Solver.html">
+							Solver
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.PolicyInterface.html">
+							PolicyInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.SolverBugException.html">
+							SolverBugException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.SolverProblemsException.html">
+							SolverProblemsException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.DependencyResolver.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.DependencyResolver.RuleSetGenerator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>\<a href="Composer.DependencyResolver.RuleSetGenerator.html">RuleSetGenerator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.DependencyResolver.RuleSetGenerator.html#25" title="Go to source code">Composer/DependencyResolver/RuleSetGenerator.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#38-43" title="Go to source code">__construct</a>(<span><a href="Composer.DependencyResolver.PolicyInterface.html"><span title="Composer\DependencyResolver\PolicyInterface">PolicyInterface</span></a> <var>$policy</var></span>, <span><a href="Composer.DependencyResolver.Pool.html"><span title="Composer\DependencyResolver\Pool">Pool</span></a> <var>$pool</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createRequireRule" id="_createRequireRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#45-72" title="Go to source code">createRequireRule</a>(
+	<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>,
+	<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>[] <var>$providers</var></span>,
+	<span><a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>::RULE_* <var>$reason</var></span>,
+	<span><a href="Composer.DependencyResolver.Rule.html#~ReasonData"><span title="(Link | BasePackage | string | int | array&#123;packageName: string, constraint: ConstraintInterface} | array&#123;package: BasePackage})">ReasonData</span></a> <var>$reasonData</var> = <span class="php-kw">null</span></span>,
+): <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new rule for the requirements of a package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new rule for the requirements of a package</p>
+<p>This rule is of the form (-A|B|C), where B and C are the providers of
+one requirement of the package A.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>The package with a requirement</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$providers</var>&nbsp;&nbsp;</td>
+										<td><p>The providers of the requirement</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$reason</var>&nbsp;&nbsp;</td>
+										<td><p>A RULE_* constant describing the reason for generating this rule</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The generated rule or null if tautological</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createRequireRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createInstallOneOfRule" id="_createInstallOneOfRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#74-96" title="Go to source code">createInstallOneOfRule</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>[] <var>$packages</var></span>, <span><a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>::RULE_* <var>$reason</var></span>, <span><a href="Composer.DependencyResolver.Rule.html#~ReasonData"><span title="(Link | BasePackage | string | int | array&#123;packageName: string, constraint: ConstraintInterface} | array&#123;package: BasePackage})">ReasonData</span></a> <var>$reasonData</var></span>): <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a rule to install at least one of a set of packages
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a rule to install at least one of a set of packages</p>
+<p>The rule is (A|B|C) with A, B and C different packages. If the given
+set of packages is empty an impossible rule is generated.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$packages</var>&nbsp;&nbsp;</td>
+										<td><p>The set of packages to choose from</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$reason</var>&nbsp;&nbsp;</td>
+										<td><p>A RULE_* constant describing the reason for
+generating this rule</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The generated rule</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createInstallOneOfRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createRule2Literals" id="_createRule2Literals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#98-120" title="Go to source code">createRule2Literals</a>(
+	<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$issuer</var></span>,
+	<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$provider</var></span>,
+	<span><a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>::RULE_* <var>$reason</var></span>,
+	<span><a href="Composer.DependencyResolver.Rule.html#~ReasonData"><span title="(Link | BasePackage | string | int | array&#123;packageName: string, constraint: ConstraintInterface} | array&#123;package: BasePackage})">ReasonData</span></a> <var>$reasonData</var> = <span class="php-kw">null</span></span>,
+): ?<a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a rule for two conflicting packages
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a rule for two conflicting packages</p>
+<p>The rule for conflicting packages A and B is (-A|-B). A is called the issuer
+and B the provider.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$issuer</var>&nbsp;&nbsp;</td>
+										<td><p>The package declaring the conflict</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$provider</var>&nbsp;&nbsp;</td>
+										<td><p>The package causing the conflict</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$reason</var>&nbsp;&nbsp;</td>
+										<td><p>A RULE_* constant describing the reason for generating this rule</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The generated rule</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createRule2Literals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createMultiConflictRule" id="_createMultiConflictRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#122-141" title="Go to source code">createMultiConflictRule</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>[] <var>$packages</var></span>, <span><a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>::RULE_* <var>$reason</var></span>, <span><a href="Composer.DependencyResolver.Rule.html#~ReasonData"><span title="(Link | BasePackage | string | int | array&#123;packageName: string, constraint: ConstraintInterface} | array&#123;package: BasePackage})">ReasonData</span></a> <var>$reasonData</var></span>): <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$reason</var>&nbsp;&nbsp;</td>
+										<td><p>A RULE_* constant</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createMultiConflictRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRulesForPackage" id="_addRulesForPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#161-210" title="Go to source code">addRulesForPackage</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>, <span><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRulesForPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addConflictRules" id="_addConflictRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#212-248" title="Go to source code">addConflictRules</a>(<span><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addConflictRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRulesForRequest" id="_addRulesForRequest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#250-291" title="Go to source code">addRulesForRequest</a>(<span><a href="Composer.DependencyResolver.Request.html"><span title="Composer\DependencyResolver\Request">Request</span></a> <var>$request</var></span>, <span><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRulesForRequest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRulesForRootAliases" id="_addRulesForRootAliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#293-306" title="Go to source code">addRulesForRootAliases</a>(<span><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRulesForRootAliases">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRulesFor" id="_getRulesFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#308-326" title="Go to source code">getRulesFor</a>(<span><a href="Composer.DependencyResolver.Request.html"><span title="Composer\DependencyResolver\Request">Request</span></a> <var>$request</var></span>, <span>?<a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var> = <span class="php-kw">null</span></span>): <a href="Composer.DependencyResolver.RuleSet.html"><span title="Composer\DependencyResolver\RuleSet">RuleSet</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRulesFor">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="policy" id="$policy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.DependencyResolver.PolicyInterface.html"><span title="Composer\DependencyResolver\PolicyInterface">PolicyInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#27-28" title="Go to source code">$policy</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$policy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pool" id="$pool">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.DependencyResolver.Pool.html"><span title="Composer\DependencyResolver\Pool">Pool</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#29-30" title="Go to source code">$pool</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pool">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rules" id="$rules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.DependencyResolver.RuleSet.html"><span title="Composer\DependencyResolver\RuleSet">RuleSet</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#31-32" title="Go to source code">$rules</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$rules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addedMap" id="$addedMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#33-34" title="Go to source code">$addedMap</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$addedMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addedPackagesByNames" id="$addedPackagesByNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>[]&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.RuleSetGenerator.html#35-36" title="Go to source code">$addedPackagesByNames</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$addedPackagesByNames">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

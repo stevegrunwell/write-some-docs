@@ -1,0 +1,631 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Config\JsonConfigSource |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Config.JsonConfigSource.html">
+							JsonConfigSource
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Config.ConfigSourceInterface.html">
+							ConfigSourceInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Config.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Config.JsonConfigSource.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Config.html">Config</a>\<a href="Composer.Config.JsonConfigSource.html">JsonConfigSource</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>JSON Configuration Source</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Config.JsonConfigSource.html#28" title="Go to source code">Composer/Config/JsonConfigSource.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#40-47" title="Go to source code">__construct</a>(<span><a href="Composer.Json.JsonFile.html"><span title="Composer\Json\JsonFile">JsonFile</span></a> <var>$file</var></span>, <span>bool <var>$authConfig</var> = <span class="php-kw">false</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#49-55" title="Go to source code">getName</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gives a user-friendly name to this source (file path or so)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gives a user-friendly name to this source (file path or so)</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_getName">						<code>Composer\Config\ConfigSourceInterface::getName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRepository" id="_addRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#57-84" title="Go to source code">addRepository</a>(<span>string <var>$name</var></span>, <span><var>$config</var></span>, <span>bool <var>$append</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a repository</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>Name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>Configuration</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$append</var>&nbsp;&nbsp;</td>
+										<td><p>Whether the repo should be appended (true) or prepended (false)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_addRepository">						<code>Composer\Config\ConfigSourceInterface::addRepository()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeRepository" id="_removeRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#86-94" title="Go to source code">removeRepository</a>(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a repository</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_removeRepository">						<code>Composer\Config\ConfigSourceInterface::removeRepository()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addConfigSetting" id="_addConfigSetting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#96-114" title="Go to source code">addConfigSetting</a>(<span>string <var>$name</var></span>, <span><var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a config setting
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a config setting</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>Name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>Value</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_addConfigSetting">						<code>Composer\Config\ConfigSourceInterface::addConfigSetting()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addConfigSetting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeConfigSetting" id="_removeConfigSetting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#116-134" title="Go to source code">removeConfigSetting</a>(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a config setting
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a config setting</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_removeConfigSetting">						<code>Composer\Config\ConfigSourceInterface::removeConfigSetting()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeConfigSetting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addProperty" id="_addProperty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#136-157" title="Go to source code">addProperty</a>(<span>string <var>$name</var></span>, <span><var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a property
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a property</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>Name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>Value</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_addProperty">						<code>Composer\Config\ConfigSourceInterface::addProperty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addProperty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeProperty" id="_removeProperty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#159-180" title="Go to source code">removeProperty</a>(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a property
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a property</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_removeProperty">						<code>Composer\Config\ConfigSourceInterface::removeProperty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeProperty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addLink" id="_addLink">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#182-190" title="Go to source code">addLink</a>(<span>string <var>$type</var></span>, <span>string <var>$name</var></span>, <span>string <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a package link
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a package link</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>Type (require, require-dev, provide, suggest, replace, conflict)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>Name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>Value</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_addLink">						<code>Composer\Config\ConfigSourceInterface::addLink()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addLink">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeLink" id="_removeLink">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.JsonConfigSource.html#192-205" title="Go to source code">removeLink</a>(<span>string <var>$type</var></span>, <span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a package link
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a package link</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>Type (require, require-dev, provide, suggest, replace, conflict)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>Name</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Config.ConfigSourceInterface.html#_removeLink">						<code>Composer\Config\ConfigSourceInterface::removeLink()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeLink">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

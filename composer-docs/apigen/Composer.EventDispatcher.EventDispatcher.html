@@ -1,0 +1,1192 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\EventDispatcher\EventDispatcher |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.EventDispatcher.Event.html">
+							Event
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.EventDispatcher.EventDispatcher.html">
+							EventDispatcher
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.EventDispatcher.EventSubscriberInterface.html">
+							EventSubscriberInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.EventDispatcher.ScriptExecutionException.html">
+							ScriptExecutionException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.EventDispatcher.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.EventDispatcher.EventDispatcher.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>\<a href="Composer.EventDispatcher.EventDispatcher.html">EventDispatcher</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>The Event Dispatcher.</p>
+<p>Example in command:
+$dispatcher = new EventDispatcher($this-&gt;requireComposer(), $this-&gt;getApplication()-&gt;getIO());
+// ...
+$dispatcher-&gt;dispatch(ScriptEvents::POST_INSTALL_CMD);
+// ...</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.EventDispatcher.EventDispatcher.html#52" title="Go to source code">Composer/EventDispatcher/EventDispatcher.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#69-82" title="Go to source code">__construct</a>(<span><a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a> <var>$composer</var></span>, <span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$composer</var>&nbsp;&nbsp;</td>
+										<td><p>The composer instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>The IOInterface instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRunScripts" id="_setRunScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#84-94" title="Go to source code">setRunScripts</a>(<span>bool <var>$runScripts</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set whether script handlers are active or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set whether script handlers are active or not</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRunScripts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dispatch" id="_dispatch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#96-114" title="Go to source code">dispatch</a>(<span>string|null <var>$eventName</var></span>, <span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Dispatch an event
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dispatch an event</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$eventName</var>&nbsp;&nbsp;</td>
+										<td><p>The event name, required if no $event is provided</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$event</var>&nbsp;&nbsp;</td>
+										<td><p>An event instance, required if no $eventName is provided</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dispatch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dispatchScript" id="_dispatchScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#116-130" title="Go to source code">dispatchScript</a>(
+	<span>string <var>$eventName</var></span>,
+	<span>bool <var>$devMode</var> = <span class="php-kw">false</span></span>,
+	<span>array&lt;int, mixed&gt; <var>$additionalArgs</var> = []</span>,
+	<span>array&lt;string, mixed&gt; <var>$flags</var> = []</span>,
+): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Dispatch a script event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dispatch a script event.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$eventName</var>&nbsp;&nbsp;</td>
+										<td><p>The constant in ScriptEvents</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$additionalArgs</var>&nbsp;&nbsp;</td>
+										<td><p>Arguments passed by the user</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$flags</var>&nbsp;&nbsp;</td>
+										<td><p>Optional flags to pass data not as argument</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dispatchScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dispatchPackageEvent" id="_dispatchPackageEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#132-149" title="Go to source code">dispatchPackageEvent</a>(
+	<span>string <var>$eventName</var></span>,
+	<span>bool <var>$devMode</var></span>,
+	<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$localRepo</var></span>,
+	<span><a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>[] <var>$operations</var></span>,
+	<span><a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a> <var>$operation</var></span>,
+): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Dispatch a package event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dispatch a package event.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$eventName</var>&nbsp;&nbsp;</td>
+										<td><p>The constant in PackageEvents</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$devMode</var>&nbsp;&nbsp;</td>
+										<td><p>Whether or not we are in dev mode</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$localRepo</var>&nbsp;&nbsp;</td>
+										<td><p>The installed repository</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operations</var>&nbsp;&nbsp;</td>
+										<td><p>The list of operations</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operation</var>&nbsp;&nbsp;</td>
+										<td><p>The package being installed/updated/removed</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dispatchPackageEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dispatchInstallerEvent" id="_dispatchInstallerEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#151-167" title="Go to source code">dispatchInstallerEvent</a>(<span>string <var>$eventName</var></span>, <span>bool <var>$devMode</var></span>, <span>bool <var>$executeOperations</var></span>, <span><a href="Composer.DependencyResolver.Transaction.html"><span title="Composer\DependencyResolver\Transaction">Transaction</span></a> <var>$transaction</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Dispatch a installer event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dispatch a installer event.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$eventName</var>&nbsp;&nbsp;</td>
+										<td><p>The constant in InstallerEvents</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$devMode</var>&nbsp;&nbsp;</td>
+										<td><p>Whether or not we are in dev mode</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$executeOperations</var>&nbsp;&nbsp;</td>
+										<td><p>True if operations will be executed, false in --dry-run</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$transaction</var>&nbsp;&nbsp;</td>
+										<td><p>The transaction contains the list of operations</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dispatchInstallerEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doDispatch" id="_doDispatch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#169-410" title="Go to source code">doDispatch</a>(<span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Triggers the listeners of an event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Triggers the listeners of an event.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$event</var>&nbsp;&nbsp;</td>
+										<td><p>The event object to pass to the event handlers/listeners.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a>|<a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doDispatch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="executeTty" id="_executeTty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#412-419" title="Go to source code">executeTty</a>(<span>string <var>$exec</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_executeTty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPhpExecCommand" id="_getPhpExecCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#421-435" title="Go to source code">getPhpExecCommand</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPhpExecCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="executeEventPhpScript" id="_executeEventPhpScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#437-451" title="Go to source code">executeEventPhpScript</a>(<span>string <var>$className</var></span>, <span>string <var>$methodName</var></span>, <span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$event</var>&nbsp;&nbsp;</td>
+										<td><p>Event invoking the PHP callable</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_executeEventPhpScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addListener" id="_addListener">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#453-463" title="Go to source code">addListener</a>(<span>string <var>$eventName</var></span>, <span>callable|string <var>$listener</var></span>, <span>int <var>$priority</var> = <span class="php-num">0</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a listener for a particular event
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a listener for a particular event</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$eventName</var>&nbsp;&nbsp;</td>
+										<td><p>The event name - typically a constant</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$listener</var>&nbsp;&nbsp;</td>
+										<td><p>A callable expecting an event argument, or a command string to be executed (same as a composer.json &quot;scripts&quot; entry)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$priority</var>&nbsp;&nbsp;</td>
+										<td><p>A higher value represents a higher priority</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addListener">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeListener" id="_removeListener">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#465-479" title="Go to source code">removeListener</a>(<span>callable|object <var>$listener</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$listener</var>&nbsp;&nbsp;</td>
+										<td><p>A callable or an object instance for which all listeners should be removed</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeListener">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addSubscriber" id="_addSubscriber">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#481-499" title="Go to source code">addSubscriber</a>(<span><a href="Composer.EventDispatcher.EventSubscriberInterface.html"><span title="Composer\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</span></a> <var>$subscriber</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds object methods as listeners for the events in getSubscribedEvents
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds object methods as listeners for the events in getSubscribedEvents</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addSubscriber">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getListeners" id="_getListeners">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#501-519" title="Go to source code">getListeners</a>(<span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): array&lt;callable|string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves all listeners for a given event
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves all listeners for a given event</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>All listeners: callables and scripts</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getListeners">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasEventListeners" id="_hasEventListeners">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#521-529" title="Go to source code">hasEventListeners</a>(<span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if an event has listeners registered
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if an event has listeners registered</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasEventListeners">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getScriptListeners" id="_getScriptListeners">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#531-564" title="Go to source code">getScriptListeners</a>(<span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Finds all listeners defined as scripts in the package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Finds all listeners defined as scripts in the package</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$event</var>&nbsp;&nbsp;</td>
+										<td><p>Event object</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Listeners</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScriptListeners">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isPhpScript" id="_isPhpScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#566-572" title="Go to source code">isPhpScript</a>(<span>string <var>$callable</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if string given references a class path and method
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if string given references a class path and method</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isPhpScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCommandClass" id="_isCommandClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#574-580" title="Go to source code">isCommandClass</a>(<span>string <var>$callable</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if string given references a command class
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if string given references a command class</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCommandClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isComposerScript" id="_isComposerScript">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#582-588" title="Go to source code">isComposerScript</a>(<span>string <var>$callable</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if string given references a composer run-script
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if string given references a composer run-script</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isComposerScript">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pushEvent" id="_pushEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#590-603" title="Go to source code">pushEvent</a>(<span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Push an event to the stack of active event
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Push an event to the stack of active event</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pushEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="popEvent" id="_popEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.EventDispatcher.EventDispatcher.html#605-611" title="Go to source code">popEvent</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Pops the active event from the stack
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pops the active event from the stack</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_popEvent">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="composer" id="$composer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.EventDispatcher.EventDispatcher.html#54-55" title="Go to source code">$composer</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$composer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="io" id="$io">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.EventDispatcher.EventDispatcher.html#56-57" title="Go to source code">$io</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$io">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loader" id="$loader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Composer.Autoload.ClassLoader.html"><span title="Composer\Autoload\ClassLoader">ClassLoader</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.EventDispatcher.EventDispatcher.html#58-59" title="Go to source code">$loader</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$loader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="process" id="$process">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.EventDispatcher.EventDispatcher.html#60-61" title="Go to source code">$process</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$process">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="listeners" id="$listeners">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, array&lt;int, array&lt;callable|string&gt;&gt;&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.EventDispatcher.EventDispatcher.html#62-63" title="Go to source code">$listeners</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$listeners">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="runScripts" id="$runScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.EventDispatcher.EventDispatcher.html#64-65" title="Go to source code">$runScripts</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$runScripts">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

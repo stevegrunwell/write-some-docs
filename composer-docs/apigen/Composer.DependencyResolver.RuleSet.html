@@ -1,0 +1,784 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Composer\DependencyResolver\RuleSet |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Decisions.html">
+							Decisions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.DefaultPolicy.html">
+							DefaultPolicy
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.GenericRule.html">
+							GenericRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.MultiConflictRule.html">
+							MultiConflictRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Pool.html">
+							Pool
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolBuilder.html">
+							PoolBuilder
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolOptimizer.html">
+							PoolOptimizer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Problem.html">
+							Problem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule.html">
+							Rule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule2Literals.html">
+							Rule2Literals
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetGenerator.html">
+							RuleSetGenerator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetIterator.html">
+							RuleSetIterator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchChain.html">
+							RuleWatchChain
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchGraph.html">
+							RuleWatchGraph
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchNode.html">
+							RuleWatchNode
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Solver.html">
+							Solver
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.PolicyInterface.html">
+							PolicyInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.SolverBugException.html">
+							SolverBugException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.SolverProblemsException.html">
+							SolverProblemsException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.DependencyResolver.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.DependencyResolver.RuleSet.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>\<a href="Composer.DependencyResolver.RuleSet.html">RuleSet</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;<a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>&gt;, <a href="Countable.html"><span title="Countable">Countable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct()</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="add" id="_add">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>add(<span><a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a> <var>$rule</var></span>, <span><b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_* <var>$type</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_add">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ruleById" id="_ruleById">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ruleById(<span>int <var>$id</var></span>): <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ruleById">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRules" id="_getRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRules(): array&lt;<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_*, <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>[]&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="Composer.DependencyResolver.RuleSetIterator.html"><span title="Composer\DependencyResolver\RuleSetIterator">RuleSetIterator</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIteratorFor" id="_getIteratorFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIteratorFor(<span><b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_*|array&lt;<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_*&gt; <var>$types</var></span>): <a href="Composer.DependencyResolver.RuleSetIterator.html"><span title="Composer\DependencyResolver\RuleSetIterator">RuleSetIterator</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIteratorFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIteratorWithout" id="_getIteratorWithout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIteratorWithout(<span>array&lt;<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_*&gt;|<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_* <var>$types</var></span>): <a href="Composer.DependencyResolver.RuleSetIterator.html"><span title="Composer\DependencyResolver\RuleSetIterator">RuleSetIterator</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIteratorWithout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTypes" id="_getTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTypes(): array{<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::<a href="Composer.DependencyResolver.RuleSet.html#TYPE_PACKAGE">TYPE_PACKAGE</a>, <b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::<a href="Composer.DependencyResolver.RuleSet.html#TYPE_REQUEST">TYPE_REQUEST</a>, <b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::<a href="Composer.DependencyResolver.RuleSet.html#TYPE_LEARNED">TYPE_LEARNED</a>}</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPrettyString" id="_getPrettyString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPrettyString(
+	<span>?<a href="Composer.Repository.RepositorySet.html"><span title="Composer\Repository\RepositorySet">RepositorySet</span></a> <var>$repositorySet</var> = <span class="php-kw">null</span></span>,
+	<span>?<a href="Composer.DependencyResolver.Request.html"><span title="Composer\DependencyResolver\Request">Request</span></a> <var>$request</var> = <span class="php-kw">null</span></span>,
+	<span>?<a href="Composer.DependencyResolver.Pool.html"><span title="Composer\DependencyResolver\Pool">Pool</span></a> <var>$pool</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$isVerbose</var> = <span class="php-kw">false</span></span>,
+): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPrettyString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="TYPE_PACKAGE" id="TYPE_PACKAGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_PACKAGE = <span class="php-num">0</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_PACKAGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TYPE_REQUEST" id="TYPE_REQUEST">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_REQUEST = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_REQUEST">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TYPE_LEARNED" id="TYPE_LEARNED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_LEARNED = <span class="php-num">4</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_LEARNED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TYPES" id="TYPES">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPES = [<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::<a href="Composer.DependencyResolver.RuleSet.html#TYPE_PACKAGE">TYPE_PACKAGE</a> =&gt; <span class="php-str">'PACKAGE'</span>, <b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::<a href="Composer.DependencyResolver.RuleSet.html#TYPE_REQUEST">TYPE_REQUEST</a> =&gt; <span class="php-str">'REQUEST'</span>, <b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::<a href="Composer.DependencyResolver.RuleSet.html#TYPE_LEARNED">TYPE_LEARNED</a> =&gt; <span class="php-str">'LEARNED'</span>]</code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPES">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="ruleById" id="$ruleById">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int, <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$ruleById</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$ruleById">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rules" id="$rules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;<b><span class="active" title="Composer\DependencyResolver\RuleSet">self</span></b>::TYPE_*, <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>[]&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$rules</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$rules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nextRuleId" id="$nextRuleId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><span class="php-num">0</span>|positive-int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$nextRuleId</var> = <span class="php-num">0</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$nextRuleId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rulesByHash" id="$rulesByHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int|string, <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>|<a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>[]&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$rulesByHash</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$rulesByHash">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,617 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Json\JsonManipulator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Json.JsonFile.html">
+							JsonFile
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Json.JsonFormatter.html">
+							JsonFormatter
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Json.JsonManipulator.html">
+							JsonManipulator
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Json.JsonValidationException.html">
+							JsonValidationException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Json.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Json.JsonManipulator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Json.html">Json</a>\<a href="Composer.Json.JsonManipulator.html">JsonManipulator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Json.JsonManipulator.html#21" title="Go to source code">Composer/Json/JsonManipulator.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#41-53" title="Go to source code">__construct</a>(<span>string <var>$contents</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContents" id="_getContents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#55-58" title="Go to source code">getContents</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addLink" id="_addLink">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#60-117" title="Go to source code">addLink</a>(<span>string <var>$type</var></span>, <span>string <var>$package</var></span>, <span>string <var>$constraint</var></span>, <span>bool <var>$sortPackages</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addLink">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRepository" id="_addRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#157-163" title="Go to source code">addRepository</a>(<span>string <var>$name</var></span>, <span>array&lt;string, mixed&gt;|false <var>$config</var></span>, <span>bool <var>$append</var> = <span class="php-kw">true</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeRepository" id="_removeRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#165-168" title="Go to source code">removeRepository</a>(<span>string <var>$name</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addConfigSetting" id="_addConfigSetting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#170-176" title="Go to source code">addConfigSetting</a>(<span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addConfigSetting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeConfigSetting" id="_removeConfigSetting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#178-181" title="Go to source code">removeConfigSetting</a>(<span>string <var>$name</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeConfigSetting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addProperty" id="_addProperty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#183-201" title="Go to source code">addProperty</a>(<span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addProperty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeProperty" id="_removeProperty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#203-218" title="Go to source code">removeProperty</a>(<span>string <var>$name</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeProperty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addSubNode" id="_addSubNode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#220-330" title="Go to source code">addSubNode</a>(<span>string <var>$mainNode</var></span>, <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>, <span>bool <var>$append</var> = <span class="php-kw">true</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addSubNode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeSubNode" id="_removeSubNode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#332-437" title="Go to source code">removeSubNode</a>(<span>string <var>$mainNode</var></span>, <span>string <var>$name</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeSubNode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addMainKey" id="_addMainKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#439-480" title="Go to source code">addMainKey</a>(<span>string <var>$key</var></span>, <span>mixed <var>$content</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addMainKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeMainKey" id="_removeMainKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#482-517" title="Go to source code">removeMainKey</a>(<span>string <var>$key</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeMainKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeMainKeyIfEmpty" id="_removeMainKeyIfEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#519-532" title="Go to source code">removeMainKeyIfEmpty</a>(<span>string <var>$key</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeMainKeyIfEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="format" id="_format">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#534-560" title="Go to source code">format</a>(<span>mixed <var>$data</var></span>, <span>int <var>$depth</var> = <span class="php-num">0</span></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_format">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="detectIndenting" id="_detectIndenting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonManipulator.html#562-565" title="Go to source code">detectIndenting</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_detectIndenting">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

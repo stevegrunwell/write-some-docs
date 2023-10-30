@@ -1,0 +1,412 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Composer\Advisory\Auditor |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Advisory.IgnoredSecurityAdvisory.html">
+							IgnoredSecurityAdvisory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Advisory.PartialSecurityAdvisory.html">
+							PartialSecurityAdvisory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Advisory.SecurityAdvisory.html">
+							SecurityAdvisory
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Advisory.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Advisory.Auditor.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Advisory.html">Advisory</a>\<a href="Composer.Advisory.Auditor.html">Auditor</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="audit" id="_audit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>audit(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Repository.RepositorySet.html"><span title="Composer\Repository\RepositorySet">RepositorySet</span></a> <var>$repoSet</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[] <var>$packages</var></span>,
+	<span><b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::FORMAT_* <var>$format</var></span>,
+	<span>bool <var>$warningOnly</var> = <span class="php-kw">true</span></span>,
+	<span>string[] <var>$ignoreList</var> = []</span>,
+	<span><b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::ABANDONED_* <var>$abandoned</var> = <b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::<a href="Composer.Advisory.Auditor.html#ABANDONED_REPORT">ABANDONED_REPORT</a></span>,
+): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$format</var>&nbsp;&nbsp;</td>
+										<td><p>The format that will be used to output audit results.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$warningOnly</var>&nbsp;&nbsp;</td>
+										<td><p>If true, outputs a warning. If false, outputs an error.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$ignoreList</var>&nbsp;&nbsp;</td>
+										<td><p>List of advisory IDs, remote IDs or CVE IDs that reported but not listed as vulnerabilities.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Amount of packages with vulnerabilities found</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>If no packages are passed in</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_audit">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="FORMAT_TABLE" id="FORMAT_TABLE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>FORMAT_TABLE = <span class="php-str">'table'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FORMAT_TABLE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FORMAT_PLAIN" id="FORMAT_PLAIN">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>FORMAT_PLAIN = <span class="php-str">'plain'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FORMAT_PLAIN">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FORMAT_JSON" id="FORMAT_JSON">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>FORMAT_JSON = <span class="php-str">'json'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FORMAT_JSON">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FORMAT_SUMMARY" id="FORMAT_SUMMARY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>FORMAT_SUMMARY = <span class="php-str">'summary'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FORMAT_SUMMARY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FORMATS" id="FORMATS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>FORMATS = [<b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::<a href="Composer.Advisory.Auditor.html#FORMAT_TABLE">FORMAT_TABLE</a>, <b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::<a href="Composer.Advisory.Auditor.html#FORMAT_PLAIN">FORMAT_PLAIN</a>, <b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::<a href="Composer.Advisory.Auditor.html#FORMAT_JSON">FORMAT_JSON</a>, <b><span class="active" title="Composer\Advisory\Auditor">self</span></b>::<a href="Composer.Advisory.Auditor.html#FORMAT_SUMMARY">FORMAT_SUMMARY</a>]</code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FORMATS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ABANDONED_IGNORE" id="ABANDONED_IGNORE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ABANDONED_IGNORE = <span class="php-str">'ignore'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ABANDONED_IGNORE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ABANDONED_REPORT" id="ABANDONED_REPORT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ABANDONED_REPORT = <span class="php-str">'report'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ABANDONED_REPORT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ABANDONED_FAIL" id="ABANDONED_FAIL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ABANDONED_FAIL = <span class="php-str">'fail'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ABANDONED_FAIL">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

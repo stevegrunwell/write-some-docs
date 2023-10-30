@@ -1,0 +1,1807 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Util\Perforce |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Util.html">Util</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.Http.html">Http</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Util.AuthHelper.html">
+							AuthHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Bitbucket.html">
+							Bitbucket
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ComposerMirror.html">
+							ComposerMirror
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ConfigValidator.html">
+							ConfigValidator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ErrorHandler.html">
+							ErrorHandler
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Filesystem.html">
+							Filesystem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Git.html">
+							Git
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.GitHub.html">
+							GitHub
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.GitLab.html">
+							GitLab
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Hg.html">
+							Hg
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.HttpDownloader.html">
+							HttpDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.IniHelper.html">
+							IniHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Loop.html">
+							Loop
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Util.MetadataMinifier.html">
+							MetadataMinifier
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.NoProxyPattern.html">
+							NoProxyPattern
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.PackageInfo.html">
+							PackageInfo
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.PackageSorter.html">
+							PackageSorter
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Util.Perforce.html">
+							Perforce
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Platform.html">
+							Platform
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ProcessExecutor.html">
+							ProcessExecutor
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Silencer.html">
+							Silencer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.StreamContextFactory.html">
+							StreamContextFactory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Svn.html">
+							Svn
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.SyncHelper.html">
+							SyncHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Tar.html">
+							Tar
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Util.TlsHelper.html">
+							TlsHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Url.html">
+							Url
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Zip.html">
+							Zip
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Util.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Util.Perforce.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Util.html">Util</a>\<a href="Composer.Util.Perforce.html">Perforce</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Util.Perforce.html#24" title="Go to source code">Composer/Util/Perforce.php</a><br>
+		</div>
+
+		<table class="table" id="aliases">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Type aliases</th>
+			</tr>
+
+	<tr data-order="RepoConfig" id="~RepoConfig">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				<a href="source-Composer.Util.Perforce.html#19-23" title="Go to source code">
+					RepoConfig
+				</a>
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array{unique_perforce_client_name?: string, depot?: string, branch?: string, p4user?: string, p4password?: string}</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~RepoConfig">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#61-72" title="Go to source code">__construct</a>(
+	<span><a href="Composer.Util.Perforce.html#~RepoConfig"><span title="array&#123;unique_perforce_client_name?: string, depot?: string, branch?: string, p4user?: string, p4password?: string}">RepoConfig</span></a> <var>$repoConfig</var></span>,
+	<span>string <var>$port</var></span>,
+	<span>string <var>$path</var></span>,
+	<span><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var></span>,
+	<span>bool <var>$isWindows</var></span>,
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#74-80" title="Go to source code">create</a>(<span><a href="Composer.Util.Perforce.html#~RepoConfig"><span title="array&#123;unique_perforce_client_name?: string, depot?: string, branch?: string, p4user?: string, p4password?: string}">RepoConfig</span></a> <var>$repoConfig</var></span>, <span>string <var>$port</var></span>, <span>string <var>$path</var></span>, <span><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var></span>, <span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>): <b><span class="active" title="Composer\Util\Perforce">self</span></b></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="checkServerExists" id="_checkServerExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#82-85" title="Go to source code">checkServerExists</a>(<span>string <var>$url</var></span>, <span><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$processExecutor</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_checkServerExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initialize" id="_initialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#87-114" title="Go to source code">initialize</a>(<span><a href="Composer.Util.Perforce.html#~RepoConfig"><span title="array&#123;unique_perforce_client_name?: string, depot?: string, branch?: string, p4user?: string, p4password?: string}">RepoConfig</span></a> <var>$repoConfig</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initializeDepotAndBranch" id="_initializeDepotAndBranch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#116-124" title="Go to source code">initializeDepotAndBranch</a>(<span>?string <var>$depot</var></span>, <span>?string <var>$branch</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initializeDepotAndBranch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateUniquePerforceClientName" id="_generateUniquePerforceClientName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#126-132" title="Go to source code">generateUniquePerforceClientName</a>(): non-empty-string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateUniquePerforceClientName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cleanupClientSpec" id="_cleanupClientSpec">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#134-144" title="Go to source code">cleanupClientSpec</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cleanupClientSpec">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="executeCommand" id="_executeCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#146-154" title="Go to source code">executeCommand</a>(<span>non-empty-string <var>$command</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_executeCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClient" id="_getClient">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#156-164" title="Go to source code">getClient</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClient">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPath" id="_getPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#166-169" title="Go to source code">getPath</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initializePath" id="_initializePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#171-176" title="Go to source code">initializePath</a>(<span>string <var>$path</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initializePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPort" id="_getPort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#178-181" title="Go to source code">getPort</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStream" id="_setStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#183-191" title="Go to source code">setStream</a>(<span>string <var>$stream</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isStream" id="_isStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#193-196" title="Go to source code">isStream</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isStream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStream" id="_getStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#198-209" title="Go to source code">getStream</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStreamWithoutLabel" id="_getStreamWithoutLabel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#211-219" title="Go to source code">getStreamWithoutLabel</a>(<span>string <var>$stream</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStreamWithoutLabel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getP4ClientSpec" id="_getP4ClientSpec">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#221-227" title="Go to source code">getP4ClientSpec</a>(): non-empty-string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getP4ClientSpec">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUser" id="_getUser">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#229-232" title="Go to source code">getUser</a>(): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUser">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUser" id="_setUser">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#234-237" title="Go to source code">setUser</a>(<span>?string <var>$user</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUser">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryP4User" id="_queryP4User">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#239-256" title="Go to source code">queryP4User</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_queryP4User">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getP4variable" id="_getP4variable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#258-291" title="Go to source code">getP4variable</a>(<span>string <var>$name</var></span>): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getP4variable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryP4Password" id="_queryP4Password">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#293-305" title="Go to source code">queryP4Password</a>(): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_queryP4Password">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateP4Command" id="_generateP4Command">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#307-320" title="Go to source code">generateP4Command</a>(<span>string <var>$command</var></span>, <span>bool <var>$useClient</var> = <span class="php-kw">true</span></span>): non-empty-string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateP4Command">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isLoggedIn" id="_isLoggedIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#322-340" title="Go to source code">isLoggedIn</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isLoggedIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="connectClient" id="_connectClient">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#342-348" title="Go to source code">connectClient</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_connectClient">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncCodeBase" id="_syncCodeBase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#350-360" title="Go to source code">syncCodeBase</a>(<span>?string <var>$sourceReference</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncCodeBase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeClientSpecToFile" id="_writeClientSpecToFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#362-386" title="Go to source code">writeClientSpecToFile</a>(<span>resource|false <var>$spec</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeClientSpecToFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeP4ClientSpec" id="_writeP4ClientSpec">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#388-399" title="Go to source code">writeP4ClientSpec</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeP4ClientSpec">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="read" id="_read">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#401-414" title="Go to source code">read</a>(<span>resource <var>$pipe</var></span>, <span>mixed <var>$name</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_read">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="windowsLogin" id="_windowsLogin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#416-423" title="Go to source code">windowsLogin</a>(<span>?string <var>$password</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_windowsLogin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Login" id="_p4Login">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#425-440" title="Go to source code">p4Login</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_p4Login">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getComposerInformation" id="_getComposerInformation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#442-454" title="Go to source code">getComposerInformation</a>(<span>string <var>$identifier</var></span>): mixed[]|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getComposerInformation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFileContent" id="_getFileContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#456-469" title="Go to source code">getFileContent</a>(<span>string <var>$file</var></span>, <span>string <var>$identifier</var></span>): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFileContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFilePath" id="_getFilePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#471-494" title="Go to source code">getFilePath</a>(<span>string <var>$file</var></span>, <span>string <var>$identifier</var></span>): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFilePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBranches" id="_getBranches">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#496-526" title="Go to source code">getBranches</a>(): array{master: string}</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBranches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTags" id="_getTags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#528-546" title="Go to source code">getTags</a>(): array&lt;string, string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="checkStream" id="_checkStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#548-566" title="Go to source code">checkStream</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_checkStream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getChangeList" id="_getChangeList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#568-587" title="Go to source code">getChangeList</a>(<span>string <var>$reference</var></span>): mixed|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getChangeList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommitLogs" id="_getCommitLogs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#589-608" title="Go to source code">getCommitLogs</a>(<span>string <var>$fromReference</var></span>, <span>string <var>$toReference</var></span>): mixed|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommitLogs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFilesystem" id="_getFilesystem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#610-617" title="Go to source code">getFilesystem</a>(): <a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFilesystem">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFilesystem" id="_setFilesystem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Perforce.html#619-622" title="Go to source code">setFilesystem</a>(<span><a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a> <var>$fs</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFilesystem">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="path" id="$path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#26-27" title="Go to source code">$path</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Depot" id="$p4Depot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#28-29" title="Go to source code">$p4Depot</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4Depot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Client" id="$p4Client">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#30-31" title="Go to source code">$p4Client</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4Client">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4User" id="$p4User">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#32-33" title="Go to source code">$p4User</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4User">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Password" id="$p4Password">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#34-35" title="Go to source code">$p4Password</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4Password">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Port" id="$p4Port">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#36-37" title="Go to source code">$p4Port</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4Port">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Stream" id="$p4Stream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#38-39" title="Go to source code">$p4Stream</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4Stream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4ClientSpec" id="$p4ClientSpec">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#40-41" title="Go to source code">$p4ClientSpec</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4ClientSpec">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4DepotType" id="$p4DepotType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#42-43" title="Go to source code">$p4DepotType</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4DepotType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="p4Branch" id="$p4Branch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#44-45" title="Go to source code">$p4Branch</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$p4Branch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="process" id="$process">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#46-47" title="Go to source code">$process</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$process">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uniquePerforceClientName" id="$uniquePerforceClientName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#48-49" title="Go to source code">$uniquePerforceClientName</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$uniquePerforceClientName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="windowsFlag" id="$windowsFlag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#50-51" title="Go to source code">$windowsFlag</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$windowsFlag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="commandResult" id="$commandResult">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#52-53" title="Go to source code">$commandResult</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$commandResult">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="io" id="$io">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#55-56" title="Go to source code">$io</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$io">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filesystem" id="$filesystem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.Perforce.html#58-59" title="Go to source code">$filesystem</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$filesystem">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

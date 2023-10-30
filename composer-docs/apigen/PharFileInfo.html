@@ -1,0 +1,617 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class PharFileInfo |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-includeIfExists.html">
+							includeIfExists
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="PharFileInfo.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="PharFileInfo.html">PharFileInfo</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="SplFileInfo.html"><span title="SplFileInfo">SplFileInfo</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="SplFileInfo.html"><span>SplFileInfo</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">PharFileInfo</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>string <var>$filename</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#___construct">						<code>SplFileInfo::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__destruct" id="___destruct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__destruct()</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___destruct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chmod" id="_chmod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chmod(<span>int <var>$perms</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chmod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compress" id="_compress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compress(<span>int <var>$compression</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decompress" id="_decompress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decompress(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decompress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delMetadata" id="_delMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delMetadata(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCompressedSize" id="_getCompressedSize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCompressedSize(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCompressedSize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCRC32" id="_getCRC32">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCRC32(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCRC32">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContent" id="_getContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getContent(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMetadata" id="_getMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMetadata(<span>array <var>$unserializeOptions</var> = []</span>): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPharFlags" id="_getPharFlags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPharFlags(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPharFlags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasMetadata" id="_hasMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasMetadata(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCompressed" id="_isCompressed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isCompressed(<span>?int <var>$compression</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCompressed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCRCChecked" id="_isCRCChecked">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isCRCChecked(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCRCChecked">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMetadata" id="_setMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setMetadata(<span>mixed <var>$metadata</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMetadata">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="SplFileInfo.html"><span>SplFileInfo</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="SplFileInfo.html#_getPath">getPath()</a>, <a href="SplFileInfo.html#_getFilename">getFilename()</a>, <a href="SplFileInfo.html#_getExtension">getExtension()</a>, <a href="SplFileInfo.html#_getBasename">getBasename()</a>, <a href="SplFileInfo.html#_getPathname">getPathname()</a>, <a href="SplFileInfo.html#_getPerms">getPerms()</a>, <a href="SplFileInfo.html#_getInode">getInode()</a>, <a href="SplFileInfo.html#_getSize">getSize()</a>, <a href="SplFileInfo.html#_getOwner">getOwner()</a>, <a href="SplFileInfo.html#_getGroup">getGroup()</a>, <a href="SplFileInfo.html#_getATime">getATime()</a>, <a href="SplFileInfo.html#_getMTime">getMTime()</a>, <a href="SplFileInfo.html#_getCTime">getCTime()</a>, <a href="SplFileInfo.html#_getType">getType()</a>, <a href="SplFileInfo.html#_isWritable">isWritable()</a>, <a href="SplFileInfo.html#_isReadable">isReadable()</a>, <a href="SplFileInfo.html#_isExecutable">isExecutable()</a>, <a href="SplFileInfo.html#_isFile">isFile()</a>, <a href="SplFileInfo.html#_isDir">isDir()</a>, <a href="SplFileInfo.html#_isLink">isLink()</a>, <a href="SplFileInfo.html#_getLinkTarget">getLinkTarget()</a>, <a href="SplFileInfo.html#_getRealPath">getRealPath()</a>, <a href="SplFileInfo.html#_getFileInfo">getFileInfo()</a>, <a href="SplFileInfo.html#_getPathInfo">getPathInfo()</a>, <a href="SplFileInfo.html#_openFile">openFile()</a>, <a href="SplFileInfo.html#_setFileClass">setFileClass()</a>, <a href="SplFileInfo.html#_setInfoClass">setInfoClass()</a>, <a href="SplFileInfo.html#___toString">__toString()</a>, <a href="SplFileInfo.html#___debugInfo">__debugInfo()</a>, <a href="SplFileInfo.html#__bad_state_ex" class="deprecated">_bad_state_ex()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

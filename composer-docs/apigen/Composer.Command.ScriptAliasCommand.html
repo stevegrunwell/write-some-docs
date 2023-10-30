@@ -1,0 +1,477 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Command\ScriptAliasCommand |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Command.AboutCommand.html">
+							AboutCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ArchiveCommand.html">
+							ArchiveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.AuditCommand.html">
+							AuditCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BaseCommand.html">
+							BaseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BaseDependencyCommand.html">
+							BaseDependencyCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BumpCommand.html">
+							BumpCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CheckPlatformReqsCommand.html">
+							CheckPlatformReqsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ClearCacheCommand.html">
+							ClearCacheCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ConfigCommand.html">
+							ConfigCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CreateProjectCommand.html">
+							CreateProjectCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DependsCommand.html">
+							DependsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DiagnoseCommand.html">
+							DiagnoseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DumpAutoloadCommand.html">
+							DumpAutoloadCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ExecCommand.html">
+							ExecCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.FundCommand.html">
+							FundCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.GlobalCommand.html">
+							GlobalCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.HomeCommand.html">
+							HomeCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InitCommand.html">
+							InitCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InstallCommand.html">
+							InstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.LicensesCommand.html">
+							LicensesCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.OutdatedCommand.html">
+							OutdatedCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ProhibitsCommand.html">
+							ProhibitsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ReinstallCommand.html">
+							ReinstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RemoveCommand.html">
+							RemoveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RequireCommand.html">
+							RequireCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RunScriptCommand.html">
+							RunScriptCommand
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Command.ScriptAliasCommand.html">
+							ScriptAliasCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SearchCommand.html">
+							SearchCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SelfUpdateCommand.html">
+							SelfUpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ShowCommand.html">
+							ShowCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.StatusCommand.html">
+							StatusCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SuggestsCommand.html">
+							SuggestsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.UpdateCommand.html">
+							UpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ValidateCommand.html">
+							ValidateCommand
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Command.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Command.ScriptAliasCommand.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Command.html">Command</a>\<a href="Composer.Command.ScriptAliasCommand.html">ScriptAliasCommand</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Command.BaseCommand.html"><span title="Composer\Command\BaseCommand">BaseCommand</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<span>Symfony\Component\Console\Command\Command</span>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Command.BaseCommand.html"><span>Composer\Command\BaseCommand</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Command\ScriptAliasCommand</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Command.ScriptAliasCommand.html#24" title="Go to source code">Composer/Command/ScriptAliasCommand.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ScriptAliasCommand.html#31-39" title="Go to source code">__construct</a>(<span>string <var>$script</var></span>, <span>?string <var>$description</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="configure" id="_configure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ScriptAliasCommand.html#41-61" title="Go to source code">configure</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_configure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="execute" id="_execute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ScriptAliasCommand.html#63-75" title="Go to source code">execute</a>(<span><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span> <var>$input</var></span>, <span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_execute">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Command.BaseCommand.html"><span>Composer\Command\BaseCommand</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Command.BaseCommand.html#_getApplication">getApplication()</a>, <a href="Composer.Command.BaseCommand.html#_getComposer" class="deprecated">getComposer()</a>, <a href="Composer.Command.BaseCommand.html#_requireComposer">requireComposer()</a>, <a href="Composer.Command.BaseCommand.html#_tryComposer">tryComposer()</a>, <a href="Composer.Command.BaseCommand.html#_setComposer">setComposer()</a>, <a href="Composer.Command.BaseCommand.html#_resetComposer">resetComposer()</a>, <a href="Composer.Command.BaseCommand.html#_isProxyCommand">isProxyCommand()</a>, <a href="Composer.Command.BaseCommand.html#_getIO">getIO()</a>, <a href="Composer.Command.BaseCommand.html#_setIO">setIO()</a>, <a href="Composer.Command.BaseCommand.html#_complete">complete()</a>, <a href="Composer.Command.BaseCommand.html#_initialize">initialize()</a>, <a href="Composer.Command.BaseCommand.html#_getPreferredInstallOptions">getPreferredInstallOptions()</a>, <a href="Composer.Command.BaseCommand.html#_getPlatformRequirementFilter">getPlatformRequirementFilter()</a>, <a href="Composer.Command.BaseCommand.html#_formatRequirements">formatRequirements()</a>, <a href="Composer.Command.BaseCommand.html#_normalizeRequirements">normalizeRequirements()</a>, <a href="Composer.Command.BaseCommand.html#_renderTable">renderTable()</a>, <a href="Composer.Command.BaseCommand.html#_getTerminalWidth">getTerminalWidth()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

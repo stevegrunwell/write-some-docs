@@ -1,0 +1,1366 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Util\Filesystem |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Util.html">Util</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.Http.html">Http</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Util.AuthHelper.html">
+							AuthHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Bitbucket.html">
+							Bitbucket
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ComposerMirror.html">
+							ComposerMirror
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ConfigValidator.html">
+							ConfigValidator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ErrorHandler.html">
+							ErrorHandler
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Util.Filesystem.html">
+							Filesystem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Git.html">
+							Git
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.GitHub.html">
+							GitHub
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.GitLab.html">
+							GitLab
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Hg.html">
+							Hg
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.HttpDownloader.html">
+							HttpDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.IniHelper.html">
+							IniHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Loop.html">
+							Loop
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Util.MetadataMinifier.html">
+							MetadataMinifier
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.NoProxyPattern.html">
+							NoProxyPattern
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.PackageInfo.html">
+							PackageInfo
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.PackageSorter.html">
+							PackageSorter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Perforce.html">
+							Perforce
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Platform.html">
+							Platform
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ProcessExecutor.html">
+							ProcessExecutor
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Silencer.html">
+							Silencer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.StreamContextFactory.html">
+							StreamContextFactory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Svn.html">
+							Svn
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.SyncHelper.html">
+							SyncHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Tar.html">
+							Tar
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Util.TlsHelper.html">
+							TlsHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Url.html">
+							Url
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Zip.html">
+							Zip
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Util.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Util.Filesystem.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Util.html">Util</a>\<a href="Composer.Util.Filesystem.html">Filesystem</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Util.Filesystem.html#26" title="Go to source code">Composer/Util/Filesystem.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#31-34" title="Go to source code">__construct</a>(<span>?<a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$executor</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#36-50" title="Go to source code">remove</a>(<span>string <var>$file</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDirEmpty" id="_isDirEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#52-66" title="Go to source code">isDirEmpty</a>(<span>string <var>$dir</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if a directory is empty
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if a directory is empty</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDirEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="emptyDirectory" id="_emptyDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#68-92" title="Go to source code">emptyDirectory</a>(<span>string <var>$dir</var></span>, <span>bool <var>$ensureDirectoryExists</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_emptyDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeDirectory" id="_removeDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#94-126" title="Go to source code">removeDirectory</a>(<span>string <var>$directory</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively remove a directory
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively remove a directory</p>
+<p>Uses the process component if proc_open is enabled on the PHP
+installation.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeDirectoryAsync" id="_removeDirectoryAsync">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#128-165" title="Go to source code">removeDirectoryAsync</a>(<span>string <var>$directory</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively remove a directory asynchronously
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively remove a directory asynchronously</p>
+<p>Uses the process component if proc_open is enabled on the PHP
+installation.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeDirectoryAsync">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeDirectoryPhp" id="_removeDirectoryPhp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#199-241" title="Go to source code">removeDirectoryPhp</a>(<span>string <var>$directory</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively delete directory using PHP iterators.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively delete directory using PHP iterators.</p>
+<p>Uses a CHILD_FIRST RecursiveIteratorIterator to sort files
+before directories, creating a single non-recursive loop
+to delete files/directories in the correct order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeDirectoryPhp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureDirectoryExists" id="_ensureDirectoryExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#243-263" title="Go to source code">ensureDirectoryExists</a>(<span>string <var>$directory</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureDirectoryExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unlink" id="_unlink">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#265-293" title="Go to source code">unlink</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Attempts to unlink a file and in case of failure retries after 350ms on windows
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attempts to unlink a file and in case of failure retries after 350ms on windows</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unlink">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rmdir" id="_rmdir">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#295-323" title="Go to source code">rmdir</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Attempts to rmdir a file and in case of failure retries after 350ms on windows
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attempts to rmdir a file and in case of failure retries after 350ms on windows</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rmdir">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copyThenRemove" id="_copyThenRemove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#325-343" title="Go to source code">copyThenRemove</a>(<span>string <var>$source</var></span>, <span>string <var>$target</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Copy then delete is a non-atomic version of &#123;@link rename}.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copy then delete is a non-atomic version of {@link rename}.</p>
+<p>Some systems can't rename and also don't have proc_open,
+which requires this solution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copyThenRemove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#345-371" title="Go to source code">copy</a>(<span>string <var>$source</var></span>, <span>string <var>$target</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Copies a file or directory from $source to $target.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copies a file or directory from $source to $target.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rename" id="_rename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#373-416" title="Go to source code">rename</a>(<span>string <var>$source</var></span>, <span>string <var>$target</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findShortestPath" id="_findShortestPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#418-467" title="Go to source code">findShortestPath</a>(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>, <span>bool <var>$directories</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the shortest path from $from to $to
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the shortest path from $from to $to</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$directories</var>&nbsp;&nbsp;</td>
+										<td><p>if true, the source/target are considered to be directories</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findShortestPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findShortestPathCode" id="_findShortestPathCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#469-518" title="Go to source code">findShortestPathCode</a>(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>, <span>bool <var>$directories</var> = <span class="php-kw">false</span></span>, <span>bool <var>$staticCode</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns PHP code that, when executed in $from, will return the path to $to
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns PHP code that, when executed in $from, will return the path to $to</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$directories</var>&nbsp;&nbsp;</td>
+										<td><p>if true, the source/target are considered to be directories</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findShortestPathCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAbsolutePath" id="_isAbsolutePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#520-528" title="Go to source code">isAbsolutePath</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the given path is absolute
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the given path is absolute</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isAbsolutePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="size" id="_size">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#530-548" title="Go to source code">size</a>(<span>string <var>$path</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns size of a file or directory specified by path. If a directory is
+given, its size will be computed recursively.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns size of a file or directory specified by path. If a directory is
+given, its size will be computed recursively.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>Path to the file or directory</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_size">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="normalizePath" id="_normalizePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#550-599" title="Go to source code">normalizePath</a>(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Normalize a path. This replaces backslashes with slashes, removes ending
+slash and collapses redundant separators and…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Normalize a path. This replaces backslashes with slashes, removes ending
+slash and collapses redundant separators and up-level references.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>Path to the file or directory</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_normalizePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="trimTrailingSlash" id="_trimTrailingSlash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#601-615" title="Go to source code">trimTrailingSlash</a>(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove trailing slashes if present to avoid issues with symlinks
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove trailing slashes if present to avoid issues with symlinks</p>
+<p>And other possible unforeseen disasters, see <a href="https://github.com/composer/composer/pull/9422">https://github.com/composer/composer/pull/9422</a></p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_trimTrailingSlash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isLocalPath" id="_isLocalPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#617-625" title="Go to source code">isLocalPath</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Return if the given path is local
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return if the given path is local</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isLocalPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPlatformPath" id="_getPlatformPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#627-637" title="Go to source code">getPlatformPath</a>(<span>string <var>$path</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPlatformPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isReadable" id="_isReadable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#639-663" title="Go to source code">isReadable</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Cross-platform safe version of is_readable()
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cross-platform safe version of is_readable()</p>
+<p>This will also check for readability by reading the file as is_readable can not be trusted on network-mounts
+and \wsl$ paths. See <a href="https://github.com/composer/composer/issues/8231">https://github.com/composer/composer/issues/8231</a> and <a href="https://bugs.php.net/bug.php?id=68926">https://bugs.php.net/bug.php?id=68926</a></p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isReadable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="directorySize" id="_directorySize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#665-681" title="Go to source code">directorySize</a>(<span>string <var>$directory</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_directorySize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getProcess" id="_getProcess">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#683-693" title="Go to source code">getProcess</a>(): <a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getProcess">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relativeSymlink" id="_relativeSymlink">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#709-731" title="Go to source code">relativeSymlink</a>(<span>string <var>$target</var></span>, <span>string <var>$link</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a relative symlink from $link to $target
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a relative symlink from $link to $target</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$target</var>&nbsp;&nbsp;</td>
+										<td><p>The path of the binary file to be symlinked</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$link</var>&nbsp;&nbsp;</td>
+										<td><p>The path where the symlink should be created</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_relativeSymlink">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSymlinkedDirectory" id="_isSymlinkedDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#733-747" title="Go to source code">isSymlinkedDirectory</a>(<span>string <var>$directory</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		return true if that directory is a symlink.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>return true if that directory is a symlink.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSymlinkedDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="junction" id="_junction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#778-806" title="Go to source code">junction</a>(<span>string <var>$target</var></span>, <span>string <var>$junction</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates an NTFS junction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates an NTFS junction.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_junction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isJunction" id="_isJunction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#808-845" title="Go to source code">isJunction</a>(<span>string <var>$junction</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether the target directory is a Windows NTFS Junction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether the target directory is a Windows NTFS Junction.</p>
+<p>We test if the path is a directory and not an ordinary link, then check
+that the mode value returned from lstat (which gives the status of the
+link itself) is not a directory, by replicating the POSIX S_ISDIR test.</p>
+<p>This logic works because PHP does not set the mode value for a junction,
+since there is no universal file type flag for it. Unfortunately an
+uninitialized variable in PHP prior to 7.2.16 and 7.3.3 may cause a
+random value to be returned. See <a href="https://bugs.php.net/bug.php?id=77552">https://bugs.php.net/bug.php?id=77552</a></p>
+<p>If this random value passes the S_ISDIR test, then a junction will not be
+detected and a recursive delete operation could lead to loss of data in
+the target directory. Note that Windows rmdir can handle this situation
+and will only delete the junction (from Windows 7 onwards).</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$junction</var>&nbsp;&nbsp;</td>
+										<td><p>Path to check.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isJunction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeJunction" id="_removeJunction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#847-863" title="Go to source code">removeJunction</a>(<span>string <var>$junction</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes a Windows NTFS junction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes a Windows NTFS junction.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeJunction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filePutContentsIfModified" id="_filePutContentsIfModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#865-876" title="Go to source code">filePutContentsIfModified</a>(<span>string <var>$path</var></span>, <span>string <var>$content</var></span>): int|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filePutContentsIfModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="safeCopy" id="_safeCopy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.Filesystem.html#878-895" title="Go to source code">safeCopy</a>(<span>string <var>$source</var></span>, <span>string <var>$target</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Copy file using stream_copy_to_stream to work around https://bugs.php.net/bug.php?id=6463
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copy file using stream_copy_to_stream to work around <a href="https://bugs.php.net/bug.php?id=6463">https://bugs.php.net/bug.php?id=6463</a></p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_safeCopy">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,882 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Config |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Cache.html">
+							Cache
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Compiler.html">
+							Compiler
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Config.html">
+							Config
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Factory.html">
+							Factory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.InstalledVersions.html">
+							InstalledVersions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.html">
+							Installer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.PartialComposer.html">
+							PartialComposer
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Config.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="Composer.Config.html">Config</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Config.html#26" title="Go to source code">Composer/Config.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#118-138" title="Go to source code">__construct</a>(<span>bool <var>$useEnvironment</var> = <span class="php-kw">true</span></span>, <span>?string <var>$baseDir</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$useEnvironment</var>&nbsp;&nbsp;</td>
+										<td><p>Use COMPOSER_ environment variables to replace config settings</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$baseDir</var>&nbsp;&nbsp;</td>
+										<td><p>Optional base directory of the config</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setConfigSource" id="_setConfigSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#140-143" title="Go to source code">setConfigSource</a>(<span><a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a> <var>$source</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setConfigSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConfigSource" id="_getConfigSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#145-148" title="Go to source code">getConfigSource</a>(): <a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConfigSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAuthConfigSource" id="_setAuthConfigSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#150-153" title="Go to source code">setAuthConfigSource</a>(<span><a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a> <var>$source</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAuthConfigSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAuthConfigSource" id="_getAuthConfigSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#155-158" title="Go to source code">getAuthConfigSource</a>(): <a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAuthConfigSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLocalAuthConfigSource" id="_setLocalAuthConfigSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#160-163" title="Go to source code">setLocalAuthConfigSource</a>(<span><a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a> <var>$source</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLocalAuthConfigSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLocalAuthConfigSource" id="_getLocalAuthConfigSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#165-168" title="Go to source code">getLocalAuthConfigSource</a>(): ?<a href="Composer.Config.ConfigSourceInterface.html"><span title="Composer\Config\ConfigSourceInterface">ConfigSourceInterface</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLocalAuthConfigSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#170-261" title="Go to source code">merge</a>(
+	<span>array{config?: array&lt;string, mixed&gt;, repositories?: array&lt;mixed&gt;} <var>$config</var></span>,
+	<span>string <var>$source</var> = <b><span class="active" title="Composer\Config">self</span></b>::<a href="Composer.Config.html#SOURCE_UNKNOWN">SOURCE_UNKNOWN</a></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merges new config values with the existing ones (overriding)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merges new config values with the existing ones (overriding)</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRepositories" id="_getRepositories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#263-269" title="Go to source code">getRepositories</a>(): array&lt;int|string, mixed&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRepositories">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#271-446" title="Go to source code">get</a>(<span>string <var>$key</var></span>, <span>int <var>$flags</var> = <span class="php-num">0</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a setting
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a setting</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$flags</var>&nbsp;&nbsp;</td>
+										<td><p>Options (see class constants)</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#448-461" title="Go to source code">all</a>(<span>int <var>$flags</var> = <span class="php-num">0</span></span>): array&lt;string, mixed[]&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSourceOfValue" id="_getSourceOfValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#463-468" title="Go to source code">getSourceOfValue</a>(<span>string <var>$key</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSourceOfValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="raw" id="_raw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#484-493" title="Go to source code">raw</a>(): array&lt;string, mixed[]&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_raw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#495-501" title="Go to source code">has</a>(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether a setting exists
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether a setting exists</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prohibitUrlByConfig" id="_prohibitUrlByConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#563-616" title="Go to source code">prohibitUrlByConfig</a>(<span>string <var>$url</var></span>, <span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var> = <span class="php-kw">null</span></span>, <span>mixed[] <var>$repoOptions</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates that the passed URL is allowed to be used by current config, or throws an exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates that the passed URL is allowed to be used by current config, or throws an exception.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prohibitUrlByConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disableProcessTimeout" id="_disableProcessTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Config.html#618-632" title="Go to source code">disableProcessTimeout</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Used by long-running custom scripts in composer.json
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Used by long-running custom scripts in composer.json</p>
+<p>&quot;scripts&quot;: {
+&quot;watch&quot;: [
+&quot;Composer\Config::disableProcessTimeout&quot;,
+&quot;vendor/bin/long-running-script --watch&quot;
+]
+}</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disableProcessTimeout">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="SOURCE_DEFAULT" id="SOURCE_DEFAULT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Config.html#28" title="Go to source code">SOURCE_DEFAULT</a> = <span class="php-str">'default'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#SOURCE_DEFAULT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="SOURCE_COMMAND" id="SOURCE_COMMAND">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Config.html#29" title="Go to source code">SOURCE_COMMAND</a> = <span class="php-str">'command'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#SOURCE_COMMAND">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="SOURCE_UNKNOWN" id="SOURCE_UNKNOWN">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Config.html#30" title="Go to source code">SOURCE_UNKNOWN</a> = <span class="php-str">'unknown'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#SOURCE_UNKNOWN">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="RELATIVE_PATHS" id="RELATIVE_PATHS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Config.html#32" title="Go to source code">RELATIVE_PATHS</a> = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#RELATIVE_PATHS">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="defaultConfig" id="$defaultConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, mixed&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Config.html#34-87" title="Go to source code">$defaultConfig</a></var> = [
+	<span class="php-str">'process-timeout'</span> =&gt; <span class="php-num">300</span>,
+	<span class="php-str">'use-include-path'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'allow-plugins'</span> =&gt; [],
+	<span class="php-str">'use-parent-dir'</span> =&gt; <span class="php-str">'prompt'</span>,
+	<span class="php-str">'preferred-install'</span> =&gt; <span class="php-str">'dist'</span>,
+	<span class="php-str">'audit'</span> =&gt; [<span class="php-str">'ignore'</span> =&gt; [], <span class="php-str">'abandoned'</span> =&gt; <span class="php-str">'default'</span>],
+	<span class="php-str">'notify-on-install'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'github-protocols'</span> =&gt; [<span class="php-str">'https'</span>, <span class="php-str">'ssh'</span>, <span class="php-str">'git'</span>],
+	<span class="php-str">'gitlab-protocol'</span> =&gt; <span class="php-kw">null</span>,
+	<span class="php-str">'vendor-dir'</span> =&gt; <span class="php-str">'vendor'</span>,
+	<span class="php-str">'bin-dir'</span> =&gt; <span class="php-str">'&#123;$vendor-dir}/bin'</span>,
+	<span class="php-str">'cache-dir'</span> =&gt; <span class="php-str">'&#123;$home}/cache'</span>,
+	<span class="php-str">'data-dir'</span> =&gt; <span class="php-str">'&#123;$home}'</span>,
+	<span class="php-str">'cache-files-dir'</span> =&gt; <span class="php-str">'&#123;$cache-dir}/files'</span>,
+	<span class="php-str">'cache-repo-dir'</span> =&gt; <span class="php-str">'&#123;$cache-dir}/repo'</span>,
+	<span class="php-str">'cache-vcs-dir'</span> =&gt; <span class="php-str">'&#123;$cache-dir}/vcs'</span>,
+	<span class="php-str">'cache-ttl'</span> =&gt; <span class="php-num">15552000</span>,
+	<span class="php-str">'cache-files-ttl'</span> =&gt; <span class="php-kw">null</span>,
+	<span class="php-str">'cache-files-maxsize'</span> =&gt; <span class="php-str">'300MiB'</span>,
+	<span class="php-str">'cache-read-only'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'bin-compat'</span> =&gt; <span class="php-str">'auto'</span>,
+	<span class="php-str">'discard-changes'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'autoloader-suffix'</span> =&gt; <span class="php-kw">null</span>,
+	<span class="php-str">'sort-packages'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'optimize-autoloader'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'classmap-authoritative'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'apcu-autoloader'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'prepend-autoloader'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'github-domains'</span> =&gt; [<span class="php-str">'github.com'</span>],
+	<span class="php-str">'bitbucket-expose-hostname'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'disable-tls'</span> =&gt; <span class="php-kw">false</span>,
+	<span class="php-str">'secure-http'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'secure-svn-domains'</span> =&gt; [],
+	<span class="php-str">'cafile'</span> =&gt; <span class="php-kw">null</span>,
+	<span class="php-str">'capath'</span> =&gt; <span class="php-kw">null</span>,
+	<span class="php-str">'github-expose-hostname'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'gitlab-domains'</span> =&gt; [<span class="php-str">'gitlab.com'</span>],
+	<span class="php-str">'store-auths'</span> =&gt; <span class="php-str">'prompt'</span>,
+	<span class="php-str">'platform'</span> =&gt; [],
+	<span class="php-str">'archive-format'</span> =&gt; <span class="php-str">'tar'</span>,
+	<span class="php-str">'archive-dir'</span> =&gt; <span class="php-str">'.'</span>,
+	<span class="php-str">'htaccess-protect'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'use-github-api'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'lock'</span> =&gt; <span class="php-kw">true</span>,
+	<span class="php-str">'platform-check'</span> =&gt; <span class="php-str">'php-only'</span>,
+	<span class="php-str">'bitbucket-oauth'</span> =&gt; [],
+	<span class="php-str">'github-oauth'</span> =&gt; [],
+	<span class="php-str">'gitlab-oauth'</span> =&gt; [],
+	<span class="php-str">'gitlab-token'</span> =&gt; [],
+	<span class="php-str">'http-basic'</span> =&gt; [],
+	<span class="php-str">'bearer'</span> =&gt; [],
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultRepositories" id="$defaultRepositories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, mixed&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Config.html#89-95" title="Go to source code">$defaultRepositories</a></var> = [<span class="php-str">'packagist.org'</span> =&gt; [<span class="php-str">'type'</span> =&gt; <span class="php-str">'composer'</span>, <span class="php-str">'url'</span> =&gt; <span class="php-str">'https://repo.packagist.org'</span>]]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultRepositories">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,649 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Plugin\PreFileDownloadEvent |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.Capability.html">Capability</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Plugin.CommandEvent.html">
+							CommandEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PluginEvents.html">
+							PluginEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PluginManager.html">
+							PluginManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PostFileDownloadEvent.html">
+							PostFileDownloadEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PreCommandRunEvent.html">
+							PreCommandRunEvent
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Plugin.PreFileDownloadEvent.html">
+							PreFileDownloadEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PrePoolCreateEvent.html">
+							PrePoolCreateEvent
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Plugin.Capable.html">
+							Capable
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PluginInterface.html">
+							PluginInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Plugin.PluginBlockedException.html">
+							PluginBlockedException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Plugin.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Plugin.PreFileDownloadEvent.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Plugin.html">Plugin</a>\<a href="Composer.Plugin.PreFileDownloadEvent.html">PreFileDownloadEvent</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>The pre file download event.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.EventDispatcher.Event.html"><span>Composer\EventDispatcher\Event</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Plugin\PreFileDownloadEvent</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Plugin.PreFileDownloadEvent.html#23" title="Go to source code">Composer/Plugin/PreFileDownloadEvent.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#55-69" title="Go to source code">__construct</a>(
+	<span>string <var>$name</var></span>,
+	<span><a href="Composer.Util.HttpDownloader.html"><span title="Composer\Util\HttpDownloader">HttpDownloader</span></a> <var>$httpDownloader</var></span>,
+	<span>non-empty-string <var>$processedUrl</var></span>,
+	<span>string <var>$type</var></span>,
+	<span>mixed <var>$context</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The event name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$httpDownloader</var>&nbsp;&nbsp;</td>
+										<td><p>Arguments passed by the user</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$processedUrl</var>&nbsp;&nbsp;</td>
+										<td><p>Optional flags to pass data not as argument</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.EventDispatcher.Event.html#___construct">						<code>Composer\EventDispatcher\Event::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHttpDownloader" id="_getHttpDownloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#71-74" title="Go to source code">getHttpDownloader</a>(): <a href="Composer.Util.HttpDownloader.html"><span title="Composer\Util\HttpDownloader">HttpDownloader</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHttpDownloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getProcessedUrl" id="_getProcessedUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#76-84" title="Go to source code">getProcessedUrl</a>(): non-empty-string</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves the processed URL that will be downloaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves the processed URL that will be downloaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getProcessedUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setProcessedUrl" id="_setProcessedUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#86-94" title="Go to source code">setProcessedUrl</a>(<span>non-empty-string <var>$processedUrl</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the processed URL that will be downloaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the processed URL that will be downloaded.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$processedUrl</var>&nbsp;&nbsp;</td>
+										<td><p>New processed URL</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setProcessedUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCustomCacheKey" id="_getCustomCacheKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#96-102" title="Go to source code">getCustomCacheKey</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves a custom package cache key for this download.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves a custom package cache key for this download.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCustomCacheKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCustomCacheKey" id="_setCustomCacheKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#104-112" title="Go to source code">setCustomCacheKey</a>(<span>string|null <var>$customCacheKey</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a custom package cache key for this download.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a custom package cache key for this download.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$customCacheKey</var>&nbsp;&nbsp;</td>
+										<td><p>New cache key</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCustomCacheKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getType" id="_getType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#114-120" title="Go to source code">getType</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the type of this download (package, metadata).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the type of this download (package, metadata).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContext" id="_getContext">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#122-133" title="Go to source code">getContext</a>(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the context of this download, if any.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the context of this download, if any.</p>
+<p>If this download is of type package, the package object is returned.
+If the type is metadata, an array{repository: RepositoryInterface} is returned.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContext">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTransportOptions" id="_getTransportOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#135-145" title="Go to source code">getTransportOptions</a>(): mixed[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns transport options for the download.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns transport options for the download.</p>
+<p>Only available for events with type metadata, for packages set the transport options on the package itself.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTransportOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTransportOptions" id="_setTransportOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PreFileDownloadEvent.html#147-157" title="Go to source code">setTransportOptions</a>(<span>mixed[] <var>$options</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets transport options for the download.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets transport options for the download.</p>
+<p>Only available for events with type metadata, for packages set the transport options on the package itself.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTransportOptions">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.EventDispatcher.Event.html"><span>Composer\EventDispatcher\Event</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.EventDispatcher.Event.html#_getName">getName()</a>, <a href="Composer.EventDispatcher.Event.html#_getArguments">getArguments()</a>, <a href="Composer.EventDispatcher.Event.html#_getFlags">getFlags()</a>, <a href="Composer.EventDispatcher.Event.html#_isPropagationStopped">isPropagationStopped()</a>, <a href="Composer.EventDispatcher.Event.html#_stopPropagation">stopPropagation()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.EventDispatcher.Event.html"><span>Composer\EventDispatcher\Event</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.EventDispatcher.Event.html#$name">$name</a></var>, <var><a href="Composer.EventDispatcher.Event.html#$args">$args</a></var>, <var><a href="Composer.EventDispatcher.Event.html#$flags">$flags</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

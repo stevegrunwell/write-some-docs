@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Repository\FilesystemRepository | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Repository_FilesystemRepository" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Repository.html">Repository</a></li><li class="backslash">\</li><li>FilesystemRepository</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>FilesystemRepository    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>FilesystemRepository</strong>        extends <a href="../../Composer/Repository/WritableArrayRepository.html"><abbr title="Composer\Repository\WritableArrayRepository">WritableArrayRepository</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Filesystem repository.</p></p>                    </div>
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Composer/Repository/CanonicalPackagesTrait.html"><abbr title="Composer\Repository\CanonicalPackagesTrait">CanonicalPackagesTrait</abbr></a>    </div>
+                <div class="col-md-6"><p>Provides getCanonicalPackages() to various repository implementations</p></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_packages">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$packages</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#property_packages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_packageMap">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$packageMap</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#property_packageMap">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_devPackageNames">
+                                        protected                                        string[]
+                                                                                
+                                    </td>
+                <td>$devPackageNames</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/Repository/WritableArrayRepository.html#property_devPackageNames">
+<abbr title="Composer\Repository\WritableArrayRepository">WritableArrayRepository</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_file">
+                                        protected                                        <a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a>
+                                                                                
+                                    </td>
+                <td>$file</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a> $repositoryFile, bool $dumpVersions = false, <abbr title="Composer\Repository\Composer\Package\RootPackageInterface">RootPackageInterface</abbr>|null $rootPackage = null, <abbr title="Composer\Repository\Composer\Util\Filesystem">Filesystem</abbr>|null $filesystem = null)
+        
+                                            <p><p>Initializes filesystem repository.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRepoName">getRepoName</a>()
+        
+                                            <p><p>Returns a name representing this repository to the user</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_getRepoName">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadPackages">loadPackages</a>(array $packageNameMap, array $acceptableStabilities, array $stabilityFlags, array $alreadyLoaded = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_loadPackages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findPackage">findPackage</a>(string $name, string|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr> $constraint)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_findPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findPackages">findPackages</a>(string $name, string|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr> $constraint = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_findPackages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_search">search</a>(string $query, int $mode = 0, string|null $type = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_search">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasPackage">hasPackage</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_hasPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addPackage">addPackage</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p><p>Adds a new package to the repository</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_addPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getProviders">getProviders</a>(string $packageName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_getProviders">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Package/AliasPackage.html"><abbr title="Composer\Package\AliasPackage">AliasPackage</abbr></a>|<a href="../../Composer/Package/CompleteAliasPackage.html"><abbr title="Composer\Package\CompleteAliasPackage">CompleteAliasPackage</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createAliasPackage">createAliasPackage</a>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package, string $alias, string $prettyAlias)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_createAliasPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removePackage">removePackage</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p><p>Removes package from repository.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_removePackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPackages">getPackages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_getPackages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_count">count</a>()
+        
+                                            <p><p>Returns the number of packages in this repository</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/ArrayRepository.html#method_count">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_initialize">initialize</a>()
+        
+                                            <p><p>Initializes repository (reads file, or remote address).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCanonicalPackages">getCanonicalPackages</a>()
+        
+                                            <p><p>Get unique packages (at most one package of each name), with aliases resolved and removed.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/CanonicalPackagesTrait.html#method_getCanonicalPackages">
+<abbr title="Composer\Repository\CanonicalPackagesTrait">CanonicalPackagesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDevMode">getDevMode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDevPackageNames">setDevPackageNames</a>(array $devPackageNames)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/WritableArrayRepository.html#method_setDevPackageNames">
+<abbr title="Composer\Repository\WritableArrayRepository">WritableArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDevPackageNames">getDevPackageNames</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Repository/WritableArrayRepository.html#method_getDevPackageNames">
+<abbr title="Composer\Repository\WritableArrayRepository">WritableArrayRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_write">write</a>(bool $devMode, <a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager)
+        
+                                            <p><p>Writes writable repository.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reload">reload</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 51</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a> $repositoryFile, bool $dumpVersions = false, <abbr title="Composer\Repository\Composer\Package\RootPackageInterface">RootPackageInterface</abbr>|null $rootPackage = null, <abbr title="Composer\Repository\Composer\Util\Filesystem">Filesystem</abbr>|null $filesystem = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initializes filesystem repository.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a></td>
+                <td>$repositoryFile</td>
+                <td><p>repository json file</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$dumpVersions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Repository\Composer\Package\RootPackageInterface">RootPackageInterface</abbr>|null</td>
+                <td>$rootPackage</td>
+                <td><p>Must be provided if $dumpVersions is true</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Repository\Composer\Util\Filesystem">Filesystem</abbr>|null</td>
+                <td>$filesystem</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRepoName">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_getRepoName">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 52</div>
+        <code>                    string
+    <strong>getRepoName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a name representing this repository to the user</p></p>                <p><p>This is best effort and definitely can not always be very precise</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadPackages">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_loadPackages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 60</div>
+        <code>                    array
+    <strong>loadPackages</strong>(array $packageNameMap, array $acceptableStabilities, array $stabilityFlags, array $alreadyLoaded = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageNameMap</td>
+                <td><p>package names pointing to constraints</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$acceptableStabilities</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$stabilityFlags</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$alreadyLoaded</td>
+                <td><p>an array of package name =&gt; package version =&gt; package</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findPackage">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_findPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 100</div>
+        <code>                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>|null
+    <strong>findPackage</strong>(string $name, string|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr> $constraint)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>package name</p></td>
+            </tr>
+                    <tr>
+                <td>string|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></td>
+                <td>$constraint</td>
+                <td><p>package version or version constraint to match against</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findPackages">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_findPackages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 124</div>
+        <code>                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>[]
+    <strong>findPackages</strong>(string $name, string|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr> $constraint = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td><p>package name</p></td>
+            </tr>
+                    <tr>
+                <td>string|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></td>
+                <td>$constraint</td>
+                <td><p>package version or version constraint to match against</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_search">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 149</div>
+        <code>                    array[]
+    <strong>search</strong>(string $query, int $mode = 0, string|null $type = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td><p>search query, for SEARCH_NAME and SEARCH_VENDOR regular expressions metacharacters are supported by implementations, and user input should be escaped through preg_quote by callers</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$mode</td>
+                <td><p>a set of SEARCH_* constants to search on, implementations should do a best effort only, default is SEARCH_FULLTEXT</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$type</td>
+                <td><p>The type of package to search for. Defaults to all types of packages</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array[]</td>
+            <td><p>an array of array('name' =&gt; '...', 'description' =&gt; '...'|null, 'abandoned' =&gt; 'string'|true|unset) For SEARCH_VENDOR the name will be in &quot;vendor&quot; form</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPackage">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_hasPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 198</div>
+        <code>                    bool
+    <strong>hasPackage</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td><p>package instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPackage">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_addPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 215</div>
+        <code>                    void
+    <strong>addPackage</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds a new package to the repository</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProviders">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_getProviders">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 240</div>
+        <code>                    array[]
+    <strong>getProviders</strong>(string $packageName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td><p>package name which must be provided</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array[]</td>
+            <td><p>an array with the provider name as key and value of array('name' =&gt; '...', 'description' =&gt; '...', 'type' =&gt; '...')</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createAliasPackage">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_createAliasPackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 266</div>
+        <code>            protected        <a href="../../Composer/Package/AliasPackage.html"><abbr title="Composer\Package\AliasPackage">AliasPackage</abbr></a>|<a href="../../Composer/Package/CompleteAliasPackage.html"><abbr title="Composer\Package\CompleteAliasPackage">CompleteAliasPackage</abbr></a>
+    <strong>createAliasPackage</strong>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package, string $alias, string $prettyAlias)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$prettyAlias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Package/AliasPackage.html"><abbr title="Composer\Package\AliasPackage">AliasPackage</abbr></a>|<a href="../../Composer/Package/CompleteAliasPackage.html"><abbr title="Composer\Package\CompleteAliasPackage">CompleteAliasPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removePackage">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_removePackage">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 286</div>
+        <code>                    void
+    <strong>removePackage</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes package from repository.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td><p>package instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPackages">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_getPackages">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 305</div>
+        <code>                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>[]
+    <strong>getPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../Composer/Repository/ArrayRepository.html#method_count">
+<abbr title="Composer\Repository\ArrayRepository">ArrayRepository</abbr></a> at line 323</div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the number of packages in this repository</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><p>Number of packages</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">at line 74</div>
+        <code>            protected        void
+    <strong>initialize</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initializes repository (reads file, or remote address).</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCanonicalPackages">
+        <div class="location">in <a href="../../Composer/Repository/CanonicalPackagesTrait.html#method_getCanonicalPackages">
+<abbr title="Composer\Repository\CanonicalPackagesTrait">CanonicalPackagesTrait</abbr></a> at line 30</div>
+        <code>                    <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a>[]
+    <strong>getCanonicalPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get unique packages (at most one package of each name), with aliases resolved and removed.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDevMode">
+        <div class="location">at line 66</div>
+        <code>                    bool|null
+    <strong>getDevMode</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td><p>true if dev requirements were installed, false if --no-dev was used, null if yet unknown</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDevPackageNames">
+        <div class="location">in <a href="../../Composer/Repository/WritableArrayRepository.html#method_setDevPackageNames">
+<abbr title="Composer\Repository\WritableArrayRepository">WritableArrayRepository</abbr></a> at line 45</div>
+        <code>                    void
+    <strong>setDevPackageNames</strong>(array $devPackageNames)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$devPackageNames</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDevPackageNames">
+        <div class="location">in <a href="../../Composer/Repository/WritableArrayRepository.html#method_getDevPackageNames">
+<abbr title="Composer\Repository\WritableArrayRepository">WritableArrayRepository</abbr></a> at line 53</div>
+        <code>                    string[]
+    <strong>getDevPackageNames</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td><p>Names of dependencies installed through require-dev</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">at line 120</div>
+        <code>                    void
+    <strong>write</strong>(bool $devMode, <a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Writes writable repository.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$devMode</td>
+                <td><p>Whether dev requirements were included or not in this installation</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a></td>
+                <td>$installationManager</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reload">
+        <div class="location">at line 111</div>
+        <code>                    void
+    <strong>reload</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

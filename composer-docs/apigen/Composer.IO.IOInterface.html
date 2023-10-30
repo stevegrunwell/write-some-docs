@@ -1,0 +1,1428 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Interface Composer\IO\IOInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.IO.BaseIO.html">
+							BaseIO
+						</a>
+					</li>
+					<li>
+						<a href="Composer.IO.BufferIO.html">
+							BufferIO
+						</a>
+					</li>
+					<li>
+						<a href="Composer.IO.ConsoleIO.html">
+							ConsoleIO
+						</a>
+					</li>
+					<li>
+						<a href="Composer.IO.NullIO.html">
+							NullIO
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.IO.IOInterface.html">
+							IOInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.IO.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.IO.IOInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.IO.html">IO</a>\<a href="Composer.IO.IOInterface.html">IOInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><span title="Psr\Log\LoggerInterface">LoggerInterface</span></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>The Input/Output helper interface.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\IO\IOInterface</span></b>
+		extends
+			<span title="Psr\Log\LoggerInterface">LoggerInterface</span>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.IO.BaseIO.html"><span>Composer\IO\BaseIO</span></a>
+
+		implements
+			<b><span class="active" title="Composer\IO\IOInterface">IOInterface</span></b>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.IO.NullIO.html"><span>Composer\IO\NullIO</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.IO.ConsoleIO.html"><span>Composer\IO\ConsoleIO</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.IO.BufferIO.html"><span>Composer\IO\BufferIO</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.IO.IOInterface.html#23" title="Go to source code">Composer/IO/IOInterface.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="isInteractive" id="_isInteractive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#31-36" title="Go to source code">isInteractive</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is this input means interactive?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is this input means interactive?</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_isInteractive">						<code>Composer\IO\NullIO::isInteractive()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_isInteractive">						<code>Composer\IO\ConsoleIO::isInteractive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isInteractive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isVerbose" id="_isVerbose">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#38-43" title="Go to source code">isVerbose</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is this output verbose?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is this output verbose?</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_isVerbose">						<code>Composer\IO\NullIO::isVerbose()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_isVerbose">						<code>Composer\IO\ConsoleIO::isVerbose()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isVerbose">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isVeryVerbose" id="_isVeryVerbose">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#45-50" title="Go to source code">isVeryVerbose</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the output very verbose?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the output very verbose?</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_isVeryVerbose">						<code>Composer\IO\NullIO::isVeryVerbose()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_isVeryVerbose">						<code>Composer\IO\ConsoleIO::isVeryVerbose()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isVeryVerbose">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDebug" id="_isDebug">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#52-57" title="Go to source code">isDebug</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the output in debug verbosity?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the output in debug verbosity?</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_isDebug">						<code>Composer\IO\NullIO::isDebug()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_isDebug">						<code>Composer\IO\ConsoleIO::isDebug()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDebug">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDecorated" id="_isDecorated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#59-64" title="Go to source code">isDecorated</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is this output decorated?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is this output decorated?</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_isDecorated">						<code>Composer\IO\NullIO::isDecorated()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_isDecorated">						<code>Composer\IO\ConsoleIO::isDecorated()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDecorated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="write" id="_write">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#66-75" title="Go to source code">write</a>(<span>string|string[] <var>$messages</var></span>, <span>bool <var>$newline</var> = <span class="php-kw">true</span></span>, <span>int <var>$verbosity</var> = <b><span class="active" title="Composer\IO\IOInterface">self</span></b>::<a href="Composer.IO.IOInterface.html#NORMAL">NORMAL</a></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Writes a message to the output.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Writes a message to the output.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$messages</var>&nbsp;&nbsp;</td>
+										<td><p>The message as an array of lines or a single string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$newline</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to add a newline or not</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>Verbosity level from the VERBOSITY_* constants</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_write">						<code>Composer\IO\NullIO::write()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_write">						<code>Composer\IO\ConsoleIO::write()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_write">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeError" id="_writeError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#77-86" title="Go to source code">writeError</a>(<span>string|string[] <var>$messages</var></span>, <span>bool <var>$newline</var> = <span class="php-kw">true</span></span>, <span>int <var>$verbosity</var> = <b><span class="active" title="Composer\IO\IOInterface">self</span></b>::<a href="Composer.IO.IOInterface.html#NORMAL">NORMAL</a></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Writes a message to the error output.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Writes a message to the error output.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$messages</var>&nbsp;&nbsp;</td>
+										<td><p>The message as an array of lines or a single string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$newline</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to add a newline or not</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>Verbosity level from the VERBOSITY_* constants</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_writeError">						<code>Composer\IO\NullIO::writeError()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_writeError">						<code>Composer\IO\ConsoleIO::writeError()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeRaw" id="_writeRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#88-97" title="Go to source code">writeRaw</a>(<span>string|string[] <var>$messages</var></span>, <span>bool <var>$newline</var> = <span class="php-kw">true</span></span>, <span>int <var>$verbosity</var> = <b><span class="active" title="Composer\IO\IOInterface">self</span></b>::<a href="Composer.IO.IOInterface.html#NORMAL">NORMAL</a></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Writes a message to the output, without formatting it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Writes a message to the output, without formatting it.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$messages</var>&nbsp;&nbsp;</td>
+										<td><p>The message as an array of lines or a single string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$newline</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to add a newline or not</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>Verbosity level from the VERBOSITY_* constants</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_writeRaw">						<code>Composer\IO\BaseIO::writeRaw()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeErrorRaw" id="_writeErrorRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#99-108" title="Go to source code">writeErrorRaw</a>(<span>string|string[] <var>$messages</var></span>, <span>bool <var>$newline</var> = <span class="php-kw">true</span></span>, <span>int <var>$verbosity</var> = <b><span class="active" title="Composer\IO\IOInterface">self</span></b>::<a href="Composer.IO.IOInterface.html#NORMAL">NORMAL</a></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Writes a message to the error output, without formatting it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Writes a message to the error output, without formatting it.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$messages</var>&nbsp;&nbsp;</td>
+										<td><p>The message as an array of lines or a single string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$newline</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to add a newline or not</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>Verbosity level from the VERBOSITY_* constants</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_writeErrorRaw">						<code>Composer\IO\BaseIO::writeErrorRaw()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeErrorRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="overwrite" id="_overwrite">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#110-120" title="Go to source code">overwrite</a>(<span>string|string[] <var>$messages</var></span>, <span>bool <var>$newline</var> = <span class="php-kw">true</span></span>, <span>int <var>$size</var> = <span class="php-kw">null</span></span>, <span>int <var>$verbosity</var> = <b><span class="active" title="Composer\IO\IOInterface">self</span></b>::<a href="Composer.IO.IOInterface.html#NORMAL">NORMAL</a></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Overwrites a previous message to the output.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Overwrites a previous message to the output.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$messages</var>&nbsp;&nbsp;</td>
+										<td><p>The message as an array of lines or a single string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$newline</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to add a newline or not</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$size</var>&nbsp;&nbsp;</td>
+										<td><p>The size of line</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>Verbosity level from the VERBOSITY_* constants</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_overwrite">						<code>Composer\IO\NullIO::overwrite()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_overwrite">						<code>Composer\IO\ConsoleIO::overwrite()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_overwrite">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="overwriteError" id="_overwriteError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#122-132" title="Go to source code">overwriteError</a>(<span>string|string[] <var>$messages</var></span>, <span>bool <var>$newline</var> = <span class="php-kw">true</span></span>, <span>int <var>$size</var> = <span class="php-kw">null</span></span>, <span>int <var>$verbosity</var> = <b><span class="active" title="Composer\IO\IOInterface">self</span></b>::<a href="Composer.IO.IOInterface.html#NORMAL">NORMAL</a></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Overwrites a previous message to the error output.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Overwrites a previous message to the error output.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$messages</var>&nbsp;&nbsp;</td>
+										<td><p>The message as an array of lines or a single string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$newline</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to add a newline or not</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$size</var>&nbsp;&nbsp;</td>
+										<td><p>The size of line</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>Verbosity level from the VERBOSITY_* constants</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_overwriteError">						<code>Composer\IO\NullIO::overwriteError()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_overwriteError">						<code>Composer\IO\ConsoleIO::overwriteError()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_overwriteError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ask" id="_ask">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#134-143" title="Go to source code">ask</a>(<span>string <var>$question</var></span>, <span>string|bool|int|float|null <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Asks a question to the user.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Asks a question to the user.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$question</var>&nbsp;&nbsp;</td>
+										<td><p>The question to ask</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default answer if none is given by the user</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The user answer</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>If there is no data to read in the input stream</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_ask">						<code>Composer\IO\NullIO::ask()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_ask">						<code>Composer\IO\ConsoleIO::ask()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ask">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="askConfirmation" id="_askConfirmation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#145-155" title="Go to source code">askConfirmation</a>(<span>string <var>$question</var></span>, <span>bool <var>$default</var> = <span class="php-kw">true</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Asks a confirmation to the user.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Asks a confirmation to the user.</p>
+<p>The question will be asked until the user answers by nothing, yes, or no.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$question</var>&nbsp;&nbsp;</td>
+										<td><p>The question to ask</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default answer if the user enters nothing</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>true if the user has confirmed, false otherwise</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_askConfirmation">						<code>Composer\IO\NullIO::askConfirmation()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_askConfirmation">						<code>Composer\IO\ConsoleIO::askConfirmation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_askConfirmation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="askAndValidate" id="_askAndValidate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#157-172" title="Go to source code">askAndValidate</a>(<span>string <var>$question</var></span>, <span>callable <var>$validator</var></span>, <span>null|int <var>$attempts</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Asks for a value and validates the response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Asks for a value and validates the response.</p>
+<p>The validator receives the data to validate. It must return the
+validated data when the data is valid and throw an exception
+otherwise.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$question</var>&nbsp;&nbsp;</td>
+										<td><p>The question to ask</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$validator</var>&nbsp;&nbsp;</td>
+										<td><p>A PHP callback</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$attempts</var>&nbsp;&nbsp;</td>
+										<td><p>Max number of times to ask before giving up (default of null means infinite)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default answer if none is given by the user</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td><p>When any of the validators return an error</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_askAndValidate">						<code>Composer\IO\NullIO::askAndValidate()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_askAndValidate">						<code>Composer\IO\ConsoleIO::askAndValidate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_askAndValidate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="askAndHideAnswer" id="_askAndHideAnswer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#174-181" title="Go to source code">askAndHideAnswer</a>(<span>string <var>$question</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Asks a question to the user and hide the answer.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Asks a question to the user and hide the answer.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$question</var>&nbsp;&nbsp;</td>
+										<td><p>The question to ask</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The answer</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_askAndHideAnswer">						<code>Composer\IO\NullIO::askAndHideAnswer()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_askAndHideAnswer">						<code>Composer\IO\ConsoleIO::askAndHideAnswer()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_askAndHideAnswer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="select" id="_select">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#183-198" title="Go to source code">select</a>(
+	<span>string <var>$question</var></span>,
+	<span>string[] <var>$choices</var></span>,
+	<span>bool|string <var>$default</var></span>,
+	<span>bool|int <var>$attempts</var> = <span class="php-kw">false</span></span>,
+	<span>string <var>$errorMessage</var> = <span class="php-str">'Value "%s" is invalid'</span></span>,
+	<span>bool <var>$multiselect</var> = <span class="php-kw">false</span></span>,
+): int|string|list&lt;string&gt;|bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Asks the user to select a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Asks the user to select a value.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$question</var>&nbsp;&nbsp;</td>
+										<td><p>The question to ask</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$choices</var>&nbsp;&nbsp;</td>
+										<td><p>List of choices to pick from</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default answer if the user enters nothing</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$attempts</var>&nbsp;&nbsp;</td>
+										<td><p>Max number of times to ask before giving up (false by default, which means infinite)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$errorMessage</var>&nbsp;&nbsp;</td>
+										<td><p>Message which will be shown if invalid value from choice list would be picked</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$multiselect</var>&nbsp;&nbsp;</td>
+										<td><p>Select more than one value separated by comma</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The selected value or values (the key of the choices array)</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.NullIO.html#_select">						<code>Composer\IO\NullIO::select()</code></a>				</li>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#_select">						<code>Composer\IO\ConsoleIO::select()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_select">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAuthentications" id="_getAuthentications">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#200-205" title="Go to source code">getAuthentications</a>(): array&lt;string, array{username: (string|null), password: (string|null)}&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all authentication information entered.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all authentication information entered.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The map of authentication data</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_getAuthentications">						<code>Composer\IO\BaseIO::getAuthentications()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAuthentications">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAuthentication" id="_hasAuthentication">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#207-214" title="Go to source code">hasAuthentication</a>(<span>string <var>$repositoryName</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Verify if the repository has a authentication information.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Verify if the repository has a authentication information.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repositoryName</var>&nbsp;&nbsp;</td>
+										<td><p>The unique name of repository</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_hasAuthentication">						<code>Composer\IO\BaseIO::hasAuthentication()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAuthentication">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAuthentication" id="_getAuthentication">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#216-223" title="Go to source code">getAuthentication</a>(<span>string <var>$repositoryName</var></span>): array{username: (string|null), password: (string|null)}</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the username and password of repository.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the username and password of repository.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repositoryName</var>&nbsp;&nbsp;</td>
+										<td><p>The unique name of repository</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_getAuthentication">						<code>Composer\IO\BaseIO::getAuthentication()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAuthentication">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAuthentication" id="_setAuthentication">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#225-234" title="Go to source code">setAuthentication</a>(<span>string <var>$repositoryName</var></span>, <span>string <var>$username</var></span>, <span>null|string <var>$password</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the authentication information for the repository.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the authentication information for the repository.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repositoryName</var>&nbsp;&nbsp;</td>
+										<td><p>The unique name of repository</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$username</var>&nbsp;&nbsp;</td>
+										<td><p>The username</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$password</var>&nbsp;&nbsp;</td>
+										<td><p>The password</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_setAuthentication">						<code>Composer\IO\BaseIO::setAuthentication()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAuthentication">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadConfiguration" id="_loadConfiguration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.IOInterface.html#236-241" title="Go to source code">loadConfiguration</a>(<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Loads authentications from a config instance
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Loads authentications from a config instance</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.BaseIO.html#_loadConfiguration">						<code>Composer\IO\BaseIO::loadConfiguration()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadConfiguration">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="QUIET" id="QUIET">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.IO.IOInterface.html#25" title="Go to source code">QUIET</a> = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#QUIET">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="NORMAL" id="NORMAL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.IO.IOInterface.html#26" title="Go to source code">NORMAL</a> = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NORMAL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VERBOSE" id="VERBOSE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.IO.IOInterface.html#27" title="Go to source code">VERBOSE</a> = <span class="php-num">4</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VERBOSE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VERY_VERBOSE" id="VERY_VERBOSE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.IO.IOInterface.html#28" title="Go to source code">VERY_VERBOSE</a> = <span class="php-num">8</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VERY_VERBOSE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DEBUG" id="DEBUG">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.IO.IOInterface.html#29" title="Go to source code">DEBUG</a> = <span class="php-num">16</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DEBUG">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

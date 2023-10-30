@@ -1,0 +1,1835 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class PharData |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-includeIfExists.html">
+							includeIfExists
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="PharData.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="PharData.html">PharData</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="RecursiveDirectoryIterator.html"><span title="RecursiveDirectoryIterator">RecursiveDirectoryIterator</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Countable.html"><span title="Countable">Countable</span></a>, <a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="SplFileInfo.html"><span>SplFileInfo</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="DirectoryIterator.html"><span>DirectoryIterator</span></a>
+
+		implements
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="FilesystemIterator.html"><span>FilesystemIterator</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="RecursiveDirectoryIterator.html"><span>RecursiveDirectoryIterator</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">PharData</span></b>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>string <var>$filename</var></span>,
+	<span>int <var>$flags</var> = <a href="FilesystemIterator.html"><span title="FilesystemIterator">FilesystemIterator</span></a>::SKIP_DOTS | <a href="FilesystemIterator.html"><span title="FilesystemIterator">FilesystemIterator</span></a>::UNIX_PATHS</span>,
+	<span>?string <var>$alias</var> = <span class="php-kw">null</span></span>,
+	<span>int <var>$format</var> = <span class="php-num">0</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="RecursiveDirectoryIterator.html#___construct">						<code>RecursiveDirectoryIterator::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__destruct" id="___destruct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__destruct()</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___destruct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addEmptyDir" id="_addEmptyDir">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addEmptyDir(<span>string <var>$directory</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addEmptyDir">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addFile" id="_addFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addFile(<span>string <var>$filename</var></span>, <span>?string <var>$localName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addFromString" id="_addFromString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addFromString(<span>string <var>$localName</var></span>, <span>string <var>$contents</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addFromString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildFromDirectory" id="_buildFromDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildFromDirectory(<span>string <var>$directory</var></span>, <span>string <var>$pattern</var> = <span class="php-str">""</span></span>): array|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildFromDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildFromIterator" id="_buildFromIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildFromIterator(<span><a href="Traversable.html"><span title="Traversable">Traversable</span></a> <var>$iterator</var></span>, <span>?string <var>$baseDirectory</var> = <span class="php-kw">null</span></span>): array|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildFromIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compressFiles" id="_compressFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compressFiles(<span>int <var>$compression</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compressFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decompressFiles" id="_decompressFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decompressFiles(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decompressFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compress" id="_compress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compress(<span>int <var>$compression</var></span>, <span>?string <var>$extension</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="PharData">PharData</span></b>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decompress" id="_decompress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decompress(<span>?string <var>$extension</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="PharData">PharData</span></b>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decompress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="convertToExecutable" id="_convertToExecutable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>convertToExecutable(<span>?int <var>$format</var> = <span class="php-kw">null</span></span>, <span>?int <var>$compression</var> = <span class="php-kw">null</span></span>, <span>?string <var>$extension</var> = <span class="php-kw">null</span></span>): <a href="Phar.html"><span title="Phar">Phar</span></a>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_convertToExecutable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="convertToData" id="_convertToData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>convertToData(<span>?int <var>$format</var> = <span class="php-kw">null</span></span>, <span>?int <var>$compression</var> = <span class="php-kw">null</span></span>, <span>?string <var>$extension</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="PharData">PharData</span></b>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_convertToData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copy(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(<span>int <var>$mode</var> = COUNT_NORMAL</span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(<span>string <var>$localName</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delMetadata" id="_delMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delMetadata(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extractTo" id="_extractTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>extractTo(<span>string <var>$directory</var></span>, <span>array|string|null <var>$files</var> = <span class="php-kw">null</span></span>, <span>bool <var>$overwrite</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extractTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAlias" id="_getAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAlias(): string|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPath" id="_getPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPath(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#_getPath">						<code>SplFileInfo::getPath()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMetadata" id="_getMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMetadata(<span>array <var>$unserializeOptions</var> = []</span>): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getModified" id="_getModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getModified(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSignature" id="_getSignature">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSignature(): array|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSignature">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStub" id="_getStub">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStub(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStub">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getVersion" id="_getVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getVersion(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasMetadata" id="_hasMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasMetadata(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isBuffering" id="_isBuffering">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isBuffering(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isBuffering">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCompressed" id="_isCompressed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isCompressed(): int|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCompressed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFileFormat" id="_isFileFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isFileFormat(<span>int <var>$format</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFileFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isWritable" id="_isWritable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isWritable(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#_isWritable">						<code>SplFileInfo::isWritable()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isWritable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>string <var>$localName</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>string <var>$localName</var></span>): <a href="PharFileInfo.html"><span title="PharFileInfo">PharFileInfo</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Actually this should be return by ref but atm cannot be.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Actually this should be return by ref but atm cannot be.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>string <var>$localName</var></span>, <span>resource|string <var>$value</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>string <var>$localName</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAlias" id="_setAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAlias(<span>string <var>$alias</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefaultStub" id="_setDefaultStub">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefaultStub(<span>?string <var>$index</var> = <span class="php-kw">null</span></span>, <span>?string <var>$webIndex</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefaultStub">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMetadata" id="_setMetadata">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setMetadata(<span>mixed <var>$metadata</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMetadata">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSignatureAlgorithm" id="_setSignatureAlgorithm">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSignatureAlgorithm(<span>int <var>$algo</var></span>, <span>?string <var>$privateKey</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSignatureAlgorithm">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStub" id="_setStub">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setStub(<span>resource|string <var>$stub</var></span>, <span>int <var>$length</var> = UNKNOWN</span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStub">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="startBuffering" id="_startBuffering">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>startBuffering(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_startBuffering">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stopBuffering" id="_stopBuffering">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>stopBuffering(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_stopBuffering">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="apiVersion" id="_apiVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>apiVersion(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_apiVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="canCompress" id="_canCompress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>canCompress(<span>int <var>$compression</var> = <span class="php-num">0</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_canCompress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="canWrite" id="_canWrite">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>canWrite(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_canWrite">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createDefaultStub" id="_createDefaultStub">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createDefaultStub(<span>?string <var>$index</var> = <span class="php-kw">null</span></span>, <span>?string <var>$webIndex</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createDefaultStub">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSupportedCompression" id="_getSupportedCompression">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSupportedCompression(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSupportedCompression">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSupportedSignatures" id="_getSupportedSignatures">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSupportedSignatures(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSupportedSignatures">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="interceptFileFuncs" id="_interceptFileFuncs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>interceptFileFuncs(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_interceptFileFuncs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValidPharFilename" id="_isValidPharFilename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValidPharFilename(<span>string <var>$filename</var></span>, <span>bool <var>$executable</var> = <span class="php-kw">true</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValidPharFilename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadPhar" id="_loadPhar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadPhar(<span>string <var>$filename</var></span>, <span>?string <var>$alias</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadPhar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapPhar" id="_mapPhar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapPhar(<span>?string <var>$alias</var> = <span class="php-kw">null</span></span>, <span>int <var>$offset</var> = <span class="php-num">0</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapPhar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="running" id="_running">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>running(<span>bool <var>$returnPhar</var> = <span class="php-kw">true</span></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_running">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mount" id="_mount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mount(<span>string <var>$pharPath</var></span>, <span>string <var>$externalPath</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mungServer" id="_mungServer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mungServer(<span>array <var>$variables</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mungServer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unlinkArchive" id="_unlinkArchive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unlinkArchive(<span>string <var>$filename</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unlinkArchive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="webPhar" id="_webPhar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>webPhar(
+	<span>?string <var>$alias</var> = <span class="php-kw">null</span></span>,
+	<span>?string <var>$index</var> = <span class="php-kw">null</span></span>,
+	<span>?string <var>$fileNotFoundScript</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$mimeTypes</var> = []</span>,
+	<span>?callable <var>$rewrite</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_webPhar">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="RecursiveDirectoryIterator.html"><span>RecursiveDirectoryIterator</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="RecursiveDirectoryIterator.html#_hasChildren">hasChildren()</a>, <a href="RecursiveDirectoryIterator.html#_getChildren">getChildren()</a>, <a href="RecursiveDirectoryIterator.html#_getSubPath">getSubPath()</a>, <a href="RecursiveDirectoryIterator.html#_getSubPathname">getSubPathname()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="FilesystemIterator.html"><span>FilesystemIterator</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="FilesystemIterator.html#_rewind">rewind()</a>, <a href="FilesystemIterator.html#_key">key()</a>, <a href="FilesystemIterator.html#_current">current()</a>, <a href="FilesystemIterator.html#_getFlags">getFlags()</a>, <a href="FilesystemIterator.html#_setFlags">setFlags()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="DirectoryIterator.html"><span>DirectoryIterator</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="DirectoryIterator.html#_getFilename">getFilename()</a>, <a href="DirectoryIterator.html#_getExtension">getExtension()</a>, <a href="DirectoryIterator.html#_getBasename">getBasename()</a>, <a href="DirectoryIterator.html#_isDot">isDot()</a>, <a href="DirectoryIterator.html#_valid">valid()</a>, <a href="DirectoryIterator.html#_next">next()</a>, <a href="DirectoryIterator.html#_seek">seek()</a>, <a href="DirectoryIterator.html#___toString">__toString()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="SplFileInfo.html"><span>SplFileInfo</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="SplFileInfo.html#_getPathname">getPathname()</a>, <a href="SplFileInfo.html#_getPerms">getPerms()</a>, <a href="SplFileInfo.html#_getInode">getInode()</a>, <a href="SplFileInfo.html#_getSize">getSize()</a>, <a href="SplFileInfo.html#_getOwner">getOwner()</a>, <a href="SplFileInfo.html#_getGroup">getGroup()</a>, <a href="SplFileInfo.html#_getATime">getATime()</a>, <a href="SplFileInfo.html#_getMTime">getMTime()</a>, <a href="SplFileInfo.html#_getCTime">getCTime()</a>, <a href="SplFileInfo.html#_getType">getType()</a>, <a href="SplFileInfo.html#_isReadable">isReadable()</a>, <a href="SplFileInfo.html#_isExecutable">isExecutable()</a>, <a href="SplFileInfo.html#_isFile">isFile()</a>, <a href="SplFileInfo.html#_isDir">isDir()</a>, <a href="SplFileInfo.html#_isLink">isLink()</a>, <a href="SplFileInfo.html#_getLinkTarget">getLinkTarget()</a>, <a href="SplFileInfo.html#_getRealPath">getRealPath()</a>, <a href="SplFileInfo.html#_getFileInfo">getFileInfo()</a>, <a href="SplFileInfo.html#_getPathInfo">getPathInfo()</a>, <a href="SplFileInfo.html#_openFile">openFile()</a>, <a href="SplFileInfo.html#_setFileClass">setFileClass()</a>, <a href="SplFileInfo.html#_setInfoClass">setInfoClass()</a>, <a href="SplFileInfo.html#___debugInfo">__debugInfo()</a>, <a href="SplFileInfo.html#__bad_state_ex" class="deprecated">_bad_state_ex()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

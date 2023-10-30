@@ -1,0 +1,1237 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Repository\Vcs\GitHubDriver |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Repository.Vcs.html">Vcs</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Repository.Vcs.FossilDriver.html">
+							FossilDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitBitbucketDriver.html">
+							GitBitbucketDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitDriver.html">
+							GitDriver
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Repository.Vcs.GitHubDriver.html">
+							GitHubDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.GitLabDriver.html">
+							GitLabDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.HgDriver.html">
+							HgDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.PerforceDriver.html">
+							PerforceDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.SvnDriver.html">
+							SvnDriver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.Vcs.VcsDriver.html">
+							VcsDriver
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Repository.Vcs.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Repository.Vcs.GitHubDriver.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Repository.html">Repository</a>\<a href="namespace-Composer.Repository.Vcs.html">Vcs</a>\<a href="Composer.Repository.Vcs.GitHubDriver.html">GitHubDriver</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Repository.Vcs.VcsDriver.html"><span title="Composer\Repository\Vcs\VcsDriver">VcsDriver</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html"><span>Composer\Repository\Vcs\VcsDriver</span></a>
+
+		implements
+			<a href="Composer.Repository.Vcs.VcsDriverInterface.html"><span title="Composer\Repository\Vcs\VcsDriverInterface">VcsDriverInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Repository\Vcs\GitHubDriver</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Repository.Vcs.GitHubDriver.html#27" title="Go to source code">Composer/Repository/Vcs/GitHubDriver.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="initialize" id="_initialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#57-84" title="Go to source code">initialize</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Initializes the driver (git clone, svn checkout, fetch info etc)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initializes the driver (git clone, svn checkout, fetch info etc)</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_initialize">						<code>Composer\Repository\Vcs\VcsDriverInterface::initialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRepositoryUrl" id="_getRepositoryUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#86-89" title="Go to source code">getRepositoryUrl</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRepositoryUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRootIdentifier" id="_getRootIdentifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#91-101" title="Go to source code">getRootIdentifier</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the root identifier (trunk, master, default/tip ..)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the root identifier (trunk, master, default/tip ..)</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Identifier</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getRootIdentifier">						<code>Composer\Repository\Vcs\VcsDriverInterface::getRootIdentifier()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRootIdentifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUrl" id="_getUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#103-113" title="Go to source code">getUrl</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the URL of the repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the URL of the repository</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getUrl">						<code>Composer\Repository\Vcs\VcsDriverInterface::getUrl()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getApiUrl" id="_getApiUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#115-124" title="Go to source code">getApiUrl</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getApiUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSource" id="_getSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#126-143" title="Go to source code">getSource</a>(<span>string <var>$identifier</var></span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getSource">						<code>Composer\Repository\Vcs\VcsDriverInterface::getSource()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDist" id="_getDist">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#145-153" title="Go to source code">getDist</a>(<span>string <var>$identifier</var></span>): ?array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getDist">						<code>Composer\Repository\Vcs\VcsDriverInterface::getDist()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDist">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getComposerInformation" id="_getComposerInformation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#155-199" title="Go to source code">getComposerInformation</a>(<span>string <var>$identifier</var></span>): ?array</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the composer.json file information
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the composer.json file information</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$identifier</var>&nbsp;&nbsp;</td>
+										<td><p>Any identifier to a specific branch/tag/commit</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Array containing all infos from the composer.json file, or null to denote that no file was present</p>
+</div>
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html#_getComposerInformation">						<code>Composer\Repository\Vcs\VcsDriver::getComposerInformation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getComposerInformation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFileContent" id="_getFileContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#295-318" title="Go to source code">getFileContent</a>(<span>string <var>$file</var></span>, <span>string <var>$identifier</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the content of $file or null if the file does not exist.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the content of $file or null if the file does not exist.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getFileContent">						<code>Composer\Repository\Vcs\VcsDriverInterface::getFileContent()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFileContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getChangeDate" id="_getChangeDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#320-333" title="Go to source code">getChangeDate</a>(<span>string <var>$identifier</var></span>): ?<a href="DateTimeImmutable.html"><span title="DateTimeImmutable">DateTimeImmutable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the changedate for $identifier.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the changedate for $identifier.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getChangeDate">						<code>Composer\Repository\Vcs\VcsDriverInterface::getChangeDate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getChangeDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTags" id="_getTags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#335-361" title="Go to source code">getTags</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Return list of tags in the repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return list of tags in the repository</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Tag names as keys, identifiers as values</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getTags">						<code>Composer\Repository\Vcs\VcsDriverInterface::getTags()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBranches" id="_getBranches">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#363-392" title="Go to source code">getBranches</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Return list of branches in the repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return list of branches in the repository</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Branch names as keys, identifiers as values</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_getBranches">						<code>Composer\Repository\Vcs\VcsDriverInterface::getBranches()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBranches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="supports" id="_supports">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#394-415" title="Go to source code">supports</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span>string <var>$url</var></span>, <span>bool <var>$deep</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if this driver can handle a given url
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if this driver can handle a given url</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>IO instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>current $config</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>URL to validate/check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$deep</var>&nbsp;&nbsp;</td>
+										<td><p>unless true, only shallow checks (url matching typically) should be done</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriverInterface.html#_supports">						<code>Composer\Repository\Vcs\VcsDriverInterface::supports()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_supports">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRepoData" id="_getRepoData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#417-427" title="Go to source code">getRepoData</a>(): mixed[]|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Gives back the loaded &lt;github-api&gt;/repos/&lt;owner&gt;/&lt;repo&gt; result
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gives back the loaded <github-api>/repos/<owner>/<repo> result</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRepoData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateSshUrl" id="_generateSshUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#429-439" title="Go to source code">generateSshUrl</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate an SSH URL
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate an SSH URL</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateSshUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContents" id="_getContents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#441-527" title="Go to source code">getContents</a>(<span>string <var>$url</var></span>, <span>bool <var>$fetchingRepoData</var> = <span class="php-kw">false</span></span>): <a href="Composer.Util.Http.Response.html"><span title="Composer\Util\Http\Response">Response</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the remote content.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the remote content.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>The URL of content</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Repository.Vcs.VcsDriver.html#_getContents">						<code>Composer\Repository\Vcs\VcsDriver::getContents()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fetchRootIdentifier" id="_fetchRootIdentifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#529-568" title="Go to source code">fetchRootIdentifier</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fetch root identifier from GitHub
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fetch root identifier from GitHub</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Composer.Downloader.TransportException.html"><span>Composer\Downloader\TransportException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fetchRootIdentifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attemptCloneFallback" id="_attemptCloneFallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#570-594" title="Go to source code">attemptCloneFallback</a>(): true</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attemptCloneFallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setupGitDriver" id="_setupGitDriver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#596-606" title="Go to source code">setupGitDriver</a>(<span>string <var>$url</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setupGitDriver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getNextPage" id="_getNextPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.Vcs.GitHubDriver.html#608-623" title="Go to source code">getNextPage</a>(<span><a href="Composer.Util.Http.Response.html"><span title="Composer\Util\Http\Response">Response</span></a> <var>$response</var></span>): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getNextPage">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Repository.Vcs.VcsDriver.html"><span>Composer\Repository\Vcs\VcsDriver</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Repository.Vcs.VcsDriver.html#___construct">__construct()</a>, <a href="Composer.Repository.Vcs.VcsDriver.html#_shouldCache">shouldCache()</a>, <a href="Composer.Repository.Vcs.VcsDriver.html#_getBaseComposerInformation">getBaseComposerInformation()</a>, <a href="Composer.Repository.Vcs.VcsDriver.html#_hasComposerFile">hasComposerFile()</a>, <a href="Composer.Repository.Vcs.VcsDriver.html#_getScheme">getScheme()</a>, <a href="Composer.Repository.Vcs.VcsDriver.html#_cleanup">cleanup()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="owner" id="$owner">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#29-30" title="Go to source code">$owner</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$owner">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="repository" id="$repository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#31-32" title="Go to source code">$repository</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$repository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tags" id="$tags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int|string, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#33-34" title="Go to source code">$tags</a></var></code>
+				
+	<div class="expandable-collapsedView">
+		Map of tag name to identifier
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map of tag name to identifier</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$tags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="branches" id="$branches">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int|string, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#35-36" title="Go to source code">$branches</a></var></code>
+				
+	<div class="expandable-collapsedView">
+		Map of branch name to identifier
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map of branch name to identifier</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$branches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rootIdentifier" id="$rootIdentifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#37-38" title="Go to source code">$rootIdentifier</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$rootIdentifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="repoData" id="$repoData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#39-40" title="Go to source code">$repoData</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$repoData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasIssues" id="$hasIssues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#41-42" title="Go to source code">$hasIssues</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$hasIssues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isPrivate" id="$isPrivate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#43-44" title="Go to source code">$isPrivate</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$isPrivate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="gitDriver" id="$gitDriver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Composer.Repository.Vcs.GitDriver.html"><span title="Composer\Repository\Vcs\GitDriver">GitDriver</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Repository.Vcs.GitHubDriver.html#50-55" title="Go to source code">$gitDriver</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$gitDriver">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.Repository.Vcs.VcsDriver.html"><span>Composer\Repository\Vcs\VcsDriver</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.Repository.Vcs.VcsDriver.html#$url">$url</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$originUrl">$originUrl</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$repoConfig">$repoConfig</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$io">$io</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$config">$config</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$process">$process</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$httpDownloader">$httpDownloader</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$infoCache">$infoCache</a></var>, <var><a href="Composer.Repository.Vcs.VcsDriver.html#$cache">$cache</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\IO\NullIO | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_IO_NullIO" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/IO.html">IO</a></li><li class="backslash">\</li><li>NullIO</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>NullIO    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>NullIO</strong>        extends <a href="../../Composer/IO/BaseIO.html"><abbr title="Composer\IO\BaseIO">BaseIO</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>IOInterface that is not interactive and never writes the output</p></p>                    </div>
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_authentications">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$authentications</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#property_authentications">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthentications">getAuthentications</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_getAuthentications">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resetAuthentications">resetAuthentications</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_resetAuthentications">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasAuthentication">hasAuthentication</a>(string $repositoryName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_hasAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthentication">getAuthentication</a>(string $repositoryName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_getAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setAuthentication">setAuthentication</a>(string $repositoryName, string $username, string|null $password = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_setAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_writeRaw">writeRaw</a>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_writeRaw">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_writeErrorRaw">writeErrorRaw</a>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_writeErrorRaw">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkAndSetAuthentication">checkAndSetAuthentication</a>(string $repositoryName, string $username, string|null $password = null)
+        
+                                            <p><p>Check for overwrite and set the authentication information for the repository.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_checkAndSetAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadConfiguration">loadConfiguration</a>(<a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_loadConfiguration">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_emergency">emergency</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_emergency">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_alert">alert</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_alert">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_critical">critical</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_critical">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_error">error</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_error">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_warning">warning</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_warning">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_notice">notice</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_notice">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_info">info</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_info">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_debug">debug</a>($message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_debug">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_log">log</a>($level, $message, array $context = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/IO/BaseIO.html#method_log">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isInteractive">isInteractive</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isVerbose">isVerbose</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isVeryVerbose">isVeryVerbose</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isDebug">isDebug</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isDecorated">isDecorated</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_write">write</a>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_writeError">writeError</a>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_overwrite">overwrite</a>(string|string[] $messages, bool $newline = true, int|null $size = null, int $verbosity = self::NORMAL)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_overwriteError">overwriteError</a>(string|string[] $messages, bool $newline = true, int|null $size = null, int $verbosity = self::NORMAL)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ask">ask</a>(string $question, string|bool|int|float|null $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_askConfirmation">askConfirmation</a>(string $question, bool $default = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_askAndValidate">askAndValidate</a>(string $question, callable $validator, int|null $attempts = null, mixed $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_askAndHideAnswer">askAndHideAnswer</a>(string $question)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|string|<abbr title="Composer\IO\list&lt;string&gt;">list&lt;string&gt;</abbr>|bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_select">select</a>(string $question, array $choices, bool|string $default, bool|int $attempts = false, string $errorMessage = &#039;Value &quot;%s&quot; is invalid&#039;, bool $multiselect = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getAuthentications">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_getAuthentications">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 28</div>
+        <code>                    
+    <strong>getAuthentications</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetAuthentications">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_resetAuthentications">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 36</div>
+        <code>                    void
+    <strong>resetAuthentications</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAuthentication">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_hasAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 44</div>
+        <code>                    bool
+    <strong>hasAuthentication</strong>(string $repositoryName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repositoryName</td>
+                <td><p>The unique name of repository</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthentication">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_getAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 52</div>
+        <code>                    
+    <strong>getAuthentication</strong>(string $repositoryName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repositoryName</td>
+                <td><p>The unique name of repository</p></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthentication">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_setAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 64</div>
+        <code>                    void
+    <strong>setAuthentication</strong>(string $repositoryName, string $username, string|null $password = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repositoryName</td>
+                <td><p>The unique name of repository</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td><p>The username</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$password</td>
+                <td><p>The password</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeRaw">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_writeRaw">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 72</div>
+        <code>                    void
+    <strong>writeRaw</strong>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$messages</td>
+                <td><p>The message as an array of lines or a single string</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$newline</td>
+                <td><p>Whether to add a newline or not</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$verbosity</td>
+                <td><p>Verbosity level from the VERBOSITY_* constants</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeErrorRaw">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_writeErrorRaw">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 80</div>
+        <code>                    void
+    <strong>writeErrorRaw</strong>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$messages</td>
+                <td><p>The message as an array of lines or a single string</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$newline</td>
+                <td><p>Whether to add a newline or not</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$verbosity</td>
+                <td><p>Verbosity level from the VERBOSITY_* constants</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkAndSetAuthentication">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_checkAndSetAuthentication">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 94</div>
+        <code>            protected        void
+    <strong>checkAndSetAuthentication</strong>(string $repositoryName, string $username, string|null $password = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check for overwrite and set the authentication information for the repository.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repositoryName</td>
+                <td><p>The unique name of repository</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td><p>The username</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$password</td>
+                <td><p>The password</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadConfiguration">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_loadConfiguration">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 115</div>
+        <code>                    void
+    <strong>loadConfiguration</strong>(<a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_emergency">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_emergency">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 178</div>
+        <code>                    void
+    <strong>emergency</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alert">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_alert">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 183</div>
+        <code>                    void
+    <strong>alert</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_critical">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_critical">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 188</div>
+        <code>                    void
+    <strong>critical</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_error">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 193</div>
+        <code>                    void
+    <strong>error</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_warning">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_warning">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 198</div>
+        <code>                    void
+    <strong>warning</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notice">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_notice">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 203</div>
+        <code>                    void
+    <strong>notice</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_info">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 208</div>
+        <code>                    void
+    <strong>info</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_debug">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_debug">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 213</div>
+        <code>                    void
+    <strong>debug</strong>($message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">in <a href="../../Composer/IO/BaseIO.html#method_log">
+<abbr title="Composer\IO\BaseIO">BaseIO</abbr></a> at line 218</div>
+        <code>                    void
+    <strong>log</strong>($level, $message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInteractive">
+        <div class="location">at line 25</div>
+        <code>                    bool
+    <strong>isInteractive</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVerbose">
+        <div class="location">at line 33</div>
+        <code>                    bool
+    <strong>isVerbose</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVeryVerbose">
+        <div class="location">at line 41</div>
+        <code>                    bool
+    <strong>isVeryVerbose</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDebug">
+        <div class="location">at line 49</div>
+        <code>                    bool
+    <strong>isDebug</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDecorated">
+        <div class="location">at line 57</div>
+        <code>                    bool
+    <strong>isDecorated</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">at line 65</div>
+        <code>                    void
+    <strong>write</strong>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$messages</td>
+                <td><p>The message as an array of lines or a single string</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$newline</td>
+                <td><p>Whether to add a newline or not</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$verbosity</td>
+                <td><p>Verbosity level from the VERBOSITY_* constants</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeError">
+        <div class="location">at line 72</div>
+        <code>                    void
+    <strong>writeError</strong>(string|string[] $messages, bool $newline = true, int $verbosity = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$messages</td>
+                <td><p>The message as an array of lines or a single string</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$newline</td>
+                <td><p>Whether to add a newline or not</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$verbosity</td>
+                <td><p>Verbosity level from the VERBOSITY_* constants</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_overwrite">
+        <div class="location">at line 79</div>
+        <code>                    void
+    <strong>overwrite</strong>(string|string[] $messages, bool $newline = true, int|null $size = null, int $verbosity = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$messages</td>
+                <td><p>The message as an array of lines or a single string</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$newline</td>
+                <td><p>Whether to add a newline or not</p></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$size</td>
+                <td><p>The size of line</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$verbosity</td>
+                <td><p>Verbosity level from the VERBOSITY_* constants</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_overwriteError">
+        <div class="location">at line 86</div>
+        <code>                    void
+    <strong>overwriteError</strong>(string|string[] $messages, bool $newline = true, int|null $size = null, int $verbosity = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$messages</td>
+                <td><p>The message as an array of lines or a single string</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$newline</td>
+                <td><p>Whether to add a newline or not</p></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$size</td>
+                <td><p>The size of line</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$verbosity</td>
+                <td><p>Verbosity level from the VERBOSITY_* constants</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ask">
+        <div class="location">at line 93</div>
+        <code>                    mixed
+    <strong>ask</strong>(string $question, string|bool|int|float|null $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$question</td>
+                <td><p>The question to ask</p></td>
+            </tr>
+                    <tr>
+                <td>string|bool|int|float|null</td>
+                <td>$default</td>
+                <td><p>The default answer if none is given by the user</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td><p>The user answer</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_askConfirmation">
+        <div class="location">at line 101</div>
+        <code>                    bool
+    <strong>askConfirmation</strong>(string $question, bool $default = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$question</td>
+                <td><p>The question to ask</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$default</td>
+                <td><p>The default answer if the user enters nothing</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td><p>true if the user has confirmed, false otherwise</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_askAndValidate">
+        <div class="location">at line 109</div>
+        <code>                    mixed
+    <strong>askAndValidate</strong>(string $question, callable $validator, int|null $attempts = null, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$question</td>
+                <td><p>The question to ask</p></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$validator</td>
+                <td><p>A PHP callback</p></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$attempts</td>
+                <td><p>Max number of times to ask before giving up (default of null means infinite)</p></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td><p>The default answer if none is given by the user</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_askAndHideAnswer">
+        <div class="location">at line 117</div>
+        <code>                    string|null
+    <strong>askAndHideAnswer</strong>(string $question)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$question</td>
+                <td><p>The question to ask</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td><p>The answer</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_select">
+        <div class="location">at line 125</div>
+        <code>                    int|string|<abbr title="Composer\IO\list&lt;string&gt;">list&lt;string&gt;</abbr>|bool
+    <strong>select</strong>(string $question, array $choices, bool|string $default, bool|int $attempts = false, string $errorMessage = &#039;Value &quot;%s&quot; is invalid&#039;, bool $multiselect = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$question</td>
+                <td><p>The question to ask</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$choices</td>
+                <td><p>List of choices to pick from</p></td>
+            </tr>
+                    <tr>
+                <td>bool|string</td>
+                <td>$default</td>
+                <td><p>The default answer if the user enters nothing</p></td>
+            </tr>
+                    <tr>
+                <td>bool|int</td>
+                <td>$attempts</td>
+                <td><p>Max number of times to ask before giving up (false by default, which means infinite)</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$errorMessage</td>
+                <td><p>Message which will be shown if invalid value from choice list would be picked</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$multiselect</td>
+                <td><p>Select more than one value separated by comma</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string|<abbr title="Composer\IO\list&lt;string&gt;">list&lt;string&gt;</abbr>|bool</td>
+            <td><p>The selected value or values (the key of the choices array)</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

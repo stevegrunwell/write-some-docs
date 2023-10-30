@@ -1,0 +1,867 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Util\ProcessExecutor |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Util.html">Util</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.Http.html">Http</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Util.AuthHelper.html">
+							AuthHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Bitbucket.html">
+							Bitbucket
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ComposerMirror.html">
+							ComposerMirror
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ConfigValidator.html">
+							ConfigValidator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.ErrorHandler.html">
+							ErrorHandler
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Filesystem.html">
+							Filesystem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Git.html">
+							Git
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.GitHub.html">
+							GitHub
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.GitLab.html">
+							GitLab
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Hg.html">
+							Hg
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.HttpDownloader.html">
+							HttpDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.IniHelper.html">
+							IniHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Loop.html">
+							Loop
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Util.MetadataMinifier.html">
+							MetadataMinifier
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.NoProxyPattern.html">
+							NoProxyPattern
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.PackageInfo.html">
+							PackageInfo
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.PackageSorter.html">
+							PackageSorter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Perforce.html">
+							Perforce
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Platform.html">
+							Platform
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Util.ProcessExecutor.html">
+							ProcessExecutor
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Silencer.html">
+							Silencer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.StreamContextFactory.html">
+							StreamContextFactory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Svn.html">
+							Svn
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.SyncHelper.html">
+							SyncHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Tar.html">
+							Tar
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Util.TlsHelper.html">
+							TlsHelper
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Url.html">
+							Url
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Zip.html">
+							Zip
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Util.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Util.ProcessExecutor.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Util.html">Util</a>\<a href="Composer.Util.ProcessExecutor.html">ProcessExecutor</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Util.ProcessExecutor.html#28" title="Go to source code">Composer/Util/ProcessExecutor.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#59-62" title="Go to source code">__construct</a>(<span>?<a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="execute" id="_execute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#64-80" title="Go to source code">execute</a>(<span>string|list&lt;string&gt; <var>$command</var></span>, <span>mixed &amp;<var>$output</var> = <span class="php-kw">null</span></span>, <span>null|string <var>$cwd</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		runs a process on the commandline
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>runs a process on the commandline</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$command</var>&nbsp;&nbsp;</td>
+										<td><p>the command to execute</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$output</var>&nbsp;&nbsp;</td>
+										<td><p>the output will be written into this var if passed by ref
+if a callable is passed it will be used as output handler</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cwd</var>&nbsp;&nbsp;</td>
+										<td><p>the working directory</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>statuscode</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_execute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="executeTty" id="_executeTty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#82-96" title="Go to source code">executeTty</a>(<span>string|list&lt;string&gt; <var>$command</var></span>, <span>null|string <var>$cwd</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		runs a process on the commandline in TTY mode
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>runs a process on the commandline in TTY mode</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$command</var>&nbsp;&nbsp;</td>
+										<td><p>the command to execute</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cwd</var>&nbsp;&nbsp;</td>
+										<td><p>the working directory</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>statuscode</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_executeTty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="executeAsync" id="_executeAsync">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#153-224" title="Go to source code">executeAsync</a>(<span>string|list&lt;string&gt; <var>$command</var></span>, <span>string <var>$cwd</var> = <span class="php-kw">null</span></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		starts a process on the commandline in async mode
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>starts a process on the commandline in async mode</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$command</var>&nbsp;&nbsp;</td>
+										<td><p>the command to execute</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cwd</var>&nbsp;&nbsp;</td>
+										<td><p>the working directory</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_executeAsync">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="outputHandler" id="_outputHandler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#226-243" title="Go to source code">outputHandler</a>(<span>string <var>$type</var></span>, <span>string <var>$buffer</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_outputHandler">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMaxJobs" id="_setMaxJobs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#284-287" title="Go to source code">setMaxJobs</a>(<span>int <var>$maxJobs</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMaxJobs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resetMaxJobs" id="_resetMaxJobs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#289-292" title="Go to source code">resetMaxJobs</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resetMaxJobs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wait" id="_wait">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#294-306" title="Go to source code">wait</a>(<span>?int <var>$index</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$index</var>&nbsp;&nbsp;</td>
+										<td><p>job id</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wait">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="splitLines" id="_splitLines">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#362-370" title="Go to source code">splitLines</a>(<span>?string <var>$output</var></span>): string[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_splitLines">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getErrorOutput" id="_getErrorOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#372-378" title="Go to source code">getErrorOutput</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get any error output from the last command
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get any error output from the last command</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getErrorOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTimeout" id="_getTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#380-386" title="Go to source code">getTimeout</a>(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+							<h4>Returns</h4>
+							<div><p>the timeout in seconds</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTimeout" id="_setTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#388-394" title="Go to source code">setTimeout</a>(<span>int <var>$timeout</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$timeout</var>&nbsp;&nbsp;</td>
+										<td><p>the timeout in seconds</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escape" id="_escape">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Util.ProcessExecutor.html#396-406" title="Go to source code">escape</a>(<span>string|false|null <var>$argument</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escapes a string to be used as a shell argument.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escapes a string to be used as a shell argument.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$argument</var>&nbsp;&nbsp;</td>
+										<td><p>The argument that will be escaped</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The escaped argument</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escape">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="timeout" id="$timeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.ProcessExecutor.html#36-37" title="Go to source code">$timeout</a></var> = <span class="php-num">300</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$timeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="captureOutput" id="$captureOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.ProcessExecutor.html#39-40" title="Go to source code">$captureOutput</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$captureOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errorOutput" id="$errorOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.ProcessExecutor.html#41-42" title="Go to source code">$errorOutput</a></var> = <span class="php-str">''</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$errorOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="io" id="$io">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Util.ProcessExecutor.html#43-44" title="Go to source code">$io</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$io">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

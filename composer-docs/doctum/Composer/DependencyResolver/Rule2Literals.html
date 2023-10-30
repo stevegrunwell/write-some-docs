@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\DependencyResolver\Rule2Literals | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_DependencyResolver_Rule2Literals" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/DependencyResolver.html">DependencyResolver</a></li><li class="backslash">\</li><li>Rule2Literals</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Rule2Literals    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Rule2Literals</strong>        extends <a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a>
+</p>
+
+        
+    
+        
+
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        RULE_ROOT_REQUIRE
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_FIXED
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_PACKAGE_CONFLICT
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_PACKAGE_REQUIRES
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_PACKAGE_SAME_NAME
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_LEARNED
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_PACKAGE_ALIAS
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        RULE_PACKAGE_INVERSE_ALIAS
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                            private
+                                                                                BITFIELD_TYPE
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                            private
+                                                                                BITFIELD_REASON
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                            private
+                                                                                BITFIELD_DISABLED
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_bitfield">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$bitfield</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#property_bitfield">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                        protected                                        <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a>
+                                                                                
+                                    </td>
+                <td>$request</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#property_request">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reasonData">
+                                        protected                                        <a href="../../Composer/Package/Link.html"><abbr title="Composer\Package\Link">Link</abbr></a>|<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>|<abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|string
+                                                                                
+                                    </td>
+                <td>$reasonData</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#property_reasonData">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_literal1">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$literal1</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_literal2">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$literal2</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(int $literal1, int $literal2, $reason, mixed $reasonData)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLiterals">getLiterals</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getHash">getHash</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p><p>Formats a rule as a string of the format (Literal1|Literal2|...)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_equals">equals</a>(<a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> $rule)
+        
+                                            <p><p>Checks if this rule is equal to another one</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReason">getReason</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_getReason">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReasonData">getReasonData</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_getReasonData">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRequiredPackage">getRequiredPackage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_getRequiredPackage">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setType">setType</a>($type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_setType">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_getType">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disable">disable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_disable">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enable">enable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_enable">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isDisabled">isDisabled</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_isDisabled">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isEnabled">isEnabled</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_isEnabled">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isAssertion">isAssertion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isCausedByLock">isCausedByLock</a>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_isCausedByLock">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSourcePackage">getSourcePackage</a>(<a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_getSourcePackage">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrettyString">getPrettyString</a>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, array $installedMap = [], array $learnedPool = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_getPrettyString">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_formatPackagesUnique">formatPackagesUnique</a>(<a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, array $packages, bool $isVerbose, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null, bool $useRemovedVersionGroup = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/DependencyResolver/Rule.html#method_formatPackagesUnique">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 32</div>
+        <code>                    
+    <strong>__construct</strong>(int $literal1, int $literal2, $reason, mixed $reasonData)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$literal1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$literal2</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$reason</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$reasonData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLiterals">
+        <div class="location">at line 48</div>
+        <code>                    array
+    <strong>getLiterals</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHash">
+        <div class="location">at line 56</div>
+        <code>                    int|string
+    <strong>getHash</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Formats a rule as a string of the format (Literal1|Literal2|...)</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_equals">
+        <div class="location">at line 69</div>
+        <code>                    bool
+    <strong>equals</strong>(<a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> $rule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if this rule is equal to another one</p></p>                <p><p>Ignores whether either of the rules is disabled.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></td>
+                <td>$rule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReason">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_getReason">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 88</div>
+        <code>                    int
+    <strong>getReason</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReasonData">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_getReasonData">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 96</div>
+        <code>                    
+    <strong>getReasonData</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequiredPackage">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_getRequiredPackage">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 101</div>
+        <code>                    string|null
+    <strong>getRequiredPackage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setType">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_setType">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 118</div>
+        <code>                    void
+    <strong>setType</strong>($type)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_getType">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 123</div>
+        <code>                    int
+    <strong>getType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_disable">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 128</div>
+        <code>                    void
+    <strong>disable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_enable">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 133</div>
+        <code>                    void
+    <strong>enable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDisabled">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_isDisabled">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 138</div>
+        <code>                    bool
+    <strong>isDisabled</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEnabled">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_isEnabled">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 143</div>
+        <code>                    bool
+    <strong>isEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAssertion">
+        <div class="location">at line 101</div>
+        <code>                    bool
+    <strong>isAssertion</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCausedByLock">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_isCausedByLock">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 150</div>
+        <code>                    bool
+    <strong>isCausedByLock</strong>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a></td>
+                <td>$repositorySet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourcePackage">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_getSourcePackage">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 200</div>
+        <code>                    <a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a>
+    <strong>getSourcePackage</strong>(<a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool)
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrettyString">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_getPrettyString">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 232</div>
+        <code>                    string
+    <strong>getPrettyString</strong>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, array $installedMap = [], array $learnedPool = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a></td>
+                <td>$repositorySet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isVerbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$installedMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$learnedPool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatPackagesUnique">
+        <div class="location">in <a href="../../Composer/DependencyResolver/Rule.html#method_formatPackagesUnique">
+<abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> at line 444</div>
+        <code>            protected        string
+    <strong>formatPackagesUnique</strong>(<a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, array $packages, bool $isVerbose, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null, bool $useRemovedVersionGroup = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$packages</td>
+                <td><p>An array containing packages or literals</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isVerbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useRemovedVersionGroup</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

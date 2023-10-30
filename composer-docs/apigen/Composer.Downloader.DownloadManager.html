@@ -1,0 +1,1016 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Downloader\DownloadManager |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ArchiveDownloader.html">
+							ArchiveDownloader
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Downloader.DownloadManager.html">
+							DownloadManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FileDownloader.html">
+							FileDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FossilDownloader.html">
+							FossilDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GitDownloader.html">
+							GitDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GzipDownloader.html">
+							GzipDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.HgDownloader.html">
+							HgDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PathDownloader.html">
+							PathDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PerforceDownloader.html">
+							PerforceDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PharDownloader.html">
+							PharDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.RarDownloader.html">
+							RarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.SvnDownloader.html">
+							SvnDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TarDownloader.html">
+							TarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsDownloader.html">
+							VcsDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.XzDownloader.html">
+							XzDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.ZipDownloader.html">
+							ZipDownloader
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ChangeReportInterface.html">
+							ChangeReportInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloaderInterface.html">
+							DownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DvcsDownloaderInterface.html">
+							DvcsDownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsCapableDownloaderInterface.html">
+							VcsCapableDownloaderInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.FilesystemException.html">
+							FilesystemException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.MaxFileSizeExceededException.html">
+							MaxFileSizeExceededException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TransportException.html">
+							TransportException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Downloader.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Downloader.DownloadManager.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Downloader.html">Downloader</a>\<a href="Composer.Downloader.DownloadManager.html">DownloadManager</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Downloaders manager.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Downloader.DownloadManager.html#27" title="Go to source code">Composer/Downloader/DownloadManager.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#42-54" title="Go to source code">__construct</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span>bool <var>$preferSource</var> = <span class="php-kw">false</span></span>, <span><a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a>|null <var>$filesystem</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Initializes download manager.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initializes download manager.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>The Input Output Interface</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$preferSource</var>&nbsp;&nbsp;</td>
+										<td><p>prefer downloading from source</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$filesystem</var>&nbsp;&nbsp;</td>
+										<td><p>custom Filesystem object</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferSource" id="_setPreferSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#56-67" title="Go to source code">setPreferSource</a>(<span>bool <var>$preferSource</var></span>): <b><span class="active" title="Composer\Downloader\DownloadManager">DownloadManager</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Makes downloader prefer source installation over the dist.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Makes downloader prefer source installation over the dist.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$preferSource</var>&nbsp;&nbsp;</td>
+										<td><p>prefer downloading from source</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferDist" id="_setPreferDist">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#69-80" title="Go to source code">setPreferDist</a>(<span>bool <var>$preferDist</var></span>): <b><span class="active" title="Composer\Downloader\DownloadManager">DownloadManager</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Makes downloader prefer dist installation over the source.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Makes downloader prefer dist installation over the source.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$preferDist</var>&nbsp;&nbsp;</td>
+										<td><p>prefer downloading from dist</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferDist">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferences" id="_setPreferences">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#82-94" title="Go to source code">setPreferences</a>(<span>array&lt;string, string&gt; <var>$preferences</var></span>): <b><span class="active" title="Composer\Downloader\DownloadManager">DownloadManager</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Sets fine tuned preference settings for package level source/dist selection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets fine tuned preference settings for package level source/dist selection.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$preferences</var>&nbsp;&nbsp;</td>
+										<td><p>array of preferences by package patterns</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferences">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDownloader" id="_setDownloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#96-109" title="Go to source code">setDownloader</a>(<span>string <var>$type</var></span>, <span><a href="Composer.Downloader.DownloaderInterface.html"><span title="Composer\Downloader\DownloaderInterface">DownloaderInterface</span></a> <var>$downloader</var></span>): <b><span class="active" title="Composer\Downloader\DownloadManager">DownloadManager</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Sets installer downloader for a specific installation type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets installer downloader for a specific installation type.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>installation type</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$downloader</var>&nbsp;&nbsp;</td>
+										<td><p>downloader instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDownloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDownloader" id="_getDownloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#111-125" title="Go to source code">getDownloader</a>(<span>string <var>$type</var></span>): <a href="Composer.Downloader.DownloaderInterface.html"><span title="Composer\Downloader\DownloaderInterface">DownloaderInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns downloader for a specific installation type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns downloader for a specific installation type.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>installation type</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if downloader for provided type is not registered</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDownloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDownloaderForPackage" id="_getDownloaderForPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#127-164" title="Go to source code">getDownloaderForPackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): ?<a href="Composer.Downloader.DownloaderInterface.html"><span title="Composer\Downloader\DownloaderInterface">DownloaderInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns downloader for already installed package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns downloader for already installed package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if package has no installation source specified</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td><p>if specific downloader used to load package with
+wrong type</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDownloaderForPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDownloaderType" id="_getDownloaderType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#166-169" title="Go to source code">getDownloaderType</a>(<span><a href="Composer.Downloader.DownloaderInterface.html"><span title="Composer\Downloader\DownloaderInterface">DownloaderInterface</span></a> <var>$downloader</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDownloaderType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="download" id="_download">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#171-236" title="Go to source code">download</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$targetDir</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>|null <var>$prevPackage</var> = <span class="php-kw">null</span></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Downloads package into target dir.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Downloads package into target dir.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>target dir</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package instance in case of updates</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if package have no urls to download from</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_download">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepare" id="_prepare">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#238-256" title="Go to source code">prepare</a>(
+	<span>string <var>$type</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>,
+	<span>string <var>$targetDir</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>|null <var>$prevPackage</var> = <span class="php-kw">null</span></span>,
+): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Prepares an operation execution
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepares an operation execution</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>one of install/update/uninstall</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>target dir</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package instance in case of updates</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepare">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="install" id="_install">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#258-277" title="Go to source code">install</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$targetDir</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Installs package into target dir.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Installs package into target dir.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>target dir</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if package have no urls to download from</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_install">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#279-328" title="Go to source code">update</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$initial</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$target</var></span>, <span>string <var>$targetDir</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Updates package from initial to target version.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates package from initial to target version.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$initial</var>&nbsp;&nbsp;</td>
+										<td><p>initial package version</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$target</var>&nbsp;&nbsp;</td>
+										<td><p>target package version</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>target dir</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if initial package is not installed</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#330-346" title="Go to source code">remove</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$targetDir</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Removes package from target dir.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes package from target dir.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>target dir</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cleanup" id="_cleanup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#348-366" title="Go to source code">cleanup</a>(
+	<span>string <var>$type</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>,
+	<span>string <var>$targetDir</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>|null <var>$prevPackage</var> = <span class="php-kw">null</span></span>,
+): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Cleans up a failed operation
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cleans up a failed operation</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>one of install/update/uninstall</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>target dir</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package instance in case of updates</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cleanup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolvePackageInstallPreference" id="_resolvePackageInstallPreference">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.DownloadManager.html#368-387" title="Go to source code">resolvePackageInstallPreference</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines the install preference of a package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines the install preference of a package</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolvePackageInstallPreference">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

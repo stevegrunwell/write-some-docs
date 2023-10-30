@@ -1,0 +1,387 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Package\Loader\InvalidPackageException |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.html">Package</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Archiver.html">Archiver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Comparer.html">Comparer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Dumper.html">Dumper</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.Loader.html">Loader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Version.html">Version</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.Loader.ArrayLoader.html">
+							ArrayLoader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Loader.JsonLoader.html">
+							JsonLoader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Loader.RootPackageLoader.html">
+							RootPackageLoader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Loader.ValidatingArrayLoader.html">
+							ValidatingArrayLoader
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.Loader.LoaderInterface.html">
+							LoaderInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Package.Loader.InvalidPackageException.html">
+							InvalidPackageException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Package.Loader.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Package.Loader.InvalidPackageException.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Package.html">Package</a>\<a href="namespace-Composer.Package.Loader.html">Loader</a>\<a href="Composer.Package.Loader.InvalidPackageException.html">InvalidPackageException</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Exception.html"><span title="Exception">Exception</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Exception.html"><span>Exception</span></a>
+
+		implements
+			<a href="Throwable.html"><span title="Throwable">Throwable</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Package\Loader\InvalidPackageException</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Package.Loader.InvalidPackageException.html#18" title="Go to source code">Composer/Package/Loader/InvalidPackageException.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Loader.InvalidPackageException.html#27-38" title="Go to source code">__construct</a>(<span>list&lt;string&gt; <var>$errors</var></span>, <span>list&lt;string&gt; <var>$warnings</var></span>, <span>mixed[] <var>$data</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Exception.html#___construct">						<code>Exception::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getData" id="_getData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Loader.InvalidPackageException.html#40-46" title="Go to source code">getData</a>(): mixed[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getErrors" id="_getErrors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Loader.InvalidPackageException.html#48-54" title="Go to source code">getErrors</a>(): list&lt;string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getErrors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getWarnings" id="_getWarnings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Loader.InvalidPackageException.html#56-62" title="Go to source code">getWarnings</a>(): list&lt;string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getWarnings">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Exception.html"><span>Exception</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Exception.html#___wakeup">__wakeup()</a>, <a href="Exception.html#_getMessage">getMessage()</a>, <a href="Exception.html#_getCode">getCode()</a>, <a href="Exception.html#_getFile">getFile()</a>, <a href="Exception.html#_getLine">getLine()</a>, <a href="Exception.html#_getTrace">getTrace()</a>, <a href="Exception.html#_getPrevious">getPrevious()</a>, <a href="Exception.html#_getTraceAsString">getTraceAsString()</a>, <a href="Exception.html#___toString">__toString()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

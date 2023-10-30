@@ -1,0 +1,566 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Package\Archiver\ArchiveManager |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.html">Package</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.Archiver.html">Archiver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Comparer.html">Comparer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Dumper.html">Dumper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Loader.html">Loader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Version.html">Version</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.Archiver.ArchivableFilesFilter.html">
+							ArchivableFilesFilter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Archiver.ArchivableFilesFinder.html">
+							ArchivableFilesFinder
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Package.Archiver.ArchiveManager.html">
+							ArchiveManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Archiver.BaseExcludeFilter.html">
+							BaseExcludeFilter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Archiver.ComposerExcludeFilter.html">
+							ComposerExcludeFilter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Archiver.GitExcludeFilter.html">
+							GitExcludeFilter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Archiver.PharArchiver.html">
+							PharArchiver
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Archiver.ZipArchiver.html">
+							ZipArchiver
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.Archiver.ArchiverInterface.html">
+							ArchiverInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Package.Archiver.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Package.Archiver.ArchiveManager.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Package.html">Package</a>\<a href="namespace-Composer.Package.Archiver.html">Archiver</a>\<a href="Composer.Package.Archiver.ArchiveManager.html">ArchiveManager</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Package.Archiver.ArchiveManager.html#28" title="Go to source code">Composer/Package/Archiver/ArchiveManager.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Archiver.ArchiveManager.html#45-52" title="Go to source code">__construct</a>(<span><a href="Composer.Downloader.DownloadManager.html"><span title="Composer\Downloader\DownloadManager">DownloadManager</span></a> <var>$downloadManager</var></span>, <span><a href="Composer.Util.Loop.html"><span title="Composer\Util\Loop">Loop</span></a> <var>$loop</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$downloadManager</var>&nbsp;&nbsp;</td>
+										<td><p>A manager used to download package sources</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addArchiver" id="_addArchiver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Archiver.ArchiveManager.html#54-57" title="Go to source code">addArchiver</a>(<span><a href="Composer.Package.Archiver.ArchiverInterface.html"><span title="Composer\Package\Archiver\ArchiverInterface">ArchiverInterface</span></a> <var>$archiver</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addArchiver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOverwriteFiles" id="_setOverwriteFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Archiver.ArchiveManager.html#59-71" title="Go to source code">setOverwriteFiles</a>(<span>bool <var>$overwriteFiles</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set whether existing archives should be overwritten
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set whether existing archives should be overwritten</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$overwriteFiles</var>&nbsp;&nbsp;</td>
+										<td><p>New setting</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOverwriteFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPackageFilename" id="_getPackageFilename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Archiver.ArchiveManager.html#121-131" title="Go to source code">getPackageFilename</a>(<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a distinct filename for a particular version of a package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a distinct filename for a particular version of a package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>The package to get a name for</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A filename without an extension</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPackageFilename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="archive" id="_archive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Archiver.ArchiveManager.html#133-236" title="Go to source code">archive</a>(
+	<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>,
+	<span>string <var>$format</var></span>,
+	<span>string <var>$targetDir</var></span>,
+	<span>string|null <var>$fileName</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$ignoreFilters</var> = <span class="php-kw">false</span></span>,
+): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Create an archive of the specified package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an archive of the specified package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>The package to archive</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$format</var>&nbsp;&nbsp;</td>
+										<td><p>The format of the archive (zip, tar, ...)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$targetDir</var>&nbsp;&nbsp;</td>
+										<td><p>The directory where to build the archive</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$fileName</var>&nbsp;&nbsp;</td>
+										<td><p>The relative file name to use for the archive, or null to generate
+the package name. Note that the format will be appended to this name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$ignoreFilters</var>&nbsp;&nbsp;</td>
+										<td><p>Ignore filters when looking for files in the package</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The path of the created archive</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_archive">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="downloadManager" id="$downloadManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Downloader.DownloadManager.html"><span title="Composer\Downloader\DownloadManager">DownloadManager</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.Archiver.ArchiveManager.html#30-31" title="Go to source code">$downloadManager</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$downloadManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loop" id="$loop">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Util.Loop.html"><span title="Composer\Util\Loop">Loop</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.Archiver.ArchiveManager.html#32-33" title="Go to source code">$loop</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$loop">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="archivers" id="$archivers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.Archiver.ArchiverInterface.html"><span title="Composer\Package\Archiver\ArchiverInterface">ArchiverInterface</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.Archiver.ArchiveManager.html#35-38" title="Go to source code">$archivers</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$archivers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="overwriteFiles" id="$overwriteFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.Archiver.ArchiveManager.html#40-43" title="Go to source code">$overwriteFiles</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$overwriteFiles">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

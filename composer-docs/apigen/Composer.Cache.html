@@ -1,0 +1,753 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Cache |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Cache.html">
+							Cache
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Compiler.html">
+							Compiler
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Config.html">
+							Config
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Factory.html">
+							Factory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.InstalledVersions.html">
+							InstalledVersions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.html">
+							Installer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.PartialComposer.html">
+							PartialComposer
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Cache.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="Composer.Cache.html">Cache</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Reads/writes to a filesystem cache</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Cache.html#27" title="Go to source code">Composer/Cache.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#44-61" title="Go to source code">__construct</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span>string <var>$cacheDir</var></span>,
+	<span>string <var>$allowlist</var> = <span class="php-str">'a-z0-9._'</span></span>,
+	<span><a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a> <var>$filesystem</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$readOnly</var> = <span class="php-kw">false</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$cacheDir</var>&nbsp;&nbsp;</td>
+										<td><p>location of the cache</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$allowlist</var>&nbsp;&nbsp;</td>
+										<td><p>List of characters that are allowed in path names (used in a regex character class)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$filesystem</var>&nbsp;&nbsp;</td>
+										<td><p>optional filesystem instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$readOnly</var>&nbsp;&nbsp;</td>
+										<td><p>whether the cache is in readOnly mode</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setReadOnly" id="_setReadOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#63-69" title="Go to source code">setReadOnly</a>(<span>bool <var>$readOnly</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setReadOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isReadOnly" id="_isReadOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#71-77" title="Go to source code">isReadOnly</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isReadOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isUsable" id="_isUsable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#79-85" title="Go to source code">isUsable</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isUsable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEnabled" id="_isEnabled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#87-108" title="Go to source code">isEnabled</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEnabled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRoot" id="_getRoot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#110-116" title="Go to source code">getRoot</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRoot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="read" id="_read">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#118-133" title="Go to source code">read</a>(<span>string <var>$file</var></span>): string|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_read">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="write" id="_write">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#135-182" title="Go to source code">write</a>(<span>string <var>$file</var></span>, <span>string <var>$contents</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_write">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copyFrom" id="_copyFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#184-205" title="Go to source code">copyFrom</a>(<span>string <var>$file</var></span>, <span>string <var>$source</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Copy a file into the cache
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copy a file into the cache</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copyFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copyTo" id="_copyTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#207-232" title="Go to source code">copyTo</a>(<span>string <var>$file</var></span>, <span>string <var>$target</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Copy a file out of the cache
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copy a file out of the cache</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copyTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="gcIsNecessary" id="_gcIsNecessary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#234-253" title="Go to source code">gcIsNecessary</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_gcIsNecessary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#255-268" title="Go to source code">remove</a>(<span>string <var>$file</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clear" id="_clear">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#270-282" title="Go to source code">clear</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clear">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAge" id="_getAge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#284-298" title="Go to source code">getAge</a>(<span>string <var>$file</var></span>): int|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="gc" id="_gc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#300-331" title="Go to source code">gc</a>(<span>int <var>$ttl</var></span>, <span>int <var>$maxSize</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_gc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="gcVcsCache" id="_gcVcsCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#333-350" title="Go to source code">gcVcsCache</a>(<span>int <var>$ttl</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_gcVcsCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sha1" id="_sha1">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#352-365" title="Go to source code">sha1</a>(<span>string <var>$file</var></span>): string|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sha1">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sha256" id="_sha256">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#367-380" title="Go to source code">sha256</a>(<span>string <var>$file</var></span>): string|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sha256">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFinder" id="_getFinder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Cache.html#382-388" title="Go to source code">getFinder</a>(): <span title="Symfony\Component\Finder\Finder">Finder</span></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFinder">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

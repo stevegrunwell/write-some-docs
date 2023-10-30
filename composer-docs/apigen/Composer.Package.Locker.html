@@ -1,0 +1,837 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Package\Locker |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.html">Package</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Archiver.html">Archiver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Comparer.html">Comparer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Dumper.html">Dumper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Loader.html">Loader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Version.html">Version</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.AliasPackage.html">
+							AliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.BasePackage.html">
+							BasePackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.CompleteAliasPackage.html">
+							CompleteAliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.CompletePackage.html">
+							CompletePackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Link.html">
+							Link
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Package.Locker.html">
+							Locker
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Package.html">
+							Package
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootAliasPackage.html">
+							RootAliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootPackage.html">
+							RootPackage
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.CompletePackageInterface.html">
+							CompletePackageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.PackageInterface.html">
+							PackageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootPackageInterface.html">
+							RootPackageInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Package.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Package.Locker.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Package.html">Package</a>\<a href="Composer.Package.Locker.html">Locker</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Reads/writes project lockfile (composer.lock).</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Package.Locker.html#37" title="Go to source code">Composer/Package/Locker.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#58-74" title="Go to source code">__construct</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Json.JsonFile.html"><span title="Composer\Json\JsonFile">JsonFile</span></a> <var>$lockFile</var></span>,
+	<span><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a> <var>$installationManager</var></span>,
+	<span>string <var>$composerFileContents</var></span>,
+	<span>?<a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Initializes packages locker.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initializes packages locker.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$lockFile</var>&nbsp;&nbsp;</td>
+										<td><p>lockfile loader</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$installationManager</var>&nbsp;&nbsp;</td>
+										<td><p>installation manager instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$composerFileContents</var>&nbsp;&nbsp;</td>
+										<td><p>The contents of the composer file</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContentHash" id="_getContentHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#76-111" title="Go to source code">getContentHash</a>(<span>string <var>$composerFileContents</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the md5 hash of the sorted content of the composer file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the md5 hash of the sorted content of the composer file.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$composerFileContents</var>&nbsp;&nbsp;</td>
+										<td><p>The contents of the composer file.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContentHash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isLocked" id="_isLocked">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#113-125" title="Go to source code">isLocked</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether locker has been locked (lockfile found).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether locker has been locked (lockfile found).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isLocked">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFresh" id="_isFresh">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#127-146" title="Go to source code">isFresh</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the lock file is still up to date with the current hash
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the lock file is still up to date with the current hash</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFresh">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLockedRepository" id="_getLockedRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#148-198" title="Go to source code">getLockedRepository</a>(<span>bool <var>$withDevReqs</var> = <span class="php-kw">false</span></span>): <a href="Composer.Repository.LockArrayRepository.html"><span title="Composer\Repository\LockArrayRepository">LockArrayRepository</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Searches and returns an array of locked packages, retrieved from registered repositories.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Searches and returns an array of locked packages, retrieved from registered repositories.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$withDevReqs</var>&nbsp;&nbsp;</td>
+										<td><p>true to retrieve the locked dev packages</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLockedRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDevPackageNames" id="_getDevPackageNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#200-214" title="Go to source code">getDevPackageNames</a>(): string[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+							<h4>Returns</h4>
+							<div><p>Names of dependencies installed through require-dev</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDevPackageNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPlatformRequirements" id="_getPlatformRequirements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#216-248" title="Go to source code">getPlatformRequirements</a>(<span>bool <var>$withDevReqs</var> = <span class="php-kw">false</span></span>): <a href="Composer.Package.Link.html"><span title="Composer\Package\Link">Link</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the platform requirements stored in the lock file
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the platform requirements stored in the lock file</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$withDevReqs</var>&nbsp;&nbsp;</td>
+										<td><p>if true, the platform requirements from the require-dev block are also returned</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPlatformRequirements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMinimumStability" id="_getMinimumStability">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#250-255" title="Go to source code">getMinimumStability</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMinimumStability">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStabilityFlags" id="_getStabilityFlags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#257-265" title="Go to source code">getStabilityFlags</a>(): array&lt;string, string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStabilityFlags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreferStable" id="_getPreferStable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#267-274" title="Go to source code">getPreferStable</a>(): ?bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreferStable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreferLowest" id="_getPreferLowest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#276-283" title="Go to source code">getPreferLowest</a>(): ?bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreferLowest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPlatformOverrides" id="_getPlatformOverrides">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#285-293" title="Go to source code">getPlatformOverrides</a>(): array&lt;string, string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPlatformOverrides">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAliases" id="_getAliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#295-305" title="Go to source code">getAliases</a>(): string[][]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAliases">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPluginApi" id="_getPluginApi">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#307-315" title="Go to source code">getPluginApi</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPluginApi">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLockData" id="_getLockData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#317-331" title="Go to source code">getLockData</a>(): array&lt;string, mixed&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLockData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLockData" id="_setLockData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#333-404" title="Go to source code">setLockData</a>(
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[] <var>$packages</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[]|null <var>$devPackages</var></span>,
+	<span>array&lt;string, string&gt; <var>$platformReqs</var></span>,
+	<span>array&lt;string, string&gt; <var>$platformDevReqs</var></span>,
+	<span>list&lt;array{package: string, version: string, alias: string, alias_normalized: string}&gt; <var>$aliases</var></span>,
+	<span>string <var>$minimumStability</var></span>,
+	<span>array&lt;string, int&gt; <var>$stabilityFlags</var></span>,
+	<span>bool <var>$preferStable</var></span>,
+	<span>bool <var>$preferLowest</var></span>,
+	<span>array&lt;string, string|false&gt; <var>$platformOverrides</var></span>,
+	<span>bool <var>$write</var> = <span class="php-kw">true</span></span>,
+): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Locks provided data into lockfile.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Locks provided data into lockfile.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$packages</var>&nbsp;&nbsp;</td>
+										<td><p>array of packages</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$devPackages</var>&nbsp;&nbsp;</td>
+										<td><p>array of dev packages or null if installed without --dev</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$platformReqs</var>&nbsp;&nbsp;</td>
+										<td><p>array of package name =&gt; constraint for required platform packages</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$platformDevReqs</var>&nbsp;&nbsp;</td>
+										<td><p>array of package name =&gt; constraint for dev-required platform packages</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$write</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to actually write data to disk, useful in tests and for --dry-run</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLockData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMissingRequirementInfo" id="_getMissingRequirementInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.Locker.html#507-562" title="Go to source code">getMissingRequirementInfo</a>(<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a> <var>$package</var></span>, <span>bool <var>$includeDev</var></span>): array&lt;string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMissingRequirementInfo">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

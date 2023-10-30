@@ -1,0 +1,558 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Composer\DependencyResolver\Transaction |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Decisions.html">
+							Decisions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.DefaultPolicy.html">
+							DefaultPolicy
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.GenericRule.html">
+							GenericRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.MultiConflictRule.html">
+							MultiConflictRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Pool.html">
+							Pool
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolBuilder.html">
+							PoolBuilder
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolOptimizer.html">
+							PoolOptimizer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Problem.html">
+							Problem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule.html">
+							Rule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule2Literals.html">
+							Rule2Literals
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetGenerator.html">
+							RuleSetGenerator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetIterator.html">
+							RuleSetIterator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchChain.html">
+							RuleWatchChain
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchGraph.html">
+							RuleWatchGraph
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchNode.html">
+							RuleWatchNode
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Solver.html">
+							Solver
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.PolicyInterface.html">
+							PolicyInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.SolverBugException.html">
+							SolverBugException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.SolverProblemsException.html">
+							SolverProblemsException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.DependencyResolver.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.DependencyResolver.Transaction.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>\<a href="Composer.DependencyResolver.Transaction.html">Transaction</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\DependencyResolver\Transaction</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.DependencyResolver.LockTransaction.html"><span>Composer\DependencyResolver\LockTransaction</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.DependencyResolver.LocalRepoTransaction.html"><span>Composer\DependencyResolver\LocalRepoTransaction</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[] <var>$presentPackages</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[] <var>$resultPackages</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.LockTransaction.html#___construct">						<code>Composer\DependencyResolver\LockTransaction::__construct()</code></a>				</li>
+				<li>
+<a href="Composer.DependencyResolver.LocalRepoTransaction.html#___construct">						<code>Composer\DependencyResolver\LocalRepoTransaction::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOperations" id="_getOperations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOperations(): <a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOperations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="calculateOperations" id="_calculateOperations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>calculateOperations(): <a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_calculateOperations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRootPackages" id="_getRootPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRootPackages(): array&lt;string, <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine which packages in the result are not required by any other packages in it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine which packages in the result are not required by any other packages in it.</p>
+<p>These serve as a starting point to enumerate packages in a topological order despite potential cycles.
+If there are packages with a cycle on the top level the package with the lowest name gets picked</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRootPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getProvidersInResult" id="_getProvidersInResult">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getProvidersInResult(<span><a href="Composer.Package.Link.html"><span title="Composer\Package\Link">Link</span></a> <var>$link</var></span>): <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getProvidersInResult">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="operations" id="$operations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$operations</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$operations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="presentPackages" id="$presentPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$presentPackages</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$presentPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resultPackageMap" id="$resultPackageMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resultPackageMap</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resultPackageMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resultPackagesByName" id="$resultPackagesByName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[]&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resultPackagesByName</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resultPackagesByName">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

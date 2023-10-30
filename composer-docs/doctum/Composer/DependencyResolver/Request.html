@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\DependencyResolver\Request | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_DependencyResolver_Request" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/DependencyResolver.html">DependencyResolver</a></li><li class="backslash">\</li><li>Request</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Request    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Request</strong>
+</p>
+
+        
+    
+        
+
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        UPDATE_ONLY_LISTED
+                                    </td>
+                <td class="last">
+                    <p><em><p>Identifies a partial update for listed packages only, all dependencies will remain at locked versions</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        UPDATE_LISTED_WITH_TRANSITIVE_DEPS_NO_ROOT_REQUIRE
+                                    </td>
+                <td class="last">
+                    <p><em><p>Identifies a partial update for listed packages and recursively all their dependencies, however dependencies
+also directly required by the root composer.json and their dependencies will remain at the locked version.</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        UPDATE_LISTED_WITH_TRANSITIVE_DEPS
+                                    </td>
+                <td class="last">
+                    <p><em><p>Identifies a partial update for listed packages and recursively all their dependencies, even dependencies
+also directly required by the root composer.json will be updated.</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_lockedRepository">
+                                        protected                                        <abbr title="Composer\DependencyResolver\?\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>
+                                                                                
+                                    </td>
+                <td>$lockedRepository</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requires">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;string,\Composer\Semver\Constraint\ConstraintInterface&gt;">ConstraintInterface&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$requires</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fixedPackages">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;string,\Composer\Package\BasePackage&gt;">BasePackage&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$fixedPackages</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lockedPackages">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;string,\Composer\Package\BasePackage&gt;">BasePackage&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$lockedPackages</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fixedLockedPackages">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;string,\Composer\Package\BasePackage&gt;">BasePackage&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$fixedLockedPackages</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateAllowList">
+                                        protected                                        string[]
+                                                                                
+                                    </td>
+                <td>$updateAllowList</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_updateAllowTransitiveDependencies">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$updateAllowTransitiveDependencies</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<abbr title="Composer\DependencyResolver\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>|null $lockedRepository = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requireName">requireName</a>(string $packageName, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fixPackage">fixPackage</a>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        
+                                            <p><p>Mark a package as currently present and having to remain installed</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_lockPackage">lockPackage</a>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        
+                                            <p><p>Mark a package as locked to a specific version but removable</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fixLockedPackage">fixLockedPackage</a>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        
+                                            <p><p>Marks a locked package fixed. So it's treated irremovable like a platform package.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unlockPackage">unlockPackage</a>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpdateAllowList">setUpdateAllowList</a>(array $updateAllowList, $updateAllowTransitiveDependencies)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdateAllowList">getUpdateAllowList</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdateAllowTransitiveDependencies">getUpdateAllowTransitiveDependencies</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUpdateAllowTransitiveRootDependencies">getUpdateAllowTransitiveRootDependencies</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRequires">getRequires</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFixedPackages">getFixedPackages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isFixedPackage">isFixedPackage</a>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLockedPackages">getLockedPackages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isLockedPackage">isLockedPackage</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFixedOrLockedPackages">getFixedOrLockedPackages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPresentMap">getPresentMap</a>(bool $packageIds = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFixedPackagesMap">getFixedPackagesMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\DependencyResolver\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLockedRepository">getLockedRepository</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restrictPackages">restrictPackages</a>(array $names)
+        
+                                            <p><p>Restricts the pool builder from loading other packages than those listed here</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRestrictedPackages">getRestrictedPackages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 60</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Composer\DependencyResolver\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>|null $lockedRepository = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>|null</td>
+                <td>$lockedRepository</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requireName">
+        <div class="location">at line 65</div>
+        <code>                    void
+    <strong>requireName</strong>(string $packageName, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fixPackage">
+        <div class="location">at line 84</div>
+        <code>                    void
+    <strong>fixPackage</strong>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mark a package as currently present and having to remain installed</p></p>                <p><p>This is used for platform packages which cannot be modified by Composer. A rule enforcing their installation is
+generated for dependency resolution. Partial updates with dependencies cannot in any way modify these packages.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lockPackage">
+        <div class="location">at line 99</div>
+        <code>                    void
+    <strong>lockPackage</strong>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mark a package as locked to a specific version but removable</p></p>                <p><p>This is used for lock file packages which need to be treated similar to fixed packages by the pool builder in
+that by default they should really only have the currently present version loaded and no remote alternatives.</p>
+<p>However unlike fixed packages there will not be a special rule enforcing their installation for the solver, so
+if nothing requires these packages they will be removed. Additionally in a partial update these packages can be
+unlocked, meaning other versions can be installed if explicitly requested as part of the update.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fixLockedPackage">
+        <div class="location">at line 111</div>
+        <code>                    void
+    <strong>fixLockedPackage</strong>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Marks a locked package fixed. So it's treated irremovable like a platform package.</p></p>                <p><p>This is necessary for the composer install step which verifies the lock file integrity and should not allow
+removal of any packages. At the same time lock packages there cannot simply be marked fixed, as error reporting
+would then report them as platform packages, so this still marks them as locked packages at the same time.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unlockPackage">
+        <div class="location">at line 117</div>
+        <code>                    void
+    <strong>unlockPackage</strong>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpdateAllowList">
+        <div class="location">at line 126</div>
+        <code>                    void
+    <strong>setUpdateAllowList</strong>(array $updateAllowList, $updateAllowTransitiveDependencies)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$updateAllowList</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$updateAllowTransitiveDependencies</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateAllowList">
+        <div class="location">at line 135</div>
+        <code>                    array
+    <strong>getUpdateAllowList</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateAllowTransitiveDependencies">
+        <div class="location">at line 140</div>
+        <code>                    bool
+    <strong>getUpdateAllowTransitiveDependencies</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateAllowTransitiveRootDependencies">
+        <div class="location">at line 145</div>
+        <code>                    bool
+    <strong>getUpdateAllowTransitiveRootDependencies</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequires">
+        <div class="location">at line 153</div>
+        <code>                    array
+    <strong>getRequires</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFixedPackages">
+        <div class="location">at line 161</div>
+        <code>                    array
+    <strong>getFixedPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFixedPackage">
+        <div class="location">at line 166</div>
+        <code>                    bool
+    <strong>isFixedPackage</strong>(<a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/BasePackage.html"><abbr title="Composer\Package\BasePackage">BasePackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLockedPackages">
+        <div class="location">at line 174</div>
+        <code>                    array
+    <strong>getLockedPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLockedPackage">
+        <div class="location">at line 179</div>
+        <code>                    bool
+    <strong>isLockedPackage</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFixedOrLockedPackages">
+        <div class="location">at line 187</div>
+        <code>                    array
+    <strong>getFixedOrLockedPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPresentMap">
+        <div class="location">at line 200</div>
+        <code>                    array
+    <strong>getPresentMap</strong>(bool $packageIds = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$packageIds</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFixedPackagesMap">
+        <div class="location">at line 220</div>
+        <code>                    array
+    <strong>getFixedPackagesMap</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLockedRepository">
+        <div class="location">at line 234</div>
+        <code>                    <abbr title="Composer\DependencyResolver\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>|null
+    <strong>getLockedRepository</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\DependencyResolver\Composer\Repository\LockArrayRepository">LockArrayRepository</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restrictPackages">
+        <div class="location">at line 244</div>
+        <code>                    void
+    <strong>restrictPackages</strong>(array $names)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Restricts the pool builder from loading other packages than those listed here</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$names</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRestrictedPackages">
+        <div class="location">at line 252</div>
+        <code>                    array|null
+    <strong>getRestrictedPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

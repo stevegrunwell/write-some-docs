@@ -1,0 +1,1095 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Downloader\GitDownloader |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ArchiveDownloader.html">
+							ArchiveDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloadManager.html">
+							DownloadManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FileDownloader.html">
+							FileDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FossilDownloader.html">
+							FossilDownloader
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Downloader.GitDownloader.html">
+							GitDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GzipDownloader.html">
+							GzipDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.HgDownloader.html">
+							HgDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PathDownloader.html">
+							PathDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PerforceDownloader.html">
+							PerforceDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PharDownloader.html">
+							PharDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.RarDownloader.html">
+							RarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.SvnDownloader.html">
+							SvnDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TarDownloader.html">
+							TarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsDownloader.html">
+							VcsDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.XzDownloader.html">
+							XzDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.ZipDownloader.html">
+							ZipDownloader
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ChangeReportInterface.html">
+							ChangeReportInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloaderInterface.html">
+							DownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DvcsDownloaderInterface.html">
+							DvcsDownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsCapableDownloaderInterface.html">
+							VcsCapableDownloaderInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.FilesystemException.html">
+							FilesystemException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.MaxFileSizeExceededException.html">
+							MaxFileSizeExceededException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TransportException.html">
+							TransportException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Downloader.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Downloader.GitDownloader.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Downloader.html">Downloader</a>\<a href="Composer.Downloader.GitDownloader.html">GitDownloader</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Downloader.VcsDownloader.html"><span title="Composer\Downloader\VcsDownloader">VcsDownloader</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Composer.Downloader.DvcsDownloaderInterface.html"><span title="Composer\Downloader\DvcsDownloaderInterface">DvcsDownloaderInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.Downloader.VcsDownloader.html"><span>Composer\Downloader\VcsDownloader</span></a>
+
+		implements
+			<a href="Composer.Downloader.DownloaderInterface.html"><span title="Composer\Downloader\DownloaderInterface">DownloaderInterface</span></a>, 
+			<a href="Composer.Downloader.ChangeReportInterface.html"><span title="Composer\Downloader\ChangeReportInterface">ChangeReportInterface</span></a>, 
+			<a href="Composer.Downloader.VcsCapableDownloaderInterface.html"><span title="Composer\Downloader\VcsCapableDownloaderInterface">VcsCapableDownloaderInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Downloader\GitDownloader</span></b>
+
+		implements
+			<a href="Composer.Downloader.DvcsDownloaderInterface.html"><span title="Composer\Downloader\DvcsDownloaderInterface">DvcsDownloaderInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Downloader.GitDownloader.html#30" title="Go to source code">Composer/Downloader/GitDownloader.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#52-56" title="Go to source code">__construct</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span>?<a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var> = <span class="php-kw">null</span></span>, <span>?<a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a> <var>$fs</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#___construct">						<code>Composer\Downloader\VcsDownloader::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doDownload" id="_doDownload">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#58-86" title="Go to source code">doDownload</a>(
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>,
+	<span>string <var>$path</var></span>,
+	<span>string <var>$url</var></span>,
+	<span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$prevPackage</var> = <span class="php-kw">null</span></span>,
+): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Downloads data needed to run an install/update later
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Downloads data needed to run an install/update later</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>package url</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package (in case of an update)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_doDownload">						<code>Composer\Downloader\VcsDownloader::doDownload()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doDownload">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doInstall" id="_doInstall">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#88-151" title="Go to source code">doInstall</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>, <span>string <var>$url</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Downloads specific package into specific folder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Downloads specific package into specific folder.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>package url</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_doInstall">						<code>Composer\Downloader\VcsDownloader::doInstall()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doInstall">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doUpdate" id="_doUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#153-216" title="Go to source code">doUpdate</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$initial</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$target</var></span>, <span>string <var>$path</var></span>, <span>string <var>$url</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Updates specific package in specific folder from initial to target version.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates specific package in specific folder from initial to target version.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$initial</var>&nbsp;&nbsp;</td>
+										<td><p>initial package</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$target</var>&nbsp;&nbsp;</td>
+										<td><p>updated package</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>package url</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_doUpdate">						<code>Composer\Downloader\VcsDownloader::doUpdate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLocalChanges" id="_getLocalChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#218-236" title="Go to source code">getLocalChanges</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks for changes to the local copy
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks for changes to the local copy</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>package directory</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>changes or null</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.ChangeReportInterface.html#_getLocalChanges">						<code>Composer\Downloader\ChangeReportInterface::getLocalChanges()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLocalChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUnpushedChanges" id="_getUnpushedChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#238-330" title="Go to source code">getUnpushedChanges</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks for unpushed changes to a current branch
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks for unpushed changes to a current branch</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package directory</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>package directory</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>changes or null</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.DvcsDownloaderInterface.html#_getUnpushedChanges">						<code>Composer\Downloader\DvcsDownloaderInterface::getUnpushedChanges()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUnpushedChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cleanChanges" id="_cleanChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#332-417" title="Go to source code">cleanChanges</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>, <span>bool <var>$update</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Prompt the user to check if changes should be stashed/removed or the operation aborted
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prompt the user to check if changes should be stashed/removed or the operation aborted</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$update</var>&nbsp;&nbsp;</td>
+										<td><p>if true (update) the changes can be stashed and reapplied after an update,
+if false (remove) the changes should be assumed to be lost if the operation is not aborted</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_cleanChanges">						<code>Composer\Downloader\VcsDownloader::cleanChanges()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cleanChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reapplyChanges" id="_reapplyChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#419-434" title="Go to source code">reapplyChanges</a>(<span>string <var>$path</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Reapply previously stashes changes if applicable, only called after an update (regardless if successful or not)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reapply previously stashes changes if applicable, only called after an update (regardless if successful or not)</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_reapplyChanges">						<code>Composer\Downloader\VcsDownloader::reapplyChanges()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reapplyChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateToCommit" id="_updateToCommit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#436-501" title="Go to source code">updateToCommit</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>, <span>string <var>$reference</var></span>, <span>string <var>$prettyVersion</var></span>): null|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Updates the given path to the given commit ref
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates the given path to the given commit ref</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>if a string is returned, it is the commit reference that was checked out if the original could not be found</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateToCommit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateOriginUrl" id="_updateOriginUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#503-507" title="Go to source code">updateOriginUrl</a>(<span>string <var>$path</var></span>, <span>string <var>$url</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateOriginUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPushUrl" id="_setPushUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#509-521" title="Go to source code">setPushUrl</a>(<span>string <var>$path</var></span>, <span>string <var>$url</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPushUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommitLogs" id="_getCommitLogs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#523-536" title="Go to source code">getCommitLogs</a>(<span>string <var>$fromReference</var></span>, <span>string <var>$toReference</var></span>, <span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Fetches the commit logs between two commits
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fetches the commit logs between two commits</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$fromReference</var>&nbsp;&nbsp;</td>
+										<td><p>the source reference</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$toReference</var>&nbsp;&nbsp;</td>
+										<td><p>the target reference</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>the package path</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_getCommitLogs">						<code>Composer\Downloader\VcsDownloader::getCommitLogs()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommitLogs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="discardChanges" id="_discardChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#538-552" title="Go to source code">discardChanges</a>(<span>string <var>$path</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_discardChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stashChanges" id="_stashChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#554-568" title="Go to source code">stashChanges</a>(<span>string <var>$path</var></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_stashChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="viewDiff" id="_viewDiff">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#570-581" title="Go to source code">viewDiff</a>(<span>string <var>$path</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_viewDiff">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="normalizePath" id="_normalizePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#583-602" title="Go to source code">normalizePath</a>(<span>string <var>$path</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_normalizePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasMetadataRepository" id="_hasMetadataRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#604-612" title="Go to source code">hasMetadataRepository</a>(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if VCS metadata repository has been initialized
+repository example: .git|.svn|.hg
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if VCS metadata repository has been initialized
+repository example: .git|.svn|.hg</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsDownloader.html#_hasMetadataRepository">						<code>Composer\Downloader\VcsDownloader::hasMetadataRepository()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasMetadataRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getShortHash" id="_getShortHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.GitDownloader.html#614-621" title="Go to source code">getShortHash</a>(<span>string <var>$reference</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getShortHash">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Downloader.VcsDownloader.html"><span>Composer\Downloader\VcsDownloader</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Downloader.VcsDownloader.html#_getInstallationSource">getInstallationSource()</a>, <a href="Composer.Downloader.VcsDownloader.html#_download">download()</a>, <a href="Composer.Downloader.VcsDownloader.html#_prepare">prepare()</a>, <a href="Composer.Downloader.VcsDownloader.html#_cleanup">cleanup()</a>, <a href="Composer.Downloader.VcsDownloader.html#_install">install()</a>, <a href="Composer.Downloader.VcsDownloader.html#_update">update()</a>, <a href="Composer.Downloader.VcsDownloader.html#_remove">remove()</a>, <a href="Composer.Downloader.VcsDownloader.html#_getVcsReference">getVcsReference()</a>, </code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.Downloader.VcsDownloader.html"><span>Composer\Downloader\VcsDownloader</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.Downloader.VcsDownloader.html#$io">$io</a></var>, <var><a href="Composer.Downloader.VcsDownloader.html#$config">$config</a></var>, <var><a href="Composer.Downloader.VcsDownloader.html#$process">$process</a></var>, <var><a href="Composer.Downloader.VcsDownloader.html#$filesystem">$filesystem</a></var>, <var><a href="Composer.Downloader.VcsDownloader.html#$hasCleanedChanges">$hasCleanedChanges</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

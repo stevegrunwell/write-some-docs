@@ -1,0 +1,2182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Command\ShowCommand | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Command_ShowCommand" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Command.html">Command</a></li><li class="backslash">\</li><li>ShowCommand</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ShowCommand    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ShowCommand</strong>        extends <a href="../../Composer/Command/BaseCommand.html"><abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a>
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Composer/Command/CompletionTrait.html"><abbr title="Composer\Command\CompletionTrait">CompletionTrait</abbr></a>    </div>
+                <div class="col-md-6"><p>Adds completion to arguments and options.</p></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_versionParser">
+                                        protected                                        <a href="../../Composer/Package/Version/VersionParser.html"><abbr title="Composer\Package\Version\VersionParser">VersionParser</abbr></a>
+                                                                                
+                                    </td>
+                <td>$versionParser</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_colors">
+                                        protected                                        string[]
+                                                                                
+                                    </td>
+                <td>$colors</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Console/Application.html"><abbr title="Composer\Console\Application">Application</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getApplication">getApplication</a>()
+        
+                                            <p><p>Gets the application instance for this command.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getApplication">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getComposer">getComposer</a>(bool $required = true, bool|null $disablePlugins = null, bool|null $disableScripts = null)
+        <small><span class="label label-danger">deprecated</span></small>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requireComposer">requireComposer</a>(bool|null $disablePlugins = null, bool|null $disableScripts = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/CompletionTrait.html#method_requireComposer">
+<abbr title="Composer\Command\CompletionTrait">CompletionTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Command\Composer\Composer">Composer</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tryComposer">tryComposer</a>(bool|null $disablePlugins = null, bool|null $disableScripts = null)
+        
+                                            <p><p>Retrieves the default Composer\Composer instance or null</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_tryComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setComposer">setComposer</a>(<a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a> $composer)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_setComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resetComposer">resetComposer</a>()
+        
+                                            <p><p>Removes the cached composer instance</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_resetComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isProxyCommand">isProxyCommand</a>()
+        
+                                            <p><p>Whether or not this command is meant to call another command.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_isProxyCommand">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIO">getIO</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getIO">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIO">setIO</a>(<a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_setIO">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_complete">complete</a>(<abbr title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</abbr> $input, <abbr title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</abbr> $suggestions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_complete">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_initialize">initialize</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_initialize">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPreferredInstallOptions">getPreferredInstallOptions</a>(<a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, bool $keepVcsRequiresPreferSource = false)
+        
+                                            <p><p>Returns preferSource and preferDist values based on the configuration.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getPreferredInstallOptions">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Filter/PlatformRequirementFilter/PlatformRequirementFilterInterface.html"><abbr title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPlatformRequirementFilter">getPlatformRequirementFilter</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getPlatformRequirementFilter">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Command\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_formatRequirements">formatRequirements</a>(array $requirements)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_formatRequirements">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_normalizeRequirements">normalizeRequirements</a>(array $requirements)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_normalizeRequirements">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderTable">renderTable</a>(array $table, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_renderTable">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTerminalWidth">getTerminalWidth</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getTerminalWidth">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuditFormat">getAuditFormat</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, string $optName = &#039;audit-format&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Composer/Command/BaseCommand.html#method_getAuditFormat">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_configure">configure</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_suggestPackageBasedOnMode">suggestPackageBasedOnMode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_execute">execute</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRootRequires">getRootRequires</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|string|string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getVersionStyle">getVersionStyle</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $latestPackage, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPackage">getPackage</a>(<a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $repos, string $name, <abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|string $version = null)
+        
+                                            <p><p>finds a package by name and version if provided</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_printPackageInfo">printPackageInfo</a>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null $latestPackage = null)
+        
+                                            <p><p>Prints package info.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_printMeta">printMeta</a>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null $latestPackage = null)
+        
+                                            <p><p>Prints package metadata.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_printVersions">printVersions</a>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo)
+        
+                                            <p><p>Prints all available versions of this package and highlights the installed one if any.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_printLinks">printLinks</a>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, string $linkType, string|null $title = null)
+        
+                                            <p><p>print link objects</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_printLicenses">printLicenses</a>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package)
+        
+                                            <p><p>Prints the licenses of a package with metadata</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_printPackageInfoAsJson">printPackageInfoAsJson</a>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null $latestPackage = null)
+        
+                                            <p><p>Prints package info in JSON format.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_initStyles">initStyles</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p><p>Init styles for tree</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_displayPackageTree">displayPackageTree</a>(array $arrayTree)
+        
+                                            <p><p>Display the tree</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_generatePackageTree">generatePackageTree</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $remoteRepos)
+        
+                                            <p><p>Generate the package tree</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_displayTree">displayTree</a>(<abbr title="Composer\Command\array&lt;string,array&lt;int,array&lt;string,array">array&lt;string,array&lt;int,array&lt;string,array</abbr>|<abbr title="Composer\Command\string&gt;&gt;">string&gt;&gt;</abbr>|string|<abbr title="Composer\Command\null&gt;">null&gt;</abbr>|string $package, array $packagesInTree, string $previousTreeBar = &#039;├&#039;, int $level = 1)
+        
+                                            <p><p>Display a package tree</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addTree">addTree</a>(string $name, <a href="../../Composer/Package/Link.html"><abbr title="Composer\Package\Link">Link</abbr></a> $link, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $remoteRepos, array $packagesInTree)
+        
+                                            <p><p>Display a package tree</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getApplication">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getApplication">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 60</div>
+        <code>                    <a href="../../Composer/Console/Application.html"><abbr title="Composer\Console\Application">Application</abbr></a>
+    <strong>getApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets the application instance for this command.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Console/Application.html"><abbr title="Composer\Console\Application">Application</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComposer">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 78</div>
+        <code>                    <a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a>|null
+    <strong>getComposer</strong>(bool $required = true, bool|null $disablePlugins = null, bool|null $disableScripts = null)
+        <small><span class="label label-danger">deprecated</span></small></code>
+    </h3>
+    <div class="details">    
+            <p>
+                <small><span class="label label-danger">deprecated</span></small>
+                            <tr>
+                    <td>since</td>
+                    <td>Composer 2.3.0 use requireComposer or tryComposer depending on whether you have $required set to true or false</td>
+                </tr>
+                    </p>
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$required</td>
+                <td><p>Should be set to false, or use <code>requireComposer</code> instead</p></td>
+            </tr>
+                    <tr>
+                <td>bool|null</td>
+                <td>$disablePlugins</td>
+                <td><p>If null, reads --no-plugins as default</p></td>
+            </tr>
+                    <tr>
+                <td>bool|null</td>
+                <td>$disableScripts</td>
+                <td><p>If null, reads --no-scripts as default</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requireComposer">
+        <div class="location">in <a href="../../Composer/Command/CompletionTrait.html#method_requireComposer">
+<abbr title="Composer\Command\CompletionTrait">CompletionTrait</abbr></a> at line 36</div>
+        <code>    abstract                <a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a>
+    <strong>requireComposer</strong>(bool|null $disablePlugins = null, bool|null $disableScripts = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|null</td>
+                <td>$disablePlugins</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool|null</td>
+                <td>$disableScripts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Composer/Command/BaseCommand.html#method_requireComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr>::requireComposer</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tryComposer">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_tryComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 122</div>
+        <code>                    <abbr title="Composer\Command\Composer\Composer">Composer</abbr>|null
+    <strong>tryComposer</strong>(bool|null $disablePlugins = null, bool|null $disableScripts = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves the default Composer\Composer instance or null</p></p>                <p><p>Use this instead of getComposer(false)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|null</td>
+                <td>$disablePlugins</td>
+                <td><p>If null, reads --no-plugins as default</p></td>
+            </tr>
+                    <tr>
+                <td>bool|null</td>
+                <td>$disableScripts</td>
+                <td><p>If null, reads --no-scripts as default</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Command\Composer\Composer">Composer</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setComposer">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_setComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 137</div>
+        <code>                    void
+    <strong>setComposer</strong>(<a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a> $composer)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Composer.html"><abbr title="Composer\Composer">Composer</abbr></a></td>
+                <td>$composer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetComposer">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_resetComposer">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 147</div>
+        <code>                    void
+    <strong>resetComposer</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes the cached composer instance</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isProxyCommand">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_isProxyCommand">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 160</div>
+        <code>                    bool
+    <strong>isProxyCommand</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Whether or not this command is meant to call another command.</p></p>                <p><p>This is mainly needed to avoid duplicated warnings messages.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIO">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getIO">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 168</div>
+        <code>                    <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a>
+    <strong>getIO</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIO">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_setIO">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 185</div>
+        <code>                    void
+    <strong>setIO</strong>(<a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_complete">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_complete">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 197</div>
+        <code>                    void
+    <strong>complete</strong>(<abbr title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</abbr> $input, <abbr title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</abbr> $suggestions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</abbr></td>
+                <td>$suggestions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_initialize">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 221</div>
+        <code>            protected        void
+    <strong>initialize</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreferredInstallOptions">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getPreferredInstallOptions">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 287</div>
+        <code>            protected        bool[]
+    <strong>getPreferredInstallOptions</strong>(<a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, bool $keepVcsRequiresPreferSource = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns preferSource and preferDist values based on the configuration.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$keepVcsRequiresPreferSource</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool[]</td>
+            <td><p>An array composed of the preferSource and preferDist values</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlatformRequirementFilter">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getPlatformRequirementFilter">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 340</div>
+        <code>            protected        <a href="../../Composer/Filter/PlatformRequirementFilter/PlatformRequirementFilterInterface.html"><abbr title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</abbr></a>
+    <strong>getPlatformRequirementFilter</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Filter/PlatformRequirementFilter/PlatformRequirementFilterInterface.html"><abbr title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatRequirements">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_formatRequirements">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 363</div>
+        <code>            protected        <abbr title="Composer\Command\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+    <strong>formatRequirements</strong>(array $requirements)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$requirements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Command\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeRequirements">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_normalizeRequirements">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 382</div>
+        <code>            protected        
+    <strong>normalizeRequirements</strong>(array $requirements)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$requirements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderTable">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_renderTable">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 394</div>
+        <code>            protected        void
+    <strong>renderTable</strong>(array $table, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTerminalWidth">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getTerminalWidth">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 404</div>
+        <code>            protected        int
+    <strong>getTerminalWidth</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuditFormat">
+        <div class="location">in <a href="../../Composer/Command/BaseCommand.html#method_getAuditFormat">
+<abbr title="Composer\Command\BaseCommand">BaseCommand</abbr></a> at line 423</div>
+        <code>            protected        string
+    <strong>getAuditFormat</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, string $optName = &#039;audit-format&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$optName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configure">
+        <div class="location">at line 77</div>
+        <code>            protected        void
+    <strong>configure</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_suggestPackageBasedOnMode">
+        <div class="location">at line 119</div>
+        <code>            protected        <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+    <strong>suggestPackageBasedOnMode</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line 134</div>
+        <code>            protected        int
+    <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRootRequires">
+        <div class="location">at line 702</div>
+        <code>            protected        array
+    <strong>getRootRequires</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersionStyle">
+        <div class="location">at line 720</div>
+        <code>            protected        array|string|string[]
+    <strong>getVersionStyle</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $latestPackage, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$latestPackage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string|string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPackage">
+        <div class="location">at line 732</div>
+        <code>            protected        array
+    <strong>getPackage</strong>(<a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $repos, string $name, <abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|string $version = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>finds a package by name and version if provided</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a></td>
+                <td>$repos</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|string</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printPackageInfo">
+        <div class="location">at line 782</div>
+        <code>            protected        void
+    <strong>printPackageInfo</strong>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null $latestPackage = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Prints package info.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$versions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null</td>
+                <td>$latestPackage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printMeta">
+        <div class="location">at line 807</div>
+        <code>            protected        void
+    <strong>printMeta</strong>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null $latestPackage = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Prints package metadata.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$versions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null</td>
+                <td>$latestPackage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printVersions">
+        <div class="location">at line 878</div>
+        <code>            protected        void
+    <strong>printVersions</strong>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Prints all available versions of this package and highlights the installed one if any.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$versions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printLinks">
+        <div class="location">at line 904</div>
+        <code>            protected        void
+    <strong>printLinks</strong>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, string $linkType, string|null $title = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>print link objects</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$linkType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printLicenses">
+        <div class="location">at line 920</div>
+        <code>            protected        void
+    <strong>printLicenses</strong>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Prints the licenses of a package with metadata</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printPackageInfoAsJson">
+        <div class="location">at line 950</div>
+        <code>            protected        void
+    <strong>printPackageInfoAsJson</strong>(<a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a> $package, array $versions, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null $latestPackage = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Prints package info in JSON format.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/CompletePackageInterface.html"><abbr title="Composer\Package\CompletePackageInterface">CompletePackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$versions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Command\Composer\Package\PackageInterface">PackageInterface</abbr>|null</td>
+                <td>$latestPackage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initStyles">
+        <div class="location">at line 1130</div>
+        <code>            protected        void
+    <strong>initStyles</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Init styles for tree</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_displayPackageTree">
+        <div class="location">at line 1151</div>
+        <code>            protected        void
+    <strong>displayPackageTree</strong>(array $arrayTree)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Display the tree</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrayTree</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generatePackageTree">
+        <div class="location">at line 1201</div>
+        <code>            protected        array
+    <strong>generatePackageTree</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $remoteRepos)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generate the package tree</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a></td>
+                <td>$remoteRepos</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_displayTree">
+        <div class="location">at line 1244</div>
+        <code>            protected        void
+    <strong>displayTree</strong>(<abbr title="Composer\Command\array&lt;string,array&lt;int,array&lt;string,array">array&lt;string,array&lt;int,array&lt;string,array</abbr>|<abbr title="Composer\Command\string&gt;&gt;">string&gt;&gt;</abbr>|string|<abbr title="Composer\Command\null&gt;">null&gt;</abbr>|string $package, array $packagesInTree, string $previousTreeBar = &#039;├&#039;, int $level = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Display a package tree</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Command\array&lt;string,array&lt;int,array&lt;string,array">array&lt;string,array&lt;int,array&lt;string,array</abbr>|<abbr title="Composer\Command\string&gt;&gt;">string&gt;&gt;</abbr>|string|<abbr title="Composer\Command\null&gt;">null&gt;</abbr>|string</td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$packagesInTree</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$previousTreeBar</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTree">
+        <div class="location">at line 1298</div>
+        <code>            protected        array
+    <strong>addTree</strong>(string $name, <a href="../../Composer/Package/Link.html"><abbr title="Composer\Package\Link">Link</abbr></a> $link, <a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a> $installedRepo, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $remoteRepos, array $packagesInTree)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Display a package tree</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/Link.html"><abbr title="Composer\Package\Link">Link</abbr></a></td>
+                <td>$link</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepository.html"><abbr title="Composer\Repository\InstalledRepository">InstalledRepository</abbr></a></td>
+                <td>$installedRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a></td>
+                <td>$remoteRepos</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$packagesInTree</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

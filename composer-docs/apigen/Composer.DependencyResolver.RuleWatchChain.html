@@ -1,0 +1,422 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\DependencyResolver\RuleWatchChain |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Decisions.html">
+							Decisions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.DefaultPolicy.html">
+							DefaultPolicy
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.GenericRule.html">
+							GenericRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.MultiConflictRule.html">
+							MultiConflictRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Pool.html">
+							Pool
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolBuilder.html">
+							PoolBuilder
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolOptimizer.html">
+							PoolOptimizer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Problem.html">
+							Problem
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule.html">
+							Rule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule2Literals.html">
+							Rule2Literals
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetGenerator.html">
+							RuleSetGenerator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetIterator.html">
+							RuleSetIterator
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.DependencyResolver.RuleWatchChain.html">
+							RuleWatchChain
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchGraph.html">
+							RuleWatchGraph
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchNode.html">
+							RuleWatchNode
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Solver.html">
+							Solver
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.PolicyInterface.html">
+							PolicyInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.SolverBugException.html">
+							SolverBugException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.SolverProblemsException.html">
+							SolverProblemsException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.DependencyResolver.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.DependencyResolver.RuleWatchChain.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>\<a href="Composer.DependencyResolver.RuleWatchChain.html">RuleWatchChain</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="SplDoublyLinkedList.html"><span title="SplDoublyLinkedList">SplDoublyLinkedList</span></a>&lt;<a href="Composer.DependencyResolver.RuleWatchNode.html"><span title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</span></a>&gt;</code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>An extension of SplDoublyLinkedList with seek and removal of current element</p>
+<p>SplDoublyLinkedList only allows deleting a particular offset and has no
+method to set the internal iterator to a particular offset.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="SplDoublyLinkedList.html"><span>SplDoublyLinkedList</span></a>
+
+		implements
+			<a href="Iterator.html"><span title="Iterator">Iterator</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Serializable.html"><span title="Serializable">Serializable</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\DependencyResolver\RuleWatchChain</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.DependencyResolver.RuleWatchChain.html#24" title="Go to source code">Composer/DependencyResolver/RuleWatchChain.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="seek" id="_seek">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleWatchChain.html#26-35" title="Go to source code">seek</a>(<span>int <var>$offset</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Moves the internal iterator to the specified offset
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Moves the internal iterator to the specified offset</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$offset</var>&nbsp;&nbsp;</td>
+										<td><p>The offset to seek to.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_seek">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.RuleWatchChain.html#37-50" title="Go to source code">remove</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes the current element from the list
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes the current element from the list</p>
+<p>As SplDoublyLinkedList only allows deleting a particular offset and
+incorrectly sets the internal iterator if you delete the current value
+this method sets the internal iterator back to the following element
+using the seek method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="SplDoublyLinkedList.html"><span>SplDoublyLinkedList</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="SplDoublyLinkedList.html#_add">add()</a>, <a href="SplDoublyLinkedList.html#_pop">pop()</a>, <a href="SplDoublyLinkedList.html#_shift">shift()</a>, <a href="SplDoublyLinkedList.html#_push">push()</a>, <a href="SplDoublyLinkedList.html#_unshift">unshift()</a>, <a href="SplDoublyLinkedList.html#_top">top()</a>, <a href="SplDoublyLinkedList.html#_bottom">bottom()</a>, <a href="SplDoublyLinkedList.html#___debugInfo">__debugInfo()</a>, <a href="SplDoublyLinkedList.html#_count">count()</a>, <a href="SplDoublyLinkedList.html#_isEmpty">isEmpty()</a>, <a href="SplDoublyLinkedList.html#_setIteratorMode">setIteratorMode()</a>, <a href="SplDoublyLinkedList.html#_getIteratorMode">getIteratorMode()</a>, <a href="SplDoublyLinkedList.html#_offsetExists">offsetExists()</a>, <a href="SplDoublyLinkedList.html#_offsetGet">offsetGet()</a>, <a href="SplDoublyLinkedList.html#_offsetSet">offsetSet()</a>, <a href="SplDoublyLinkedList.html#_offsetUnset">offsetUnset()</a>, <a href="SplDoublyLinkedList.html#_rewind">rewind()</a>, <a href="SplDoublyLinkedList.html#_current">current()</a>, <a href="SplDoublyLinkedList.html#_key">key()</a>, <a href="SplDoublyLinkedList.html#_prev">prev()</a>, <a href="SplDoublyLinkedList.html#_next">next()</a>, <a href="SplDoublyLinkedList.html#_valid">valid()</a>, <a href="SplDoublyLinkedList.html#_unserialize">unserialize()</a>, <a href="SplDoublyLinkedList.html#_serialize">serialize()</a>, <a href="SplDoublyLinkedList.html#___serialize">__serialize()</a>, <a href="SplDoublyLinkedList.html#___unserialize">__unserialize()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

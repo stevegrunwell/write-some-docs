@@ -1,0 +1,653 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class DirectoryIterator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-includeIfExists.html">
+							includeIfExists
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="DirectoryIterator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="DirectoryIterator.html">DirectoryIterator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="SplFileInfo.html"><span title="SplFileInfo">SplFileInfo</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="SplFileInfo.html"><span>SplFileInfo</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">DirectoryIterator</span></b>
+
+		implements
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="FilesystemIterator.html"><span>FilesystemIterator</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="RecursiveDirectoryIterator.html"><span>RecursiveDirectoryIterator</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Phar.html"><span>Phar</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	<li>
+<a href="PharData.html"><span>PharData</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>string <var>$directory</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#___construct">						<code>SplFileInfo::__construct()</code></a>				</li>
+		</ul>
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="FilesystemIterator.html#___construct">						<code>FilesystemIterator::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFilename" id="_getFilename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFilename(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#_getFilename">						<code>SplFileInfo::getFilename()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFilename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExtension" id="_getExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExtension(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#_getExtension">						<code>SplFileInfo::getExtension()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBasename" id="_getBasename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBasename(<span>string <var>$suffix</var> = <span class="php-str">""</span></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#_getBasename">						<code>SplFileInfo::getBasename()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBasename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDot" id="_isDot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDot(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rewind" id="_rewind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rewind(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="FilesystemIterator.html#_rewind">						<code>FilesystemIterator::rewind()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Iterator.html#_rewind">						<code>Iterator::rewind()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rewind">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="valid" id="_valid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>valid(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Iterator.html#_valid">						<code>Iterator::valid()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_valid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="key" id="_key">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>key(): int|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="FilesystemIterator.html#_key">						<code>FilesystemIterator::key()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Iterator.html#_key">						<code>Iterator::key()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_key">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="current" id="_current">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>current(): <b><span class="active" title="DirectoryIterator">DirectoryIterator</span></b></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="FilesystemIterator.html#_current">						<code>FilesystemIterator::current()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Iterator.html#_current">						<code>Iterator::current()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_current">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="next" id="_next">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>next(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Iterator.html#_next">						<code>Iterator::next()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_next">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="seek" id="_seek">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>seek(<span>int <var>$offset</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="SeekableIterator.html#_seek">						<code>SeekableIterator::seek()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_seek">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#___toString">						<code>SplFileInfo::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="SplFileInfo.html"><span>SplFileInfo</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="SplFileInfo.html#_getPath">getPath()</a>, <a href="SplFileInfo.html#_getPathname">getPathname()</a>, <a href="SplFileInfo.html#_getPerms">getPerms()</a>, <a href="SplFileInfo.html#_getInode">getInode()</a>, <a href="SplFileInfo.html#_getSize">getSize()</a>, <a href="SplFileInfo.html#_getOwner">getOwner()</a>, <a href="SplFileInfo.html#_getGroup">getGroup()</a>, <a href="SplFileInfo.html#_getATime">getATime()</a>, <a href="SplFileInfo.html#_getMTime">getMTime()</a>, <a href="SplFileInfo.html#_getCTime">getCTime()</a>, <a href="SplFileInfo.html#_getType">getType()</a>, <a href="SplFileInfo.html#_isWritable">isWritable()</a>, <a href="SplFileInfo.html#_isReadable">isReadable()</a>, <a href="SplFileInfo.html#_isExecutable">isExecutable()</a>, <a href="SplFileInfo.html#_isFile">isFile()</a>, <a href="SplFileInfo.html#_isDir">isDir()</a>, <a href="SplFileInfo.html#_isLink">isLink()</a>, <a href="SplFileInfo.html#_getLinkTarget">getLinkTarget()</a>, <a href="SplFileInfo.html#_getRealPath">getRealPath()</a>, <a href="SplFileInfo.html#_getFileInfo">getFileInfo()</a>, <a href="SplFileInfo.html#_getPathInfo">getPathInfo()</a>, <a href="SplFileInfo.html#_openFile">openFile()</a>, <a href="SplFileInfo.html#_setFileClass">setFileClass()</a>, <a href="SplFileInfo.html#_setInfoClass">setInfoClass()</a>, <a href="SplFileInfo.html#___debugInfo">__debugInfo()</a>, <a href="SplFileInfo.html#__bad_state_ex" class="deprecated">_bad_state_ex()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

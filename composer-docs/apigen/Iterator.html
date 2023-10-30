@@ -1,0 +1,571 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Iterator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-includeIfExists.html">
+							includeIfExists
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Iterator.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="Iterator.html">Iterator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Traversable.html"><span title="Traversable">Traversable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Iterator</span></b>
+		extends
+			<a href="Traversable.html"><span title="Traversable">Traversable</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.DependencyResolver.RuleSetIterator.html"><span>Composer\DependencyResolver\RuleSetIterator</span></a>
+
+		implements
+			<b><span class="active" title="Iterator">Iterator</span></b>&lt;<a href="Composer.DependencyResolver.RuleSet.html"><span title="Composer\DependencyResolver\RuleSet">RuleSet</span></a>::TYPE_*, <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>&gt;
+
+	</li>
+	<li>
+<a href="Composer.DependencyResolver.Decisions.html"><span>Composer\DependencyResolver\Decisions</span></a>
+
+		implements
+			<b><span class="active" title="Iterator">Iterator</span></b>&lt;array{0: int, 1: <a href="Composer.DependencyResolver.Rule.html"><span title="Composer\DependencyResolver\Rule">Rule</span></a>}&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+	</li>
+	<li>
+<a href="SplDoublyLinkedList.html"><span>SplDoublyLinkedList</span></a>
+
+		implements
+			<b><span class="active" title="Iterator">Iterator</span></b>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Serializable.html"><span title="Serializable">Serializable</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.DependencyResolver.RuleWatchChain.html"><span>Composer\DependencyResolver\RuleWatchChain</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="RecursiveIterator.html"><span>RecursiveIterator</span></a>
+		extends
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="RecursiveDirectoryIterator.html"><span>RecursiveDirectoryIterator</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Phar.html"><span>Phar</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	<li>
+<a href="PharData.html"><span>PharData</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="SplFileObject.html"><span>SplFileObject</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>, 
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="SeekableIterator.html"><span>SeekableIterator</span></a>
+		extends
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="DirectoryIterator.html"><span>DirectoryIterator</span></a>
+
+		implements
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="FilesystemIterator.html"><span>FilesystemIterator</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="RecursiveDirectoryIterator.html"><span>RecursiveDirectoryIterator</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Phar.html"><span>Phar</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	<li>
+<a href="PharData.html"><span>PharData</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="SplFileObject.html"><span>SplFileObject</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>, 
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OuterIterator.html"><span>OuterIterator</span></a>
+		extends
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="IteratorIterator.html"><span>IteratorIterator</span></a>
+
+		implements
+			<a href="OuterIterator.html"><span title="OuterIterator">OuterIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="FilterIterator.html"><span>FilterIterator</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.Archiver.ArchivableFilesFilter.html"><span>Composer\Package\Archiver\ArchivableFilesFilter</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Package.Archiver.ArchivableFilesFinder.html"><span>Composer\Package\Archiver\ArchivableFilesFinder</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="current" id="_current">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>current(): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.RuleSetIterator.html#_current">						<code>Composer\DependencyResolver\RuleSetIterator::current()</code></a>				</li>
+				<li>
+<a href="Composer.DependencyResolver.Decisions.html#_current">						<code>Composer\DependencyResolver\Decisions::current()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_current">						<code>IteratorIterator::current()</code></a>				</li>
+				<li>
+<a href="DirectoryIterator.html#_current">						<code>DirectoryIterator::current()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_current">						<code>SplFileObject::current()</code></a>				</li>
+				<li>
+<a href="SplDoublyLinkedList.html#_current">						<code>SplDoublyLinkedList::current()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_current">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="next" id="_next">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>next(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.RuleSetIterator.html#_next">						<code>Composer\DependencyResolver\RuleSetIterator::next()</code></a>				</li>
+				<li>
+<a href="Composer.DependencyResolver.Decisions.html#_next">						<code>Composer\DependencyResolver\Decisions::next()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_next">						<code>IteratorIterator::next()</code></a>				</li>
+				<li>
+<a href="DirectoryIterator.html#_next">						<code>DirectoryIterator::next()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_next">						<code>SplFileObject::next()</code></a>				</li>
+				<li>
+<a href="SplDoublyLinkedList.html#_next">						<code>SplDoublyLinkedList::next()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_next">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="key" id="_key">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>key(): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.RuleSetIterator.html#_key">						<code>Composer\DependencyResolver\RuleSetIterator::key()</code></a>				</li>
+				<li>
+<a href="Composer.DependencyResolver.Decisions.html#_key">						<code>Composer\DependencyResolver\Decisions::key()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_key">						<code>IteratorIterator::key()</code></a>				</li>
+				<li>
+<a href="DirectoryIterator.html#_key">						<code>DirectoryIterator::key()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_key">						<code>SplFileObject::key()</code></a>				</li>
+				<li>
+<a href="SplDoublyLinkedList.html#_key">						<code>SplDoublyLinkedList::key()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_key">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="valid" id="_valid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>valid(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.RuleSetIterator.html#_valid">						<code>Composer\DependencyResolver\RuleSetIterator::valid()</code></a>				</li>
+				<li>
+<a href="Composer.DependencyResolver.Decisions.html#_valid">						<code>Composer\DependencyResolver\Decisions::valid()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_valid">						<code>IteratorIterator::valid()</code></a>				</li>
+				<li>
+<a href="DirectoryIterator.html#_valid">						<code>DirectoryIterator::valid()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_valid">						<code>SplFileObject::valid()</code></a>				</li>
+				<li>
+<a href="SplDoublyLinkedList.html#_valid">						<code>SplDoublyLinkedList::valid()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_valid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rewind" id="_rewind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rewind(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.RuleSetIterator.html#_rewind">						<code>Composer\DependencyResolver\RuleSetIterator::rewind()</code></a>				</li>
+				<li>
+<a href="Composer.DependencyResolver.Decisions.html#_rewind">						<code>Composer\DependencyResolver\Decisions::rewind()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_rewind">						<code>IteratorIterator::rewind()</code></a>				</li>
+				<li>
+<a href="DirectoryIterator.html#_rewind">						<code>DirectoryIterator::rewind()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_rewind">						<code>SplFileObject::rewind()</code></a>				</li>
+				<li>
+<a href="SplDoublyLinkedList.html#_rewind">						<code>SplDoublyLinkedList::rewind()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rewind">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

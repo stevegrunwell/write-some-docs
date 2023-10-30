@@ -1,0 +1,736 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Repository\RepositoryManager |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.Vcs.html">Vcs</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Repository.ArrayRepository.html">
+							ArrayRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.ArtifactRepository.html">
+							ArtifactRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.ComposerRepository.html">
+							ComposerRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.CompositeRepository.html">
+							CompositeRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.FilesystemRepository.html">
+							FilesystemRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.FilterRepository.html">
+							FilterRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.InstalledArrayRepository.html">
+							InstalledArrayRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.InstalledFilesystemRepository.html">
+							InstalledFilesystemRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.InstalledRepository.html">
+							InstalledRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.LockArrayRepository.html">
+							LockArrayRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.PackageRepository.html">
+							PackageRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.PathRepository.html">
+							PathRepository
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Repository.PearRepository.html">
+							PearRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.PlatformRepository.html">
+							PlatformRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.RepositoryFactory.html">
+							RepositoryFactory
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Repository.RepositoryManager.html">
+							RepositoryManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.RepositorySet.html">
+							RepositorySet
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.RepositoryUtils.html">
+							RepositoryUtils
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.RootPackageRepository.html">
+							RootPackageRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.VcsRepository.html">
+							VcsRepository
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.WritableArrayRepository.html">
+							WritableArrayRepository
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Repository.ConfigurableRepositoryInterface.html">
+							ConfigurableRepositoryInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.InstalledRepositoryInterface.html">
+							InstalledRepositoryInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.RepositoryInterface.html">
+							RepositoryInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.VersionCacheInterface.html">
+							VersionCacheInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.WritableRepositoryInterface.html">
+							WritableRepositoryInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Repository.InvalidRepositoryException.html">
+							InvalidRepositoryException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Repository.RepositorySecurityException.html">
+							RepositorySecurityException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Repository.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Repository.RepositoryManager.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Repository.html">Repository</a>\<a href="Composer.Repository.RepositoryManager.html">RepositoryManager</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Repositories manager.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Repository.RepositoryManager.html#29" title="Go to source code">Composer/Repository/RepositoryManager.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#48-55" title="Go to source code">__construct</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>,
+	<span><a href="Composer.Util.HttpDownloader.html"><span title="Composer\Util\HttpDownloader">HttpDownloader</span></a> <var>$httpDownloader</var></span>,
+	<span>?<a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a> <var>$eventDispatcher</var> = <span class="php-kw">null</span></span>,
+	<span>?<a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findPackage" id="_findPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#57-73" title="Go to source code">findPackage</a>(<span>string <var>$name</var></span>, <span>string|<span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span> <var>$constraint</var></span>): ?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Searches for a package by its name and version in managed repositories.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Searches for a package by its name and version in managed repositories.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>package name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$constraint</var>&nbsp;&nbsp;</td>
+										<td><p>package version or version constraint to match against</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findPackages" id="_findPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#75-92" title="Go to source code">findPackages</a>(<span>string <var>$name</var></span>, <span>string|<span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span> <var>$constraint</var></span>): <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Searches for all packages matching a name and optionally a version in managed repositories.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Searches for all packages matching a name and optionally a version in managed repositories.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>package name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$constraint</var>&nbsp;&nbsp;</td>
+										<td><p>package version or version constraint to match against</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRepository" id="_addRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#94-102" title="Go to source code">addRepository</a>(<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$repository</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds repository
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds repository</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repository</var>&nbsp;&nbsp;</td>
+										<td><p>repository instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prependRepository" id="_prependRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#104-114" title="Go to source code">prependRepository</a>(<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$repository</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a repository to the beginning of the chain
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a repository to the beginning of the chain</p>
+<p>This is useful when injecting additional repositories that should trump Packagist, e.g. from a plugin.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repository</var>&nbsp;&nbsp;</td>
+										<td><p>repository instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prependRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createRepository" id="_createRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#116-148" title="Go to source code">createRepository</a>(<span>string <var>$type</var></span>, <span>array&lt;string, mixed&gt; <var>$config</var></span>, <span>string <var>$name</var> = <span class="php-kw">null</span></span>): <a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a new repository for a specific installation type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a new repository for a specific installation type.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>repository type</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>repository configuration</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>repository name</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if repository for provided type is not registered</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRepositoryClass" id="_setRepositoryClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#150-159" title="Go to source code">setRepositoryClass</a>(<span>string <var>$type</var></span>, <span>class-string&lt;<a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a>&gt; <var>$class</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Stores repository class for a specific installation type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Stores repository class for a specific installation type.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>installation type</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$class</var>&nbsp;&nbsp;</td>
+										<td><p>class name of the repo implementation</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRepositoryClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRepositories" id="_getRepositories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#161-169" title="Go to source code">getRepositories</a>(): <a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns all repositories, except local one.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns all repositories, except local one.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRepositories">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLocalRepository" id="_setLocalRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#171-179" title="Go to source code">setLocalRepository</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repository</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets local repository for the project.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets local repository for the project.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repository</var>&nbsp;&nbsp;</td>
+										<td><p>repository instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLocalRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLocalRepository" id="_getLocalRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Repository.RepositoryManager.html#181-187" title="Go to source code">getLocalRepository</a>(): <a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns local repository for the project.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns local repository for the project.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLocalRepository">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

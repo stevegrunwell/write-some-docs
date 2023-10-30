@@ -1,0 +1,471 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Script\Event |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Script.Event.html">
+							Event
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Script.ScriptEvents.html">
+							ScriptEvents
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Script.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Script.Event.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Script.html">Script</a>\<a href="Composer.Script.Event.html">Event</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>The script event class</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.EventDispatcher.Event.html"><span>Composer\EventDispatcher\Event</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Script\Event</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Script.Event.html#25" title="Go to source code">Composer/Script/Event.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Script.Event.html#47-63" title="Go to source code">__construct</a>(
+	<span>string <var>$name</var></span>,
+	<span><a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a> <var>$composer</var></span>,
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span>bool <var>$devMode</var> = <span class="php-kw">false</span></span>,
+	<span>array&lt;string|int|float|bool|null&gt; <var>$args</var> = []</span>,
+	<span>mixed[] <var>$flags</var> = []</span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The event name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$composer</var>&nbsp;&nbsp;</td>
+										<td><p>The composer object</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>The IOInterface object</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$devMode</var>&nbsp;&nbsp;</td>
+										<td><p>Whether or not we are in dev mode</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$args</var>&nbsp;&nbsp;</td>
+										<td><p>Arguments passed by the user</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$flags</var>&nbsp;&nbsp;</td>
+										<td><p>Optional flags to pass data not as argument</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.EventDispatcher.Event.html#___construct">						<code>Composer\EventDispatcher\Event::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getComposer" id="_getComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Script.Event.html#65-71" title="Go to source code">getComposer</a>(): <a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the composer instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the composer instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIO" id="_getIO">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Script.Event.html#73-79" title="Go to source code">getIO</a>(): <a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the IO instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the IO instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIO">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDevMode" id="_isDevMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Script.Event.html#81-87" title="Go to source code">isDevMode</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the dev mode flag
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the dev mode flag</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDevMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOriginatingEvent" id="_getOriginatingEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Script.Event.html#89-97" title="Go to source code">getOriginatingEvent</a>(): ?<a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the originating event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the originating event.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOriginatingEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOriginatingEvent" id="_setOriginatingEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Script.Event.html#99-109" title="Go to source code">setOriginatingEvent</a>(<span><a href="Composer.EventDispatcher.Event.html"><span title="Composer\EventDispatcher\Event">Event</span></a> <var>$event</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the originating event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the originating event.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOriginatingEvent">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.EventDispatcher.Event.html"><span>Composer\EventDispatcher\Event</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.EventDispatcher.Event.html#_getName">getName()</a>, <a href="Composer.EventDispatcher.Event.html#_getArguments">getArguments()</a>, <a href="Composer.EventDispatcher.Event.html#_getFlags">getFlags()</a>, <a href="Composer.EventDispatcher.Event.html#_isPropagationStopped">isPropagationStopped()</a>, <a href="Composer.EventDispatcher.Event.html#_stopPropagation">stopPropagation()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.EventDispatcher.Event.html"><span>Composer\EventDispatcher\Event</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.EventDispatcher.Event.html#$name">$name</a></var>, <var><a href="Composer.EventDispatcher.Event.html#$args">$args</a></var>, <var><a href="Composer.EventDispatcher.Event.html#$flags">$flags</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

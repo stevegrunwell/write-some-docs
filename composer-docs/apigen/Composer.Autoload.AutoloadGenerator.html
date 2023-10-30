@@ -1,0 +1,1018 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Autoload\AutoloadGenerator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Autoload.AutoloadGenerator.html">
+							AutoloadGenerator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Autoload.ClassLoader.html">
+							ClassLoader
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Autoload.ClassMapGenerator.html">
+							ClassMapGenerator
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-Composer.Autoload.composerRequire.html">
+							composerRequire
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Autoload.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Autoload.AutoloadGenerator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Autoload.html">Autoload</a>\<a href="Composer.Autoload.AutoloadGenerator.html">AutoloadGenerator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Autoload.AutoloadGenerator.html#42" title="Go to source code">Composer/Autoload/AutoloadGenerator.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#89-95" title="Go to source code">__construct</a>(<span><a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a> <var>$eventDispatcher</var></span>, <span>?<a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDevMode" id="_setDevMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#97-103" title="Go to source code">setDevMode</a>(<span>bool <var>$devMode</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDevMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setClassMapAuthoritative" id="_setClassMapAuthoritative">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#105-113" title="Go to source code">setClassMapAuthoritative</a>(<span>bool <var>$classMapAuthoritative</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether generated autoloader considers the class map authoritative.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether generated autoloader considers the class map authoritative.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setClassMapAuthoritative">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setApcu" id="_setApcu">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#115-124" title="Go to source code">setApcu</a>(<span>bool <var>$apcu</var></span>, <span>?string <var>$apcuPrefix</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether generated autoloader considers APCu caching.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether generated autoloader considers APCu caching.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setApcu">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRunScripts" id="_setRunScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#126-134" title="Go to source code">setRunScripts</a>(<span>bool <var>$runScripts</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether to run scripts or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether to run scripts or not</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRunScripts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDryRun" id="_setDryRun">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#136-142" title="Go to source code">setDryRun</a>(<span>bool <var>$dryRun</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether to run in drymode or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether to run in drymode or not</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDryRun">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIgnorePlatformRequirements" id="_setIgnorePlatformRequirements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#144-161" title="Go to source code"><span class="deprecated">setIgnorePlatformRequirements</span></a>(<span>bool|string[] <var>$ignorePlatformReqs</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether platform requirements should be ignored.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether platform requirements should be ignored.</p>
+<p>If this is set to true, the platform check file will not be generated
+If this is set to false, the platform check file will be generated with all requirements
+If this is set to string[], those packages will be ignored from the platform check file</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>use setPlatformRequirementFilter instead</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIgnorePlatformRequirements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPlatformRequirementFilter" id="_setPlatformRequirementFilter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#163-169" title="Go to source code">setPlatformRequirementFilter</a>(<span><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPlatformRequirementFilter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dump" id="_dump">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#171-460" title="Go to source code">dump</a>(
+	<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>,
+	<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$localRepo</var></span>,
+	<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a> <var>$rootPackage</var></span>,
+	<span><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a> <var>$installationManager</var></span>,
+	<span>string <var>$targetDir</var></span>,
+	<span>bool <var>$scanPsrPackages</var> = <span class="php-kw">false</span></span>,
+	<span>?string <var>$suffix</var> = <span class="php-kw">null</span></span>,
+	<span>?<a href="Composer.Package.Locker.html"><span title="Composer\Package\Locker">Locker</span></a> <var>$locker</var> = <span class="php-kw">null</span></span>,
+): <span title="Composer\ClassMapGenerator\ClassMap">ClassMap</span></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><span>Seld\JsonLint\ParsingException</span></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dump">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildPackageMap" id="_buildPackageMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#491-512" title="Go to source code">buildPackageMap</a>(
+	<span><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a> <var>$installationManager</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$rootPackage</var></span>,
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>[] <var>$packages</var></span>,
+): non-empty-array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildPackageMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validatePackage" id="_validatePackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#514-533" title="Go to source code">validatePackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>Throws an exception, if the package has illegal settings.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validatePackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseAutoloads" id="_parseAutoloads">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#535-580" title="Go to source code">parseAutoloads</a>(
+	<span>non-empty-array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt; <var>$packageMap</var></span>,
+	<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a> <var>$rootPackage</var></span>,
+	<span>bool|string[] <var>$filteredDevPackages</var> = <span class="php-kw">false</span></span>,
+): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Compiles an ordered list of namespace =&gt; path mappings
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compiles an ordered list of namespace =&gt; path mappings</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$packageMap</var>&nbsp;&nbsp;</td>
+										<td><p>array of array(package, installDir-relative-to-composer.json or null for metapackages)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$rootPackage</var>&nbsp;&nbsp;</td>
+										<td><p>root package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$filteredDevPackages</var>&nbsp;&nbsp;</td>
+										<td><p>If an array, the list of packages that must be removed. If bool, whether to filter out require-dev packages</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseAutoloads">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createLoader" id="_createLoader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#582-625" title="Go to source code">createLoader</a>(<span>array&lt;string, mixed[]&gt; <var>$autoloads</var></span>, <span>?string <var>$vendorDir</var> = <span class="php-kw">null</span></span>): <a href="Composer.Autoload.ClassLoader.html"><span title="Composer\Autoload\ClassLoader">ClassLoader</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Registers an autoloader based on an autoload-map returned by parseAutoloads
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Registers an autoloader based on an autoload-map returned by parseAutoloads</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$autoloads</var>&nbsp;&nbsp;</td>
+										<td><p>see parseAutoloads return value</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createLoader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIncludePathsFile" id="_getIncludePathsFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#627-674" title="Go to source code">getIncludePathsFile</a>(
+	<span>array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt; <var>$packageMap</var></span>,
+	<span><a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a> <var>$filesystem</var></span>,
+	<span>string <var>$basePath</var></span>,
+	<span>string <var>$vendorPath</var></span>,
+	<span>string <var>$vendorPathCode</var></span>,
+	<span>string <var>$appBaseDirCode</var></span>,
+): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIncludePathsFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIncludeFilesFile" id="_getIncludeFilesFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#676-720" title="Go to source code">getIncludeFilesFile</a>(
+	<span>array&lt;string, string&gt; <var>$files</var></span>,
+	<span><a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a> <var>$filesystem</var></span>,
+	<span>string <var>$basePath</var></span>,
+	<span>string <var>$vendorPath</var></span>,
+	<span>string <var>$vendorPathCode</var></span>,
+	<span>string <var>$appBaseDirCode</var></span>,
+): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIncludeFilesFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPathCode" id="_getPathCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#722-749" title="Go to source code">getPathCode</a>(<span><a href="Composer.Util.Filesystem.html"><span title="Composer\Util\Filesystem">Filesystem</span></a> <var>$filesystem</var></span>, <span>string <var>$basePath</var></span>, <span>string <var>$vendorPath</var></span>, <span>string <var>$path</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPathCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPlatformCheck" id="_getPlatformCheck">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#751-923" title="Go to source code">getPlatformCheck</a>(
+	<span>array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt; <var>$packageMap</var></span>,
+	<span>bool|<span class="php-str">'php-only'</span> <var>$checkPlatform</var></span>,
+	<span>string[] <var>$devPackageNames</var></span>,
+): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPlatformCheck">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAutoloadFile" id="_getAutoloadFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#925-965" title="Go to source code">getAutoloadFile</a>(<span>string <var>$vendorPathToTargetDirCode</var></span>, <span>string <var>$suffix</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAutoloadFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAutoloadRealFile" id="_getAutoloadRealFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#967-1103" title="Go to source code">getAutoloadRealFile</a>(
+	<span>bool <var>$useClassMap</var></span>,
+	<span>bool <var>$useIncludePath</var></span>,
+	<span>?string <var>$targetDirLoader</var></span>,
+	<span>bool <var>$useIncludeFiles</var></span>,
+	<span>string <var>$vendorPathCode</var></span>,
+	<span>string <var>$appBaseDirCode</var></span>,
+	<span>string <var>$suffix</var></span>,
+	<span>bool <var>$useGlobalIncludePath</var></span>,
+	<span>string <var>$prependAutoloader</var></span>,
+	<span>bool <var>$checkPlatform</var></span>,
+): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$vendorPathCode</var>&nbsp;&nbsp;</td>
+										<td><p>unused in this method</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$appBaseDirCode</var>&nbsp;&nbsp;</td>
+										<td><p>unused in this method</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prependAutoloader</var>&nbsp;&nbsp;</td>
+										<td><p>'true'|'false'</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAutoloadRealFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStaticFile" id="_getStaticFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#1105-1197" title="Go to source code">getStaticFile</a>(<span>string <var>$suffix</var></span>, <span>string <var>$targetDir</var></span>, <span>string <var>$vendorPath</var></span>, <span>string <var>$basePath</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$vendorPath</var>&nbsp;&nbsp;</td>
+										<td><p>input for findShortestPathCode</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$basePath</var>&nbsp;&nbsp;</td>
+										<td><p>input for findShortestPathCode</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStaticFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseAutoloadsType" id="_parseAutoloadsType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#1199-1292" title="Go to source code">parseAutoloadsType</a>(
+	<span>array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt; <var>$packageMap</var></span>,
+	<span>string <var>$type</var></span>,
+	<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a> <var>$rootPackage</var></span>,
+): array&lt;int, string&gt;|array&lt;string, array&lt;string&gt;&gt;|array&lt;string, string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>one of: 'psr-0'|'psr-4'|'classmap'|'files'</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseAutoloadsType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFileIdentifier" id="_getFileIdentifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#1294-1300" title="Go to source code">getFileIdentifier</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFileIdentifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filterPackageMap" id="_filterPackageMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#1302-1352" title="Go to source code">filterPackageMap</a>(
+	<span>array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt; <var>$packageMap</var></span>,
+	<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a> <var>$rootPackage</var></span>,
+): array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Filters out dev-dependencies
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filters out dev-dependencies</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filterPackageMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortPackageMap" id="_sortPackageMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Autoload.AutoloadGenerator.html#1354-1384" title="Go to source code">sortPackageMap</a>(
+	<span>array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt; <var>$packageMap</var></span>,
+): array&lt;int, array{0: <a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, 1: (string|null)}&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Sorts packages by dependency weight
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sorts packages by dependency weight</p>
+<p>Packages of equal weight are sorted alphabetically</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortPackageMap">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

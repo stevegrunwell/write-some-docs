@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\EventDispatcher\EventDispatcher | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_EventDispatcher_EventDispatcher" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/EventDispatcher.html">EventDispatcher</a></li><li class="backslash">\</li><li>EventDispatcher</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>EventDispatcher    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>EventDispatcher</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The Event Dispatcher.</p></p>            <p><p>Example in command:
+$dispatcher = new EventDispatcher($this-&gt;requireComposer(), $this-&gt;getApplication()-&gt;getIO());
+// ...
+$dispatcher-&gt;dispatch(ScriptEvents::POST_INSTALL_CMD);
+// ...</p></p>        </div>
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_composer">
+                                        protected                                        <a href="../../Composer/PartialComposer.html"><abbr title="Composer\PartialComposer">PartialComposer</abbr></a>
+                                                                                
+                                    </td>
+                <td>$composer</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_io">
+                                        protected                                        <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a>
+                                                                                
+                                    </td>
+                <td>$io</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loader">
+                                        protected                                        <abbr title="Composer\EventDispatcher\?\Composer\Autoload\ClassLoader">ClassLoader</abbr>
+                                                                                
+                                    </td>
+                <td>$loader</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_process">
+                                        protected                                        <a href="../../Composer/Util/ProcessExecutor.html"><abbr title="Composer\Util\ProcessExecutor">ProcessExecutor</abbr></a>
+                                                                                
+                                    </td>
+                <td>$process</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_listeners">
+                                        protected                                        <abbr title="Composer\EventDispatcher\array&lt;string,array&lt;int,(callable">array&lt;string,array&lt;int,(callable</abbr>|<abbr title="Composer\EventDispatcher\string)[]&gt;&gt;">string)[]&gt;&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$listeners</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_runScripts">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$runScripts</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../Composer/PartialComposer.html"><abbr title="Composer\PartialComposer">PartialComposer</abbr></a> $composer, <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <abbr title="Composer\EventDispatcher\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null $process = null)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/EventDispatcher/EventDispatcher.html"><abbr title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setRunScripts">setRunScripts</a>(bool $runScripts = true)
+        
+                                            <p><p>Set whether script handlers are active or not</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatch">dispatch</a>(string|null $eventName, <abbr title="Composer\EventDispatcher\Composer\EventDispatcher\Event">Event</abbr>|null $event = null)
+        
+                                            <p><p>Dispatch an event</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatchScript">dispatchScript</a>(string $eventName, bool $devMode = false, array $additionalArgs = [], array $flags = [])
+        
+                                            <p><p>Dispatch a script event.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatchPackageEvent">dispatchPackageEvent</a>(string $eventName, bool $devMode, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $localRepo, array $operations, <a href="../../Composer/DependencyResolver/Operation/OperationInterface.html"><abbr title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</abbr></a> $operation)
+        
+                                            <p><p>Dispatch a package event.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatchInstallerEvent">dispatchInstallerEvent</a>(string $eventName, bool $devMode, bool $executeOperations, <a href="../../Composer/DependencyResolver/Transaction.html"><abbr title="Composer\DependencyResolver\Transaction">Transaction</abbr></a> $transaction)
+        
+                                            <p><p>Dispatch a installer event.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doDispatch">doDispatch</a>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        
+                                            <p><p>Triggers the listeners of an event.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeTty">executeTty</a>(string $exec)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPhpExecCommand">getPhpExecCommand</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeEventPhpScript">executeEventPhpScript</a>(string $className, string $methodName, <a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addListener">addListener</a>(string $eventName, callable|string $listener, int $priority = 0)
+        
+                                            <p><p>Add a listener for a particular event</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeListener">removeListener</a>(callable|object $listener)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addSubscriber">addSubscriber</a>(<a href="../../Composer/EventDispatcher/EventSubscriberInterface.html"><abbr title="Composer\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)
+        
+                                            <p><p>Adds object methods as listeners for the events in getSubscribedEvents</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getListeners">getListeners</a>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        
+                                            <p><p>Retrieves all listeners for a given event</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasEventListeners">hasEventListeners</a>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        
+                                            <p><p>Checks if an event has listeners registered</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getScriptListeners">getScriptListeners</a>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        
+                                            <p><p>Finds all listeners defined as scripts in the package</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isPhpScript">isPhpScript</a>(string $callable)
+        
+                                            <p><p>Checks if string given references a class path and method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isCommandClass">isCommandClass</a>(string $callable)
+        
+                                            <p><p>Checks if string given references a command class</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isComposerScript">isComposerScript</a>(string $callable)
+        
+                                            <p><p>Checks if string given references a composer run-script</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pushEvent">pushEvent</a>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        
+                                            <p><p>Push an event to the stack of active event</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_popEvent">popEvent</a>()
+        
+                                            <p><p>Pops the active event from the stack</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 76</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Composer/PartialComposer.html"><abbr title="Composer\PartialComposer">PartialComposer</abbr></a> $composer, <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <abbr title="Composer\EventDispatcher\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null $process = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Constructor.</p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/PartialComposer.html"><abbr title="Composer\PartialComposer">PartialComposer</abbr></a></td>
+                <td>$composer</td>
+                <td><p>The composer instance</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td><p>The IOInterface instance</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\EventDispatcher\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null</td>
+                <td>$process</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRunScripts">
+        <div class="location">at line 89</div>
+        <code>                    <a href="../../Composer/EventDispatcher/EventDispatcher.html"><abbr title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr></a>
+    <strong>setRunScripts</strong>(bool $runScripts = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set whether script handlers are active or not</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$runScripts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/EventDispatcher/EventDispatcher.html"><abbr title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatch">
+        <div class="location">at line 104</div>
+        <code>                    int
+    <strong>dispatch</strong>(string|null $eventName, <abbr title="Composer\EventDispatcher\Composer\EventDispatcher\Event">Event</abbr>|null $event = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch an event</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$eventName</td>
+                <td><p>The event name, required if no $event is provided</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\EventDispatcher\Composer\EventDispatcher\Event">Event</abbr>|null</td>
+                <td>$event</td>
+                <td><p>An event instance, required if no $eventName is provided</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatchScript">
+        <div class="location">at line 125</div>
+        <code>                    int
+    <strong>dispatchScript</strong>(string $eventName, bool $devMode = false, array $additionalArgs = [], array $flags = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch a script event.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td><p>The constant in ScriptEvents</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$devMode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$additionalArgs</td>
+                <td><p>Arguments passed by the user</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$flags</td>
+                <td><p>Optional flags to pass data not as argument</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatchPackageEvent">
+        <div class="location">at line 144</div>
+        <code>                    int
+    <strong>dispatchPackageEvent</strong>(string $eventName, bool $devMode, <a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a> $localRepo, array $operations, <a href="../../Composer/DependencyResolver/Operation/OperationInterface.html"><abbr title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</abbr></a> $operation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch a package event.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td><p>The constant in PackageEvents</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$devMode</td>
+                <td><p>Whether or not we are in dev mode</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositoryInterface.html"><abbr title="Composer\Repository\RepositoryInterface">RepositoryInterface</abbr></a></td>
+                <td>$localRepo</td>
+                <td><p>The installed repository</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$operations</td>
+                <td><p>The list of operations</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Operation/OperationInterface.html"><abbr title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</abbr></a></td>
+                <td>$operation</td>
+                <td><p>The package being installed/updated/removed</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatchInstallerEvent">
+        <div class="location">at line 162</div>
+        <code>                    int
+    <strong>dispatchInstallerEvent</strong>(string $eventName, bool $devMode, bool $executeOperations, <a href="../../Composer/DependencyResolver/Transaction.html"><abbr title="Composer\DependencyResolver\Transaction">Transaction</abbr></a> $transaction)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch a installer event.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td><p>The constant in InstallerEvents</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$devMode</td>
+                <td><p>Whether or not we are in dev mode</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$executeOperations</td>
+                <td><p>True if operations will be executed, false in --dry-run</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Transaction.html"><abbr title="Composer\DependencyResolver\Transaction">Transaction</abbr></a></td>
+                <td>$transaction</td>
+                <td><p>The transaction contains the list of operations</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doDispatch">
+        <div class="location">at line 177</div>
+        <code>            protected        int
+    <strong>doDispatch</strong>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Triggers the listeners of an event.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td><p>The event object to pass to the event handlers/listeners.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><p>return code of the executed script if any, for php scripts a false return
+value is changed to 1, anything else to 0</p></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="RuntimeException|\Exception">Exception</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeTty">
+        <div class="location">at line 412</div>
+        <code>            protected        int
+    <strong>executeTty</strong>(string $exec)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$exec</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPhpExecCommand">
+        <div class="location">at line 421</div>
+        <code>            protected        string
+    <strong>getPhpExecCommand</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeEventPhpScript">
+        <div class="location">at line 442</div>
+        <code>            protected        mixed
+    <strong>executeEventPhpScript</strong>(string $className, string $methodName, <a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td><p>Event invoking the PHP callable</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addListener">
+        <div class="location">at line 460</div>
+        <code>                    void
+    <strong>addListener</strong>(string $eventName, callable|string $listener, int $priority = 0)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a listener for a particular event</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td><p>The event name - typically a constant</p></td>
+            </tr>
+                    <tr>
+                <td>callable|string</td>
+                <td>$listener</td>
+                <td><p>A callable expecting an event argument, or a command string to be executed (same as a composer.json &quot;scripts&quot; entry)</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td><p>A higher value represents a higher priority</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeListener">
+        <div class="location">at line 468</div>
+        <code>                    void
+    <strong>removeListener</strong>(callable|object $listener)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|object</td>
+                <td>$listener</td>
+                <td><p>A callable or an object instance for which all listeners should be removed</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSubscriber">
+        <div class="location">at line 486</div>
+        <code>                    void
+    <strong>addSubscriber</strong>(<a href="../../Composer/EventDispatcher/EventSubscriberInterface.html"><abbr title="Composer\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds object methods as listeners for the events in getSubscribedEvents</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/EventSubscriberInterface.html"><abbr title="Composer\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</abbr></a></td>
+                <td>$subscriber</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../Composer/EventDispatcher/EventSubscriberInterface.html"><abbr title="Composer\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</abbr></a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getListeners">
+        <div class="location">at line 506</div>
+        <code>            protected        array
+    <strong>getListeners</strong>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieves all listeners for a given event</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td><p>All listeners: callables and scripts</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasEventListeners">
+        <div class="location">at line 524</div>
+        <code>                    bool
+    <strong>hasEventListeners</strong>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if an event has listeners registered</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScriptListeners">
+        <div class="location">at line 537</div>
+        <code>            protected        array
+    <strong>getScriptListeners</strong>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Finds all listeners defined as scripts in the package</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td><p>Event object</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Listeners</td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPhpScript">
+        <div class="location">at line 569</div>
+        <code>            protected        bool
+    <strong>isPhpScript</strong>(string $callable)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if string given references a class path and method</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCommandClass">
+        <div class="location">at line 577</div>
+        <code>            protected        bool
+    <strong>isCommandClass</strong>(string $callable)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if string given references a command class</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isComposerScript">
+        <div class="location">at line 585</div>
+        <code>            protected        bool
+    <strong>isComposerScript</strong>(string $callable)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if string given references a composer run-script</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushEvent">
+        <div class="location">at line 595</div>
+        <code>            protected        int
+    <strong>pushEvent</strong>(<a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Push an event to the stack of active event</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/Event.html"><abbr title="Composer\EventDispatcher\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_popEvent">
+        <div class="location">at line 608</div>
+        <code>            protected        string|null
+    <strong>popEvent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Pops the active event from the stack</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

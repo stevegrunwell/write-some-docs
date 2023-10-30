@@ -1,0 +1,2501 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Installer |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Cache.html">
+							Cache
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Compiler.html">
+							Compiler
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Config.html">
+							Config
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Factory.html">
+							Factory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.InstalledVersions.html">
+							InstalledVersions
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Installer.html">
+							Installer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.PartialComposer.html">
+							PartialComposer
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Installer.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="Composer.Installer.html">Installer</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Installer.html#74" title="Go to source code">Composer/Installer.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#207-227" title="Go to source code">__construct</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>,
+	<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>&amp;<a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>,
+	<span><a href="Composer.Downloader.DownloadManager.html"><span title="Composer\Downloader\DownloadManager">DownloadManager</span></a> <var>$downloadManager</var></span>,
+	<span><a href="Composer.Repository.RepositoryManager.html"><span title="Composer\Repository\RepositoryManager">RepositoryManager</span></a> <var>$repositoryManager</var></span>,
+	<span><a href="Composer.Package.Locker.html"><span title="Composer\Package\Locker">Locker</span></a> <var>$locker</var></span>,
+	<span><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a> <var>$installationManager</var></span>,
+	<span><a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a> <var>$eventDispatcher</var></span>,
+	<span><a href="Composer.Autoload.AutoloadGenerator.html"><span title="Composer\Autoload\AutoloadGenerator">AutoloadGenerator</span></a> <var>$autoloadGenerator</var></span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="run" id="_run">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#229-433" title="Go to source code">run</a>(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run installation (or update)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run installation (or update)</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>0 on success or a positive error code on failure</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_run">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doUpdate" id="_doUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#435-633" title="Go to source code">doUpdate</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$localRepo</var></span>, <span>bool <var>$doInstall</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extractDevPackages" id="_extractDevPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#635-687" title="Go to source code">extractDevPackages</a>(
+	<span><a href="Composer.DependencyResolver.LockTransaction.html"><span title="Composer\DependencyResolver\LockTransaction">LockTransaction</span></a> <var>$lockTransaction</var></span>,
+	<span><a href="Composer.Repository.PlatformRepository.html"><span title="Composer\Repository\PlatformRepository">PlatformRepository</span></a> <var>$platformRepo</var></span>,
+	<span>list&lt;array{package: string, version: string, alias: string, alias_normalized: string}&gt; <var>$aliases</var></span>,
+	<span><a href="Composer.DependencyResolver.PolicyInterface.html"><span title="Composer\DependencyResolver\PolicyInterface">PolicyInterface</span></a> <var>$policy</var></span>,
+	<span>?<a href="Composer.Repository.LockArrayRepository.html"><span title="Composer\Repository\LockArrayRepository">LockArrayRepository</span></a> <var>$lockedRepository</var> = <span class="php-kw">null</span></span>,
+): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the solver a second time on top of the existing update result with only the current result set in the pool
+and see…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the solver a second time on top of the existing update result with only the current result set in the pool
+and see what packages would get removed if we only had the non-dev packages in the solver request</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extractDevPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doInstall" id="_doInstall">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#689-825" title="Go to source code">doInstall</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$localRepo</var></span>, <span>bool <var>$alreadySolved</var> = <span class="php-kw">false</span></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$alreadySolved</var>&nbsp;&nbsp;</td>
+										<td><p>Whether the function is called as part of an update command or independently</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>exit code</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doInstall">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createPlatformRepo" id="_createPlatformRepo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#827-836" title="Go to source code">createPlatformRepo</a>(<span>bool <var>$forUpdate</var></span>): <a href="Composer.Repository.PlatformRepository.html"><span title="Composer\Repository\PlatformRepository">PlatformRepository</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createPlatformRepo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1058-1076" title="Go to source code">create</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a> <var>$composer</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Create Installer
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create Installer</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAdditionalFixedRepository" id="_setAdditionalFixedRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1078-1086" title="Go to source code">setAdditionalFixedRepository</a>(<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$additionalFixedRepository</var></span>): $this</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAdditionalFixedRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTemporaryConstraints" id="_setTemporaryConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1088-1097" title="Go to source code">setTemporaryConstraints</a>(<span>array&lt;string, <span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span>&gt; <var>$constraints</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTemporaryConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDryRun" id="_setDryRun">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1099-1109" title="Go to source code">setDryRun</a>(<span>bool <var>$dryRun</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Whether to run in drymode or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether to run in drymode or not</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDryRun">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDryRun" id="_isDryRun">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1111-1117" title="Go to source code">isDryRun</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks, if this is a dry run (simulation mode).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks, if this is a dry run (simulation mode).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDryRun">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDownloadOnly" id="_setDownloadOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1119-1129" title="Go to source code">setDownloadOnly</a>(<span>bool <var>$downloadOnly</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Whether to download only or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether to download only or not.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDownloadOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferSource" id="_setPreferSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1131-1141" title="Go to source code">setPreferSource</a>(<span>bool <var>$preferSource</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		prefer source installation
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>prefer source installation</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferDist" id="_setPreferDist">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1143-1153" title="Go to source code">setPreferDist</a>(<span>bool <var>$preferDist</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		prefer dist installation
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>prefer dist installation</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferDist">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOptimizeAutoloader" id="_setOptimizeAutoloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1155-1170" title="Go to source code">setOptimizeAutoloader</a>(<span>bool <var>$optimizeAutoloader</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Whether or not generated autoloader are optimized
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether or not generated autoloader are optimized</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOptimizeAutoloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setClassMapAuthoritative" id="_setClassMapAuthoritative">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1172-1187" title="Go to source code">setClassMapAuthoritative</a>(<span>bool <var>$classMapAuthoritative</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Whether or not generated autoloader considers the class map
+authoritative.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether or not generated autoloader considers the class map
+authoritative.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setClassMapAuthoritative">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setApcuAutoloader" id="_setApcuAutoloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1189-1200" title="Go to source code">setApcuAutoloader</a>(<span>bool <var>$apcuAutoloader</var></span>, <span>?string <var>$apcuAutoloaderPrefix</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Whether or not generated autoloader considers APCu caching.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether or not generated autoloader considers APCu caching.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setApcuAutoloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUpdate" id="_setUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1202-1212" title="Go to source code">setUpdate</a>(<span>bool <var>$update</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		update packages
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>update packages</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setInstall" id="_setInstall">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1214-1224" title="Go to source code">setInstall</a>(<span>bool <var>$install</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Allows disabling the install step after an update
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Allows disabling the install step after an update</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setInstall">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDevMode" id="_setDevMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1226-1236" title="Go to source code">setDevMode</a>(<span>bool <var>$devMode</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		enables dev packages
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>enables dev packages</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDevMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDumpAutoloader" id="_setDumpAutoloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1238-1250" title="Go to source code">setDumpAutoloader</a>(<span>bool <var>$dumpAutoloader</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		set whether to run autoloader or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>set whether to run autoloader or not</p>
+<p>This is disabled implicitly when enabling dryRun</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDumpAutoloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRunScripts" id="_setRunScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1252-1265" title="Go to source code"><span class="deprecated">setRunScripts</span></a>(<span>bool <var>$runScripts</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		set whether to run scripts or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>set whether to run scripts or not</p>
+<p>This is disabled implicitly when enabling dryRun</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Use setRunScripts(false) on the EventDispatcher instance being injected instead</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRunScripts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setConfig" id="_setConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1267-1277" title="Go to source code">setConfig</a>(<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		set the config instance
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>set the config instance</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setVerbose" id="_setVerbose">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1279-1289" title="Go to source code">setVerbose</a>(<span>bool <var>$verbose</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		run in verbose mode
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>run in verbose mode</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setVerbose">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isVerbose" id="_isVerbose">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1291-1297" title="Go to source code">isVerbose</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks, if running in verbose mode.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks, if running in verbose mode.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isVerbose">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIgnorePlatformRequirements" id="_setIgnorePlatformRequirements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1299-1317" title="Go to source code"><span class="deprecated">setIgnorePlatformRequirements</span></a>(<span>bool|string[] <var>$ignorePlatformReqs</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		set ignore Platform Package requirements
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>set ignore Platform Package requirements</p>
+<p>If this is set to true, all platform requirements are ignored
+If this is set to false, no platform requirements are ignored
+If this is set to string[], those packages will be ignored</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>use setPlatformRequirementFilter instead</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIgnorePlatformRequirements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPlatformRequirementFilter" id="_setPlatformRequirementFilter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1319-1327" title="Go to source code">setPlatformRequirementFilter</a>(<span><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a> <var>$platformRequirementFilter</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPlatformRequirementFilter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUpdateMirrors" id="_setUpdateMirrors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1329-1339" title="Go to source code">setUpdateMirrors</a>(<span>bool <var>$updateMirrors</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Update the lock file to the exact same versions and references but use current remote metadata like URLs and mirror info
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the lock file to the exact same versions and references but use current remote metadata like URLs and mirror info</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUpdateMirrors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUpdateAllowList" id="_setUpdateAllowList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1341-1358" title="Go to source code">setUpdateAllowList</a>(<span>string[] <var>$packages</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		restrict the update operation to a few packages, all other packages
+that are already installed will be kept at their…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>restrict the update operation to a few packages, all other packages
+that are already installed will be kept at their current version</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUpdateAllowList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUpdateAllowTransitiveDependencies" id="_setUpdateAllowTransitiveDependencies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1360-1378" title="Go to source code">setUpdateAllowTransitiveDependencies</a>(<span>int <var>$updateAllowTransitiveDependencies</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should dependencies of packages marked for update be updated?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should dependencies of packages marked for update be updated?</p>
+<p>Depending on the chosen constant this will either only update the directly named packages, all transitive
+dependencies which are not root requirement or all transitive dependencies including root requirements</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$updateAllowTransitiveDependencies</var>&nbsp;&nbsp;</td>
+										<td><p>One of the UPDATE_ constants on the Request class</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUpdateAllowTransitiveDependencies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferStable" id="_setPreferStable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1380-1390" title="Go to source code">setPreferStable</a>(<span>bool <var>$preferStable</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should packages be preferred in a stable version when updating?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should packages be preferred in a stable version when updating?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferStable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferLowest" id="_setPreferLowest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1392-1402" title="Go to source code">setPreferLowest</a>(<span>bool <var>$preferLowest</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should packages be preferred in a lowest version when updating?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should packages be preferred in a lowest version when updating?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferLowest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setWriteLock" id="_setWriteLock">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1404-1416" title="Go to source code">setWriteLock</a>(<span>bool <var>$writeLock</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should the lock file be updated when updating?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should the lock file be updated when updating?</p>
+<p>This is disabled implicitly when enabling dryRun</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setWriteLock">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setExecuteOperations" id="_setExecuteOperations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1418-1430" title="Go to source code">setExecuteOperations</a>(<span>bool <var>$executeOperations</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should the operations (package install, update and removal) be executed on disk?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should the operations (package install, update and removal) be executed on disk?</p>
+<p>This is disabled implicitly when enabling dryRun</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setExecuteOperations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAudit" id="_setAudit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1432-1442" title="Go to source code">setAudit</a>(<span>bool <var>$audit</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should an audit be run after installation is complete?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should an audit be run after installation is complete?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAudit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setErrorOnAudit" id="_setErrorOnAudit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1444-1455" title="Go to source code">setErrorOnAudit</a>(<span>bool <var>$errorOnAudit</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Should exit with status code 5 on audit error
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Should exit with status code 5 on audit error</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setErrorOnAudit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAuditFormat" id="_setAuditFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1457-1468" title="Go to source code">setAuditFormat</a>(<span><a href="Composer.Advisory.Auditor.html"><span title="Composer\Advisory\Auditor">Auditor</span></a>::FORMAT_* <var>$auditFormat</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		What format should be used for audit output?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>What format should be used for audit output?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAuditFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disablePlugins" id="_disablePlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1470-1484" title="Go to source code">disablePlugins</a>(): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Disables plugins.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disables plugins.</p>
+<p>Call this if you want to ensure that third-party code never gets
+executed. The default is to automatically install, and execute
+custom third-party installers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disablePlugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSuggestedPackagesReporter" id="_setSuggestedPackagesReporter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.html#1486-1494" title="Go to source code">setSuggestedPackagesReporter</a>(<span><a href="Composer.Installer.SuggestedPackagesReporter.html"><span title="Composer\Installer\SuggestedPackagesReporter">SuggestedPackagesReporter</span></a> <var>$suggestedPackagesReporter</var></span>): <b><span class="active" title="Composer\Installer">Installer</span></b></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSuggestedPackagesReporter">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="ERROR_NONE" id="ERROR_NONE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.html#76" title="Go to source code">ERROR_NONE</a> = <span class="php-num">0</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERROR_NONE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ERROR_GENERIC_FAILURE" id="ERROR_GENERIC_FAILURE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.html#76-77" title="Go to source code">ERROR_GENERIC_FAILURE</a> = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERROR_GENERIC_FAILURE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ERROR_NO_LOCK_FILE_FOR_PARTIAL_UPDATE" id="ERROR_NO_LOCK_FILE_FOR_PARTIAL_UPDATE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.html#78" title="Go to source code">ERROR_NO_LOCK_FILE_FOR_PARTIAL_UPDATE</a> = <span class="php-num">3</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERROR_NO_LOCK_FILE_FOR_PARTIAL_UPDATE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ERROR_LOCK_FILE_INVALID" id="ERROR_LOCK_FILE_INVALID">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.html#79" title="Go to source code">ERROR_LOCK_FILE_INVALID</a> = <span class="php-num">4</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERROR_LOCK_FILE_INVALID">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ERROR_DEPENDENCY_RESOLUTION_FAILED" id="ERROR_DEPENDENCY_RESOLUTION_FAILED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.html#80-81" title="Go to source code">ERROR_DEPENDENCY_RESOLUTION_FAILED</a> = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERROR_DEPENDENCY_RESOLUTION_FAILED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ERROR_AUDIT_FAILED" id="ERROR_AUDIT_FAILED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.html#82" title="Go to source code">ERROR_AUDIT_FAILED</a> = <span class="php-num">5</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERROR_AUDIT_FAILED">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="io" id="$io">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#84-87" title="Go to source code">$io</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$io">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="config" id="$config">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#89-92" title="Go to source code">$config</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$config">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="package" id="$package">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>&amp;<a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#94-97" title="Go to source code">$package</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$package">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fixedRootPackage" id="$fixedRootPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>&amp;<a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#99-103" title="Go to source code">$fixedRootPackage</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fixedRootPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="downloadManager" id="$downloadManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Downloader.DownloadManager.html"><span title="Composer\Downloader\DownloadManager">DownloadManager</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#105-108" title="Go to source code">$downloadManager</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$downloadManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="repositoryManager" id="$repositoryManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Repository.RepositoryManager.html"><span title="Composer\Repository\RepositoryManager">RepositoryManager</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#110-113" title="Go to source code">$repositoryManager</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$repositoryManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="locker" id="$locker">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.Locker.html"><span title="Composer\Package\Locker">Locker</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#115-118" title="Go to source code">$locker</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$locker">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="installationManager" id="$installationManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#120-123" title="Go to source code">$installationManager</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$installationManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="eventDispatcher" id="$eventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#125-128" title="Go to source code">$eventDispatcher</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$eventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="autoloadGenerator" id="$autoloadGenerator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Autoload.AutoloadGenerator.html"><span title="Composer\Autoload\AutoloadGenerator">AutoloadGenerator</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#130-133" title="Go to source code">$autoloadGenerator</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$autoloadGenerator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preferSource" id="$preferSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#135-136" title="Go to source code">$preferSource</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$preferSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preferDist" id="$preferDist">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#137-138" title="Go to source code">$preferDist</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$preferDist">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="optimizeAutoloader" id="$optimizeAutoloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#139-140" title="Go to source code">$optimizeAutoloader</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$optimizeAutoloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="classMapAuthoritative" id="$classMapAuthoritative">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#141-142" title="Go to source code">$classMapAuthoritative</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$classMapAuthoritative">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="apcuAutoloader" id="$apcuAutoloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#143-144" title="Go to source code">$apcuAutoloader</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$apcuAutoloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="apcuAutoloaderPrefix" id="$apcuAutoloaderPrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#145-146" title="Go to source code">$apcuAutoloaderPrefix</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$apcuAutoloaderPrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="devMode" id="$devMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#147-148" title="Go to source code">$devMode</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$devMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dryRun" id="$dryRun">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#149-150" title="Go to source code">$dryRun</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dryRun">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="downloadOnly" id="$downloadOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#151-152" title="Go to source code">$downloadOnly</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$downloadOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="verbose" id="$verbose">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#153-154" title="Go to source code">$verbose</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$verbose">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="$update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#155-156" title="Go to source code">$update</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="install" id="$install">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#157-158" title="Go to source code">$install</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$install">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dumpAutoloader" id="$dumpAutoloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#159-160" title="Go to source code">$dumpAutoloader</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dumpAutoloader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="runScripts" id="$runScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#161-162" title="Go to source code">$runScripts</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$runScripts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preferStable" id="$preferStable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#163-164" title="Go to source code">$preferStable</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$preferStable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preferLowest" id="$preferLowest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#165-166" title="Go to source code">$preferLowest</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$preferLowest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeLock" id="$writeLock">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#167-168" title="Go to source code">$writeLock</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$writeLock">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="executeOperations" id="$executeOperations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#169-170" title="Go to source code">$executeOperations</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$executeOperations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="audit" id="$audit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#171-172" title="Go to source code">$audit</a></var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$audit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errorOnAudit" id="$errorOnAudit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#173-174" title="Go to source code">$errorOnAudit</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$errorOnAudit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="auditFormat" id="$auditFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Advisory.Auditor.html"><span title="Composer\Advisory\Auditor">Auditor</span></a>::FORMAT_*</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#175-176" title="Go to source code">$auditFormat</a></var> = <a href="Composer.Advisory.Auditor.html"><span title="Composer\Advisory\Auditor">Auditor</span></a>::<a href="Composer.Advisory.Auditor.html#FORMAT_SUMMARY">FORMAT_SUMMARY</a></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$auditFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateMirrors" id="$updateMirrors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#178-179" title="Go to source code">$updateMirrors</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$updateMirrors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateAllowList" id="$updateAllowList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">non-empty-list&lt;string&gt;|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#180-185" title="Go to source code">$updateAllowList</a></var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$updateAllowList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateAllowTransitiveDependencies" id="$updateAllowTransitiveDependencies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.DependencyResolver.Request.html"><span title="Composer\DependencyResolver\Request">Request</span></a>::UPDATE_*</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#186-187" title="Go to source code">$updateAllowTransitiveDependencies</a></var> = <a href="Composer.DependencyResolver.Request.html"><span title="Composer\DependencyResolver\Request">Request</span></a>::<a href="Composer.DependencyResolver.Request.html#UPDATE_ONLY_LISTED">UPDATE_ONLY_LISTED</a></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$updateAllowTransitiveDependencies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="suggestedPackagesReporter" id="$suggestedPackagesReporter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Installer.SuggestedPackagesReporter.html"><span title="Composer\Installer\SuggestedPackagesReporter">SuggestedPackagesReporter</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#189-192" title="Go to source code">$suggestedPackagesReporter</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$suggestedPackagesReporter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="platformRequirementFilter" id="$platformRequirementFilter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#194-197" title="Go to source code">$platformRequirementFilter</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$platformRequirementFilter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="additionalFixedRepository" id="$additionalFixedRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#199-202" title="Go to source code">$additionalFixedRepository</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$additionalFixedRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="temporaryConstraints" id="$temporaryConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.html#204-205" title="Go to source code">$temporaryConstraints</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$temporaryConstraints">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

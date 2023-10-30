@@ -1,0 +1,684 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Command\BaseDependencyCommand |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Command.AboutCommand.html">
+							AboutCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ArchiveCommand.html">
+							ArchiveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.AuditCommand.html">
+							AuditCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BaseCommand.html">
+							BaseCommand
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Command.BaseDependencyCommand.html">
+							BaseDependencyCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BumpCommand.html">
+							BumpCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CheckPlatformReqsCommand.html">
+							CheckPlatformReqsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ClearCacheCommand.html">
+							ClearCacheCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ConfigCommand.html">
+							ConfigCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CreateProjectCommand.html">
+							CreateProjectCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DependsCommand.html">
+							DependsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DiagnoseCommand.html">
+							DiagnoseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DumpAutoloadCommand.html">
+							DumpAutoloadCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ExecCommand.html">
+							ExecCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.FundCommand.html">
+							FundCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.GlobalCommand.html">
+							GlobalCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.HomeCommand.html">
+							HomeCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InitCommand.html">
+							InitCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InstallCommand.html">
+							InstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.LicensesCommand.html">
+							LicensesCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.OutdatedCommand.html">
+							OutdatedCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ProhibitsCommand.html">
+							ProhibitsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ReinstallCommand.html">
+							ReinstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RemoveCommand.html">
+							RemoveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RequireCommand.html">
+							RequireCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RunScriptCommand.html">
+							RunScriptCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ScriptAliasCommand.html">
+							ScriptAliasCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SearchCommand.html">
+							SearchCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SelfUpdateCommand.html">
+							SelfUpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ShowCommand.html">
+							ShowCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.StatusCommand.html">
+							StatusCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SuggestsCommand.html">
+							SuggestsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.UpdateCommand.html">
+							UpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ValidateCommand.html">
+							ValidateCommand
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Command.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Command.BaseDependencyCommand.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Command.html">Command</a>\<a href="Composer.Command.BaseDependencyCommand.html">BaseDependencyCommand</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Command.BaseCommand.html"><span title="Composer\Command\BaseCommand">BaseCommand</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Base implementation for commands mapping dependency relationships.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<span>Symfony\Component\Console\Command\Command</span>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Command.BaseCommand.html"><span>Composer\Command\BaseCommand</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Command\BaseDependencyCommand</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Command.ProhibitsCommand.html"><span>Composer\Command\ProhibitsCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.DependsCommand.html"><span>Composer\Command\DependsCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Command.BaseDependencyCommand.html#39" title="Go to source code">Composer/Command/BaseDependencyCommand.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="doExecute" id="_doExecute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseDependencyCommand.html#49-159" title="Go to source code">doExecute</a>(<span><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span> <var>$input</var></span>, <span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>, <span>bool <var>$inverted</var> = <span class="php-kw">false</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the command.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$inverted</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to invert matching process (why-not vs why behaviour)</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Exit code of the operation.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doExecute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printTable" id="_printTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseDependencyCommand.html#161-197" title="Go to source code">printTable</a>(<span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>, <span>array{<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, <a href="Composer.Package.Link.html"><span title="Composer\Package\Link">Link</span></a>, mixed}[] <var>$results</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Assembles and prints a bottom-up table of the dependencies.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Assembles and prints a bottom-up table of the dependencies.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initStyles" id="_initStyles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseDependencyCommand.html#199-216" title="Go to source code">initStyles</a>(<span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Init styles for tree
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Init styles for tree</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initStyles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printTree" id="_printTree">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseDependencyCommand.html#218-246" title="Go to source code">printTree</a>(<span>array{<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>, <a href="Composer.Package.Link.html"><span title="Composer\Package\Link">Link</span></a>, (mixed[]|bool)}[] <var>$results</var></span>, <span>string <var>$prefix</var> = <span class="php-str">''</span></span>, <span>int <var>$level</var> = <span class="php-num">1</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively prints a tree of the selected results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively prints a tree of the selected results.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$results</var>&nbsp;&nbsp;</td>
+										<td><p>Results to be printed at this level.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prefix</var>&nbsp;&nbsp;</td>
+										<td><p>Prefix of the current tree level.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$level</var>&nbsp;&nbsp;</td>
+										<td><p>Current level of recursion.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printTree">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Command.BaseCommand.html"><span>Composer\Command\BaseCommand</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Command.BaseCommand.html#_getApplication">getApplication()</a>, <a href="Composer.Command.BaseCommand.html#_getComposer" class="deprecated">getComposer()</a>, <a href="Composer.Command.BaseCommand.html#_requireComposer">requireComposer()</a>, <a href="Composer.Command.BaseCommand.html#_tryComposer">tryComposer()</a>, <a href="Composer.Command.BaseCommand.html#_setComposer">setComposer()</a>, <a href="Composer.Command.BaseCommand.html#_resetComposer">resetComposer()</a>, <a href="Composer.Command.BaseCommand.html#_isProxyCommand">isProxyCommand()</a>, <a href="Composer.Command.BaseCommand.html#_getIO">getIO()</a>, <a href="Composer.Command.BaseCommand.html#_setIO">setIO()</a>, <a href="Composer.Command.BaseCommand.html#_complete">complete()</a>, <a href="Composer.Command.BaseCommand.html#_initialize">initialize()</a>, <a href="Composer.Command.BaseCommand.html#_getPreferredInstallOptions">getPreferredInstallOptions()</a>, <a href="Composer.Command.BaseCommand.html#_getPlatformRequirementFilter">getPlatformRequirementFilter()</a>, <a href="Composer.Command.BaseCommand.html#_formatRequirements">formatRequirements()</a>, <a href="Composer.Command.BaseCommand.html#_normalizeRequirements">normalizeRequirements()</a>, <a href="Composer.Command.BaseCommand.html#_renderTable">renderTable()</a>, <a href="Composer.Command.BaseCommand.html#_getTerminalWidth">getTerminalWidth()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="ARGUMENT_PACKAGE" id="ARGUMENT_PACKAGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Command.BaseDependencyCommand.html#41" title="Go to source code">ARGUMENT_PACKAGE</a> = <span class="php-str">'package'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ARGUMENT_PACKAGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ARGUMENT_CONSTRAINT" id="ARGUMENT_CONSTRAINT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Command.BaseDependencyCommand.html#42" title="Go to source code">ARGUMENT_CONSTRAINT</a> = <span class="php-str">'version'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ARGUMENT_CONSTRAINT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="OPTION_RECURSIVE" id="OPTION_RECURSIVE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Command.BaseDependencyCommand.html#43" title="Go to source code">OPTION_RECURSIVE</a> = <span class="php-str">'recursive'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#OPTION_RECURSIVE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="OPTION_TREE" id="OPTION_TREE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Command.BaseDependencyCommand.html#44" title="Go to source code">OPTION_TREE</a> = <span class="php-str">'tree'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#OPTION_TREE">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="colors" id="$colors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Command.BaseDependencyCommand.html#46-47" title="Go to source code">$colors</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$colors">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

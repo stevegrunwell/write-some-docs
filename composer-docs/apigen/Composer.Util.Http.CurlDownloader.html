@@ -1,0 +1,383 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Composer\Util\Http\CurlDownloader |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Util.html">Util</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Util.Http.html">Http</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Util.Http.CurlResponse.html">
+							CurlResponse
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Util.Http.Response.html">
+							Response
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Util.Http.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Util.Http.CurlDownloader.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Util.html">Util</a>\<a href="namespace-Composer.Util.Http.html">Http</a>\<a href="Composer.Util.Http.CurlDownloader.html">CurlDownloader</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+		<table class="table" id="aliases">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Type aliases</th>
+			</tr>
+
+	<tr data-order="Attributes" id="~Attributes">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				
+					Attributes
+				
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array{retryAuthFailure: bool, redirects: int&lt;<span class="php-num">0</span>, max&gt;, retries: int&lt;<span class="php-num">0</span>, max&gt;, storeAuth: (<span class="php-str">'prompt'</span>|bool)}</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~Attributes">#</a>
+		</td>
+	</tr>
+	<tr data-order="Job" id="~Job">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				
+					Job
+				
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array{url: non-empty-string, origin: string, attributes: <a href="Composer.Util.Http.CurlDownloader.html#~Attributes"><span title="array&#123;retryAuthFailure: bool, redirects: int&lt;0, max&gt;, retries: int&lt;0, max&gt;, storeAuth: (prompt | bool)}">Attributes</span></a>, options: mixed[], progress: mixed[], curlHandle: <a href="CurlHandle.html"><span title="CurlHandle">CurlHandle</span></a>, filename: (string|null), headerHandle: resource, bodyHandle: resource, resolve: callable, reject: callable}</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~Job">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span>mixed[] <var>$options</var> = []</span>, <span>bool <var>$disableTls</var> = <span class="php-kw">false</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="download" id="_download">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>download(
+	<span>callable <var>$resolve</var></span>,
+	<span>callable <var>$reject</var></span>,
+	<span>string <var>$origin</var></span>,
+	<span>non-empty-string <var>$url</var></span>,
+	<span>mixed[] <var>$options</var></span>,
+	<span>?string <var>$copyTo</var> = <span class="php-kw">null</span></span>,
+): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+							<h4>Returns</h4>
+							<div><p>internal job id</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_download">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="abortRequest" id="_abortRequest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>abortRequest(<span>int <var>$id</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_abortRequest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tick" id="_tick">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tick(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tick">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="multiErrors" id="$multiErrors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int, string[]&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$multiErrors</var> = [
+	CURLM_BAD_HANDLE =&gt; [<span class="php-str">'CURLM_BAD_HANDLE'</span>, <span class="php-str">'The passed-in handle is not a valid CURLM handle.'</span>],
+	CURLM_BAD_EASY_HANDLE =&gt; [
+		<span class="php-str">'CURLM_BAD_EASY_HANDLE'</span>,
+		<span class="php-str">"An easy handle was not good/valid. It could mean that it isn't an easy handle at all, or possibly that the handle already is in used by this or another multi handle."</span>,
+	],
+	CURLM_OUT_OF_MEMORY =&gt; [<span class="php-str">'CURLM_OUT_OF_MEMORY'</span>, <span class="php-str">'You are doomed.'</span>],
+	CURLM_INTERNAL_ERROR =&gt; [<span class="php-str">'CURLM_INTERNAL_ERROR'</span>, <span class="php-str">'This can only be returned if libcurl bugs. Please report it to us!'</span>],
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$multiErrors">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

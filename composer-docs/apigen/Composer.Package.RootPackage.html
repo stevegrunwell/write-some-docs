@@ -1,0 +1,1056 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Package\RootPackage |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.html">Package</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Archiver.html">Archiver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Comparer.html">Comparer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Dumper.html">Dumper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Loader.html">Loader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Version.html">Version</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.AliasPackage.html">
+							AliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.BasePackage.html">
+							BasePackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.CompleteAliasPackage.html">
+							CompleteAliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.CompletePackage.html">
+							CompletePackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Link.html">
+							Link
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Locker.html">
+							Locker
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Package.html">
+							Package
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootAliasPackage.html">
+							RootAliasPackage
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Package.RootPackage.html">
+							RootPackage
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.CompletePackageInterface.html">
+							CompletePackageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.PackageInterface.html">
+							PackageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootPackageInterface.html">
+							RootPackageInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Package.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Package.RootPackage.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Package.html">Package</a>\<a href="Composer.Package.RootPackage.html">RootPackage</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Package.CompletePackage.html"><span title="Composer\Package\CompletePackage">CompletePackage</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>The root package represents the project's composer.json and contains additional metadata</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.BasePackage.html"><span>Composer\Package\BasePackage</span></a>
+
+		implements
+			<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.Package.html"><span>Composer\Package\Package</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.CompletePackage.html"><span>Composer\Package\CompletePackage</span></a>
+
+		implements
+			<a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Package\RootPackage</span></b>
+
+		implements
+			<a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Package.RootPackage.html#20" title="Go to source code">Composer/Package/RootPackage.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="setMinimumStability" id="_setMinimumStability">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#37-43" title="Go to source code">setMinimumStability</a>(<span>string <var>$minimumStability</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the minimumStability
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the minimumStability</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_setMinimumStability">						<code>Composer\Package\RootPackageInterface::setMinimumStability()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMinimumStability">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMinimumStability" id="_getMinimumStability">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#45-51" title="Go to source code">getMinimumStability</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the minimum stability of the package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the minimum stability of the package</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_getMinimumStability">						<code>Composer\Package\RootPackageInterface::getMinimumStability()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMinimumStability">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStabilityFlags" id="_setStabilityFlags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#53-59" title="Go to source code">setStabilityFlags</a>(<span>array <var>$stabilityFlags</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the stabilityFlags
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the stabilityFlags</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_setStabilityFlags">						<code>Composer\Package\RootPackageInterface::setStabilityFlags()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStabilityFlags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStabilityFlags" id="_getStabilityFlags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#61-67" title="Go to source code">getStabilityFlags</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the stability flags to apply to dependencies
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the stability flags to apply to dependencies</p>
+<p>array('foo/bar' =&gt; 'dev')</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_getStabilityFlags">						<code>Composer\Package\RootPackageInterface::getStabilityFlags()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStabilityFlags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreferStable" id="_setPreferStable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#69-75" title="Go to source code">setPreferStable</a>(<span>bool <var>$preferStable</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the preferStable
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the preferStable</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_setPreferStable">						<code>Composer\Package\RootPackageInterface::setPreferStable()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreferStable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreferStable" id="_getPreferStable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#77-83" title="Go to source code">getPreferStable</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the root package prefers picking stable packages over unstable ones
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the root package prefers picking stable packages over unstable ones</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_getPreferStable">						<code>Composer\Package\RootPackageInterface::getPreferStable()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreferStable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setConfig" id="_setConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#85-91" title="Go to source code">setConfig</a>(<span>array <var>$config</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the config
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the config</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_setConfig">						<code>Composer\Package\RootPackageInterface::setConfig()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConfig" id="_getConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#93-99" title="Go to source code">getConfig</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the root package's configuration
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the root package's configuration</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_getConfig">						<code>Composer\Package\RootPackageInterface::getConfig()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setReferences" id="_setReferences">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#101-107" title="Go to source code">setReferences</a>(<span>array <var>$references</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the references
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the references</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_setReferences">						<code>Composer\Package\RootPackageInterface::setReferences()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setReferences">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getReferences" id="_getReferences">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#109-115" title="Go to source code">getReferences</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a set of package names and source references that must be enforced on them
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a set of package names and source references that must be enforced on them</p>
+<p>array('foo/bar' =&gt; 'abcd1234')</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_getReferences">						<code>Composer\Package\RootPackageInterface::getReferences()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getReferences">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAliases" id="_setAliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#117-123" title="Go to source code">setAliases</a>(<span>array <var>$aliases</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the aliases
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the aliases</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_setAliases">						<code>Composer\Package\RootPackageInterface::setAliases()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAliases">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAliases" id="_getAliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.RootPackage.html#125-131" title="Go to source code">getAliases</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a set of package names and their aliases
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a set of package names and their aliases</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.RootPackageInterface.html#_getAliases">						<code>Composer\Package\RootPackageInterface::getAliases()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAliases">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Package.CompletePackage.html"><span>Composer\Package\CompletePackage</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.CompletePackage.html#_setScripts">setScripts()</a>, <a href="Composer.Package.CompletePackage.html#_getScripts">getScripts()</a>, <a href="Composer.Package.CompletePackage.html#_setRepositories">setRepositories()</a>, <a href="Composer.Package.CompletePackage.html#_getRepositories">getRepositories()</a>, <a href="Composer.Package.CompletePackage.html#_setLicense">setLicense()</a>, <a href="Composer.Package.CompletePackage.html#_getLicense">getLicense()</a>, <a href="Composer.Package.CompletePackage.html#_setKeywords">setKeywords()</a>, <a href="Composer.Package.CompletePackage.html#_getKeywords">getKeywords()</a>, <a href="Composer.Package.CompletePackage.html#_setAuthors">setAuthors()</a>, <a href="Composer.Package.CompletePackage.html#_getAuthors">getAuthors()</a>, <a href="Composer.Package.CompletePackage.html#_setDescription">setDescription()</a>, <a href="Composer.Package.CompletePackage.html#_getDescription">getDescription()</a>, <a href="Composer.Package.CompletePackage.html#_setHomepage">setHomepage()</a>, <a href="Composer.Package.CompletePackage.html#_getHomepage">getHomepage()</a>, <a href="Composer.Package.CompletePackage.html#_setSupport">setSupport()</a>, <a href="Composer.Package.CompletePackage.html#_getSupport">getSupport()</a>, <a href="Composer.Package.CompletePackage.html#_setFunding">setFunding()</a>, <a href="Composer.Package.CompletePackage.html#_getFunding">getFunding()</a>, <a href="Composer.Package.CompletePackage.html#_isAbandoned">isAbandoned()</a>, <a href="Composer.Package.CompletePackage.html#_setAbandoned">setAbandoned()</a>, <a href="Composer.Package.CompletePackage.html#_getReplacementPackage">getReplacementPackage()</a>, <a href="Composer.Package.CompletePackage.html#_setArchiveName">setArchiveName()</a>, <a href="Composer.Package.CompletePackage.html#_getArchiveName">getArchiveName()</a>, <a href="Composer.Package.CompletePackage.html#_setArchiveExcludes">setArchiveExcludes()</a>, <a href="Composer.Package.CompletePackage.html#_getArchiveExcludes">getArchiveExcludes()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Package.Package.html"><span>Composer\Package\Package</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.Package.html#___construct">__construct()</a>, <a href="Composer.Package.Package.html#_isDev">isDev()</a>, <a href="Composer.Package.Package.html#_setType">setType()</a>, <a href="Composer.Package.Package.html#_getType">getType()</a>, <a href="Composer.Package.Package.html#_getStability">getStability()</a>, <a href="Composer.Package.Package.html#_setTargetDir">setTargetDir()</a>, <a href="Composer.Package.Package.html#_getTargetDir">getTargetDir()</a>, <a href="Composer.Package.Package.html#_setExtra">setExtra()</a>, <a href="Composer.Package.Package.html#_getExtra">getExtra()</a>, <a href="Composer.Package.Package.html#_setBinaries">setBinaries()</a>, <a href="Composer.Package.Package.html#_getBinaries">getBinaries()</a>, <a href="Composer.Package.Package.html#_setInstallationSource">setInstallationSource()</a>, <a href="Composer.Package.Package.html#_getInstallationSource">getInstallationSource()</a>, <a href="Composer.Package.Package.html#_setSourceType">setSourceType()</a>, <a href="Composer.Package.Package.html#_getSourceType">getSourceType()</a>, <a href="Composer.Package.Package.html#_setSourceUrl">setSourceUrl()</a>, <a href="Composer.Package.Package.html#_getSourceUrl">getSourceUrl()</a>, <a href="Composer.Package.Package.html#_setSourceReference">setSourceReference()</a>, <a href="Composer.Package.Package.html#_getSourceReference">getSourceReference()</a>, <a href="Composer.Package.Package.html#_setSourceMirrors">setSourceMirrors()</a>, <a href="Composer.Package.Package.html#_getSourceMirrors">getSourceMirrors()</a>, <a href="Composer.Package.Package.html#_getSourceUrls">getSourceUrls()</a>, <a href="Composer.Package.Package.html#_setDistType">setDistType()</a>, <a href="Composer.Package.Package.html#_getDistType">getDistType()</a>, <a href="Composer.Package.Package.html#_setDistUrl">setDistUrl()</a>, <a href="Composer.Package.Package.html#_getDistUrl">getDistUrl()</a>, <a href="Composer.Package.Package.html#_setDistReference">setDistReference()</a>, <a href="Composer.Package.Package.html#_getDistReference">getDistReference()</a>, <a href="Composer.Package.Package.html#_setDistSha1Checksum">setDistSha1Checksum()</a>, <a href="Composer.Package.Package.html#_getDistSha1Checksum">getDistSha1Checksum()</a>, <a href="Composer.Package.Package.html#_setDistMirrors">setDistMirrors()</a>, <a href="Composer.Package.Package.html#_getDistMirrors">getDistMirrors()</a>, <a href="Composer.Package.Package.html#_getDistUrls">getDistUrls()</a>, <a href="Composer.Package.Package.html#_getTransportOptions">getTransportOptions()</a>, <a href="Composer.Package.Package.html#_setTransportOptions">setTransportOptions()</a>, <a href="Composer.Package.Package.html#_getVersion">getVersion()</a>, <a href="Composer.Package.Package.html#_getPrettyVersion">getPrettyVersion()</a>, <a href="Composer.Package.Package.html#_setReleaseDate">setReleaseDate()</a>, <a href="Composer.Package.Package.html#_getReleaseDate">getReleaseDate()</a>, <a href="Composer.Package.Package.html#_setRequires">setRequires()</a>, <a href="Composer.Package.Package.html#_getRequires">getRequires()</a>, <a href="Composer.Package.Package.html#_setConflicts">setConflicts()</a>, <a href="Composer.Package.Package.html#_getConflicts">getConflicts()</a>, <a href="Composer.Package.Package.html#_setProvides">setProvides()</a>, <a href="Composer.Package.Package.html#_getProvides">getProvides()</a>, <a href="Composer.Package.Package.html#_setReplaces">setReplaces()</a>, <a href="Composer.Package.Package.html#_getReplaces">getReplaces()</a>, <a href="Composer.Package.Package.html#_setDevRequires">setDevRequires()</a>, <a href="Composer.Package.Package.html#_getDevRequires">getDevRequires()</a>, <a href="Composer.Package.Package.html#_setSuggests">setSuggests()</a>, <a href="Composer.Package.Package.html#_getSuggests">getSuggests()</a>, <a href="Composer.Package.Package.html#_setAutoload">setAutoload()</a>, <a href="Composer.Package.Package.html#_getAutoload">getAutoload()</a>, <a href="Composer.Package.Package.html#_setDevAutoload">setDevAutoload()</a>, <a href="Composer.Package.Package.html#_getDevAutoload">getDevAutoload()</a>, <a href="Composer.Package.Package.html#_setIncludePaths">setIncludePaths()</a>, <a href="Composer.Package.Package.html#_getIncludePaths">getIncludePaths()</a>, <a href="Composer.Package.Package.html#_setNotificationUrl">setNotificationUrl()</a>, <a href="Composer.Package.Package.html#_getNotificationUrl">getNotificationUrl()</a>, <a href="Composer.Package.Package.html#_setIsDefaultBranch">setIsDefaultBranch()</a>, <a href="Composer.Package.Package.html#_isDefaultBranch">isDefaultBranch()</a>, <a href="Composer.Package.Package.html#_setSourceDistReferences">setSourceDistReferences()</a>, <a href="Composer.Package.Package.html#_replaceVersion">replaceVersion()</a>, <a href="Composer.Package.Package.html#_getUrls">getUrls()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Package.BasePackage.html"><span>Composer\Package\BasePackage</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.BasePackage.html#_getName">getName()</a>, <a href="Composer.Package.BasePackage.html#_getPrettyName">getPrettyName()</a>, <a href="Composer.Package.BasePackage.html#_getNames">getNames()</a>, <a href="Composer.Package.BasePackage.html#_setId">setId()</a>, <a href="Composer.Package.BasePackage.html#_getId">getId()</a>, <a href="Composer.Package.BasePackage.html#_setRepository">setRepository()</a>, <a href="Composer.Package.BasePackage.html#_getRepository">getRepository()</a>, <a href="Composer.Package.BasePackage.html#_isPlatform">isPlatform()</a>, <a href="Composer.Package.BasePackage.html#_getUniqueName">getUniqueName()</a>, <a href="Composer.Package.BasePackage.html#_equals">equals()</a>, <a href="Composer.Package.BasePackage.html#___toString">__toString()</a>, <a href="Composer.Package.BasePackage.html#_getPrettyString">getPrettyString()</a>, <a href="Composer.Package.BasePackage.html#_getFullPrettyVersion">getFullPrettyVersion()</a>, <a href="Composer.Package.BasePackage.html#_getStabilityPriority">getStabilityPriority()</a>, <a href="Composer.Package.BasePackage.html#___clone">__clone()</a>, <a href="Composer.Package.BasePackage.html#_packageNameToRegexp">packageNameToRegexp()</a>, <a href="Composer.Package.BasePackage.html#_packageNamesToRegexp">packageNamesToRegexp()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="DEFAULT_PRETTY_VERSION" id="DEFAULT_PRETTY_VERSION">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Package.RootPackage.html#22" title="Go to source code">DEFAULT_PRETTY_VERSION</a> = <span class="php-str">'1.0.0+no-version-set'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DEFAULT_PRETTY_VERSION">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Composer.Package.BasePackage.html"><span>Composer\Package\BasePackage</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.BasePackage.html#STABILITY_STABLE"><code>STABILITY_STABLE</code></a>, <a href="Composer.Package.BasePackage.html#STABILITY_RC"><code>STABILITY_RC</code></a>, <a href="Composer.Package.BasePackage.html#STABILITY_BETA"><code>STABILITY_BETA</code></a>, <a href="Composer.Package.BasePackage.html#STABILITY_ALPHA"><code>STABILITY_ALPHA</code></a>, <a href="Composer.Package.BasePackage.html#STABILITY_DEV"><code>STABILITY_DEV</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Composer.Package.PackageInterface.html"><span>Composer\Package\PackageInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF_IF_DEV"><code>DISPLAY_SOURCE_REF_IF_DEV</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF"><code>DISPLAY_SOURCE_REF</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_DIST_REF"><code>DISPLAY_DIST_REF</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Composer.Package.PackageInterface.html"><span>Composer\Package\PackageInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF_IF_DEV"><code>DISPLAY_SOURCE_REF_IF_DEV</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF"><code>DISPLAY_SOURCE_REF</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_DIST_REF"><code>DISPLAY_DIST_REF</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Composer.Package.PackageInterface.html"><span>Composer\Package\PackageInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF_IF_DEV"><code>DISPLAY_SOURCE_REF_IF_DEV</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF"><code>DISPLAY_SOURCE_REF</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_DIST_REF"><code>DISPLAY_DIST_REF</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="minimumStability" id="$minimumStability">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.RootPackage.html#24-25" title="Go to source code">$minimumStability</a></var> = <span class="php-str">'stable'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$minimumStability">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preferStable" id="$preferStable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.RootPackage.html#26-27" title="Go to source code">$preferStable</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$preferStable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stabilityFlags" id="$stabilityFlags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>::STABILITY_*&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.RootPackage.html#28-29" title="Go to source code">$stabilityFlags</a></var> = []</code>
+				
+	<div class="expandable-collapsedView">
+		Map of package name to stability constant
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map of package name to stability constant</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$stabilityFlags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="config" id="$config">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.RootPackage.html#30-31" title="Go to source code">$config</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$config">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="references" id="$references">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.RootPackage.html#32-33" title="Go to source code">$references</a></var> = []</code>
+				
+	<div class="expandable-collapsedView">
+		Map of package name to reference/commit hash
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map of package name to reference/commit hash</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$references">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="aliases" id="$aliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">list&lt;array{package: string, version: string, alias: string, alias_normalized: string}&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Package.RootPackage.html#34-35" title="Go to source code">$aliases</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$aliases">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.Package.CompletePackage.html"><span>Composer\Package\CompletePackage</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.Package.CompletePackage.html#$repositories">$repositories</a></var>, <var><a href="Composer.Package.CompletePackage.html#$license">$license</a></var>, <var><a href="Composer.Package.CompletePackage.html#$keywords">$keywords</a></var>, <var><a href="Composer.Package.CompletePackage.html#$authors">$authors</a></var>, <var><a href="Composer.Package.CompletePackage.html#$description">$description</a></var>, <var><a href="Composer.Package.CompletePackage.html#$homepage">$homepage</a></var>, <var><a href="Composer.Package.CompletePackage.html#$scripts">$scripts</a></var>, <var><a href="Composer.Package.CompletePackage.html#$support">$support</a></var>, <var><a href="Composer.Package.CompletePackage.html#$funding">$funding</a></var>, <var><a href="Composer.Package.CompletePackage.html#$abandoned">$abandoned</a></var>, <var><a href="Composer.Package.CompletePackage.html#$archiveName">$archiveName</a></var>, <var><a href="Composer.Package.CompletePackage.html#$archiveExcludes">$archiveExcludes</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.Package.Package.html"><span>Composer\Package\Package</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.Package.Package.html#$type">$type</a></var>, <var><a href="Composer.Package.Package.html#$targetDir">$targetDir</a></var>, <var><a href="Composer.Package.Package.html#$installationSource">$installationSource</a></var>, <var><a href="Composer.Package.Package.html#$sourceType">$sourceType</a></var>, <var><a href="Composer.Package.Package.html#$sourceUrl">$sourceUrl</a></var>, <var><a href="Composer.Package.Package.html#$sourceReference">$sourceReference</a></var>, <var><a href="Composer.Package.Package.html#$sourceMirrors">$sourceMirrors</a></var>, <var><a href="Composer.Package.Package.html#$distType">$distType</a></var>, <var><a href="Composer.Package.Package.html#$distUrl">$distUrl</a></var>, <var><a href="Composer.Package.Package.html#$distReference">$distReference</a></var>, <var><a href="Composer.Package.Package.html#$distSha1Checksum">$distSha1Checksum</a></var>, <var><a href="Composer.Package.Package.html#$distMirrors">$distMirrors</a></var>, <var><a href="Composer.Package.Package.html#$version">$version</a></var>, <var><a href="Composer.Package.Package.html#$prettyVersion">$prettyVersion</a></var>, <var><a href="Composer.Package.Package.html#$releaseDate">$releaseDate</a></var>, <var><a href="Composer.Package.Package.html#$extra">$extra</a></var>, <var><a href="Composer.Package.Package.html#$binaries">$binaries</a></var>, <var><a href="Composer.Package.Package.html#$dev">$dev</a></var>, <var><a href="Composer.Package.Package.html#$stability">$stability</a></var>, <var><a href="Composer.Package.Package.html#$notificationUrl">$notificationUrl</a></var>, <var><a href="Composer.Package.Package.html#$requires">$requires</a></var>, <var><a href="Composer.Package.Package.html#$conflicts">$conflicts</a></var>, <var><a href="Composer.Package.Package.html#$provides">$provides</a></var>, <var><a href="Composer.Package.Package.html#$replaces">$replaces</a></var>, <var><a href="Composer.Package.Package.html#$devRequires">$devRequires</a></var>, <var><a href="Composer.Package.Package.html#$suggests">$suggests</a></var>, <var><a href="Composer.Package.Package.html#$autoload">$autoload</a></var>, <var><a href="Composer.Package.Package.html#$devAutoload">$devAutoload</a></var>, <var><a href="Composer.Package.Package.html#$includePaths">$includePaths</a></var>, <var><a href="Composer.Package.Package.html#$isDefaultBranch">$isDefaultBranch</a></var>, <var><a href="Composer.Package.Package.html#$transportOptions">$transportOptions</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.Package.BasePackage.html"><span>Composer\Package\BasePackage</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.Package.BasePackage.html#$stabilities">$stabilities</a></var>, <var><a href="Composer.Package.BasePackage.html#$name">$name</a></var>, <var><a href="Composer.Package.BasePackage.html#$prettyName">$prettyName</a></var>, <var><a href="Composer.Package.BasePackage.html#$repository">$repository</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

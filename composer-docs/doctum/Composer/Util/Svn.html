@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Util\Svn | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Util_Svn" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Util.html">Util</a></li><li class="backslash">\</li><li>Svn</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Svn    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Svn</strong>
+</p>
+
+        
+    
+        
+
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                            private
+                                                                                MAX_QTY_AUTH_TRIES
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_credentials">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$credentials</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hasAuth">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$hasAuth</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_io">
+                                        protected                                        <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a>
+                                                                                
+                                    </td>
+                <td>$io</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_url">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$url</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cacheCredentials">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$cacheCredentials</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_process">
+                                        protected                                        <a href="../../Composer/Util/ProcessExecutor.html"><abbr title="Composer\Util\ProcessExecutor">ProcessExecutor</abbr></a>
+                                                                                
+                                    </td>
+                <td>$process</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_qtyAuthTries">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$qtyAuthTries</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_config">
+                                        protected                                        <a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a>
+                                                                                
+                                    </td>
+                <td>$config</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(string $url, <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config, <abbr title="Composer\Util\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null $process = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cleanEnv">cleanEnv</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_execute">execute</a>(string $command, string $url, string|null $cwd = null, string|null $path = null, bool $verbose = false)
+        
+                                            <p><p>Execute an SVN remote command and try to fix up the process with credentials
+if necessary.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_executeLocal">executeLocal</a>(string $command, string $path, string|null $cwd = null, bool $verbose = false)
+        
+                                            <p><p>Execute an SVN local command and try to fix up the process with credentials
+if necessary.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCacheCredentials">setCacheCredentials</a>(bool $cacheCredentials)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Util/Svn.html"><abbr title="Composer\Util\Svn">Svn</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doAuthDance">doAuthDance</a>()
+        
+                                            <p><p>Repositories requests credentials, let's put them in.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCommand">getCommand</a>(string $cmd, string $url, string|null $path = null)
+        
+                                            <p><p>A method to create the svn commands run.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCredentialString">getCredentialString</a>()
+        
+                                            <p><p>Return the credential string for the svn command.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPassword">getPassword</a>()
+        
+                                            <p><p>Get the password for the svn command. Can be empty.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUsername">getUsername</a>()
+        
+                                            <p><p>Get the username for the svn command.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasAuth">hasAuth</a>()
+        
+                                            <p><p>Detect Svn Auth.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthCache">getAuthCache</a>()
+        
+                                            <p><p>Return the no-auth-cache switch.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_binaryVersion">binaryVersion</a>()
+        
+                                            <p><p>Returns the version of the svn binary contained in PATH</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 75</div>
+        <code>                    
+    <strong>__construct</strong>(string $url, <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config, <abbr title="Composer\Util\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null $process = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Util\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null</td>
+                <td>$process</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanEnv">
+        <div class="location">at line 83</div>
+        <code>        static            void
+    <strong>cleanEnv</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line 101</div>
+        <code>                    string
+    <strong>execute</strong>(string $command, string $url, string|null $cwd = null, string|null $path = null, bool $verbose = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Execute an SVN remote command and try to fix up the process with credentials
+if necessary.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td><p>SVN command to run</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td><p>SVN url</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$cwd</td>
+                <td><p>Working directory</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$path</td>
+                <td><p>Target for a checkout</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$verbose</td>
+                <td><p>Output all output to the user</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeLocal">
+        <div class="location">at line 120</div>
+        <code>                    string
+    <strong>executeLocal</strong>(string $command, string $path, string|null $cwd = null, bool $verbose = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Execute an SVN local command and try to fix up the process with credentials
+if necessary.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td><p>SVN command to run</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td><p>Path argument passed thru to the command</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$cwd</td>
+                <td><p>Working directory</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$verbose</td>
+                <td><p>Output all output to the user</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheCredentials">
+        <div class="location">at line 176</div>
+        <code>                    void
+    <strong>setCacheCredentials</strong>(bool $cacheCredentials)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$cacheCredentials</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doAuthDance">
+        <div class="location">at line 187</div>
+        <code>            protected        <a href="../../Composer/Util/Svn.html"><abbr title="Composer\Util\Svn">Svn</abbr></a>
+    <strong>doAuthDance</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Repositories requests credentials, let's put them in.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Util/Svn.html"><abbr title="Composer\Util\Svn">Svn</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommand">
+        <div class="location">at line 216</div>
+        <code>            protected        string
+    <strong>getCommand</strong>(string $cmd, string $url, string|null $path = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>A method to create the svn commands run.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cmd</td>
+                <td><p>Usually 'svn ls' or something like that.</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td><p>Repo URL.</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$path</td>
+                <td><p>Target for a checkout</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCredentialString">
+        <div class="location">at line 238</div>
+        <code>            protected        string
+    <strong>getCredentialString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the credential string for the svn command.</p></p>                <p><p>Adds --no-auth-cache when credentials are present.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPassword">
+        <div class="location">at line 257</div>
+        <code>            protected        string
+    <strong>getPassword</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the password for the svn command. Can be empty.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsername">
+        <div class="location">at line 271</div>
+        <code>            protected        string
+    <strong>getUsername</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the username for the svn command.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAuth">
+        <div class="location">at line 283</div>
+        <code>            protected        bool
+    <strong>hasAuth</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Detect Svn Auth.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthCache">
+        <div class="location">at line 299</div>
+        <code>            protected        string
+    <strong>getAuthCache</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the no-auth-cache switch.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_binaryVersion">
+        <div class="location">at line 349</div>
+        <code>                    string|null
+    <strong>binaryVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the version of the svn binary contained in PATH</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

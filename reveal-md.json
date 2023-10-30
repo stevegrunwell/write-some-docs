@@ -1,7 +1,7 @@
 {
     "title": "I'd Like to Write the World Some Docs",
     "theme": "white",
-    "highlightTheme": "github",
+    "highlightTheme": "a11y-dark",
     "css": [
         "resources/styles.css"
     ],
@@ -12,7 +12,7 @@
         "controls": true,
         "controlsTutorial": false,
         "pause": true,
-        "progress": true,
+        "progress": false,
         "slideNumber": false,
         "transition": "none"
     }

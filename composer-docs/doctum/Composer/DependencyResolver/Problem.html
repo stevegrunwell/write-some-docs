@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\DependencyResolver\Problem | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_DependencyResolver_Problem" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/DependencyResolver.html">DependencyResolver</a></li><li class="backslash">\</li><li>Problem</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Problem    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Problem</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Represents a problem detected while solving dependencies</p></p>                    </div>
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_reasonSeen">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;string,true&gt;">array&lt;string,true&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$reasonSeen</td>
+                <td class="last"><p>A map containing the id of each rule part of this problem as a key</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reasons">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;int,array&lt;int,\Composer\DependencyResolver\Rule&gt;&gt;">Rule&gt;&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$reasons</td>
+                <td class="last"><p>A set of reasons for the problem, each is a rule or a root require and a rule</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_section">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$section</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addRule">addRule</a>(<a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> $rule)
+        
+                                            <p><p>Add a rule as a reason</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReasons">getReasons</a>()
+        
+                                            <p><p>Retrieve all reasons for this problem</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrettyString">getPrettyString</a>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, array $installedMap = [], array $learnedPool = [])
+        
+                                            <p><p>A human readable textual representation of the problem's reasons</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_formatDeduplicatedRules">formatDeduplicatedRules</a>(array $rules, string $indent, <a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, array $installedMap = [], array $learnedPool = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isCausedByLock">isCausedByLock</a>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addReason">addReason</a>(string $id, <a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> $reason)
+        
+                                            <p><p>Store a reason descriptor but ignore duplicates</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_nextSection">nextSection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMissingPackageReason">getMissingPackageReason</a>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, string $packageName, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPackageList">getPackageList</a>(array $packages, bool $isVerbose, <abbr title="Composer\DependencyResolver\Composer\DependencyResolver\Pool">Pool</abbr>|null $pool = null, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null, bool $useRemovedVersionGroup = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_constraintToText">constraintToText</a>(<abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null)
+        
+                                            <p><p>Turns a constraint into text usable in a sentence describing a request</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addRule">
+        <div class="location">at line 56</div>
+        <code>                    void
+    <strong>addRule</strong>(<a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> $rule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a rule as a reason</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></td>
+                <td>$rule</td>
+                <td><p>A rule which is a reason for this problem</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReasons">
+        <div class="location">at line 66</div>
+        <code>                    array
+    <strong>getReasons</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieve all reasons for this problem</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td><p>The problem's reasons</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrettyString">
+        <div class="location">at line 77</div>
+        <code>                    string
+    <strong>getPrettyString</strong>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, array $installedMap = [], array $learnedPool = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>A human readable textual representation of the problem's reasons</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a></td>
+                <td>$repositorySet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isVerbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$installedMap</td>
+                <td><p>A map of all present packages</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$learnedPool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatDeduplicatedRules">
+        <div class="location">at line 109</div>
+        <code>        static            string
+    <strong>formatDeduplicatedRules</strong>(array $rules, string $indent, <a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, array $installedMap = [], array $learnedPool = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$rules</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$indent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a></td>
+                <td>$repositorySet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isVerbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$installedMap</td>
+                <td><p>A map of all present packages</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$learnedPool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCausedByLock">
+        <div class="location">at line 155</div>
+        <code>                    bool
+    <strong>isCausedByLock</strong>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a></td>
+                <td>$repositorySet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addReason">
+        <div class="location">at line 174</div>
+        <code>            protected        void
+    <strong>addReason</strong>(string $id, <a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a> $reason)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Store a reason descriptor but ignore duplicates</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td><p>A canonical identifier for the reason</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Rule.html"><abbr title="Composer\DependencyResolver\Rule">Rule</abbr></a></td>
+                <td>$reason</td>
+                <td><p>The reason descriptor</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nextSection">
+        <div class="location">at line 185</div>
+        <code>                    void
+    <strong>nextSection</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMissingPackageReason">
+        <div class="location">at line 194</div>
+        <code>        static            array
+    <strong>getMissingPackageReason</strong>(<a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a> $repositorySet, <a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a> $request, <a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a> $pool, bool $isVerbose, string $packageName, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/RepositorySet.html"><abbr title="Composer\Repository\RepositorySet">RepositorySet</abbr></a></td>
+                <td>$repositorySet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Request.html"><abbr title="Composer\DependencyResolver\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Pool.html"><abbr title="Composer\DependencyResolver\Pool">Pool</abbr></a></td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isVerbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPackageList">
+        <div class="location">at line 373</div>
+        <code>        static            string
+    <strong>getPackageList</strong>(array $packages, bool $isVerbose, <abbr title="Composer\DependencyResolver\Composer\DependencyResolver\Pool">Pool</abbr>|null $pool = null, <abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null, bool $useRemovedVersionGroup = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packages</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isVerbose</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\DependencyResolver\Pool">Pool</abbr>|null</td>
+                <td>$pool</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useRemovedVersionGroup</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_constraintToText">
+        <div class="location">at line 558</div>
+        <code>        static    protected        string
+    <strong>constraintToText</strong>(<abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null $constraint = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Turns a constraint into text usable in a sentence describing a request</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\DependencyResolver\Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr>|null</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

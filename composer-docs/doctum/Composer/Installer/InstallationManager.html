@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Installer\InstallationManager | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Installer_InstallationManager" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Installer.html">Installer</a></li><li class="backslash">\</li><li>InstallationManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>InstallationManager    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>InstallationManager</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Package operation manager.</p></p>                    </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../Composer/Util/Loop.html"><abbr title="Composer\Util\Loop">Loop</abbr></a> $loop, <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <abbr title="Composer\Installer\Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr>|null $eventDispatcher = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addInstaller">addInstaller</a>(<a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a> $installer)
+        
+                                            <p><p>Adds installer</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeInstaller">removeInstaller</a>(<a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a> $installer)
+        
+                                            <p><p>Removes installer</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disablePlugins">disablePlugins</a>()
+        
+                                            <p><p>Disables plugins.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInstaller">getInstaller</a>(string $type)
+        
+                                            <p><p>Returns installer for a specific package type.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isPackageInstalled">isPackageInstalled</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p><p>Checks whether provided package is installed in one of the registered installers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ensureBinariesPresence">ensureBinariesPresence</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p><p>Install binary for the given package.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_execute">execute</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, array $operations, bool $devMode = true, bool $runScripts = true, bool $downloadOnly = false)
+        
+                                            <p><p>Executes solver operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_download">download</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p><p>Executes download operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_install">install</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/InstallOperation.html"><abbr title="Composer\DependencyResolver\Operation\InstallOperation">InstallOperation</abbr></a> $operation)
+        
+                                            <p><p>Executes install operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/UpdateOperation.html"><abbr title="Composer\DependencyResolver\Operation\UpdateOperation">UpdateOperation</abbr></a> $operation)
+        
+                                            <p><p>Executes update operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_uninstall">uninstall</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/UninstallOperation.html"><abbr title="Composer\DependencyResolver\Operation\UninstallOperation">UninstallOperation</abbr></a> $operation)
+        
+                                            <p><p>Uninstalls package.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_markAliasInstalled">markAliasInstalled</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/MarkAliasInstalledOperation.html"><abbr title="Composer\DependencyResolver\Operation\MarkAliasInstalledOperation">MarkAliasInstalledOperation</abbr></a> $operation)
+        
+                                            <p><p>Executes markAliasInstalled operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_markAliasUninstalled">markAliasUninstalled</a>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/MarkAliasUninstalledOperation.html"><abbr title="Composer\DependencyResolver\Operation\MarkAliasUninstalledOperation">MarkAliasUninstalledOperation</abbr></a> $operation)
+        
+                                            <p><p>Executes markAlias operation.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInstallPath">getInstallPath</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p><p>Returns the installation path of a package</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setOutputProgress">setOutputProgress</a>(bool $outputProgress)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_notifyInstalls">notifyInstalls</a>(<a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 57</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Composer/Util/Loop.html"><abbr title="Composer\Util\Loop">Loop</abbr></a> $loop, <a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <abbr title="Composer\Installer\Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr>|null $eventDispatcher = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Util/Loop.html"><abbr title="Composer\Util\Loop">Loop</abbr></a></td>
+                <td>$loop</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Installer\Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr>|null</td>
+                <td>$eventDispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line 64</div>
+        <code>                    void
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addInstaller">
+        <div class="location">at line 75</div>
+        <code>                    void
+    <strong>addInstaller</strong>(<a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a> $installer)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds installer</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a></td>
+                <td>$installer</td>
+                <td><p>installer instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeInstaller">
+        <div class="location">at line 86</div>
+        <code>                    void
+    <strong>removeInstaller</strong>(<a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a> $installer)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Removes installer</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a></td>
+                <td>$installer</td>
+                <td><p>installer instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disablePlugins">
+        <div class="location">at line 101</div>
+        <code>                    void
+    <strong>disablePlugins</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disables plugins.</p></p>                <p><p>We prevent any plugins from being instantiated by simply
+deactivating the installer for them. This ensure that no third-party
+code is ever executed.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstaller">
+        <div class="location">at line 119</div>
+        <code>                    <a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a>
+    <strong>getInstaller</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns installer for a specific package type.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>package type</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Installer/InstallerInterface.html"><abbr title="Composer\Installer\InstallerInterface">InstallerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPackageInstalled">
+        <div class="location">at line 142</div>
+        <code>                    bool
+    <strong>isPackageInstalled</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks whether provided package is installed in one of the registered installers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to check</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td><p>package instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ensureBinariesPresence">
+        <div class="location">at line 157</div>
+        <code>                    void
+    <strong>ensureBinariesPresence</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Install binary for the given package.</p></p>                <p><p>If the installer associated to this package doesn't handle that function, it'll do nothing.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td><p>Package instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line 181</div>
+        <code>                    void
+    <strong>execute</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, array $operations, bool $devMode = true, bool $runScripts = true, bool $downloadOnly = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes solver operation.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to add/remove/update packages</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$operations</td>
+                <td><p>operations to execute</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$devMode</td>
+                <td><p>whether the install is being run in dev mode</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$runScripts</td>
+                <td><p>whether to dispatch script events</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$downloadOnly</td>
+                <td><p>whether to only download packages</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_download">
+        <div class="location">at line 445</div>
+        <code>                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+    <strong>download</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes download operation.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_install">
+        <div class="location">at line 460</div>
+        <code>                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+    <strong>install</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/InstallOperation.html"><abbr title="Composer\DependencyResolver\Operation\InstallOperation">InstallOperation</abbr></a> $operation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes install operation.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to check</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Operation/InstallOperation.html"><abbr title="Composer\DependencyResolver\Operation\InstallOperation">InstallOperation</abbr></a></td>
+                <td>$operation</td>
+                <td><p>operation instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at line 477</div>
+        <code>                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+    <strong>update</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/UpdateOperation.html"><abbr title="Composer\DependencyResolver\Operation\UpdateOperation">UpdateOperation</abbr></a> $operation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes update operation.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to check</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Operation/UpdateOperation.html"><abbr title="Composer\DependencyResolver\Operation\UpdateOperation">UpdateOperation</abbr></a></td>
+                <td>$operation</td>
+                <td><p>operation instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uninstall">
+        <div class="location">at line 516</div>
+        <code>                    <abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null
+    <strong>uninstall</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/UninstallOperation.html"><abbr title="Composer\DependencyResolver\Operation\UninstallOperation">UninstallOperation</abbr></a> $operation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Uninstalls package.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to check</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Operation/UninstallOperation.html"><abbr title="Composer\DependencyResolver\Operation\UninstallOperation">UninstallOperation</abbr></a></td>
+                <td>$operation</td>
+                <td><p>operation instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Installer\React\Promise\PromiseInterface">PromiseInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markAliasInstalled">
+        <div class="location">at line 530</div>
+        <code>                    void
+    <strong>markAliasInstalled</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/MarkAliasInstalledOperation.html"><abbr title="Composer\DependencyResolver\Operation\MarkAliasInstalledOperation">MarkAliasInstalledOperation</abbr></a> $operation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes markAliasInstalled operation.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to check</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Operation/MarkAliasInstalledOperation.html"><abbr title="Composer\DependencyResolver\Operation\MarkAliasInstalledOperation">MarkAliasInstalledOperation</abbr></a></td>
+                <td>$operation</td>
+                <td><p>operation instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markAliasUninstalled">
+        <div class="location">at line 545</div>
+        <code>                    void
+    <strong>markAliasUninstalled</strong>(<a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $repo, <a href="../../Composer/DependencyResolver/Operation/MarkAliasUninstalledOperation.html"><abbr title="Composer\DependencyResolver\Operation\MarkAliasUninstalledOperation">MarkAliasUninstalledOperation</abbr></a> $operation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Executes markAlias operation.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$repo</td>
+                <td><p>repository in which to check</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Operation/MarkAliasUninstalledOperation.html"><abbr title="Composer\DependencyResolver\Operation\MarkAliasUninstalledOperation">MarkAliasUninstalledOperation</abbr></a></td>
+                <td>$operation</td>
+                <td><p>operation instance</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstallPath">
+        <div class="location">at line 557</div>
+        <code>                    string|null
+    <strong>getInstallPath</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the installation path of a package</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td><p>absolute path to install to, which does not end with a slash, or null if the package does not have anything installed on disk</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutputProgress">
+        <div class="location">at line 564</div>
+        <code>                    void
+    <strong>setOutputProgress</strong>(bool $outputProgress)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$outputProgress</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notifyInstalls">
+        <div class="location">at line 569</div>
+        <code>                    void
+    <strong>notifyInstalls</strong>(<a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

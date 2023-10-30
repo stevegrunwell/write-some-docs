@@ -1,0 +1,616 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Downloader\PathDownloader |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ArchiveDownloader.html">
+							ArchiveDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloadManager.html">
+							DownloadManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FileDownloader.html">
+							FileDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FossilDownloader.html">
+							FossilDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GitDownloader.html">
+							GitDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GzipDownloader.html">
+							GzipDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.HgDownloader.html">
+							HgDownloader
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Downloader.PathDownloader.html">
+							PathDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PerforceDownloader.html">
+							PerforceDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PharDownloader.html">
+							PharDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.RarDownloader.html">
+							RarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.SvnDownloader.html">
+							SvnDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TarDownloader.html">
+							TarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsDownloader.html">
+							VcsDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.XzDownloader.html">
+							XzDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.ZipDownloader.html">
+							ZipDownloader
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ChangeReportInterface.html">
+							ChangeReportInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloaderInterface.html">
+							DownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DvcsDownloaderInterface.html">
+							DvcsDownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsCapableDownloaderInterface.html">
+							VcsCapableDownloaderInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.FilesystemException.html">
+							FilesystemException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.MaxFileSizeExceededException.html">
+							MaxFileSizeExceededException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TransportException.html">
+							TransportException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Downloader.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Downloader.PathDownloader.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Downloader.html">Downloader</a>\<a href="Composer.Downloader.PathDownloader.html">PathDownloader</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Downloader.FileDownloader.html"><span title="Composer\Downloader\FileDownloader">FileDownloader</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Composer.Downloader.VcsCapableDownloaderInterface.html"><span title="Composer\Downloader\VcsCapableDownloaderInterface">VcsCapableDownloaderInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Download a package from a local path.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.Downloader.FileDownloader.html"><span>Composer\Downloader\FileDownloader</span></a>
+
+		implements
+			<a href="Composer.Downloader.DownloaderInterface.html"><span title="Composer\Downloader\DownloaderInterface">DownloaderInterface</span></a>, 
+			<a href="Composer.Downloader.ChangeReportInterface.html"><span title="Composer\Downloader\ChangeReportInterface">ChangeReportInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Downloader\PathDownloader</span></b>
+
+		implements
+			<a href="Composer.Downloader.VcsCapableDownloaderInterface.html"><span title="Composer\Downloader\VcsCapableDownloaderInterface">VcsCapableDownloaderInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Downloader.PathDownloader.html#34" title="Go to source code">Composer/Downloader/PathDownloader.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="download" id="_download">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.PathDownloader.html#39-73" title="Go to source code">download</a>(
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>,
+	<span>string <var>$path</var></span>,
+	<span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$prevPackage</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$output</var> = <span class="php-kw">true</span></span>,
+): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		This should do any network-related tasks to prepare for an upcoming install/update
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This should do any network-related tasks to prepare for an upcoming install/update</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.FileDownloader.html#_download">						<code>Composer\Downloader\FileDownloader::download()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_download">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="install" id="_install">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.PathDownloader.html#75-159" title="Go to source code">install</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>, <span>bool <var>$output</var> = <span class="php-kw">true</span></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Installs specific package into specific folder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Installs specific package into specific folder.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.FileDownloader.html#_install">						<code>Composer\Downloader\FileDownloader::install()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_install">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.PathDownloader.html#161-204" title="Go to source code">remove</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>, <span>bool <var>$output</var> = <span class="php-kw">true</span></span>): <span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Removes specific package from specific folder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes specific package from specific folder.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.FileDownloader.html#_remove">						<code>Composer\Downloader\FileDownloader::remove()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getVcsReference" id="_getVcsReference">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.PathDownloader.html#206-222" title="Go to source code">getVcsReference</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the VCS Reference for the package at path
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the VCS Reference for the package at path</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package directory</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>package directory</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>reference or null</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.VcsCapableDownloaderInterface.html#_getVcsReference">						<code>Composer\Downloader\VcsCapableDownloaderInterface::getVcsReference()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getVcsReference">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInstallOperationAppendix" id="_getInstallOperationAppendix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.PathDownloader.html#224-246" title="Go to source code">getInstallOperationAppendix</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets appendix message to add to the "- Upgrading x" string being output on update
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets appendix message to add to the &quot;- Upgrading x&quot; string being output on update</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>download path</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.Downloader.FileDownloader.html#_getInstallOperationAppendix">						<code>Composer\Downloader\FileDownloader::getInstallOperationAppendix()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInstallOperationAppendix">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Downloader.FileDownloader.html"><span>Composer\Downloader\FileDownloader</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Downloader.FileDownloader.html#___construct">__construct()</a>, <a href="Composer.Downloader.FileDownloader.html#_getInstallationSource">getInstallationSource()</a>, <a href="Composer.Downloader.FileDownloader.html#_prepare">prepare()</a>, <a href="Composer.Downloader.FileDownloader.html#_cleanup">cleanup()</a>, <a href="Composer.Downloader.FileDownloader.html#_getDistPath">getDistPath()</a>, <a href="Composer.Downloader.FileDownloader.html#_clearLastCacheWrite">clearLastCacheWrite()</a>, <a href="Composer.Downloader.FileDownloader.html#_addCleanupPath">addCleanupPath()</a>, <a href="Composer.Downloader.FileDownloader.html#_removeCleanupPath">removeCleanupPath()</a>, <a href="Composer.Downloader.FileDownloader.html#_update">update()</a>, <a href="Composer.Downloader.FileDownloader.html#_getFileName">getFileName()</a>, <a href="Composer.Downloader.FileDownloader.html#_processUrl">processUrl()</a>, <a href="Composer.Downloader.FileDownloader.html#_getLocalChanges">getLocalChanges()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.Downloader.FileDownloader.html"><span>Composer\Downloader\FileDownloader</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.Downloader.FileDownloader.html#$io">$io</a></var>, <var><a href="Composer.Downloader.FileDownloader.html#$config">$config</a></var>, <var><a href="Composer.Downloader.FileDownloader.html#$httpDownloader">$httpDownloader</a></var>, <var><a href="Composer.Downloader.FileDownloader.html#$filesystem">$filesystem</a></var>, <var><a href="Composer.Downloader.FileDownloader.html#$cache">$cache</a></var>, <var><a href="Composer.Downloader.FileDownloader.html#$eventDispatcher">$eventDispatcher</a></var>, <var><a href="Composer.Downloader.FileDownloader.html#$process">$process</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

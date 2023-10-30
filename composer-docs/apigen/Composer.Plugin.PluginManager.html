@@ -1,0 +1,1026 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Plugin\PluginManager |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.Capability.html">Capability</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Plugin.CommandEvent.html">
+							CommandEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PluginEvents.html">
+							PluginEvents
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Plugin.PluginManager.html">
+							PluginManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PostFileDownloadEvent.html">
+							PostFileDownloadEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PreCommandRunEvent.html">
+							PreCommandRunEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PreFileDownloadEvent.html">
+							PreFileDownloadEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PrePoolCreateEvent.html">
+							PrePoolCreateEvent
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Plugin.Capable.html">
+							Capable
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Plugin.PluginInterface.html">
+							PluginInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Plugin.PluginBlockedException.html">
+							PluginBlockedException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Plugin.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Plugin.PluginManager.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Plugin.html">Plugin</a>\<a href="Composer.Plugin.PluginManager.html">PluginManager</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Plugin manager</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Plugin.PluginManager.html#41" title="Go to source code">Composer/Plugin/PluginManager.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#75-87" title="Go to source code">__construct</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a> <var>$composer</var></span>,
+	<span>?<a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a> <var>$globalComposer</var> = <span class="php-kw">null</span></span>,
+	<span>bool|<span class="php-str">'local'</span>|<span class="php-str">'global'</span> <var>$disablePlugins</var> = <span class="php-kw">false</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>Whether plugins should not be loaded, can be set to local or global to only disable local/global plugins</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRunningInGlobalDir" id="_setRunningInGlobalDir">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#89-92" title="Go to source code">setRunningInGlobalDir</a>(<span>bool <var>$runningInGlobalDir</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRunningInGlobalDir">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadInstalledPlugins" id="_loadInstalledPlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#94-107" title="Go to source code">loadInstalledPlugins</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Loads all plugins from currently installed plugin packages
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Loads all plugins from currently installed plugin packages</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadInstalledPlugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deactivateInstalledPlugins" id="_deactivateInstalledPlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#109-122" title="Go to source code">deactivateInstalledPlugins</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Deactivate all plugins from currently installed plugin packages
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Deactivate all plugins from currently installed plugin packages</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deactivateInstalledPlugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPlugins" id="_getPlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#124-132" title="Go to source code">getPlugins</a>(): array&lt;<a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a>&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets all currently active plugin instances
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets all currently active plugin instances</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>plugins</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPlugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getGlobalComposer" id="_getGlobalComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#134-140" title="Go to source code">getGlobalComposer</a>(): ?<a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets global composer or null when main composer is not fully loaded
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets global composer or null when main composer is not fully loaded</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getGlobalComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registerPackage" id="_registerPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#142-301" title="Go to source code">registerPackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>bool <var>$failOnMissingClasses</var> = <span class="php-kw">false</span></span>, <span>bool <var>$isGlobalPlugin</var> = <span class="php-kw">false</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a plugin package, activate it etc.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a plugin package, activate it etc.</p>
+<p>If it's of type composer-installer it is registered as an installer
+instead for BC</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$failOnMissingClasses</var>&nbsp;&nbsp;</td>
+										<td><p>By default this silently skips plugins that can not be found, but if set to true it fails with an exception</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$isGlobalPlugin</var>&nbsp;&nbsp;</td>
+										<td><p>Set to true to denote plugins which are installed in the global Composer directory</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_registerPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deactivatePackage" id="_deactivatePackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#303-324" title="Go to source code">deactivatePackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Deactivates a plugin package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Deactivates a plugin package</p>
+<p>If it's of type composer-installer it is unregistered from the installers
+instead for BC</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deactivatePackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uninstallPackage" id="_uninstallPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#326-348" title="Go to source code">uninstallPackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Uninstall a plugin package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Uninstall a plugin package</p>
+<p>If it's of type composer-installer it is unregistered from the installers
+instead for BC</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uninstallPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPluginApiVersion" id="_getPluginApiVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#350-356" title="Go to source code">getPluginApiVersion</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the version of the internal composer-plugin-api package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the version of the internal composer-plugin-api package.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPluginApiVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addPlugin" id="_addPlugin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#358-396" title="Go to source code">addPlugin</a>(<span><a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a> <var>$plugin</var></span>, <span>bool <var>$isGlobalPlugin</var> = <span class="php-kw">false</span></span>, <span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$sourcePackage</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a plugin, activates it and registers it with the event dispatcher
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a plugin, activates it and registers it with the event dispatcher</p>
+<p>Ideally plugin packages should be registered via registerPackage, but if you use Composer
+programmatically and want to register a plugin class directly this is a valid way
+to do it.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$plugin</var>&nbsp;&nbsp;</td>
+										<td><p>plugin instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$sourcePackage</var>&nbsp;&nbsp;</td>
+										<td><p>Package from which the plugin comes from</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addPlugin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removePlugin" id="_removePlugin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#398-419" title="Go to source code">removePlugin</a>(<span><a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a> <var>$plugin</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes a plugin, deactivates it and removes any listener the plugin has set on the plugin instance
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes a plugin, deactivates it and removes any listener the plugin has set on the plugin instance</p>
+<p>Ideally plugin packages should be deactivated via deactivatePackage, but if you use Composer
+programmatically and want to deregister a plugin class directly this is a valid way
+to do it.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$plugin</var>&nbsp;&nbsp;</td>
+										<td><p>plugin instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removePlugin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uninstallPlugin" id="_uninstallPlugin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#421-434" title="Go to source code">uninstallPlugin</a>(<span><a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a> <var>$plugin</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Notifies a plugin it is being uninstalled and should clean up
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Notifies a plugin it is being uninstalled and should clean up</p>
+<p>Ideally plugin packages should be uninstalled via uninstallPackage, but if you use Composer
+programmatically and want to deregister a plugin class directly this is a valid way
+to do it.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$plugin</var>&nbsp;&nbsp;</td>
+										<td><p>plugin instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uninstallPlugin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCapabilityImplementationClassName" id="_getCapabilityImplementationClassName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#543-567" title="Go to source code">getCapabilityImplementationClassName</a>(<span><a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a> <var>$plugin</var></span>, <span>string <var>$capability</var></span>): null|string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+							<h4>Returns</h4>
+							<div><p>The fully qualified class of the implementation or null if Plugin is not of Capable type or does not provide it</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>On empty or non-string implementation class name value</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCapabilityImplementationClassName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPluginCapability" id="_getPluginCapability">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#569-599" title="Go to source code">getPluginCapability</a>&lt;<span title="">CapabilityClass</span> is <a href="Composer.Plugin.Capability.Capability.html"><span title="Composer\Plugin\Capability\Capability">Capability</span></a>&gt;(
+	<span><a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a> <var>$plugin</var></span>,
+	<span>class-string&lt;CapabilityClass&gt; <var>$capabilityClassName</var></span>,
+	<span>array&lt;mixed&gt; <var>$ctorArgs</var> = []</span>,
+): ?<a href="Composer.Plugin.Capability.Capability.html"><span title="Composer\Plugin\Capability\Capability">Capability</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$ctorArgs</var>&nbsp;&nbsp;</td>
+										<td><p>Arguments passed to Capability's constructor.
+Keeping it an array will allow future values to be passed w\o changing the signature.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPluginCapability">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPluginCapabilities" id="_getPluginCapabilities">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Plugin.PluginManager.html#601-620" title="Go to source code">getPluginCapabilities</a>&lt;<span title="">CapabilityClass</span> is <a href="Composer.Plugin.Capability.Capability.html"><span title="Composer\Plugin\Capability\Capability">Capability</span></a>&gt;(
+	<span>class-string&lt;CapabilityClass&gt; <var>$capabilityClassName</var></span>,
+	<span>array&lt;mixed&gt; <var>$ctorArgs</var> = []</span>,
+): CapabilityClass[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$capabilityClassName</var>&nbsp;&nbsp;</td>
+										<td><p>The fully qualified name of the API interface which the plugin may provide
+an implementation of.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$ctorArgs</var>&nbsp;&nbsp;</td>
+										<td><p>Arguments passed to Capability's constructor.
+Keeping it an array will allow future values to be passed w\o changing the signature.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPluginCapabilities">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="composer" id="$composer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#43-44" title="Go to source code">$composer</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$composer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="io" id="$io">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#45-46" title="Go to source code">$io</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$io">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="globalComposer" id="$globalComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#47-48" title="Go to source code">$globalComposer</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$globalComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="versionParser" id="$versionParser">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.Version.VersionParser.html"><span title="Composer\Package\Version\VersionParser">VersionParser</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#49-50" title="Go to source code">$versionParser</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$versionParser">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disablePlugins" id="$disablePlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool|<span class="php-str">'local'</span>|<span class="php-str">'global'</span></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#51-52" title="Go to source code">$disablePlugins</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$disablePlugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="plugins" id="$plugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;<a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#54-55" title="Go to source code">$plugins</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$plugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registeredPlugins" id="$registeredPlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Plugin.PluginInterface.html"><span title="Composer\Plugin\PluginInterface">PluginInterface</span></a>|<a href="Composer.Installer.InstallerInterface.html"><span title="Composer\Installer\InstallerInterface">InstallerInterface</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Plugin.PluginManager.html#56-57" title="Go to source code">$registeredPlugins</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$registeredPlugins">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

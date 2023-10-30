@@ -1,24 +1,26 @@
-<!-- .slide: class="has-background-image" data-background-image="resources/coke-darken.jpg" data-background-position="center center" data-background-size="cover" -->
+<!-- .slide: class="dark-bg title-slide" data-background-image="resources/coke-darken.jpg" data-background-position="center center" data-background-size="cover" data-hide-footer -->
 # I'd Like to Write the World Some Docs
 
-Steve Grunwell
-stevegrunwell@phpc.social
+Steve Grunwell <!-- .element: class="byline" -->
+[@stevegrunwell@phpc.social](https://phpc.social/@stevegrunwell)
+[stevegrunwell.com/slides/write-some-docs](https://stevegrunwell.com/slides/write-some-docs)
 
 ---
 
-## What is Documentation?
+## What is<br>Documentation?
 
 Note:
 
-Before we can talk about how to write good documentation, it's important to understand that there are two kinds of documentation we're going to talk about.
+In order to write great documentation, we need to first define what we intend to write.
+
+Technical documentation can be a broad topic, so for the sake of narrowing the scope we'll group documentation into two groups: inline and external documentation.
 
 ----
 
 ### Inline Documentation
 
-* Documentation within the code itself <!-- .element: class="fragment" -->
-* Describes what everything does, function inputs/outputs, etc. <!-- .element: class="fragment" -->
-* Written for a developer audience <!-- .element: class="fragment" -->
+* Documentation within the code itself, written for a developer audience <!-- .element: class="fragment" -->
+* Describes what everything does, function inputs/outputs, contextual information, etc. <!-- .element: class="fragment" -->
 
 Note:
 
@@ -30,20 +32,22 @@ Inline documentation is the code we write in the codebase itself, and where we d
 
 ```php
 /**
- * Add two numbers and produce the absolute value of the sum.
+ * Validate an email address.
  *
- * @param int $a The first number.
- * @param int $b The second number.
- * @return int The absolute value of the sum of $a and $b.
+ * @param string $email The email address to validate.
+ *
+ * @return bool True if the email is valid, false otherwise.
  */
-function absum($a, $b) {
-	return abs($a + $b);
+function validateEmail(string $email): bool
+{
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 ```
 
 Note:
 
-Here's a typical example of a DocBlock for a PHP function, which we'll look more at later.
+* Typical example of a DocBlock for a PHP function (more on this later)
+* Summarize what the method does, what arguments it takes, what it returns, and what that return value means
 
 ----
 
@@ -55,14 +59,39 @@ Here's a typical example of a DocBlock for a PHP function, which we'll look more
  *
  * @package MyPackage
  * @author  ACME, Inc.
+ * @license MIT
  */
 
-namespace ACME\MyPackage\Person;
+namespace ACME\MyPackage;
+
+class Person
+{
+    // ...
+}
 ```
 
 Note:
 
-File-level DocBlocks are also great to help people understand the context of a file, and are another form of inline documentation.
+* Can also create file or class-level docblocks to help provide context
+* What package does it belong to? Who wrote it? What's the license?
+
+----
+
+### Inline Documentation
+
+```php
+/*
+ * I have no idea what this bit of code does,
+ * and the person who wrote it retired and is
+ * now raising goats or something.
+ *
+ * Please please please be careful!
+ */
+```
+
+Note:
+
+Sometimes, inline documentation is less formal. Sometimes it's an explanation why something was done a certain way, a warning, or an apology.
 
 ----
 
@@ -73,124 +102,214 @@ File-level DocBlocks are also great to help people understand the context of a f
 	* API documentation
 * <!-- .element: class="fragment" --> Internal documentation
 	* README files
-	* Wikis
+	* Wikis, Confluence, et al
 
 Note:
 
-When the documentation isn't intermingled with the code — even if it co-exists in the repository — we refer to it as "external" documentation.
-
-External documentation can take multiple forms, whether they're tutorials or guides to help users use your product or API documentation to help developers integrate with your service.
-
-External documentation doesn't need to be public at all; maybe you have a README file in your repository or an internal wiki for your team. These locations still contain important pieces of knowledge.
+* When the documentation isn't intermingled with the code — even if it co-exists in the repository — we refer to it as "external" documentation.
+* External documentation can take multiple forms:
+    * Tutorials + user guides to help people use your product
+    * API documentation to help developers integrate with your service.
+* Doesn't need to be public at all
+    * README file in the repo
+    * Internal wiki
+* No matter where it lives, external documentation contains important pieces of information
 
 ---
 
-## Why we Document
+## Why Do We Write Documentation?
 
 Note:
 
-Now that we understand the "What" of documentation, let's take a look at the "Why". You might notice this will be a recurring theme in this talk :)
+Now that we understand the "What" of documentation, let's take a look at the "Why".
 
 ----
 
-### For Others
+### We Document For Others
 
-> The greatest piece software in the world is one that someone can use.
+The greatest software is that which can be used
 
 Note:
 
-This is the obvious answer, but it's an important point to reiterate. Our job is to write software that people can use, and that means making the barrier of entry as low as possible.
-
-It doesn't matter if it's for end users or other engineers on your team, documentation exists to make other peoples' lives easier.
-
-----
-
-<!-- .slide: data-background-image="resources/rtfm.png" data-background-size="40% auto" -->
-
-Note:
-
-If you want to be an ass about it, writing documentation is also the only way you can smuggly tell a colleague to "Read the Fucking Manual", though I'd recommend against using those words.
+* Obvious answer, but worth reiterating
+    * Our job is to write software that people can use, and that means making the barrier of entry as low as possible.
+* Whether end users or teammates, documentation exists to make other peoples' lives easier.
 
 ----
 
-### For Ourselves
+### We Document For Ourselves
 
-* Help ourselves remember how and why something works <!-- .element: class="fragment" -->
+* Help us remember how and why something works <!-- .element: class="fragment" -->
 * Catch issues with our approach before writing any code <!-- .element: class="fragment" -->
-* Better documentation => fewer questions <!-- .element: class="fragment" -->
+* Strengthen our own writing skills <!-- .element: class="fragment" -->
+* Better documentation → fewer questions <!-- .element: class="fragment" -->
 
 
 Note:
 
-Of course, this doesn't mean we can't benefit ourselves from having good documentation. Documentation helps us remember how or why something works the way it does, and writing documentation just before we write the code can help us catch code smells before they stink up the codebase.
+Of course, this doesn't mean we can't benefit ourselves from having good documentation.
+
+* Documentation helps us remember how or why something works the way it does
+* Writing documentation as we write forces us to think through our implementations
+* Improves our own writing abilities
+* It also can't be understated how many questions good documentation can deflect.
+    * Fewer questions means less context switching.
 
 ----
 
-> "Documentation is a love letter that you write to your future self."<br>—Damian Conway
+### RTFM!
+
+Read The F'ing Manual <!-- .element: class="fragment"-->
 
 Note:
 
-Damian Conway, Aussie member of the Perl community.
+Generally speaking, I'd recommend against using this exact phrase. However, it's hard to tell someone to "RTFM" if there's no "FM" for them to "R".
 
-As it was pointed out to me on Twitter, bad documentation can also be hate-mail from previous developers, though that usually comes in the form of terrible architecture.
+* Well-written documentation is your first line of defense against answering the same questions over and over again
+    * You don't get to complain about people distracting you with questions all the time if you haven't given them a better channel
+
+----
+
+> Documentation is a love letter that you write to your future self. <footer>—Damian Conway</footer>
+
+Note:
+
+* Damian Conway, Aussie member of the Perl community.
+* It was once pointed out to me that bad documentation can also be hate-mail from previous developers, though in my experience that usually comes in the form of terrible architecture and an absence of tests
 
 ---
 
-<!-- .slide: data-background-image="resources/westworld.jpg" -->
-
-## The Anatomy of Good Documentation
+## Writing Inline Documentation
 
 Note:
 
-Now that we've covered the what and why, let's talk about what takes documentation from subpar to spectacular.
+* Covered the what and why, so let's talk about how to write documentation.
+* Will start with inline docs
 
 ----
 
-### What, How, and Why?
+### Meet the Docblock
 
-> Good documentation will explain not only **what** something does, but **how** and **why**.
+* Specially-formatted comment <!-- .element: class="fragment" -->
+    * Will vary across languages
+* Document files, functions, methods,<br>variables, and more <!-- .element: class="fragment" -->
+* Parsed by IDEs & static code analysis <!-- .element: class="fragment" -->
 
 Note:
 
-Documentation should answer three key questions:
-1. What does it do?
-2. How do I use it?
-3. Why does it work the way it does.
+* Each programming language has its own terminology, but generally speaking there's some concept of a "docblock", which is a specially-formatted comment.
+* These can generally exist at the file-level or be for specific functions, methods, variables, etc.
+* In addition to helping developers understand how the code works, this documentation is also consumed by IDEs (Intellisense), static code analysis tools like PHPStan, Phan, et al, and more
 
 ----
 
-### Documentation should be useful
+### PHPDoc
 
-This:<!-- .element: class="fragment" data-fragment-index="0" -->
-
-```
+```php
 /**
- * Handle Ajax requests for user profile data.
+ * Add two numbers and return the absolute value.
  *
- * The $_POST['fields'] key should contain a comma-separated list
- * of keys to retrieve. If left empty, the function will return an
- * array of all user profile fields.
+ * @param int $a The first number.
+ * @param int $b The second number.
  *
- * @return array An associative array of user profile fields,
- *               optionally filtered by $_POST['fields'].
+ * @return int The absolute value of $a + $b.
+ */
+function absum(int $a, int $b): int
+{
+	return abs($a + $b);
+}
+```
+
+Note:
+
+While there isn't an official format, PHPDoc is the most common form you'll see in the PHP ecosystem.
+
+There is a draft PSR (PSR-5) to adopt PHPDoc as the official format, but efforts seem to have stalled.
+
+We'll take a closer look at the structure of PHPDoc in a minute.
+
+----
+
+### JSDoc
+
+```js
+/**
+ * Add two numbers and return the absolute value.
+ *
+ * @param {number} a The first number.
+ * @param {number} b The second number.
+ *
+ * @return {number} The absolute value of a + b.
+ */
+function absum(a, b) {
+	return Math.abs($a + $b);
+}
+```
+
+Note:
+
+Very similar to PHPDoc, but uses curly-braces around the types.
+
+----
+
+### Javadoc
+
+```java
+import java.lang.Math;
+
+/**
+ * Add two numbers and return the absolute value.
+ *
+ * @param int a The first number.
+ * @param int b The second number.
+ *
+ * @return The absolute value of a + b.
+ */
+int absum(int a, int b)
+{
+	return Math.abs(a + b);
+}
+```
+
+Note:
+
+To give you a sense of how common this pattern can be, here's the same code using the Javadoc standard.
+
+----
+
+### Docblock comments
+
+* <!-- .element: class="fragment" --> Docblocks begin with <code>/**</code> and end with <code>*/</code>
+* <!-- .element: class="fragment" --> Can be single or multi-line
+    ```php
+    /**
+     * This is a docblock.
+     */
+
+    /** So is this. */
+    ```
+
+----
+
+### Not all comments are docblocks!
+
+```php
+# This isn't a docblock.
+
+// Neither is this.
+
+/*
+ * Close, but this only has one asterisk at the opening.
  */
 ```
-<!-- .element: class="fragment" data-fragment-index="0" -->
-
-Not this:<!-- .element: class="fragment" data-fragment-index="1" -->
-
-```
-// Ajax stuff.
-```
-<!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
 
-We're not writing documentation for our health, it should have a purpose. Compare this documentation to what we often see, which tells us nothing.
+It's important to understand that not all PHP comments will be parsed as docblocks, only those that start with a slash and two asterisks.
 
 ----
 
-### The Basic Structure
+### Anatomy of a Docblock
 
 1. Summary <!-- .element: class="fragment" -->
 2. Description <!-- .element: class="fragment" -->
@@ -206,212 +325,402 @@ Regardless of the language, inline documentation generally follows this pattern:
 
 ----
 
-### PHPDoc
+### Anatomy of a Docblock
 
-```
-/**
+<pre class="fragment-replace"><code class="fragment hljs php fade-out" data-fragment-index="0">/**
+ *
+ *
+ *
+ *
+ *
+ *
+ */</code><code class="fragment hljs php" data-fragment-index="0">/**
  * This is the summary.
  *
- * The description can be much longer, and include
- * markdown for _emphasis!_
  *
- * @since 0.1.5
  *
- * @param string $var A description of var.
  *
- * @return string A description of the output.
- */
-```
-
-[phpdoc.org](https://phpdoc.org/)
-
-Note:
-
-In PHP, the common standard is PHPDoc, which looks like this.
-
-It's not an official standard, but PSR-5 seeks to change that (though the PSR seems to have stalled).
-
-----
-
-### JSDoc
-
-```
-/**
+ *
+ */</code><code class="fragment hljs php" data-fragment-index="1">/**
  * This is the summary.
  *
- * The description can be much longer, and include
- * markdown for _emphasis!_
+ * This is the description. We can get a little more
+ * in-depth here.
  *
- * @since 0.1.5
  *
- * @param {String} var A description of var.
+ */</code><code class="fragment hljs php" data-fragment-index="2">/**
+ * This is the summary.
  *
- * @return {String} A description of the output.
- */
-```
-
-[usejsdoc.org](http://usejsdoc.org/)
-
-Note:
-
-Syntax is extremely similar, and many tags are present in both standards.
-
-@return == @returns
-
-----
-
-### Other languages
-
-<table>
-	<tbody>
-		<tr>
-			<th scope="row">Java</th>
-			<td>Javadoc</td>
-		</tr>
-		<tr>
-			<th scope="row">Python</th>
-			<td>Docstrings, reStructuredText, Sphinx</td>
-		</tr>
-		<tr>
-			<th scope="row">Ruby</th>
-			<td>RDoc, SDoc</td>
-		</tr>
-		<tr>
-			<th scope="row">Elixer</th>
-			<td>ExDoc</td>
-		</tr>
-	</tbody>
-</table>
+ * This is the description. We can get a little more
+ * in-depth here.
+ *
+ * @return string This is an example of a tag.
+ */</code>
+</pre>
 
 Note:
 
-Beyond PHP and JavaScript, many languages have official (or at least popular) documentation standards.
+In practice, your docblocks will usually look something like this:
 
-Different languages have different relationships and standards around documentation, but know that standards exist.
+* Summary
+* Description
+* Tags
 
-----
-
-### "How do I use this?"
-
-* Arguments <!-- .element: class="fragment" -->
-* Output <!-- .element: class="fragment" -->
-* Global variables <!-- .element: class="fragment" -->
-* Side effects <!-- .element: class="fragment" -->
-
-Note:
-
-When writing documentation, consider a developer asking "how do I use this?". Would he/she have an answer by reading your docs?
-
-4 items: arguments, output, global variables, and side effects
+Now we'll look at some of the most common tags you'll come across:
 
 ----
 
-### Arguments
+### `@param`
 
-```
-@param TYPE         NAME  DESCRIPTION
-@param string       $name The user's first name.
-@param int          $num  The number to add.
-@param bool         $test Is this a test run?
-@param array|string $args Either an array or query string of
-                          additional arguments.
-@param mixed        $data This argument could literally be anything.
-                          Usually best to avoid.
-```
+`<type> <name> [<description>]`
 
-Note:
-
-The basic structure of function/method arguments in PHPDoc looks like this: @param, the type or types, the variable name, and a sentence or two describing what that argument represents.
-
-----
-
-#### Arguments: Arrays
-
-```
+```php
 /**
- * @param array $args {
- *   Additional arguments to pass to the query. All arguments
- *   are optional.
+ * @param string  $name    The customer's name.
+ * @param Address $address The customer's address.
+ */
+function saveAddress(string $name, Address $address)
+{
+    // ...
+}
+```
+
+Note:
+
+Describes a function or method argument
+
+----
+
+### `@return`
+
+`<type> [<description>]`
+
+```php
+/**
+ * Retrieve the currently logged-in user.
  *
- *   @var int    $limit   The maximum number of results.
- *                        Default is 10.
- *   @var string $orderby The column to sort results by.
- *                        Default is 'username'.
- *   @var string $order   Direction to sort the results.
- *                        Default is 'ASC'.
- * }
+ * @return User The current User instance.
+ */
+public function getCurrentUser(): User
+{
+    // ...
+}
+```
+
+Note:
+
+Documents the return type of the function or method.
+
+Note that it follows the same format as @param except that it doesn't include the variable name.
+
+----
+
+### `@var`
+
+`<type> <name> [<description>]`
+
+```php
+/**
+ * @var string $name The customer's name.
+ */
+protected string $name;
+```
+
+Note:
+
+The @var tag takes the same shape as @param, but is used for documenting variables and class properties.
+
+----
+
+### `@throws`
+
+`<type> [<description>]`
+
+```php
+/**
+ * @throws InvalidUserException If no user with the given ID
+ *                              can be found.
+ */
+public function getUserById(int $id): User
+{
+    // ...
+}
+```
+
+Note:
+
+If the code you're writing can throw exceptions, it's great to identify which types of exceptions are thrown under different conditions.
+
+----
+
+### Intersection & Union Types
+
+Used to further narrow types.
+
+```php
+/**
+ * @param Corn&Popable $kernels The kernels must be corn and
+ *                              pop-able.
+ * @param Butter|Oil   $fat     Popcorn can be made with
+ *                              either butter or oil.
+ */
+function makePopcorn(Corn&Popable $kernels, Butter|Oil $fat)
+{
+    // ...
+}
+```
+
+Note:
+
+Intersection types are represented with an ampersand: our $kernels argument must be an instance of Corn *and* implement the Popable interface.
+
+Union types are separated with a vertical pipe, meaning that $fat can accept an instance of Butter _or_ Oil.
+
+----
+
+### Nullable Types
+
+```php
+/**
+ * @param int|null $id         The user ID. If $id is null,
+ *                             default to the current user.
+ * @param ?string  $connection The connection identifier.
+ *
+ * @return ?User The corresponding user, or null if no user
+ *               was found.
+ */
+function getUser(
+    ?int $id = null,
+    ?string $connection = null
+): ?User {
+    // ...
+}
+```
+
+Note:
+
+If you have nullable arguments (or a nullable return value), you can either use "null" as a possible return type or prefix the type with a question mark; these two are equivalent.
+
+----
+
+### Array Shapes
+
+<pre class="fragment-replace"><code class="fragment hljs php fade-out" data-fragment-index="0">/**
+ * @var array
+ */
+private array $address;</code><span class="fragment fade-out" data-fragment-index="1"><code class="fragment hljs php" data-fragment-index="0">/**
+ * @var array&lt;string, mixed>
+ */
+private array $address;</code></span><code class="fragment hljs php" data-fragment-index="1">/**
+ * @var array{
+ *      street_address:string,
+ *      street_address2?:string,
+ *      city:string,
+ *      state:string,
+ *      postal_code:string,
+ *      country:string
+ *  }
+ */
+private array $address;</code></pre>
+
+Note:
+
+Array shapes can be extremely helpful, especially if you're working in a codebase where associative arrays are being used everywhere instead of value objects.
+
+----
+
+### Dynamic Properties
+
+```php
+/**
+ * @property      string $name The animal's name.
+ * @property-read int    $age  The animal's age in years.
+ */
+class Animal
+{
+    private array $props = [];
+
+    public function __get($prop)
+    {
+        return $this->props[$prop] ?? null;
+    }
+}
+```
+
+Note:
+
+* If you rely on magic properties via the __get() magic method, you may document these properties with @property, @property-read, and @property-write
+* @property indicates read/write access
+* @property-read and @property-write imply read- or write-only, respectively
+
+----
+
+### Dynamic Methods
+
+@todo better example
+
+```php
+/**
+ * @method int    getAge()  Get the animal's age.
+ * @method string getName() Get the animal's name.
+ */
+class Animal
+{
+    private int $age;
+    private string $name;
+
+    public function __call($method, $args)
+    {
+        // Look for "get{$prop}" method calls, return the prop.
+    }
+}
+```
+
+Note:
+
+Similarly, we can document dynamic methods. In this case, we're handling getter methods for known properties like: getAge(); we might also define getName(), getSpecies(), etc.
+
+----
+
+### Linking to Relevant Content
+
+```php
+/**
+ * We can also suggest that people {@see some_function()}
+ * within our docs.
+ *
+ * @see some_other_function() For an example implementation.
+ *
+ * @link https://example.com/some-link
  */
 ```
 
 Note:
 
-Again, not a standard, but a common convention: @param, array, variable name, then open curly braces, to contain the details about the array.
+Two ways to link to other content:
 
-Really useful when accepting arrays of arguments, like database query parameters.
-
-----
-
-###  Return Values
-
-```
-@return TYPE     DESCRIPTION
-@return array    An array of query results.
-@return bool     True if the record was updated, false if
-                 something went wrong.
-@return WP_Query The resulting WP_Query object.
-```
-
-```
-@throws InvalidArgumentException if the provided argument is
-                                 not of type 'array'.
-```
-<!-- .element: class="fragment" -->
-
-Note:
-
-We also want to document the type of output expected from our function.
-
-If you're working with exceptions, it's also good to document the conditions that will trigger them.
+1. @see is generally used to point to other parts of the codebase, but can technically support URLs
+2. @link is used for absolute URLs, like external sites, GitHub READMEs, etc.
 
 ----
 
-### Link to relevant documentation
+### `@todo`
 
-<dl>
-	<dt class="fragment" data-fragment-index="0"><code>@see</code></dt>
-	<dd class="fragment" data-fragment-index="0">Reference other pieces of code or a URI</dd>
-	<dt class="fragment" data-fragment-index="1"><code>@link</code></dt>
-	<dd class="fragment" data-fragment-index="1">Reference a URI</dd>
-</dl>
+`<description>`
+
+```php
+/**
+ * @todo (stevegrunwell) Finish implementing this!
+ * @todo https://jira.example.com/browse/APP-123
+ */
+```
 
 Note:
 
-In some situations, it's also helpful to link to other documentation, either internallly or externally.
+The @todo tag lets developers flag pieces of code that still need to be worked on.
 
-GitHub READMEs, API docs, or other locations in the codebase.
+While the tag technically accepts any description, it's strongly recommended to link to a relevant ticket if one exists: not only does this give future-you more context, but makes it easier to see if the comment is out-of-date.
 
 ---
 
-## Generating Documentation
+## Leveling Up Your Inline Documentation
 
 Note:
 
-One of the coolest things you can do, assuming you've followed documentation standards, is to generate interactive docs automatically.
+At this point, we've covered the basic semantics for inline documentation. Now let's talk about how to make yours stand out among the rest.
 
 ----
 
-### Generate :allthethings:
+### What, How, and Why?
 
-* Well-formed inline docs can be compiled to create HTML documentation <!-- .element: class="fragment" -->
-* <!-- .element: class="fragment" --> Great for internal teams, *fantastic* for open-source projects
-* Examples: <!-- .element: class="fragment" -->
-	* [WordPress Code Reference](https://developer.wordpress.org/reference/)
-	* [Laravel API docs](https://laravel.com/api/5.4/)
-	* [Read the Docs' documentation](http://docs.readthedocs.io/en/latest/) (yo dawg...)
+Good documentation will explain not only **what** something does, but **how** and **why**.
 
 Note:
 
+When you're writing inline documentation, you're generally writing for a developer audience. As developers, we often want to know three things:
+
+1. What does it do?
+2. How do I use it?
+3. Why does it work the way it does?
+
+At the very least, this generally means you'll want to document all function and method arguments, return types, any globals that are in-play, and side-effects of different functions.
+
+----
+
+### Documentation should be useful!
+
+<pre class="fragment-replace"><code class="fragment fade-out hljs php" data-fragment-index="0">/**
+ * Handle Ajax requests for user profile data.
+ *
+ * The $_POST['fields'] key, if set, will contain a
+ * comma-separated list of keys to retrieve. If left
+ * empty, all keys will be returned.
+ *
+ * @return array An associative array of profile fields,
+ *               optionally filtered by $_POST['fields'].
+ */</code><code class="fragment hljs php" data-fragment-index="0">// Ajax stuff</code></pre>
+
+Note:
+
+We're not writing documentation for our health, it should have a purpose.
+
+* This version gives us context as to what's happening in the function
+* Whereas this version tells us nothing
+
+----
+
+### "But my code is<br>self-documenting!"
+
+![Meme where Dr. Evil is using air quotes with the caption "self-documenting"](resources/self-documenting.jpg)
+
+Note:
+
+Be wary anytime someone claims that they don't need to write documentation because their code is "self-documenting".
+
+Even with every argument and return type strictly-typed and every method name being as clear as possible, any non-trivial codebase will have some areas where additional context is needed. You don't need to be duplicative, but err on the side of more documentation than less.
+
+Remember: having documentation isn't a weakness nor point of shame, and saying your code is "self-documenting" is akin to saying "that sucks you're having problems, it works on my machine."
+
+----
+
+### Be Aware of Project Standards
+
+![Scene from Avengers: Infinity War where King T'Challa of Wakanda telling Bruce Banner "we don't do that here" after Banner bows to the king](resources/we-dont-do-that-here.jpg)
+
+Note:
+
+* PHPDoc is pretty common, but different projects may have different conventions for things like alignment, phrasing, or the handling of certain tags.
+    * Example: WordPress asks that you *not* use `return @void` - no return, omit the tag
+* Knowing the conventions used by your project will make documentation far less painful.
+
+---
+
+## Generating API Docs
+
+Note:
+
+When you document your code using standards like PHPDoc, you gain the ability to do something really neat: generate nicely-formatted documentation for your codebase!
+
+----
+
+### Generating API Docs
+
+* Well-formed inline docs can be compiled to create HTML documentation <!-- .element: class="fragment" -->
+* <!-- .element: class="fragment" --> Great for internal teams, <em>fantastic</em> for open-source projects
+* Examples: <!-- .element: class="fragment" -->
+	* [WordPress Code Reference](https://developer.wordpress.org/reference/)
+	* [Laravel API docs](https://laravel.com/api/9.x/)
+
+Note:
+
+*
+* Some examples in the wild:
+    * The WordPress Codex is mostly generated from inline documentation, giving you a nice view of arguments, return values, filters, the source itself, where the code lives, and anything that calls it or relies up it for every function
+    * The Laravel API docs are generated from the source code using Doctum
+
 When we're documenting often and to a standard, we're able to generate nice, user-friendly documentation as HTML or in other formats.
+
+Consider having your CI pipeline re-build docs whenever you tag a new release
 
 WordPress inline documentation efforts - arguments, return values, filters, the source itself, where the code lives, and anything else that calls it or the code depends on.
 
@@ -419,59 +728,262 @@ Laravel: not the main docs, but digging into things like Illuminate, HTTP, etc.
 
 ----
 
-<!-- .slide: data-background-image="resources/phpdocumentor-clean.png" data-background-position="center center" data-background-size="contain" -->
+### Tools for Generating API Docs
+
+* [phpDocumentor](https://www.phpdoc.org) ([example](./composer-docs/phpdocumentor/index.html))
+* [ApiGen](https://github.com/ApiGen/ApiGen) ([example](./composer-docs/apigen/index.html))
+* [Doctum](https://github.com/code-lts/doctum) ([example](./composer-docs/doctum/index.html))
 
 Note:
 
-Example generated by PHPDocumentor. List of all classes on the left, details about the Application Class in the center, including methods, properties, and constants.
-
-Template can be totally customized, and several are available out of the box.
+* Number of great documentation generators out there, but here are some of the most popular in the PHP ecosystem (I've almost certainly missed someone's favorite)
+* Examples, each generated from the same commit of Composer using phars of each tool
+* Each tool has its own configurations, letting you apply themes, specify what is (or is not) included, and more.
 
 ----
 
-### Documentation Generators
+### Generate Docs Often
 
-<table>
-	<thead>
-		<tr>
-			<th>Tools</th>
-			<th>Services</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-				<p><a href="https://www.phpdoc.org">phpDocumentor</a><br>
-				<a href="https://github.com/ApiGen/ApiGen">ApiGen</a><br>
-				<a href="http://daux.io">Daux.io</a><br>
-				<a href="http://usejsdoc.org">JSDoc</a></p>
-			</td>
-			<td>
-				<p><a href="https://readthedocs.org/">Read the Docs</a><br>
-				<a href="http://readme.io/">ReadMe</a><br>
-				<a href="https://pages.github.com/">GitHub Pages</a></p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+* Identify gaps <!-- .element: class="fragment" -->
+* Detect duplication or spaghetti code <!-- .element: class="fragment" -->
 
 Note:
 
-In addition to PHPDocumentor, there are tools like ApiGen, Daux.io, and JSDoc that can compile docs locally — just point the tools at your source and let 'em go to work. These are often good to incorporate into a build tool like Jenkins or Travis, to ensure docs are built alongside your app.
+Even if your codebase isn't being distributed, regularly generating documentation can have some benefits:
 
-Hosted options: Read the Docs, ReadMe, and GitHub Pages, which can be great if you need a place to publish docs offsite.
+Generated docs will help highlight areas of the codebase that don't have documentation and could benefit from more attention. Several of the tools include reports for areas that are either missing or don't have sufficient coverage.
 
-----
-
-<!-- .slide: data-background-image="resources/read-the-docs.jpg" data-background-size="cover" data-background-position="center top" -->
-
-Note:
-
-Example of Read the Docs' UI.
+Getting a high-level view of your app can also help you recognize possible code organization issues and find things like duplicated functionality or features you had forgotten about.
 
 ---
 
-##  Writing the Best Documentation
+## External Documentation
+
+Note:
+
+Now that we've covered inline documentation, let's talk about all of the stuff that's outside of the codebase.
+
+----
+
+### What should be documented?
+
+* Purpose, Requirements, & Installation <!-- .element: class="fragment" -->
+* How to use the software <!-- .element: class="fragment" -->
+    * What options are available? <!-- .element: class="fragment" -->
+    * Tutorials <!-- .element: class="fragment" -->
+* <!-- .element: class="fragment" --> <abbr title="Frequently-Asked Questions">FAQs</abbr>
+* Contributing <!-- .element: class="fragment" -->
+* &hellip;and anything else people should know <!-- .element: class="fragment" -->
+
+Note:
+
+It's easy to say "go write documentation". It's much harder to define _what_ to document. Here's a good starting point:
+
+* First and foremost, give your users the information they need to be successful. What problem is the software trying to solve? What are the system requirements? How can they install it?
+* Next, how do they use it? If it's a library, this would be a great place for a getting started tutorial.
+* Are there questions that you expect to pop up? Head those off at the pass with a FAQ section
+* If you're accepting contributions, tell people how you would like them to do so
+    * GitHub and other platforms now look for a CONTRIBUTING file in the repo
+* And anything else that might be relevant.
+
+----
+
+### Where should it live?
+
+* In the repository (docs/) <!-- .element: class="fragment" -->
+* Internal site (Confluence, intranet, etc.)  <!-- .element: class="fragment" -->
+* External site (website, GitHub Pages, etc.)  <!-- .element: class="fragment" -->
+* Third-party platform (Read The Docs, et al)  <!-- .element: class="fragment" -->
+* <!-- .element: class="fragment" --> <strong>Not</strong> in Discord, Slack, etc.
+
+Note:
+
+When we're writing documentation that isn't necessarily part of our code, we have to decide where to put it.
+
+* The easiest solution is often in the repository itself, in a docs/ directory (or similar).
+* If the documentation is only for your company, you might house it in something like Confluence or another similar internal documentation platform.
+* Meanwhile, public documentation could live on your site, on a separate website (docs.example.com)...
+* ...or even on a third-party platform like Read The Docs.
+* No matter where it ends up, it should be some place that is searchable and persistent. Don't write up a couple posts in Slack or Discord and expect people to be able to find id.
+
+----
+
+### Build & Host Documentation
+
+* [Read The Docs](https://readthedocs.com)
+* [ReadMe](http://readme.io/)
+* [Daux.io](https://daux.io/)
+* [Sphinx](https://www.sphinx-doc.org/en/master/)
+* [GitHub Pages](https://pages.github.com/)
+
+Note:
+
+Depending on your needs, there's a variety of places to publicly host your documentation.
+
+If at all possible, I'd encourage you to host on a subdomain of your company or project's site (e.g. docs.example.com), but alternatives exist (especially if you don't want to maintain a domain for your work)
+
+----
+
+<!-- .slides: data-background-image="resources/read-the-docs.png" data-background-size="cover" -->
+### Read The Docs <!-- .element: class="screen-reader-text" -->
+
+[![A screenshot of the "Writing Tests for PHPUnit" page of the PHPUnit documentation, hosted on Read the Docs and written in reStructuredText](resources/read-the-docs.png)](https://docs.phpunit.de/en/10.4/writing-tests-for-phpunit.html)
+
+[docs.phpunit.de](https://docs.phpunit.de)
+<!-- .element: class="image-caption"-->
+
+Note:
+
+We won't go clicking around, but here's a screenshot of the PHPUnit documentation just to give you a taste.
+
+----
+
+### How should I format it?
+
+* Headings (H1–H6) <!-- .element: class="fragment" -->
+* Ordered v unordered lists <!-- .element: class="fragment" -->
+* Definition lists <!-- .element: class="fragment" -->
+* Tables (for tabular data) <!-- .element: class="fragment" -->
+* Code blocks, blockquotes, etc. <!-- .element: class="fragment" -->
+
+----
+
+### How should I format it? <!-- .element: class="screen-reader-text" -->
+
+![The elderly, 2015 version of Biff Tannen from the Back to the Future series with the caption "There's something very familiar about all this"](resources/biff-familiar.gif)
+
+Note:
+
+Whether you're writing documentation in Markdown, Textile, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.
+
+Take advantage of all the semantic goodness we get from HTML!
+
+----
+
+### Markdown
+
+```md
+## This will become a <h2>
+
+Here's a paragraph of text. This is **bold**.
+
+* This is a list
+* With multiple points
+    * This one even has a sub-point!
+
+[Here's a link](https://example.com) to learn more.
+```
+
+Note:
+
+* Markup language that's meant to be easy to read and write, which has become pretty ubiquitous
+* Many different implementations (CommonMark, GFM, Markdown Extra, etc.)
+
+----
+
+### reStructuredText <!-- .element: style="text-transform: none;" -->
+
+```rst
+This will become a <h2>
+=======================
+
+Here's a paragraph of text. This is **bold**.
+
+* This is a list
+* With multiple points
+    * This one even has a sub-point!
+
+`Here's a link<https://example.com>`_ to learn more.
+```
+
+Note:
+
+* reStructuredText is similar, but comes out of the Python community
+* However, it's also picking up more converts, including the Linux kernel
+* When paired with a tool like Sphinx, it can build complex documentation across multiple formats
+* Support for custom directives (think: macros)
+* Notable PHP ecosystem users include PHPUnit and Symfony
+
+---
+
+## Improving External Documentation
+
+Note:
+
+For a lot of people, external documentation is where it gets scary. Where do you start?
+
+----
+
+### Start with an outline
+
+<pre class="fragment-replace"><code class="fragment fade-out hljs md" data-fragment-index="0"># My Neat Project
+
+* What does it do?
+* Getting started
+    * Installation
+        * Composer
+        * Phar
+    * Initial setup
+* ...</code><code class="fragment hljs md" data-fragment-index="0"># My Neat Project
+
+## What does it do?
+
+## Getting started
+
+### Installation
+
+#### Composer
+
+#### Phar
+
+### Initial setup</code></pre>
+
+Note:
+
+* Writing a document from scratch can be overwhelming
+* Start with a rough outline of what you want to get across, using nested headings
+* As you fill out the sections, don't be afraid to add new ones
+* Just like with code, it's okay to mark things as `@todo`
+
+----
+
+### Include a Table of Contents
+
+Let users jump to the sections that interest them.
+
+Note:
+
+* Many platforms will generate this for you automatically, using the document outline
+* Even if you have to maintain this manually, it's extremely useful for readers
+
+----
+
+### Embrace HTML <!-- .element: class="screen-reader-text" -->
+
+![The Hulk from Avenger's Endgame, labelled as "HTML", with the caption "it's like...I was made for this".](resources/html-made-for-this.jpg)
+
+Note:
+
+* Remember that HTML is all about formatting a hierarchy of information
+* Take advantage of anchors, hyperlinks, etc. to make it easy to navigate
+* Documentation can be spread across multiple pages as long as it's still discoverable
+
+----
+
+### Detail Prerequisite Knowledge
+
+* People don't usually read docs cover-to-cover <!-- .element: class="fragment" -->
+* If this section builds on a previous topic,<br>let the reader know! <!-- .element: class="fragment" -->
+
+Note:
+
+* It's unreasonable to assume that everyone will read your documentation from start to finish
+    * Usually searching for a specific error code or how to do a specific thing
+* If someone needs to understand (for example) your plugin system before they can understand some add-on, add something to the effect of "This feature utilizes our plugin system, which is detailed over here."
+
+---
+
+## General Tips
 
 Note:
 
@@ -479,9 +991,9 @@ Now that you have a sense of the tools and standards out there, I'd like to shar
 
 ----
 
-### When do I write documentation?
+### When should I write my documentation?
 
-* As — or even before — you write your code <!-- .element: class="fragment" -->
+* As (or even before!) you write your code <!-- .element: class="fragment" -->
 * When questions are raised or bugs found <!-- .element: class="fragment" -->
 * When refactoring <!-- .element: class="fragment" -->
 * Whenever documentation is insufficient <!-- .element: class="fragment" -->
@@ -490,7 +1002,7 @@ Note:
 
 Ideally, documentation should be written before you write any code. This forces you to think about your approach, and sometimes saying it out loud (or typing it) can help you catch logical errors.
 
-If bugs or stress-cases are found, make sure these are documented!
+Then, if bugs or stress-cases are found, make sure these are documented! Learn from these mistakes!
 
 When refactoring code, make sure the documentation stays up-to-date.
 
@@ -498,84 +1010,181 @@ If you find yourself having to read the code to figure out what a function does,
 
 ----
 
-### Make documentation part of code review
+### Preventing "Doc-rot"
 
 * Code changes should always include relevant changes to documentation <!-- .element: class="fragment" -->
-* Forces team to write docs for new features <!-- .element: class="fragment" -->
 * Protects documentation from falling behind <!-- .element: class="fragment" -->
+* Forces team to write docs for new features <!-- .element: class="fragment" -->
 
 Note:
 
-A practice I love to see is making documentation part of code review
+Out-of-date documentation can be as bad or worse than no documentation at all!
 
-New arguments added but not documented? No documentation for new functionality? Send it back!
+* Make documentation part of code review: new arguments added but not documented? Send it back!
+* This ensures that your existing docs don't fall behind
+* Apply this same practice to new functionality, too: new code can't get in until it's documented
+
+For external documentation, make the updates an explicit part of your release plan: it's not "done" until the docs have been updated, too.
 
 ----
 
-### Be careful about your assumptions
+### Make Docs Discoverable
 
-* Don't assume intimate knowledge <!-- .element: class="fragment" -->
-* Link to relevant docs <!-- .element: class="fragment" -->
+If they're hard to find, nobody will read them!
+
+![John Travolta in Pulp Fiction, looking around the room wondering what's going on](resources/travolta-wondering.gif)
+
+Note:
+
+* Think of anywhere someone might look for documentation, then sprinkle breadcrumbs back to wherever the docs live
+    * Example: support and/or help pages on your website that link to the relevant documentation
+    * Leverage the "support" property in composer.json to link to docs, issue tracker, etc.
+* The easier someone can find your docs the better their experience
+
+----
+
+### Watch your assumptions!
+
+* Write for the intended audience (or just below) <!-- .element: class="fragment" -->
+* Spell out acronyms the first time they're used <!-- .element: class="fragment" -->
+* Link to relevant documentation for context <!-- .element: class="fragment" -->
 
 Note:
 
 It's important to write our documentation in a way that we're not assuming the reader has intimate knowledge of the entire codebase. We don't want to talk-down, either, but imagine the person understands the language but only has high-level knowledge of the concept.
 
-If additional information is necessary, point people in the right direction.
+* Put simply, write for the intended audience or someone who is on the way to becoming part of the intended audience
+* One easy way to do this is by spelling out an acronym the first time we use it.
+    * Gives readers terms they can search for
+* If additional information is necessary, point people in the right direction.
 
 ----
 
-### Generate documentation regularly
+### Watch your assumptions!
 
-* Coverage <!-- .element: class="fragment" -->
-* Detect duplication or spaghetti code <!-- .element: class="fragment" -->
+<pre class="fragment-replace"><code class="fragment fade-out hljs php" data-fragment-index="0">/**
+ * Push the file to GCS and handle any errors.
+ */</code><code class="fragment hljs php" data-fragment-index="0">/**
+ * Move the file to Google Cloud Storage (GCS) and handle
+ * any transport exceptions that might arise.
+ *
+ * GCS documentation and possible error codes are available
+ * at {@link https://example.com/gcs-documentation}.
+ */</code></pre>
 
 Note:
 
-Even if your codebase isn't being distributed, regularly generating documentation can have some benefits:
+For someone new to this codebase, they might not immediately know what "GCS" stands for. What kinds of errors are we dealing with?
 
-Generated docs will help highlight areas of the codebase that don't have documentation and could benefit from more attention. PHPDocumentor includes reports for areas that are either missing or don't have sufficient coverage.
-
-Getting a high-level view of your app can also help you recognize possible code organization issues and find things like duplicated functionality or features you had forgotten about.
+With minor adjustments, we can clarify that GCS is "Google Cloud Storage" and provide a link to relevant documentation.
 
 ----
 
-### Is your code hard to document?
+### It's okay to repeat yourself (sometimes)
 
-![Poop emoji](resources/poop.png) <!-- .element: class="fragment poop" -->
+* Callbacks (with links) to previous sections <!-- .element: class="fragment" -->
+* Repetition supports memorization <!-- .element: class="fragment" -->
+* Repetition supports memorization <!-- .element: class="fragment" -->
 
 Note:
 
-If your code can't be documented easily, that could be a sign that your code is poorly organized or overly complex. That's what we like to call a code smell.
+When writing software, we say "Don't Repeat Yourself" (DRY), but it's okay if your documentation is a little damp
+
+* Reintroducing ideas with a sentence or two can help provide context, and you can link back to the main source for that information
+* Repeating an idea can also help people retain it
+* It also helps people remember if they see or hear it more than once
 
 ----
 
-### Learn the standards used by your project
+### Be consistent in your language
+
+Is it a plugin, extension, or module? 🤔
 
 Note:
 
-While PHPDoc is pretty common, different projects may have different conventions for things like alignment, phrasing, or the handling of certain tags.
-
-For example, WordPress asks that you *not* use `@return void` — if there's no return, omit the DocBlock tag.
-
-Knowing the conventions used by your project will make documentation far less painful.
+* A common problem, especially when multiple authors are involved, is different words being used to describe the same thing.
+    * Plugin? Extension? Module? Add-on? Mix-in?
+* I love my thesaurus as much as the next nerd, but try to establish a ubiquitous language for your codebase.
 
 ----
 
-### Writing documentation is a great first step into an open-source project
+### Hard to document?
+
+If it's too hard to explain,<br>it may be too complicated!
 
 Note:
 
-If you're looking for ways to get move involved with a project, writing documentation is a great first step, as it's an area where a lot of projects need serious help.
+* In the same way that code being hard to test can be an indication of a larger architectural issue, code being hard to document can also be a strong signal that something's funky.
+* Difficulty of writing documentation => litmus test for code quality
 
-Writing documentation forces you to understand the code better, helps other people, and is very likely to be accepted and greatly appreciated.
+----
+
+### Write for Humans
+
+* Write in short, concise sentences <!-- .element: class="fragment" -->
+* Make liberal use of whitespace <!-- .element: class="fragment" -->
+* Be careful with idioms! <!-- .element: class="fragment" -->
+* Inject a bit of personality (if you can) <!-- .element: class="fragment" -->
+
+Note:
+
+At the end of the day, there's a human being trying to use or contribute to your software. Your goal should be to give them the information they need to be successful in that task.
+
+* Short, concise sentences help people follow along.
+* Whitespace gives readers a chance to breathe
+* Avoid using idioms that may not translate well across different cultures
+* An active voice helps the reader feel like they're in it with you, not just a passive observer
+
+Not only do we want to make sure all points are covered, but we want the documentation to be easy to digest. These aren't five-paragraph essays: feel free to break things up and try to make it (dare I say?) fun to read.
+
+----
+
+### Examples should be<br>interesting & inclusive
+
+* Avoid "foo", "bar", "Bob", and "Alice" <!-- .element: class="fragment" -->
+* Save the alcohol for happy hour <!-- .element: class="fragment" -->
+* Pop-culture, food, and animals are<br>generally safe <!-- .element: class="fragment" -->
+
+Note:
+
+* Foo and bar have been done to death, so have Bob and Alice. Try fresh names and variables that mean something
+* Good to remember that not everyone drinks, so using beer or whisky in your examples can be othering
+* Instead, I like to use tacos, cats + dogs, coffee, and other relatable things
+    * Pop-culture references can be a great way to share your favorite media
+    * The number of times John, Paul, George, and Ringo have showed up in my examples is embarrassing
+
+----
+
+### Make it easy to contribute
+
+Easy to write, easy to share!
+
+Note:
+
+* Whether it's within your company or shared with millions of users, contributing documentation should not be a large hurdle.
+* Good litmus test: how many clicks does it take to fix a single typo in a README?
+
+This leads into my next point...
+
+----
+
+### Documentation & FOSS
+
+Maintainers would <u>love</u> for you to know<br>this one simple trick!
+
+Note:
+
+* If you're looking for ways to get move involved with a project, writing documentation is a great first step, as it's an area where a lot of projects need serious help.
+* Writing documentation forces you to understand the code better, helps other people, and is very likely to be accepted and greatly appreciated.
+* Looking to give back or get involved? Writing documentation will help make you the maintainer's favorite person
 
 ---
+
+<!-- .slide: data-hide-footer -->
 
 ## Thank You!
 
 Steve Grunwell<br>
-[stevegrunwell.com](https://stevegrunwell.com)<br>
-[liquidweb.com](https://www.liquidweb.com/)
+Staff Software Engineer, Mailchimp
 
 [stevegrunwell.com/slides/write-some-docs](https://stevegrunwell.com/slides/write-some-docs)<!-- .element: class="slides-link" -->

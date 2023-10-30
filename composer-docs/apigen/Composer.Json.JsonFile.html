@@ -1,0 +1,845 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Json\JsonFile |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Json.JsonFile.html">
+							JsonFile
+						</a>
+					</li>
+					<li>
+						<a class="deprecated" href="Composer.Json.JsonFormatter.html">
+							JsonFormatter
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Json.JsonManipulator.html">
+							JsonManipulator
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Json.JsonValidationException.html">
+							JsonValidationException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Json.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Json.JsonFile.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Json.html">Json</a>\<a href="Composer.Json.JsonFile.html">JsonFile</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Reads/writes json files.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Json.JsonFile.html#30" title="Go to source code">Composer/Json/JsonFile.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#56-73" title="Go to source code">__construct</a>(<span>string <var>$path</var></span>, <span>?<a href="Composer.Util.HttpDownloader.html"><span title="Composer\Util\HttpDownloader">HttpDownloader</span></a> <var>$httpDownloader</var> = <span class="php-kw">null</span></span>, <span>?<a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Initializes json file reader/parser.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initializes json file reader/parser.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>path to a lockfile</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$httpDownloader</var>&nbsp;&nbsp;</td>
+										<td><p>required for loading http/https json files</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPath" id="_getPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#75-78" title="Go to source code">getPath</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="exists" id="_exists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#80-86" title="Go to source code">exists</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether json file exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether json file exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_exists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="read" id="_read">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#88-127" title="Go to source code">read</a>(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Reads json file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reads json file.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><span>Seld\JsonLint\ParsingException</span></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_read">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="write" id="_write">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#129-173" title="Go to source code">write</a>(<span>mixed[] <var>$hash</var></span>, <span>int <var>$options</var> = JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Writes json file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Writes json file.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$hash</var>&nbsp;&nbsp;</td>
+										<td><p>writes hash into json file</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>json_encode options</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a>|<a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_write">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateSchema" id="_validateSchema">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#190-214" title="Go to source code">validateSchema</a>(<span><b><span class="active" title="Composer\Json\JsonFile">self</span></b>::*_SCHEMA <var>$schema</var> = <b><span class="active" title="Composer\Json\JsonFile">self</span></b>::<a href="Composer.Json.JsonFile.html#STRICT_SCHEMA">STRICT_SCHEMA</a></span>, <span>string|null <var>$schemaFile</var> = <span class="php-kw">null</span></span>): true</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates the schema of the current json file according to composer-schema.json rules
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates the schema of the current json file according to composer-schema.json rules</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$schemaFile</var>&nbsp;&nbsp;</td>
+										<td><p>a path to the schema file</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>true on success</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Composer.Json.JsonValidationException.html"><span>Composer\Json\JsonValidationException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><span>Seld\JsonLint\ParsingException</span></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateSchema">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateJsonSchema" id="_validateJsonSchema">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#216-264" title="Go to source code">validateJsonSchema</a>(<span>string <var>$source</var></span>, <span>mixed <var>$data</var></span>, <span><b><span class="active" title="Composer\Json\JsonFile">self</span></b>::*_SCHEMA <var>$schema</var></span>, <span>string|null <var>$schemaFile</var> = <span class="php-kw">null</span></span>): true</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates the schema of the current json file according to composer-schema.json rules
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates the schema of the current json file according to composer-schema.json rules</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>Decoded JSON data to validate</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$schemaFile</var>&nbsp;&nbsp;</td>
+										<td><p>a path to the schema file</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>true on success</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Composer.Json.JsonValidationException.html"><span>Composer\Json\JsonValidationException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateJsonSchema">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="encode" id="_encode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#266-294" title="Go to source code">encode</a>(<span>mixed <var>$data</var></span>, <span>int <var>$options</var> = <span class="php-num">448</span></span>, <span>string <var>$indent</var> = <b><span class="active" title="Composer\Json\JsonFile">self</span></b>::<a href="Composer.Json.JsonFile.html#INDENT_DEFAULT">INDENT_DEFAULT</a></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Encodes an array into (optionally pretty-printed) JSON
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Encodes an array into (optionally pretty-printed) JSON</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>Data to encode into a formatted JSON string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>json_encode options (defaults to JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$indent</var>&nbsp;&nbsp;</td>
+										<td><p>Indentation string</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Encoded json</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_encode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseJson" id="_parseJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#325-345" title="Go to source code">parseJson</a>(<span>null|string <var>$json</var></span>, <span>string <var>$file</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Parses json string and returns hash.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parses json string and returns hash.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$json</var>&nbsp;&nbsp;</td>
+										<td><p>json string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$file</var>&nbsp;&nbsp;</td>
+										<td><p>the json file</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><span>Seld\JsonLint\ParsingException</span></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateSyntax" id="_validateSyntax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#347-378" title="Go to source code">validateSyntax</a>(<span>string <var>$json</var></span>, <span>string <var>$file</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates the syntax of a JSON string
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates the syntax of a JSON string</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true on success</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><span>Seld\JsonLint\ParsingException</span></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateSyntax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="detectIndenting" id="_detectIndenting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Json.JsonFile.html#380-386" title="Go to source code">detectIndenting</a>(<span>?string <var>$json</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_detectIndenting">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="LAX_SCHEMA" id="LAX_SCHEMA">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#32" title="Go to source code">LAX_SCHEMA</a> = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#LAX_SCHEMA">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STRICT_SCHEMA" id="STRICT_SCHEMA">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#33" title="Go to source code">STRICT_SCHEMA</a> = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STRICT_SCHEMA">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="AUTH_SCHEMA" id="AUTH_SCHEMA">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#34" title="Go to source code">AUTH_SCHEMA</a> = <span class="php-num">3</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#AUTH_SCHEMA">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="JSON_UNESCAPED_SLASHES" id="JSON_UNESCAPED_SLASHES">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#36-37" title="Go to source code"><span class="deprecated">JSON_UNESCAPED_SLASHES</span></a> = <span class="php-num">64</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#JSON_UNESCAPED_SLASHES">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="JSON_PRETTY_PRINT" id="JSON_PRETTY_PRINT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#38-39" title="Go to source code"><span class="deprecated">JSON_PRETTY_PRINT</span></a> = <span class="php-num">128</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#JSON_PRETTY_PRINT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="JSON_UNESCAPED_UNICODE" id="JSON_UNESCAPED_UNICODE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#40-41" title="Go to source code"><span class="deprecated">JSON_UNESCAPED_UNICODE</span></a> = <span class="php-num">256</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#JSON_UNESCAPED_UNICODE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="COMPOSER_SCHEMA_PATH" id="COMPOSER_SCHEMA_PATH">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#43" title="Go to source code">COMPOSER_SCHEMA_PATH</a> = __DIR__ . <span class="php-str">'/../../../res/composer-schema.json'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#COMPOSER_SCHEMA_PATH">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="INDENT_DEFAULT" id="INDENT_DEFAULT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Json.JsonFile.html#45" title="Go to source code">INDENT_DEFAULT</a> = <span class="php-str">'    '</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#INDENT_DEFAULT">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

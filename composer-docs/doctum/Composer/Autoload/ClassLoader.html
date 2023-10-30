@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Autoload\ClassLoader | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Autoload_ClassLoader" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Autoload.html">Autoload</a></li><li class="backslash">\</li><li>ClassLoader</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>ClassLoader    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>ClassLoader</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>ClassLoader implements a PSR-0, PSR-4 and classmap class loader.</p></p>            <p><p>$loader = new \Composer\Autoload\ClassLoader();</p>
+<pre><code>// register classes with namespaces
+$loader-&gt;add('Symfony\Component', __DIR__.'/component');
+$loader-&gt;add('Symfony',           __DIR__.'/framework');
+
+// activate the autoloader
+$loader-&gt;register();
+
+// to enable searching the include path (eg. for PEAR packages)
+$loader-&gt;setUseIncludePath(true);</code></pre>
+<p>In this example, if you try to use a class in the Symfony\Component
+namespace or one of its children (Symfony\Component\Console for instance),
+the autoloader will first look for the class under the component/
+directory, and it will then fallback to the framework/ directory if not
+found before giving up.</p>
+<p>This class is loosely based on the Symfony UniversalClassLoader.</p></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(string|null $vendorDir = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\array&lt;string,list&lt;string&gt;&gt;">array&lt;string,list&lt;string&gt;&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrefixes">getPrefixes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\array&lt;string,list&lt;string&gt;&gt;">array&lt;string,list&lt;string&gt;&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrefixesPsr4">getPrefixesPsr4</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFallbackDirs">getFallbackDirs</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFallbackDirsPsr4">getFallbackDirsPsr4</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getClassMap">getClassMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addClassMap">addClassMap</a>(array $classMap)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_add">add</a>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths, bool $prepend = false)
+        
+                                            <p><p>Registers a set of PSR-0 directories for a given prefix, either
+appending or prepending to the ones previously set for this prefix.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addPsr4">addPsr4</a>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths, bool $prepend = false)
+        
+                                            <p><p>Registers a set of PSR-4 directories for a given namespace, either
+appending or prepending to the ones previously set for this namespace.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_set">set</a>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths)
+        
+                                            <p><p>Registers a set of PSR-0 directories for a given prefix,
+replacing any others previously set for this prefix.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPsr4">setPsr4</a>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths)
+        
+                                            <p><p>Registers a set of PSR-4 directories for a given namespace,
+replacing any others previously set for this namespace.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUseIncludePath">setUseIncludePath</a>(bool $useIncludePath)
+        
+                                            <p><p>Turns on searching the include path for class files.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getUseIncludePath">getUseIncludePath</a>()
+        
+                                            <p><p>Can be used to check if the autoloader uses the include path to check
+for classes.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setClassMapAuthoritative">setClassMapAuthoritative</a>(bool $classMapAuthoritative)
+        
+                                            <p><p>Turns off searching the prefix and fallback directories for classes
+that have not been registered with the class map.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isClassMapAuthoritative">isClassMapAuthoritative</a>()
+        
+                                            <p><p>Should class lookup fail if not found in the current class map?</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setApcuPrefix">setApcuPrefix</a>(string|null $apcuPrefix)
+        
+                                            <p><p>APCu prefix to use to cache found/not-found classes, if the extension is enabled.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getApcuPrefix">getApcuPrefix</a>()
+        
+                                            <p><p>The APCu prefix in use, or null if APCu caching is not enabled.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_register">register</a>(bool $prepend = false)
+        
+                                            <p><p>Registers this instance as an autoloader.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unregister">unregister</a>()
+        
+                                            <p><p>Unregisters this instance as an autoloader.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    true|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadClass">loadClass</a>(string $class)
+        
+                                            <p><p>Loads the given class or interface.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findFile">findFile</a>(string $class)
+        
+                                            <p><p>Finds the path to the file where the class is defined.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Composer\Autoload\array&lt;string,self&gt;">array&lt;string,self&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRegisteredLoaders">getRegisteredLoaders</a>()
+        
+                                            <p><p>Returns the currently registered loaders keyed by their corresponding vendor directories.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 106</div>
+        <code>                    
+    <strong>__construct</strong>(string|null $vendorDir = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$vendorDir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrefixes">
+        <div class="location">at line 115</div>
+        <code>                    <abbr title="Composer\Autoload\array&lt;string,list&lt;string&gt;&gt;">array&lt;string,list&lt;string&gt;&gt;</abbr>
+    <strong>getPrefixes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\array&lt;string,list&lt;string&gt;&gt;">array&lt;string,list&lt;string&gt;&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrefixesPsr4">
+        <div class="location">at line 127</div>
+        <code>                    <abbr title="Composer\Autoload\array&lt;string,list&lt;string&gt;&gt;">array&lt;string,list&lt;string&gt;&gt;</abbr>
+    <strong>getPrefixesPsr4</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\array&lt;string,list&lt;string&gt;&gt;">array&lt;string,list&lt;string&gt;&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFallbackDirs">
+        <div class="location">at line 135</div>
+        <code>                    <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>
+    <strong>getFallbackDirs</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFallbackDirsPsr4">
+        <div class="location">at line 143</div>
+        <code>                    <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>
+    <strong>getFallbackDirsPsr4</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClassMap">
+        <div class="location">at line 151</div>
+        <code>                    <abbr title="Composer\Autoload\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+    <strong>getClassMap</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr></td>
+            <td><p>Array of classname =&gt; path</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addClassMap">
+        <div class="location">at line 161</div>
+        <code>                    void
+    <strong>addClassMap</strong>(array $classMap)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$classMap</td>
+                <td><p>Class to filename map</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line 180</div>
+        <code>                    void
+    <strong>add</strong>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths, bool $prepend = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers a set of PSR-0 directories for a given prefix, either
+appending or prepending to the ones previously set for this prefix.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td><p>The prefix</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string</td>
+                <td>$paths</td>
+                <td><p>The PSR-0 root directories</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$prepend</td>
+                <td><p>Whether to prepend the directories</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPsr4">
+        <div class="location">at line 230</div>
+        <code>                    void
+    <strong>addPsr4</strong>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths, bool $prepend = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers a set of PSR-4 directories for a given namespace, either
+appending or prepending to the ones previously set for this namespace.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td><p>The prefix/namespace, with trailing '\'</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string</td>
+                <td>$paths</td>
+                <td><p>The PSR-4 base directories</p></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$prepend</td>
+                <td><p>Whether to prepend the directories</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at line 278</div>
+        <code>                    void
+    <strong>set</strong>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers a set of PSR-0 directories for a given prefix,
+replacing any others previously set for this prefix.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td><p>The prefix</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string</td>
+                <td>$paths</td>
+                <td><p>The PSR-0 base directories</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPsr4">
+        <div class="location">at line 298</div>
+        <code>                    void
+    <strong>setPsr4</strong>(string $prefix, <abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string $paths)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers a set of PSR-4 directories for a given namespace,
+replacing any others previously set for this namespace.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td><p>The prefix/namespace, with trailing '\'</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Autoload\list&lt;string&gt;">list&lt;string&gt;</abbr>|string</td>
+                <td>$paths</td>
+                <td><p>The PSR-4 base directories</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUseIncludePath">
+        <div class="location">at line 319</div>
+        <code>                    void
+    <strong>setUseIncludePath</strong>(bool $useIncludePath)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Turns on searching the include path for class files.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$useIncludePath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUseIncludePath">
+        <div class="location">at line 330</div>
+        <code>                    bool
+    <strong>getUseIncludePath</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Can be used to check if the autoloader uses the include path to check
+for classes.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClassMapAuthoritative">
+        <div class="location">at line 343</div>
+        <code>                    void
+    <strong>setClassMapAuthoritative</strong>(bool $classMapAuthoritative)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Turns off searching the prefix and fallback directories for classes
+that have not been registered with the class map.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$classMapAuthoritative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isClassMapAuthoritative">
+        <div class="location">at line 353</div>
+        <code>                    bool
+    <strong>isClassMapAuthoritative</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Should class lookup fail if not found in the current class map?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setApcuPrefix">
+        <div class="location">at line 365</div>
+        <code>                    void
+    <strong>setApcuPrefix</strong>(string|null $apcuPrefix)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>APCu prefix to use to cache found/not-found classes, if the extension is enabled.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$apcuPrefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApcuPrefix">
+        <div class="location">at line 375</div>
+        <code>                    string|null
+    <strong>getApcuPrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>The APCu prefix in use, or null if APCu caching is not enabled.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">at line 387</div>
+        <code>                    void
+    <strong>register</strong>(bool $prepend = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers this instance as an autoloader.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$prepend</td>
+                <td><p>Whether to prepend the autoloader or not</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unregister">
+        <div class="location">at line 408</div>
+        <code>                    void
+    <strong>unregister</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Unregisters this instance as an autoloader.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadClass">
+        <div class="location">at line 423</div>
+        <code>                    true|null
+    <strong>loadClass</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads the given class or interface.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td><p>The name of the class</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>true|null</td>
+            <td><p>True if loaded, null otherwise</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findFile">
+        <div class="location">at line 442</div>
+        <code>                    string|false
+    <strong>findFile</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Finds the path to the file where the class is defined.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td><p>The name of the class</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td><p>The path if found, false otherwise</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRegisteredLoaders">
+        <div class="location">at line 482</div>
+        <code>        static            <abbr title="Composer\Autoload\array&lt;string,self&gt;">array&lt;string,self&gt;</abbr>
+    <strong>getRegisteredLoaders</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the currently registered loaders keyed by their corresponding vendor directories.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\array&lt;string,self&gt;">array&lt;string,self&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

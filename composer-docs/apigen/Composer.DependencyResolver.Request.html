@@ -1,0 +1,1123 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\DependencyResolver\Request |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Decisions.html">
+							Decisions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.DefaultPolicy.html">
+							DefaultPolicy
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.GenericRule.html">
+							GenericRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.MultiConflictRule.html">
+							MultiConflictRule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Pool.html">
+							Pool
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolBuilder.html">
+							PoolBuilder
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.PoolOptimizer.html">
+							PoolOptimizer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Problem.html">
+							Problem
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.DependencyResolver.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule.html">
+							Rule
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Rule2Literals.html">
+							Rule2Literals
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetGenerator.html">
+							RuleSetGenerator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleSetIterator.html">
+							RuleSetIterator
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchChain.html">
+							RuleWatchChain
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchGraph.html">
+							RuleWatchGraph
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.RuleWatchNode.html">
+							RuleWatchNode
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Solver.html">
+							Solver
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.PolicyInterface.html">
+							PolicyInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.SolverBugException.html">
+							SolverBugException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.SolverProblemsException.html">
+							SolverProblemsException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.DependencyResolver.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.DependencyResolver.Request.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>\<a href="Composer.DependencyResolver.Request.html">Request</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.DependencyResolver.Request.html#24" title="Go to source code">Composer/DependencyResolver/Request.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#60-63" title="Go to source code">__construct</a>(<span>?<a href="Composer.Repository.LockArrayRepository.html"><span title="Composer\Repository\LockArrayRepository">LockArrayRepository</span></a> <var>$lockedRepository</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requireName" id="_requireName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#65-76" title="Go to source code">requireName</a>(<span>string <var>$packageName</var></span>, <span>?<span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span> <var>$constraint</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requireName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fixPackage" id="_fixPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#78-87" title="Go to source code">fixPackage</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Mark a package as currently present and having to remain installed
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Mark a package as currently present and having to remain installed</p>
+<p>This is used for platform packages which cannot be modified by Composer. A rule enforcing their installation is
+generated for dependency resolution. Partial updates with dependencies cannot in any way modify these packages.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fixPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lockPackage" id="_lockPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#89-102" title="Go to source code">lockPackage</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Mark a package as locked to a specific version but removable
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Mark a package as locked to a specific version but removable</p>
+<p>This is used for lock file packages which need to be treated similar to fixed packages by the pool builder in
+that by default they should really only have the currently present version loaded and no remote alternatives.</p>
+<p>However unlike fixed packages there will not be a special rule enforcing their installation for the solver, so
+if nothing requires these packages they will be removed. Additionally in a partial update these packages can be
+unlocked, meaning other versions can be installed if explicitly requested as part of the update.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lockPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fixLockedPackage" id="_fixLockedPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#104-115" title="Go to source code">fixLockedPackage</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Marks a locked package fixed. So it's treated irremovable like a platform package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marks a locked package fixed. So it's treated irremovable like a platform package.</p>
+<p>This is necessary for the composer install step which verifies the lock file integrity and should not allow
+removal of any packages. At the same time lock packages there cannot simply be marked fixed, as error reporting
+would then report them as platform packages, so this still marks them as locked packages at the same time.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fixLockedPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unlockPackage" id="_unlockPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#117-120" title="Go to source code">unlockPackage</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unlockPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUpdateAllowList" id="_setUpdateAllowList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#122-130" title="Go to source code">setUpdateAllowList</a>(<span>array&lt;string&gt; <var>$updateAllowList</var></span>, <span>false|<b><span class="active" title="Composer\DependencyResolver\Request">self</span></b>::UPDATE_* <var>$updateAllowTransitiveDependencies</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUpdateAllowList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUpdateAllowList" id="_getUpdateAllowList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#132-138" title="Go to source code">getUpdateAllowList</a>(): array&lt;string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUpdateAllowList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUpdateAllowTransitiveDependencies" id="_getUpdateAllowTransitiveDependencies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#140-143" title="Go to source code">getUpdateAllowTransitiveDependencies</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUpdateAllowTransitiveDependencies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUpdateAllowTransitiveRootDependencies" id="_getUpdateAllowTransitiveRootDependencies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#145-148" title="Go to source code">getUpdateAllowTransitiveRootDependencies</a>(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUpdateAllowTransitiveRootDependencies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRequires" id="_getRequires">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#150-156" title="Go to source code">getRequires</a>(): array&lt;string, <span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRequires">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFixedPackages" id="_getFixedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#158-164" title="Go to source code">getFixedPackages</a>(): array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFixedPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFixedPackage" id="_isFixedPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#166-169" title="Go to source code">isFixedPackage</a>(<span><a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a> <var>$package</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFixedPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLockedPackages" id="_getLockedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#171-177" title="Go to source code">getLockedPackages</a>(): array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLockedPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isLockedPackage" id="_isLockedPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#179-182" title="Go to source code">isLockedPackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isLockedPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFixedOrLockedPackages" id="_getFixedOrLockedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#184-190" title="Go to source code">getFixedOrLockedPackages</a>(): array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFixedOrLockedPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPresentMap" id="_getPresentMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#192-215" title="Go to source code">getPresentMap</a>(<span>bool <var>$packageIds</var> = <span class="php-kw">false</span></span>): array&lt;int|string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPresentMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFixedPackagesMap" id="_getFixedPackagesMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#217-229" title="Go to source code">getFixedPackagesMap</a>(): <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFixedPackagesMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLockedRepository" id="_getLockedRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#231-237" title="Go to source code">getLockedRepository</a>(): ?<a href="Composer.Repository.LockArrayRepository.html"><span title="Composer\Repository\LockArrayRepository">LockArrayRepository</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLockedRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="restrictPackages" id="_restrictPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#239-247" title="Go to source code">restrictPackages</a>(<span>non-empty-list&lt;string&gt; <var>$names</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Restricts the pool builder from loading other packages than those listed here
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Restricts the pool builder from loading other packages than those listed here</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_restrictPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRestrictedPackages" id="_getRestrictedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Request.html#249-255" title="Go to source code">getRestrictedPackages</a>(): list&lt;string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRestrictedPackages">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="UPDATE_ONLY_LISTED" id="UPDATE_ONLY_LISTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.DependencyResolver.Request.html#26-29" title="Go to source code">UPDATE_ONLY_LISTED</a> = <span class="php-num">0</span></code>
+
+	<div class="expandable-collapsedView">
+		Identifies a partial update for listed packages only, all dependencies will remain at locked versions
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Identifies a partial update for listed packages only, all dependencies will remain at locked versions</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UPDATE_ONLY_LISTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UPDATE_LISTED_WITH_TRANSITIVE_DEPS_NO_ROOT_REQUIRE" id="UPDATE_LISTED_WITH_TRANSITIVE_DEPS_NO_ROOT_REQUIRE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.DependencyResolver.Request.html#31-35" title="Go to source code">UPDATE_LISTED_WITH_TRANSITIVE_DEPS_NO_ROOT_REQUIRE</a> = <span class="php-num">1</span></code>
+
+	<div class="expandable-collapsedView">
+		Identifies a partial update for listed packages and recursively all their dependencies, however dependencies
+also…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Identifies a partial update for listed packages and recursively all their dependencies, however dependencies
+also directly required by the root composer.json and their dependencies will remain at the locked version.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UPDATE_LISTED_WITH_TRANSITIVE_DEPS_NO_ROOT_REQUIRE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UPDATE_LISTED_WITH_TRANSITIVE_DEPS" id="UPDATE_LISTED_WITH_TRANSITIVE_DEPS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.DependencyResolver.Request.html#37-41" title="Go to source code">UPDATE_LISTED_WITH_TRANSITIVE_DEPS</a> = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		Identifies a partial update for listed packages and recursively all their dependencies, even dependencies
+also directly…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Identifies a partial update for listed packages and recursively all their dependencies, even dependencies
+also directly required by the root composer.json will be updated.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UPDATE_LISTED_WITH_TRANSITIVE_DEPS">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="lockedRepository" id="$lockedRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Composer.Repository.LockArrayRepository.html"><span title="Composer\Repository\LockArrayRepository">LockArrayRepository</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#43-44" title="Go to source code">$lockedRepository</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$lockedRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requires" id="$requires">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#45-46" title="Go to source code">$requires</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$requires">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fixedPackages" id="$fixedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#47-48" title="Go to source code">$fixedPackages</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fixedPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lockedPackages" id="$lockedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#49-50" title="Go to source code">$lockedPackages</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$lockedPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fixedLockedPackages" id="$fixedLockedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, <a href="Composer.Package.BasePackage.html"><span title="Composer\Package\BasePackage">BasePackage</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#51-52" title="Go to source code">$fixedLockedPackages</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fixedLockedPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateAllowList" id="$updateAllowList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#53-54" title="Go to source code">$updateAllowList</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$updateAllowList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateAllowTransitiveDependencies" id="$updateAllowTransitiveDependencies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">false|<b><span class="active" title="Composer\DependencyResolver\Request">self</span></b>::UPDATE_*</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.DependencyResolver.Request.html#55-56" title="Go to source code">$updateAllowTransitiveDependencies</a></var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$updateAllowTransitiveDependencies">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,681 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Downloader\TransportException |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ArchiveDownloader.html">
+							ArchiveDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloadManager.html">
+							DownloadManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FileDownloader.html">
+							FileDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.FossilDownloader.html">
+							FossilDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GitDownloader.html">
+							GitDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.GzipDownloader.html">
+							GzipDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.HgDownloader.html">
+							HgDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PathDownloader.html">
+							PathDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PerforceDownloader.html">
+							PerforceDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.PharDownloader.html">
+							PharDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.RarDownloader.html">
+							RarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.SvnDownloader.html">
+							SvnDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.TarDownloader.html">
+							TarDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsDownloader.html">
+							VcsDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.XzDownloader.html">
+							XzDownloader
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.ZipDownloader.html">
+							ZipDownloader
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.ChangeReportInterface.html">
+							ChangeReportInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DownloaderInterface.html">
+							DownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.DvcsDownloaderInterface.html">
+							DvcsDownloaderInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.VcsCapableDownloaderInterface.html">
+							VcsCapableDownloaderInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Composer.Downloader.FilesystemException.html">
+							FilesystemException
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Downloader.MaxFileSizeExceededException.html">
+							MaxFileSizeExceededException
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Downloader.TransportException.html">
+							TransportException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Downloader.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Downloader.TransportException.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Downloader.html">Downloader</a>\<a href="Composer.Downloader.TransportException.html">TransportException</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="RuntimeException.html"><span title="RuntimeException">RuntimeException</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Exception.html"><span>Exception</span></a>
+
+		implements
+			<a href="Throwable.html"><span title="Throwable">Throwable</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="RuntimeException.html"><span>RuntimeException</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Downloader\TransportException</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Downloader.MaxFileSizeExceededException.html"><span>Composer\Downloader\MaxFileSizeExceededException</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Downloader.TransportException.html#18" title="Go to source code">Composer/Downloader/TransportException.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="setHeaders" id="_setHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#29-35" title="Go to source code">setHeaders</a>(<span>array&lt;string&gt; <var>$headers</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHeaders" id="_getHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#37-43" title="Go to source code">getHeaders</a>(): ?array&lt;string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setResponse" id="_setResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#45-48" title="Go to source code">setResponse</a>(<span>?string <var>$response</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResponse" id="_getResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#50-56" title="Go to source code">getResponse</a>(): ?string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStatusCode" id="_setStatusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#58-64" title="Go to source code">setStatusCode</a>(<span>?int <var>$statusCode</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStatusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStatusCode" id="_getStatusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#66-72" title="Go to source code">getStatusCode</a>(): ?int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStatusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResponseInfo" id="_getResponseInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#74-80" title="Go to source code">getResponseInfo</a>(): array&lt;mixed&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResponseInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setResponseInfo" id="_setResponseInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Downloader.TransportException.html#82-88" title="Go to source code">setResponseInfo</a>(<span>array&lt;mixed&gt; <var>$responseInfo</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setResponseInfo">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Exception.html"><span>Exception</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Exception.html#___construct">__construct()</a>, <a href="Exception.html#___wakeup">__wakeup()</a>, <a href="Exception.html#_getMessage">getMessage()</a>, <a href="Exception.html#_getCode">getCode()</a>, <a href="Exception.html#_getFile">getFile()</a>, <a href="Exception.html#_getLine">getLine()</a>, <a href="Exception.html#_getTrace">getTrace()</a>, <a href="Exception.html#_getPrevious">getPrevious()</a>, <a href="Exception.html#_getTraceAsString">getTraceAsString()</a>, <a href="Exception.html#___toString">__toString()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="headers" id="$headers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?array&lt;string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Downloader.TransportException.html#20-21" title="Go to source code">$headers</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$headers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="response" id="$response">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Downloader.TransportException.html#22-23" title="Go to source code">$response</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$response">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="statusCode" id="$statusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Downloader.TransportException.html#24-25" title="Go to source code">$statusCode</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$statusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="responseInfo" id="$responseInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;mixed&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Downloader.TransportException.html#26-27" title="Go to source code">$responseInfo</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$responseInfo">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\DependencyResolver\Operation\SolverOperation |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Operation.InstallOperation.html">
+							InstallOperation
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Operation.MarkAliasInstalledOperation.html">
+							MarkAliasInstalledOperation
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Operation.MarkAliasUninstalledOperation.html">
+							MarkAliasUninstalledOperation
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.DependencyResolver.Operation.SolverOperation.html">
+							SolverOperation
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Operation.UninstallOperation.html">
+							UninstallOperation
+						</a>
+					</li>
+					<li>
+						<a href="Composer.DependencyResolver.Operation.UpdateOperation.html">
+							UpdateOperation
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.DependencyResolver.Operation.OperationInterface.html">
+							OperationInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.DependencyResolver.Operation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.DependencyResolver.Operation.SolverOperation.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>\<a href="namespace-Composer.DependencyResolver.Operation.html">Operation</a>\<a href="Composer.DependencyResolver.Operation.SolverOperation.html">SolverOperation</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Abstract operation class.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\DependencyResolver\Operation\SolverOperation</span></b>
+
+		implements
+			<a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.DependencyResolver.Operation.InstallOperation.html"><span>Composer\DependencyResolver\Operation\InstallOperation</span></a>
+
+		implements
+			<a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>
+
+	</li>
+	<li>
+<a href="Composer.DependencyResolver.Operation.MarkAliasUninstalledOperation.html"><span>Composer\DependencyResolver\Operation\MarkAliasUninstalledOperation</span></a>
+
+		implements
+			<a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>
+
+	</li>
+	<li>
+<a href="Composer.DependencyResolver.Operation.UninstallOperation.html"><span>Composer\DependencyResolver\Operation\UninstallOperation</span></a>
+
+		implements
+			<a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>
+
+	</li>
+	<li>
+<a href="Composer.DependencyResolver.Operation.MarkAliasInstalledOperation.html"><span>Composer\DependencyResolver\Operation\MarkAliasInstalledOperation</span></a>
+
+		implements
+			<a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>
+
+	</li>
+	<li>
+<a href="Composer.DependencyResolver.Operation.UpdateOperation.html"><span>Composer\DependencyResolver\Operation\UpdateOperation</span></a>
+
+		implements
+			<a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.DependencyResolver.Operation.SolverOperation.html#20" title="Go to source code">Composer/DependencyResolver/Operation/SolverOperation.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getOperationType" id="_getOperationType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Operation.SolverOperation.html#27-33" title="Go to source code">getOperationType</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns operation type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns operation type.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.Operation.OperationInterface.html#_getOperationType">						<code>Composer\DependencyResolver\Operation\OperationInterface::getOperationType()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOperationType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.DependencyResolver.Operation.SolverOperation.html#35-41" title="Go to source code">__toString</a>()</code>
+
+
+	<div class="expandable-collapsedView">
+		Serializes the operation in a human readable format
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Serializes the operation in a human readable format</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.DependencyResolver.Operation.OperationInterface.html#___toString">						<code>Composer\DependencyResolver\Operation\OperationInterface::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="TYPE" id="TYPE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.DependencyResolver.Operation.SolverOperation.html#22-25" title="Go to source code">TYPE</a> = <span class="php-str">''</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Package\Locker | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Package_Locker" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Package.html">Package</a></li><li class="backslash">\</li><li>Locker</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Locker    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Locker</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Reads/writes project lockfile (composer.lock).</p></p>                    </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a> $lockFile, <a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager, string $composerFileContents, <abbr title="Composer\Package\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null $process = null)
+        
+                                            <p><p>Initializes packages locker.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContentHash">getContentHash</a>(string $composerFileContents)
+        
+                                            <p><p>Returns the md5 hash of the sorted content of the composer file.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isLocked">isLocked</a>()
+        
+                                            <p><p>Checks whether locker has been locked (lockfile found).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isFresh">isFresh</a>()
+        
+                                            <p><p>Checks whether the lock file is still up to date with the current hash</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Repository/LockArrayRepository.html"><abbr title="Composer\Repository\LockArrayRepository">LockArrayRepository</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLockedRepository">getLockedRepository</a>(bool $withDevReqs = false)
+        
+                                            <p><p>Searches and returns an array of locked packages, retrieved from registered repositories.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDevPackageNames">getDevPackageNames</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPlatformRequirements">getPlatformRequirements</a>(bool $withDevReqs = false)
+        
+                                            <p><p>Returns the platform requirements stored in the lock file</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMinimumStability">getMinimumStability</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStabilityFlags">getStabilityFlags</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPreferStable">getPreferStable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPreferLowest">getPreferLowest</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPlatformOverrides">getPlatformOverrides</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAliases">getAliases</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPluginApi">getPluginApi</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLockData">getLockData</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLockData">setLockData</a>(array $packages, array|null $devPackages, array $platformReqs, array $platformDevReqs, array $aliases, string $minimumStability, array $stabilityFlags, bool $preferStable, bool $preferLowest, array $platformOverrides, bool $write = true)
+        
+                                            <p><p>Locks provided data into lockfile.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMissingRequirementInfo">getMissingRequirementInfo</a>(<a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $package, bool $includeDev)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 65</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a> $io, <a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a> $lockFile, <a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager, string $composerFileContents, <abbr title="Composer\Package\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null $process = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initializes packages locker.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/IO/IOInterface.html"><abbr title="Composer\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Json/JsonFile.html"><abbr title="Composer\Json\JsonFile">JsonFile</abbr></a></td>
+                <td>$lockFile</td>
+                <td><p>lockfile loader</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a></td>
+                <td>$installationManager</td>
+                <td><p>installation manager instance</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$composerFileContents</td>
+                <td><p>The contents of the composer file</p></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Package\Composer\Util\ProcessExecutor">ProcessExecutor</abbr>|null</td>
+                <td>$process</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContentHash">
+        <div class="location">at line 81</div>
+        <code>        static            string
+    <strong>getContentHash</strong>(string $composerFileContents)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the md5 hash of the sorted content of the composer file.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$composerFileContents</td>
+                <td><p>The contents of the composer file.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLocked">
+        <div class="location">at line 116</div>
+        <code>                    bool
+    <strong>isLocked</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks whether locker has been locked (lockfile found).</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFresh">
+        <div class="location">at line 130</div>
+        <code>                    bool
+    <strong>isFresh</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks whether the lock file is still up to date with the current hash</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLockedRepository">
+        <div class="location">at line 154</div>
+        <code>                    <a href="../../Composer/Repository/LockArrayRepository.html"><abbr title="Composer\Repository\LockArrayRepository">LockArrayRepository</abbr></a>
+    <strong>getLockedRepository</strong>(bool $withDevReqs = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Searches and returns an array of locked packages, retrieved from registered repositories.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$withDevReqs</td>
+                <td><p>true to retrieve the locked dev packages</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Repository/LockArrayRepository.html"><abbr title="Composer\Repository\LockArrayRepository">LockArrayRepository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDevPackageNames">
+        <div class="location">at line 203</div>
+        <code>                    array
+    <strong>getDevPackageNames</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td><p>Names of dependencies installed through require-dev</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlatformRequirements">
+        <div class="location">at line 222</div>
+        <code>                    array
+    <strong>getPlatformRequirements</strong>(bool $withDevReqs = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the platform requirements stored in the lock file</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$withDevReqs</td>
+                <td><p>if true, the platform requirements from the require-dev block are also returned</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinimumStability">
+        <div class="location">at line 250</div>
+        <code>                    string
+    <strong>getMinimumStability</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStabilityFlags">
+        <div class="location">at line 260</div>
+        <code>                    array
+    <strong>getStabilityFlags</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreferStable">
+        <div class="location">at line 267</div>
+        <code>                    bool|null
+    <strong>getPreferStable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreferLowest">
+        <div class="location">at line 276</div>
+        <code>                    bool|null
+    <strong>getPreferLowest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlatformOverrides">
+        <div class="location">at line 288</div>
+        <code>                    array
+    <strong>getPlatformOverrides</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAliases">
+        <div class="location">at line 300</div>
+        <code>                    array
+    <strong>getAliases</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPluginApi">
+        <div class="location">at line 310</div>
+        <code>                    string
+    <strong>getPluginApi</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLockData">
+        <div class="location">at line 320</div>
+        <code>                    array
+    <strong>getLockData</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLockData">
+        <div class="location">at line 347</div>
+        <code>                    bool
+    <strong>setLockData</strong>(array $packages, array|null $devPackages, array $platformReqs, array $platformDevReqs, array $aliases, string $minimumStability, array $stabilityFlags, bool $preferStable, bool $preferLowest, array $platformOverrides, bool $write = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Locks provided data into lockfile.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packages</td>
+                <td><p>array of packages</p></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$devPackages</td>
+                <td><p>array of dev packages or null if installed without --dev</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$platformReqs</td>
+                <td><p>array of package name =&gt; constraint for required platform packages</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$platformDevReqs</td>
+                <td><p>array of package name =&gt; constraint for dev-required platform packages</p></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$aliases</td>
+                <td><p>array of aliases</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$minimumStability</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$stabilityFlags</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preferStable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preferLowest</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$platformOverrides</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$write</td>
+                <td><p>Whether to actually write data to disk, useful in tests and for --dry-run</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMissingRequirementInfo">
+        <div class="location">at line 510</div>
+        <code>                    array
+    <strong>getMissingRequirementInfo</strong>(<a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $package, bool $includeDev)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$includeDev</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

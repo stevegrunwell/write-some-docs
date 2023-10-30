@@ -6,6 +6,7 @@ Luckily, good documentation lives on outside your codebase. By following common 
 
 ✨ **[View slides](https://stevegrunwell.github.io/write-some-docs)** ✨
 
+[![Four panel comic from Commit Strip, with a conversation between two engineers: First engineer: "Hey, I got assigned some bugs on your latest project but it looks like there's no documentation?" Second engineer: "What? Of course there's documentation! There's definitely a readme and there are some explanations on Jira. And maybe some explainers in Trello. And there's some information in Google Docs in a shared folder. Check if you can access it. It's not really up to date, but it's probably useful. And worst case scenario, there are plenty of contextual comments in the code." First engineer: Okay, so exactly what I said then...there's no documentation."](resources/commit-strip.jpg)](https://www.commitstrip.com/en/2021/11/10/no-documentation/?)
 
 ## Presentation History
 
@@ -13,9 +14,24 @@ Luckily, good documentation lives on outside your codebase. By following common 
 * [Beer City Code 2017](http://beercitycode.com/) — June 10, 2017
 * [Lone Star PHP 2017](http://lonestarphp.com/) - April 22, 2017 ([joind.in](https://joind.in/talk/b68e9))
 
+## Resources
+
+* [Write the Docs](https://www.writethedocs.org) - Global community of people who care about documentation
+* [CommonMark](https://commonmark.org/) - Documentation for the CommonMark specification
+* [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) - Documentation for reStructuredText
+* [The composer.json schema (support)](https://getcomposer.org/doc/04-schema.md#support) - Details for the "support" property within the composer.json schema
+
+### Tools and Services
+
+* [ApiGen](https://github.com/ApiGen/ApiGen)
+* [Daux.io](https://daux.io/)
+* [Doctum](https://github.com/code-lts/doctum)
+* [GitHub Pages](https://pages.github.com/)
+* [phpDocumentor](https://www.phpdoc.org)
+* [Read The Docs](https://readthedocs.com)
+* [ReadMe](http://readme.io/)
+* [Sphinx](https://www.sphinx-doc.org/en/master/)
 
 ## Notes
 
-* Title slide background taken from the 'Hilltop' spot from Coca-Cola's 1971 "I'd Like to Buy the World a Coke" campaign.
-* ["RTFM" design by Spreadshirt user t335](https://www.spreadshirt.com/rtfm-A11001966)
-* Westworld logo &copy; 2016 Home Box Office, Inc
+* Title slide background taken from the 'Hilltop' spot from [Coca-Cola's 1971 "I'd Like to Buy the World a Coke" campaign](https://en.wikipedia.org/wiki/I%27d_Like_to_Teach_the_World_to_Sing_(In_Perfect_Harmony)).

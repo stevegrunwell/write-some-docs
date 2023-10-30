@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\InstalledVersions | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/doctum-font.css">
+        <script src="../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../doctum.js"></script>
+        <script async defer src="../js/bootstrap.min.js"></script>
+        <script async defer src="../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_InstalledVersions" data-root-path="../" data-search-index-url="../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                    <li><a href="../namespaces.html">Namespaces</a></li>
+                    <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../Composer.html">Composer</a></li><li class="backslash">\</li><li>InstalledVersions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>InstalledVersions    
+            </h1>
+    </div>
+
+    
+    <p>final         class
+    <strong>InstalledVersions</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>This class is copied in every Composer installed project and available to all</p></p>            <p><p>See also <a href="https://getcomposer.org/doc/07-runtime.md#installed-versions">https://getcomposer.org/doc/07-runtime.md#installed-versions</a></p>
+<p>To require its presence, you can require <code>composer-runtime-api ^2.0</code></p></p>        </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInstalledPackages">getInstalledPackages</a>()
+        
+                                            <p><p>Returns a list of all package names which are present, either by being installed, replaced or provided</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInstalledPackagesByType">getInstalledPackagesByType</a>(string $type)
+        
+                                            <p><p>Returns a list of all package names with a specific type e.g. 'library'</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isInstalled">isInstalled</a>(string $packageName, bool $includeDevRequirements = true)
+        
+                                            <p><p>Checks whether the given package is installed</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_satisfies">satisfies</a>(<abbr title="Composer\Semver\VersionParser">VersionParser</abbr> $parser, string $packageName, string|null $constraint)
+        
+                                            <p><p>Checks whether the given package satisfies a version constraint</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getVersionRanges">getVersionRanges</a>(string $packageName)
+        
+                                            <p><p>Returns a version constraint representing all the range(s) which are installed for a given package</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getVersion">getVersion</a>(string $packageName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrettyVersion">getPrettyVersion</a>(string $packageName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReference">getReference</a>(string $packageName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInstallPath">getInstallPath</a>(string $packageName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRootPackage">getRootPackage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRawData">getRawData</a>()
+        <small><span class="label label-danger">deprecated</span></small>
+                                            <p><p>Returns the raw installed.php data for custom implementations</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAllRawData">getAllRawData</a>()
+        
+                                            <p><p>Returns the raw data of all installed.php which are currently loaded for custom implementations</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reload">reload</a>(array[] $data)
+        
+                                            <p><p>Lets you reload the static array from another file</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstalledPackages">
+        <div class="location">at line 52</div>
+        <code>        static            string[]
+    <strong>getInstalledPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of all package names which are present, either by being installed, replaced or provided</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstalledPackagesByType">
+        <div class="location">at line 73</div>
+        <code>        static            string[]
+    <strong>getInstalledPackagesByType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of all package names with a specific type e.g. 'library'</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInstalled">
+        <div class="location">at line 97</div>
+        <code>        static            bool
+    <strong>isInstalled</strong>(string $packageName, bool $includeDevRequirements = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks whether the given package is installed</p></p>                <p><p>This also returns true if the package name is provided or replaced by another package</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$includeDevRequirements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_satisfies">
+        <div class="location">at line 120</div>
+        <code>        static            bool
+    <strong>satisfies</strong>(<abbr title="Composer\Semver\VersionParser">VersionParser</abbr> $parser, string $packageName, string|null $constraint)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks whether the given package satisfies a version constraint</p></p>                <p><p>e.g. If you want to know whether version 2.3+ of package foo/bar is installed, you would call:</p>
+<p>Composer\InstalledVersions::satisfies(new VersionParser, 'foo/bar', '^2.3')</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Semver\VersionParser">VersionParser</abbr></td>
+                <td>$parser</td>
+                <td><p>Install composer/semver to have access to this class and functionality</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$constraint</td>
+                <td><p>A version constraint to check for, if you pass one you have to make sure composer/semver is required by your package</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersionRanges">
+        <div class="location">at line 137</div>
+        <code>        static            string
+    <strong>getVersionRanges</strong>(string $packageName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a version constraint representing all the range(s) which are installed for a given package</p></p>                <p><p>It is easier to use this via isInstalled() with the $constraint argument if you need to check
+whether a given version of a package is installed, and not just whether it exists</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td><p>Version constraint usable with composer/semver</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersion">
+        <div class="location">at line 168</div>
+        <code>        static            string|null
+    <strong>getVersion</strong>(string $packageName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td><p>If the package is being replaced or provided but is not really installed, null will be returned as version, use satisfies or getVersionRanges if you need to know if a given version is present</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrettyVersion">
+        <div class="location">at line 189</div>
+        <code>        static            string|null
+    <strong>getPrettyVersion</strong>(string $packageName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td><p>If the package is being replaced or provided but is not really installed, null will be returned as version, use satisfies or getVersionRanges if you need to know if a given version is present</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReference">
+        <div class="location">at line 210</div>
+        <code>        static            string|null
+    <strong>getReference</strong>(string $packageName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td><p>If the package is being replaced or provided but is not really installed, null will be returned as reference</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstallPath">
+        <div class="location">at line 231</div>
+        <code>        static            string|null
+    <strong>getInstallPath</strong>(string $packageName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td><p>If the package is being replaced or provided but is not really installed, null will be returned as install path. Packages of type metapackages also have a null install path.</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRootPackage">
+        <div class="location">at line 248</div>
+        <code>        static            array
+    <strong>getRootPackage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRawData">
+        <div class="location">at line 262</div>
+        <code>        static            array[]
+    <strong>getRawData</strong>()
+        <small><span class="label label-danger">deprecated</span></small></code>
+    </h3>
+    <div class="details">    
+            <p>
+                <small><span class="label label-danger">deprecated</span></small>
+                            <tr>
+                    <td>Use</td>
+                    <td>getAllRawData() instead which returns all datasets for all autoloaders present in the process. getRawData only returns the first dataset loaded, which may not be what you expect.</td>
+                </tr>
+                    </p>
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the raw installed.php data for custom implementations</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllRawData">
+        <div class="location">at line 285</div>
+        <code>        static            array[]
+    <strong>getAllRawData</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the raw data of all installed.php which are currently loaded for custom implementations</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reload">
+        <div class="location">at line 308</div>
+        <code>        static            void
+    <strong>reload</strong>(array[] $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Lets you reload the static array from another file</p></p>                <p><p>This is only useful for complex integrations in which a project needs to use
+this class but then also needs to execute another project's autoloader in process,
+and wants to ensure both projects have access to their version of installed.php.</p>
+<p>A typical case would be PHPUnit, where it would need to make sure it reads all
+the data it needs from this class, then call reload() with
+<code>require $CWD/vendor/composer/installed.php</code> (or similar) as input to make sure
+the project in which it runs can then also use this class safely, without
+interference between PHPUnit's dependencies and the project's dependencies.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array[]</td>
+                <td>$data</td>
+                <td><p>A vendor/composer/installed.php data set</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

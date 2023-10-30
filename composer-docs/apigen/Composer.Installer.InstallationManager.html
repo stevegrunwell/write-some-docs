@@ -1,0 +1,953 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Installer\InstallationManager |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Installer.BinaryInstaller.html">
+							BinaryInstaller
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Installer.InstallationManager.html">
+							InstallationManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerEvent.html">
+							InstallerEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerEvents.html">
+							InstallerEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.LibraryInstaller.html">
+							LibraryInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.MetapackageInstaller.html">
+							MetapackageInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.NoopInstaller.html">
+							NoopInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PackageEvent.html">
+							PackageEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PackageEvents.html">
+							PackageEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PluginInstaller.html">
+							PluginInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.ProjectInstaller.html">
+							ProjectInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.SuggestedPackagesReporter.html">
+							SuggestedPackagesReporter
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Installer.BinaryPresenceInterface.html">
+							BinaryPresenceInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerInterface.html">
+							InstallerInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Installer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Installer.InstallationManager.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Installer.html">Installer</a>\<a href="Composer.Installer.InstallationManager.html">InstallationManager</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Package operation manager.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Installer.InstallationManager.html#40" title="Go to source code">Composer/Installer/InstallationManager.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#57-62" title="Go to source code">__construct</a>(<span><a href="Composer.Util.Loop.html"><span title="Composer\Util\Loop">Loop</span></a> <var>$loop</var></span>, <span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span>?<a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a> <var>$eventDispatcher</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reset" id="_reset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#64-68" title="Go to source code">reset</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addInstaller" id="_addInstaller">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#70-79" title="Go to source code">addInstaller</a>(<span><a href="Composer.Installer.InstallerInterface.html"><span title="Composer\Installer\InstallerInterface">InstallerInterface</span></a> <var>$installer</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds installer
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds installer</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$installer</var>&nbsp;&nbsp;</td>
+										<td><p>installer instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addInstaller">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeInstaller" id="_removeInstaller">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#81-92" title="Go to source code">removeInstaller</a>(<span><a href="Composer.Installer.InstallerInterface.html"><span title="Composer\Installer\InstallerInterface">InstallerInterface</span></a> <var>$installer</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes installer
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes installer</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$installer</var>&nbsp;&nbsp;</td>
+										<td><p>installer instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeInstaller">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disablePlugins" id="_disablePlugins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#94-110" title="Go to source code">disablePlugins</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disables plugins.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disables plugins.</p>
+<p>We prevent any plugins from being instantiated by simply
+deactivating the installer for them. This ensure that no third-party
+code is ever executed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disablePlugins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInstaller" id="_getInstaller">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#112-134" title="Go to source code">getInstaller</a>(<span>string <var>$type</var></span>): <a href="Composer.Installer.InstallerInterface.html"><span title="Composer\Installer\InstallerInterface">InstallerInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns installer for a specific package type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns installer for a specific package type.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>package type</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if installer for provided type is not registered</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInstaller">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isPackageInstalled" id="_isPackageInstalled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#136-149" title="Go to source code">isPackageInstalled</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether provided package is installed in one of the registered installers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether provided package is installed in one of the registered installers.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isPackageInstalled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureBinariesPresence" id="_ensureBinariesPresence">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#151-170" title="Go to source code">ensureBinariesPresence</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Install binary for the given package.
+If the installer associated to this package doesn't handle that function, it'll…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Install binary for the given package.
+If the installer associated to this package doesn't handle that function, it'll do nothing.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>Package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureBinariesPresence">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="execute" id="_execute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#172-236" title="Go to source code">execute</a>(
+	<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>,
+	<span><a href="Composer.DependencyResolver.Operation.OperationInterface.html"><span title="Composer\DependencyResolver\Operation\OperationInterface">OperationInterface</span></a>[] <var>$operations</var></span>,
+	<span>bool <var>$devMode</var> = <span class="php-kw">true</span></span>,
+	<span>bool <var>$runScripts</var> = <span class="php-kw">true</span></span>,
+	<span>bool <var>$downloadOnly</var> = <span class="php-kw">false</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Executes solver operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Executes solver operation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to add/remove/update packages</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operations</var>&nbsp;&nbsp;</td>
+										<td><p>operations to execute</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$devMode</var>&nbsp;&nbsp;</td>
+										<td><p>whether the install is being run in dev mode</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$runScripts</var>&nbsp;&nbsp;</td>
+										<td><p>whether to dispatch script events</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$downloadOnly</var>&nbsp;&nbsp;</td>
+										<td><p>whether to only download packages</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_execute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="download" id="_download">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#440-451" title="Go to source code">download</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): ?<span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Executes download operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Executes download operation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_download">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="install" id="_install">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#453-468" title="Go to source code">install</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.DependencyResolver.Operation.InstallOperation.html"><span title="Composer\DependencyResolver\Operation\InstallOperation">InstallOperation</span></a> <var>$operation</var></span>): ?<span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Executes install operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Executes install operation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operation</var>&nbsp;&nbsp;</td>
+										<td><p>operation instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_install">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#470-507" title="Go to source code">update</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.DependencyResolver.Operation.UpdateOperation.html"><span title="Composer\DependencyResolver\Operation\UpdateOperation">UpdateOperation</span></a> <var>$operation</var></span>): ?<span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Executes update operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Executes update operation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operation</var>&nbsp;&nbsp;</td>
+										<td><p>operation instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uninstall" id="_uninstall">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#509-522" title="Go to source code">uninstall</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.DependencyResolver.Operation.UninstallOperation.html"><span title="Composer\DependencyResolver\Operation\UninstallOperation">UninstallOperation</span></a> <var>$operation</var></span>): ?<span title="React\Promise\PromiseInterface">PromiseInterface</span></code>
+
+
+	<div class="expandable-collapsedView">
+		Uninstalls package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Uninstalls package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operation</var>&nbsp;&nbsp;</td>
+										<td><p>operation instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uninstall">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="markAliasInstalled" id="_markAliasInstalled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#524-537" title="Go to source code">markAliasInstalled</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.DependencyResolver.Operation.MarkAliasInstalledOperation.html"><span title="Composer\DependencyResolver\Operation\MarkAliasInstalledOperation">MarkAliasInstalledOperation</span></a> <var>$operation</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Executes markAliasInstalled operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Executes markAliasInstalled operation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operation</var>&nbsp;&nbsp;</td>
+										<td><p>operation instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_markAliasInstalled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="markAliasUninstalled" id="_markAliasUninstalled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#539-550" title="Go to source code">markAliasUninstalled</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.DependencyResolver.Operation.MarkAliasUninstalledOperation.html"><span title="Composer\DependencyResolver\Operation\MarkAliasUninstalledOperation">MarkAliasUninstalledOperation</span></a> <var>$operation</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Executes markAlias operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Executes markAlias operation.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$operation</var>&nbsp;&nbsp;</td>
+										<td><p>operation instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_markAliasUninstalled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInstallPath" id="_getInstallPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#552-562" title="Go to source code">getInstallPath</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the installation path of a package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the installation path of a package</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>absolute path to install to, which does not end with a slash, or null if the package does not have anything installed on disk</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInstallPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOutputProgress" id="_setOutputProgress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#564-567" title="Go to source code">setOutputProgress</a>(<span>bool <var>$outputProgress</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOutputProgress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="notifyInstalls" id="_notifyInstalls">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.InstallationManager.html#569-634" title="Go to source code">notifyInstalls</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_notifyInstalls">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

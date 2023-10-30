@@ -1,0 +1,1309 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Interface Composer\Package\CompletePackageInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Package.html">Package</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Archiver.html">Archiver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Comparer.html">Comparer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Dumper.html">Dumper</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Loader.html">Loader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.Version.html">Version</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Package.AliasPackage.html">
+							AliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.BasePackage.html">
+							BasePackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.CompleteAliasPackage.html">
+							CompleteAliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.CompletePackage.html">
+							CompletePackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Link.html">
+							Link
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Locker.html">
+							Locker
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.Package.html">
+							Package
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootAliasPackage.html">
+							RootAliasPackage
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootPackage.html">
+							RootPackage
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Composer.Package.CompletePackageInterface.html">
+							CompletePackageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.PackageInterface.html">
+							PackageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Package.RootPackageInterface.html">
+							RootPackageInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Package.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Package.CompletePackageInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Package.html">Package</a>\<a href="Composer.Package.CompletePackageInterface.html">CompletePackageInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Defines package metadata that is not necessarily needed for solving and installing packages</p>
+<p>PackageInterface &amp; derivatives are considered internal, you may use them in type hints but extending/implementing them is not recommended and not supported. Things may change without notice.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Package\CompletePackageInterface</span></b>
+		extends
+			<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.CompleteAliasPackage.html"><span>Composer\Package\CompleteAliasPackage</span></a>
+
+		implements
+			<b><span class="active" title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></b>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.RootAliasPackage.html"><span>Composer\Package\RootAliasPackage</span></a>
+
+		implements
+			<a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Composer.Package.CompletePackage.html"><span>Composer\Package\CompletePackage</span></a>
+
+		implements
+			<b><span class="active" title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></b>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.RootPackage.html"><span>Composer\Package\RootPackage</span></a>
+
+		implements
+			<a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Composer.Package.RootPackageInterface.html"><span>Composer\Package\RootPackageInterface</span></a>
+		extends
+			<b><span class="active" title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Package.RootAliasPackage.html"><span>Composer\Package\RootAliasPackage</span></a>
+
+		implements
+			<a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>
+
+	</li>
+	<li>
+<a href="Composer.Package.RootPackage.html"><span>Composer\Package\RootPackage</span></a>
+
+		implements
+			<a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Package.CompletePackageInterface.html#22" title="Go to source code">Composer/Package/CompletePackageInterface.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getScripts" id="_getScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#24-29" title="Go to source code">getScripts</a>(): array&lt;string, string[]&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the scripts of this package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the scripts of this package</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Map of script name to array of handlers</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getScripts">						<code>Composer\Package\CompletePackage::getScripts()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getScripts">						<code>Composer\Package\CompleteAliasPackage::getScripts()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScripts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setScripts" id="_setScripts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#31-34" title="Go to source code">setScripts</a>(<span>array&lt;string, string[]&gt; <var>$scripts</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setScripts">						<code>Composer\Package\CompletePackage::setScripts()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setScripts">						<code>Composer\Package\CompleteAliasPackage::setScripts()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setScripts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRepositories" id="_getRepositories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#36-41" title="Go to source code">getRepositories</a>(): mixed[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of repositories
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of repositories</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Repositories</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getRepositories">						<code>Composer\Package\CompletePackage::getRepositories()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getRepositories">						<code>Composer\Package\CompleteAliasPackage::getRepositories()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRepositories">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRepositories" id="_setRepositories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#43-48" title="Go to source code">setRepositories</a>(<span>mixed[] <var>$repositories</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the repositories
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the repositories</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setRepositories">						<code>Composer\Package\CompletePackage::setRepositories()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setRepositories">						<code>Composer\Package\CompleteAliasPackage::setRepositories()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRepositories">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLicense" id="_getLicense">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#50-55" title="Go to source code">getLicense</a>(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the package license, e.g. MIT, BSD, GPL
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the package license, e.g. MIT, BSD, GPL</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The package licenses</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getLicense">						<code>Composer\Package\CompletePackage::getLicense()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getLicense">						<code>Composer\Package\CompleteAliasPackage::getLicense()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLicense">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLicense" id="_setLicense">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#57-62" title="Go to source code">setLicense</a>(<span>string[] <var>$license</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the license
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the license</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setLicense">						<code>Composer\Package\CompletePackage::setLicense()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setLicense">						<code>Composer\Package\CompleteAliasPackage::setLicense()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLicense">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKeywords" id="_getKeywords">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#64-69" title="Go to source code">getKeywords</a>(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of keywords relating to the package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of keywords relating to the package</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getKeywords">						<code>Composer\Package\CompletePackage::getKeywords()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getKeywords">						<code>Composer\Package\CompleteAliasPackage::getKeywords()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKeywords">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeywords" id="_setKeywords">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#71-76" title="Go to source code">setKeywords</a>(<span>string[] <var>$keywords</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the keywords
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the keywords</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setKeywords">						<code>Composer\Package\CompletePackage::setKeywords()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setKeywords">						<code>Composer\Package\CompleteAliasPackage::setKeywords()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeywords">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDescription" id="_getDescription">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#78-83" title="Go to source code">getDescription</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the package description
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the package description</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getDescription">						<code>Composer\Package\CompletePackage::getDescription()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getDescription">						<code>Composer\Package\CompleteAliasPackage::getDescription()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDescription">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDescription" id="_setDescription">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#85-88" title="Go to source code">setDescription</a>(<span>string <var>$description</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the description
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the description</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setDescription">						<code>Composer\Package\CompletePackage::setDescription()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setDescription">						<code>Composer\Package\CompleteAliasPackage::setDescription()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDescription">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHomepage" id="_getHomepage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#90-95" title="Go to source code">getHomepage</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the package homepage
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the package homepage</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getHomepage">						<code>Composer\Package\CompletePackage::getHomepage()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getHomepage">						<code>Composer\Package\CompleteAliasPackage::getHomepage()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHomepage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHomepage" id="_setHomepage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#97-100" title="Go to source code">setHomepage</a>(<span>string <var>$homepage</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the homepage
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the homepage</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setHomepage">						<code>Composer\Package\CompletePackage::setHomepage()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setHomepage">						<code>Composer\Package\CompleteAliasPackage::setHomepage()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHomepage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAuthors" id="_getAuthors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#102-109" title="Go to source code">getAuthors</a>(): array&lt;array{name?: string, homepage?: string, email?: string, role?: string}&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of authors of the package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of authors of the package</p>
+<p>Each item can contain name/homepage/email keys</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getAuthors">						<code>Composer\Package\CompletePackage::getAuthors()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getAuthors">						<code>Composer\Package\CompleteAliasPackage::getAuthors()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAuthors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAuthors" id="_setAuthors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#111-116" title="Go to source code">setAuthors</a>(<span>array&lt;array{name?: string, homepage?: string, email?: string, role?: string}&gt; <var>$authors</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the authors
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the authors</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setAuthors">						<code>Composer\Package\CompletePackage::setAuthors()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setAuthors">						<code>Composer\Package\CompleteAliasPackage::setAuthors()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAuthors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSupport" id="_getSupport">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#118-123" title="Go to source code">getSupport</a>(
+	
+): array{issues?: string, forum?: string, wiki?: string, source?: string, email?: string, irc?: string, docs?: string, rss?: string, chat?: string, security?: string}</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the support information
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the support information</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getSupport">						<code>Composer\Package\CompletePackage::getSupport()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getSupport">						<code>Composer\Package\CompleteAliasPackage::getSupport()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSupport">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSupport" id="_setSupport">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#125-130" title="Go to source code">setSupport</a>(
+	<span>array{issues?: string, forum?: string, wiki?: string, source?: string, email?: string, irc?: string, docs?: string, rss?: string, chat?: string, security?: string} <var>$support</var></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the support information
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the support information</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setSupport">						<code>Composer\Package\CompletePackage::setSupport()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setSupport">						<code>Composer\Package\CompleteAliasPackage::setSupport()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSupport">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFunding" id="_getFunding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#132-139" title="Go to source code">getFunding</a>(): array&lt;array{type?: string, url?: string}&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of funding options for the package
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of funding options for the package</p>
+<p>Each item will contain type and url keys</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getFunding">						<code>Composer\Package\CompletePackage::getFunding()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getFunding">						<code>Composer\Package\CompleteAliasPackage::getFunding()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFunding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFunding" id="_setFunding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#141-146" title="Go to source code">setFunding</a>(<span>array&lt;array{type?: string, url?: string}&gt; <var>$funding</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the funding
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the funding</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setFunding">						<code>Composer\Package\CompletePackage::setFunding()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setFunding">						<code>Composer\Package\CompleteAliasPackage::setFunding()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFunding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAbandoned" id="_isAbandoned">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#148-151" title="Go to source code">isAbandoned</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns if the package is abandoned or not
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns if the package is abandoned or not</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_isAbandoned">						<code>Composer\Package\CompletePackage::isAbandoned()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_isAbandoned">						<code>Composer\Package\CompleteAliasPackage::isAbandoned()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isAbandoned">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getReplacementPackage" id="_getReplacementPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#153-156" title="Go to source code">getReplacementPackage</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		If the package is abandoned and has a suggested replacement, this method returns it
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>If the package is abandoned and has a suggested replacement, this method returns it</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getReplacementPackage">						<code>Composer\Package\CompletePackage::getReplacementPackage()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getReplacementPackage">						<code>Composer\Package\CompleteAliasPackage::getReplacementPackage()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getReplacementPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAbandoned" id="_setAbandoned">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#158-161" title="Go to source code">setAbandoned</a>(<span>bool|string <var>$abandoned</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setAbandoned">						<code>Composer\Package\CompletePackage::setAbandoned()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setAbandoned">						<code>Composer\Package\CompleteAliasPackage::setAbandoned()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAbandoned">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArchiveName" id="_getArchiveName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#163-168" title="Go to source code">getArchiveName</a>(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns default base filename for archive
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns default base filename for archive</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getArchiveName">						<code>Composer\Package\CompletePackage::getArchiveName()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getArchiveName">						<code>Composer\Package\CompleteAliasPackage::getArchiveName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArchiveName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setArchiveName" id="_setArchiveName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#170-173" title="Go to source code">setArchiveName</a>(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets default base filename for archive
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets default base filename for archive</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setArchiveName">						<code>Composer\Package\CompletePackage::setArchiveName()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setArchiveName">						<code>Composer\Package\CompleteAliasPackage::setArchiveName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setArchiveName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArchiveExcludes" id="_getArchiveExcludes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#175-180" title="Go to source code">getArchiveExcludes</a>(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a list of patterns to exclude from package archives
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a list of patterns to exclude from package archives</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_getArchiveExcludes">						<code>Composer\Package\CompletePackage::getArchiveExcludes()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_getArchiveExcludes">						<code>Composer\Package\CompleteAliasPackage::getArchiveExcludes()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArchiveExcludes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setArchiveExcludes" id="_setArchiveExcludes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Package.CompletePackageInterface.html#182-187" title="Go to source code">setArchiveExcludes</a>(<span>string[] <var>$excludes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a list of patterns to be excluded from archives
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a list of patterns to be excluded from archives</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Composer.Package.CompletePackage.html#_setArchiveExcludes">						<code>Composer\Package\CompletePackage::setArchiveExcludes()</code></a>				</li>
+				<li>
+<a href="Composer.Package.CompleteAliasPackage.html#_setArchiveExcludes">						<code>Composer\Package\CompleteAliasPackage::setArchiveExcludes()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setArchiveExcludes">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Package.PackageInterface.html"><span>Composer\Package\PackageInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.PackageInterface.html#_getName">getName()</a>, <a href="Composer.Package.PackageInterface.html#_getPrettyName">getPrettyName()</a>, <a href="Composer.Package.PackageInterface.html#_getNames">getNames()</a>, <a href="Composer.Package.PackageInterface.html#_setId">setId()</a>, <a href="Composer.Package.PackageInterface.html#_getId">getId()</a>, <a href="Composer.Package.PackageInterface.html#_isDev">isDev()</a>, <a href="Composer.Package.PackageInterface.html#_getType">getType()</a>, <a href="Composer.Package.PackageInterface.html#_getTargetDir">getTargetDir()</a>, <a href="Composer.Package.PackageInterface.html#_getExtra">getExtra()</a>, <a href="Composer.Package.PackageInterface.html#_setInstallationSource">setInstallationSource()</a>, <a href="Composer.Package.PackageInterface.html#_getInstallationSource">getInstallationSource()</a>, <a href="Composer.Package.PackageInterface.html#_getSourceType">getSourceType()</a>, <a href="Composer.Package.PackageInterface.html#_getSourceUrl">getSourceUrl()</a>, <a href="Composer.Package.PackageInterface.html#_getSourceUrls">getSourceUrls()</a>, <a href="Composer.Package.PackageInterface.html#_getSourceReference">getSourceReference()</a>, <a href="Composer.Package.PackageInterface.html#_getSourceMirrors">getSourceMirrors()</a>, <a href="Composer.Package.PackageInterface.html#_setSourceMirrors">setSourceMirrors()</a>, <a href="Composer.Package.PackageInterface.html#_getDistType">getDistType()</a>, <a href="Composer.Package.PackageInterface.html#_getDistUrl">getDistUrl()</a>, <a href="Composer.Package.PackageInterface.html#_getDistUrls">getDistUrls()</a>, <a href="Composer.Package.PackageInterface.html#_getDistReference">getDistReference()</a>, <a href="Composer.Package.PackageInterface.html#_getDistSha1Checksum">getDistSha1Checksum()</a>, <a href="Composer.Package.PackageInterface.html#_getDistMirrors">getDistMirrors()</a>, <a href="Composer.Package.PackageInterface.html#_setDistMirrors">setDistMirrors()</a>, <a href="Composer.Package.PackageInterface.html#_getVersion">getVersion()</a>, <a href="Composer.Package.PackageInterface.html#_getPrettyVersion">getPrettyVersion()</a>, <a href="Composer.Package.PackageInterface.html#_getFullPrettyVersion">getFullPrettyVersion()</a>, <a href="Composer.Package.PackageInterface.html#_getReleaseDate">getReleaseDate()</a>, <a href="Composer.Package.PackageInterface.html#_getStability">getStability()</a>, <a href="Composer.Package.PackageInterface.html#_getRequires">getRequires()</a>, <a href="Composer.Package.PackageInterface.html#_getConflicts">getConflicts()</a>, <a href="Composer.Package.PackageInterface.html#_getProvides">getProvides()</a>, <a href="Composer.Package.PackageInterface.html#_getReplaces">getReplaces()</a>, <a href="Composer.Package.PackageInterface.html#_getDevRequires">getDevRequires()</a>, <a href="Composer.Package.PackageInterface.html#_getSuggests">getSuggests()</a>, <a href="Composer.Package.PackageInterface.html#_getAutoload">getAutoload()</a>, <a href="Composer.Package.PackageInterface.html#_getDevAutoload">getDevAutoload()</a>, <a href="Composer.Package.PackageInterface.html#_getIncludePaths">getIncludePaths()</a>, <a href="Composer.Package.PackageInterface.html#_setRepository">setRepository()</a>, <a href="Composer.Package.PackageInterface.html#_getRepository">getRepository()</a>, <a href="Composer.Package.PackageInterface.html#_getBinaries">getBinaries()</a>, <a href="Composer.Package.PackageInterface.html#_getUniqueName">getUniqueName()</a>, <a href="Composer.Package.PackageInterface.html#_getNotificationUrl">getNotificationUrl()</a>, <a href="Composer.Package.PackageInterface.html#___toString">__toString()</a>, <a href="Composer.Package.PackageInterface.html#_getPrettyString">getPrettyString()</a>, <a href="Composer.Package.PackageInterface.html#_isDefaultBranch">isDefaultBranch()</a>, <a href="Composer.Package.PackageInterface.html#_getTransportOptions">getTransportOptions()</a>, <a href="Composer.Package.PackageInterface.html#_setTransportOptions">setTransportOptions()</a>, <a href="Composer.Package.PackageInterface.html#_setSourceReference">setSourceReference()</a>, <a href="Composer.Package.PackageInterface.html#_setDistUrl">setDistUrl()</a>, <a href="Composer.Package.PackageInterface.html#_setDistType">setDistType()</a>, <a href="Composer.Package.PackageInterface.html#_setDistReference">setDistReference()</a>, <a href="Composer.Package.PackageInterface.html#_setSourceDistReferences">setSourceDistReferences()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Composer.Package.PackageInterface.html"><span>Composer\Package\PackageInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF_IF_DEV"><code>DISPLAY_SOURCE_REF_IF_DEV</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_SOURCE_REF"><code>DISPLAY_SOURCE_REF</code></a>, <a href="Composer.Package.PackageInterface.html#DISPLAY_DIST_REF"><code>DISPLAY_DIST_REF</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,972 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Factory |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Cache.html">
+							Cache
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Compiler.html">
+							Compiler
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Config.html">
+							Config
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Factory.html">
+							Factory
+						</a>
+					</li>
+					<li>
+						<a href="Composer.InstalledVersions.html">
+							InstalledVersions
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.html">
+							Installer
+						</a>
+					</li>
+					<li>
+						<a href="Composer.PartialComposer.html">
+							PartialComposer
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Factory.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="Composer.Factory.html">Factory</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Creates a configured instance of composer.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Factory.html#52" title="Go to source code">Composer/Factory.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getHomeDir" id="_getHomeDir">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#54-96" title="Go to source code">getHomeDir</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHomeDir">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCacheDir" id="_getCacheDir">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#98-141" title="Go to source code">getCacheDir</a>(<span>string <var>$home</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCacheDir">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDataDir" id="_getDataDir">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#143-162" title="Go to source code">getDataDir</a>(<span>string <var>$home</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDataDir">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createConfig" id="_createConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#164-236" title="Go to source code">createConfig</a>(<span>?<a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var> = <span class="php-kw">null</span></span>, <span>?string <var>$cwd</var> = <span class="php-kw">null</span></span>): <a href="Composer.Config.html"><span title="Composer\Config">Config</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getComposerFile" id="_getComposerFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#238-241" title="Go to source code">getComposerFile</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getComposerFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLockFile" id="_getLockFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#243-248" title="Go to source code">getLockFile</a>(<span>string <var>$composerFile</var></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLockFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createAdditionalStyles" id="_createAdditionalStyles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#250-259" title="Go to source code">createAdditionalStyles</a>(): array{highlight: <span title="Symfony\Component\Console\Formatter\OutputFormatterStyle">OutputFormatterStyle</span>, warning: <span title="Symfony\Component\Console\Formatter\OutputFormatterStyle">OutputFormatterStyle</span>}</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createAdditionalStyles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createOutput" id="_createOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#261-267" title="Go to source code">createOutput</a>(): <span title="Symfony\Component\Console\Output\ConsoleOutput">ConsoleOutput</span></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createComposer" id="_createComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#269-450" title="Go to source code">createComposer</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span>array&lt;string, mixed&gt;|string|null <var>$localConfig</var> = <span class="php-kw">null</span></span>,
+	<span>bool|<span class="php-str">'local'</span>|<span class="php-str">'global'</span> <var>$disablePlugins</var> = <span class="php-kw">false</span></span>,
+	<span>?string <var>$cwd</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$fullLoad</var> = <span class="php-kw">true</span></span>,
+	<span>bool <var>$disableScripts</var> = <span class="php-kw">false</span></span>,
+): <a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a>|<a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a Composer instance
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a Composer instance</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>IO instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$localConfig</var>&nbsp;&nbsp;</td>
+										<td><p>either a configuration array or a filename to read from, if null it will
+read from the default filename</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>Whether plugins should not be loaded, can be set to local or global to only disable local/global plugins</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$fullLoad</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to initialize everything or only main project stuff (used when loading the global composer)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disableScripts</var>&nbsp;&nbsp;</td>
+										<td><p>Whether scripts should not be run</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Composer if $fullLoad is true, otherwise PartialComposer</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createGlobal" id="_createGlobal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#452-461" title="Go to source code">createGlobal</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span>bool <var>$disablePlugins</var> = <span class="php-kw">false</span></span>, <span>bool <var>$disableScripts</var> = <span class="php-kw">false</span></span>): ?<a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>Whether plugins should not be loaded</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disableScripts</var>&nbsp;&nbsp;</td>
+										<td><p>Whether scripts should not be executed</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createGlobal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addLocalRepository" id="_addLocalRepository">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#463-474" title="Go to source code">addLocalRepository</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Repository.RepositoryManager.html"><span title="Composer\Repository\RepositoryManager">RepositoryManager</span></a> <var>$rm</var></span>,
+	<span>string <var>$vendorDir</var></span>,
+	<span><a href="Composer.Package.RootPackageInterface.html"><span title="Composer\Package\RootPackageInterface">RootPackageInterface</span></a> <var>$rootPackage</var></span>,
+	<span>?<a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addLocalRepository">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createGlobalComposer" id="_createGlobalComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#476-494" title="Go to source code">createGlobalComposer</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>,
+	<span>bool|<span class="php-str">'local'</span>|<span class="php-str">'global'</span> <var>$disablePlugins</var></span>,
+	<span>bool <var>$disableScripts</var></span>,
+	<span>bool <var>$fullLoad</var> = <span class="php-kw">false</span></span>,
+): <a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a>|<a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>Whether plugins should not be loaded, can be set to local or global to only disable local/global plugins</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>By default PartialComposer, but Composer if $fullLoad is set to true</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createGlobalComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createDownloadManager" id="_createDownloadManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#496-543" title="Go to source code">createDownloadManager</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>,
+	<span><a href="Composer.Util.HttpDownloader.html"><span title="Composer\Util\HttpDownloader">HttpDownloader</span></a> <var>$httpDownloader</var></span>,
+	<span><a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var></span>,
+	<span><a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a> <var>$eventDispatcher</var> = <span class="php-kw">null</span></span>,
+): <a href="Composer.Downloader.DownloadManager.html"><span title="Composer\Downloader\DownloadManager">DownloadManager</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createDownloadManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createArchiveManager" id="_createArchiveManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#545-561" title="Go to source code">createArchiveManager</a>(<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span><a href="Composer.Downloader.DownloadManager.html"><span title="Composer\Downloader\DownloadManager">DownloadManager</span></a> <var>$dm</var></span>, <span><a href="Composer.Util.Loop.html"><span title="Composer\Util\Loop">Loop</span></a> <var>$loop</var></span>): <a href="Composer.Package.Archiver.ArchiveManager.html"><span title="Composer\Package\Archiver\ArchiveManager">ArchiveManager</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>The configuration</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$dm</var>&nbsp;&nbsp;</td>
+										<td><p>Manager use to download sources</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createArchiveManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createPluginManager" id="_createPluginManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#563-569" title="Go to source code">createPluginManager</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span><a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a> <var>$composer</var></span>,
+	<span>?<a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a> <var>$globalComposer</var> = <span class="php-kw">null</span></span>,
+	<span>bool|<span class="php-str">'local'</span>|<span class="php-str">'global'</span> <var>$disablePlugins</var> = <span class="php-kw">false</span></span>,
+): <a href="Composer.Plugin.PluginManager.html"><span title="Composer\Plugin\PluginManager">PluginManager</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>Whether plugins should not be loaded, can be set to local or global to only disable local/global plugins</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createPluginManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createInstallationManager" id="_createInstallationManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#571-574" title="Go to source code">createInstallationManager</a>(<span><a href="Composer.Util.Loop.html"><span title="Composer\Util\Loop">Loop</span></a> <var>$loop</var></span>, <span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span>?<a href="Composer.EventDispatcher.EventDispatcher.html"><span title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</span></a> <var>$eventDispatcher</var> = <span class="php-kw">null</span></span>): <a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createInstallationManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createDefaultInstallers" id="_createDefaultInstallers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#576-584" title="Go to source code">createDefaultInstallers</a>(
+	<span><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a> <var>$im</var></span>,
+	<span><a href="Composer.PartialComposer.html"><span title="Composer\PartialComposer">PartialComposer</span></a> <var>$composer</var></span>,
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span>?<a href="Composer.Util.ProcessExecutor.html"><span title="Composer\Util\ProcessExecutor">ProcessExecutor</span></a> <var>$process</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createDefaultInstallers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="purgePackages" id="_purgePackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#586-597" title="Go to source code">purgePackages</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.Installer.InstallationManager.html"><span title="Composer\Installer\InstallationManager">InstallationManager</span></a> <var>$im</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository to purge packages from</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$im</var>&nbsp;&nbsp;</td>
+										<td><p>manager to check whether packages are still installed</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_purgePackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadRootPackage" id="_loadRootPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#599-602" title="Go to source code">loadRootPackage</a>(
+	<span><a href="Composer.Repository.RepositoryManager.html"><span title="Composer\Repository\RepositoryManager">RepositoryManager</span></a> <var>$rm</var></span>,
+	<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>,
+	<span><a href="Composer.Package.Version.VersionParser.html"><span title="Composer\Package\Version\VersionParser">VersionParser</span></a> <var>$parser</var></span>,
+	<span><a href="Composer.Package.Version.VersionGuesser.html"><span title="Composer\Package\Version\VersionGuesser">VersionGuesser</span></a> <var>$guesser</var></span>,
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+): <a href="Composer.Package.Loader.RootPackageLoader.html"><span title="Composer\Package\Loader\RootPackageLoader">RootPackageLoader</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadRootPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#604-624" title="Go to source code">create</a>(
+	<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>,
+	<span>mixed <var>$config</var> = <span class="php-kw">null</span></span>,
+	<span>bool|<span class="php-str">'local'</span>|<span class="php-str">'global'</span> <var>$disablePlugins</var> = <span class="php-kw">false</span></span>,
+	<span>bool <var>$disableScripts</var> = <span class="php-kw">false</span></span>,
+): <a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>IO instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>either a configuration array or a filename to read from, if null it will read from
+the default filename</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>Whether plugins should not be loaded, can be set to local or global to only disable local/global plugins</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disableScripts</var>&nbsp;&nbsp;</td>
+										<td><p>Whether scripts should not be run</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createHttpDownloader" id="_createHttpDownloader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Factory.html#626-673" title="Go to source code">createHttpDownloader</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>, <span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span>mixed[] <var>$options</var> = []</span>): <a href="Composer.Util.HttpDownloader.html"><span title="Composer\Util\HttpDownloader">HttpDownloader</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		If you are calling this in a plugin, you probably should instead use $composer-&gt;getLoop()-&gt;getHttpDownloader()
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>If you are calling this in a plugin, you probably should instead use $composer-&gt;getLoop()-&gt;getHttpDownloader()</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$io</var>&nbsp;&nbsp;</td>
+										<td><p>IO instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$config</var>&nbsp;&nbsp;</td>
+										<td><p>Config instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>Array of options passed directly to HttpDownloader constructor</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createHttpDownloader">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

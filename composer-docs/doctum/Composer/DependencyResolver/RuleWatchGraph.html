@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\DependencyResolver\RuleWatchGraph | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_DependencyResolver_RuleWatchGraph" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/DependencyResolver.html">DependencyResolver</a></li><li class="backslash">\</li><li>RuleWatchGraph</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>RuleWatchGraph    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>RuleWatchGraph</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>The RuleWatchGraph efficiently propagates decisions to other rules</p></p>            <p><p>All rules generated for solving a SAT problem should be inserted into the
+graph. When a decision on a literal is made, the graph can be used to
+propagate the decision to all other rules involving the literal, leading to
+other trivial decisions resulting from unit clauses.</p></p>        </div>
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_watchChains">
+                                        protected                                        <abbr title="Composer\DependencyResolver\array&lt;int,\Composer\DependencyResolver\RuleWatchChain&gt;">RuleWatchChain&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$watchChains</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_insert">insert</a>(<a href="../../Composer/DependencyResolver/RuleWatchNode.html"><abbr title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</abbr></a> $node)
+        
+                                            <p><p>Inserts a rule node into the appropriate chains within the graph</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\DependencyResolver\Composer\DependencyResolver\Rule">Rule</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_propagateLiteral">propagateLiteral</a>(int $decidedLiteral, int $level, <a href="../../Composer/DependencyResolver/Decisions.html"><abbr title="Composer\DependencyResolver\Decisions">Decisions</abbr></a> $decisions)
+        
+                                            <p><p>Propagates a decision on a literal to all rules watching the literal</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_moveWatch">moveWatch</a>(int $fromLiteral, int $toLiteral, <a href="../../Composer/DependencyResolver/RuleWatchNode.html"><abbr title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</abbr></a> $node)
+        
+                                            <p><p>Moves a rule node from one watch chain to another</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at line 42</div>
+        <code>                    void
+    <strong>insert</strong>(<a href="../../Composer/DependencyResolver/RuleWatchNode.html"><abbr title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Inserts a rule node into the appropriate chains within the graph</p></p>                <p><p>The node is prepended to the watch chains for each of the two literals it
+watches.</p>
+<p>Assertions are skipped because they only depend on a single package and
+have no alternative literal that could be true, so there is no need to
+watch changes in any literals.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/RuleWatchNode.html"><abbr title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</abbr></a></td>
+                <td>$node</td>
+                <td><p>The rule node to be inserted into the graph</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_propagateLiteral">
+        <div class="location">at line 90</div>
+        <code>                    <abbr title="Composer\DependencyResolver\Composer\DependencyResolver\Rule">Rule</abbr>|null
+    <strong>propagateLiteral</strong>(int $decidedLiteral, int $level, <a href="../../Composer/DependencyResolver/Decisions.html"><abbr title="Composer\DependencyResolver\Decisions">Decisions</abbr></a> $decisions)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Propagates a decision on a literal to all rules watching the literal</p></p>                <p><p>If a decision, e.g. +A has been made, then all rules containing -A, e.g.
+(-A|+B|+C) now need to satisfy at least one of the other literals, so
+that the rule as a whole becomes true, since with +A applied the rule
+is now (false|+B|+C) so essentially (+B|+C).</p>
+<p>This means that all rules watching the literal -A need to be updated to
+watch 2 other literals which can still be satisfied instead. So literals
+that conflict with previously made decisions are not an option.</p>
+<p>Alternatively it can occur that a unit clause results: e.g. if in the
+above example the rule was (-A|+B), then A turning true means that
+B must now be decided true as well.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$decidedLiteral</td>
+                <td><p>The literal which was decided (A in our example)</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td><p>The level at which the decision took place and at which
+all resulting decisions should be made.</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/Decisions.html"><abbr title="Composer\DependencyResolver\Decisions">Decisions</abbr></a></td>
+                <td>$decisions</td>
+                <td><p>Used to check previous decisions and to
+register decisions resulting from propagation</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\DependencyResolver\Composer\DependencyResolver\Rule">Rule</abbr>|null</td>
+            <td><p>If a conflict is found the conflicting rule is returned</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveWatch">
+        <div class="location">at line 157</div>
+        <code>            protected        void
+    <strong>moveWatch</strong>(int $fromLiteral, int $toLiteral, <a href="../../Composer/DependencyResolver/RuleWatchNode.html"><abbr title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Moves a rule node from one watch chain to another</p></p>                <p><p>The rule node's watched literals are updated accordingly.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$fromLiteral</td>
+                <td><p>A literal the node used to watch</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$toLiteral</td>
+                <td><p>A literal the node should watch now</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/DependencyResolver/RuleWatchNode.html"><abbr title="Composer\DependencyResolver\RuleWatchNode">RuleWatchNode</abbr></a></td>
+                <td>$node</td>
+                <td><p>The rule node to be moved</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

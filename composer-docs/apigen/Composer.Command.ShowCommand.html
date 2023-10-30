@@ -1,0 +1,1042 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Command\ShowCommand |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Command.AboutCommand.html">
+							AboutCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ArchiveCommand.html">
+							ArchiveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.AuditCommand.html">
+							AuditCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BaseCommand.html">
+							BaseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BaseDependencyCommand.html">
+							BaseDependencyCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BumpCommand.html">
+							BumpCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CheckPlatformReqsCommand.html">
+							CheckPlatformReqsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ClearCacheCommand.html">
+							ClearCacheCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ConfigCommand.html">
+							ConfigCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CreateProjectCommand.html">
+							CreateProjectCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DependsCommand.html">
+							DependsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DiagnoseCommand.html">
+							DiagnoseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DumpAutoloadCommand.html">
+							DumpAutoloadCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ExecCommand.html">
+							ExecCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.FundCommand.html">
+							FundCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.GlobalCommand.html">
+							GlobalCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.HomeCommand.html">
+							HomeCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InitCommand.html">
+							InitCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InstallCommand.html">
+							InstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.LicensesCommand.html">
+							LicensesCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.OutdatedCommand.html">
+							OutdatedCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ProhibitsCommand.html">
+							ProhibitsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ReinstallCommand.html">
+							ReinstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RemoveCommand.html">
+							RemoveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RequireCommand.html">
+							RequireCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RunScriptCommand.html">
+							RunScriptCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ScriptAliasCommand.html">
+							ScriptAliasCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SearchCommand.html">
+							SearchCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SelfUpdateCommand.html">
+							SelfUpdateCommand
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Command.ShowCommand.html">
+							ShowCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.StatusCommand.html">
+							StatusCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SuggestsCommand.html">
+							SuggestsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.UpdateCommand.html">
+							UpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ValidateCommand.html">
+							ValidateCommand
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Command.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Command.ShowCommand.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Command.html">Command</a>\<a href="Composer.Command.ShowCommand.html">ShowCommand</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.Command.BaseCommand.html"><span title="Composer\Command\BaseCommand">BaseCommand</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<span>Symfony\Component\Console\Command\Command</span>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Command.BaseCommand.html"><span>Composer\Command\BaseCommand</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Command\ShowCommand</span></b>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Command.ShowCommand.html#62" title="Go to source code">Composer/Command/ShowCommand.php</a><br>
+		</div>
+
+		<table class="table" id="aliases">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Type aliases</th>
+			</tr>
+
+	<tr data-order="JsonStructure" id="~JsonStructure">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				<a href="source-Composer.Command.ShowCommand.html#53-61" title="Go to source code">
+					JsonStructure
+				</a>
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array&lt;string, null|string|array&lt;string|null&gt;|<span title="Alias">AutoloadRules</span>&gt;</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~JsonStructure">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="configure" id="_configure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#74-117" title="Go to source code">configure</a>(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_configure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="suggestPackageBasedOnMode" id="_suggestPackageBasedOnMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#119-132" title="Go to source code">suggestPackageBasedOnMode</a>(): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_suggestPackageBasedOnMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="execute" id="_execute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#134-649" title="Go to source code">execute</a>(<span><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span> <var>$input</var></span>, <span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_execute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRootRequires" id="_getRootRequires">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#699-715" title="Go to source code">getRootRequires</a>(): string[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRootRequires">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getVersionStyle" id="_getVersionStyle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#717-723" title="Go to source code">getVersionStyle</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$latestPackage</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): array|string|string[]</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getVersionStyle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPackage" id="_getPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#725-775" title="Go to source code">getPackage</a>(
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+	<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$repos</var></span>,
+	<span>string <var>$name</var></span>,
+	<span><span title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</span>|string <var>$version</var> = <span class="php-kw">null</span></span>,
+): array{(<a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a>|null), array&lt;string, string&gt;}</code>
+
+
+	<div class="expandable-collapsedView">
+		finds a package by name and version if provided
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>finds a package by name and version if provided</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printPackageInfo" id="_printPackageInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#777-800" title="Go to source code">printPackageInfo</a>(
+	<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>,
+	<span>array&lt;string, string&gt; <var>$versions</var></span>,
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+	<span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$latestPackage</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prints package info.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prints package info.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printPackageInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printMeta" id="_printMeta">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#802-871" title="Go to source code">printMeta</a>(
+	<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>,
+	<span>array&lt;string, string&gt; <var>$versions</var></span>,
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+	<span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$latestPackage</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prints package metadata.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prints package metadata.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printMeta">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printVersions" id="_printVersions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#873-897" title="Go to source code">printVersions</a>(
+	<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>,
+	<span>array&lt;string, string&gt; <var>$versions</var></span>,
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prints all available versions of this package and highlights the installed one if any.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prints all available versions of this package and highlights the installed one if any.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printVersions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printLinks" id="_printLinks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#899-915" title="Go to source code">printLinks</a>(<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>, <span>string <var>$linkType</var></span>, <span>string <var>$title</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		print link objects
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>print link objects</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printLinks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printLicenses" id="_printLicenses">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#917-943" title="Go to source code">printLicenses</a>(<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prints the licenses of a package with metadata
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prints the licenses of a package with metadata</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printLicenses">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="printPackageInfoAsJson" id="_printPackageInfoAsJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#945-1019" title="Go to source code">printPackageInfoAsJson</a>(
+	<span><a href="Composer.Package.CompletePackageInterface.html"><span title="Composer\Package\CompletePackageInterface">CompletePackageInterface</span></a> <var>$package</var></span>,
+	<span>array&lt;string, string&gt; <var>$versions</var></span>,
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+	<span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$latestPackage</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prints package info in JSON format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prints package info in JSON format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_printPackageInfoAsJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initStyles" id="_initStyles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#1127-1144" title="Go to source code">initStyles</a>(<span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Init styles for tree
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Init styles for tree</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initStyles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="displayPackageTree" id="_displayPackageTree">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#1146-1194" title="Go to source code">displayPackageTree</a>(<span>array&lt;int, array&lt;string, string|mixed[]&gt;&gt; <var>$arrayTree</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Display the tree
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Display the tree</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_displayPackageTree">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generatePackageTree" id="_generatePackageTree">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#1196-1236" title="Go to source code">generatePackageTree</a>(
+	<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>,
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+	<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$remoteRepos</var></span>,
+): array&lt;string, array&lt;int, array&lt;string, mixed[]|string&gt;&gt;|string|null&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate the package tree
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate the package tree</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generatePackageTree">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="displayTree" id="_displayTree">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#1238-1290" title="Go to source code">displayTree</a>(
+	<span>array&lt;string, array&lt;int, array&lt;string, mixed[]|string&gt;&gt;|string|null&gt;|string <var>$package</var></span>,
+	<span>array&lt;int, string|mixed[]&gt; <var>$packagesInTree</var></span>,
+	<span>string <var>$previousTreeBar</var> = <span class="php-str">'├'</span></span>,
+	<span>int <var>$level</var> = <span class="php-num">1</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Display a package tree
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Display a package tree</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_displayTree">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addTree" id="_addTree">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.ShowCommand.html#1292-1336" title="Go to source code">addTree</a>(
+	<span>string <var>$name</var></span>,
+	<span><a href="Composer.Package.Link.html"><span title="Composer\Package\Link">Link</span></a> <var>$link</var></span>,
+	<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a> <var>$installedRepo</var></span>,
+	<span><a href="Composer.Repository.RepositoryInterface.html"><span title="Composer\Repository\RepositoryInterface">RepositoryInterface</span></a> <var>$remoteRepos</var></span>,
+	<span>string[] <var>$packagesInTree</var></span>,
+): array&lt;int, array&lt;string, array&lt;int, array&lt;string, string&gt;&gt;|string&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Display a package tree
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Display a package tree</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addTree">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.Command.BaseCommand.html"><span>Composer\Command\BaseCommand</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Command.BaseCommand.html#_getApplication">getApplication()</a>, <a href="Composer.Command.BaseCommand.html#_getComposer" class="deprecated">getComposer()</a>, <a href="Composer.Command.BaseCommand.html#_requireComposer">requireComposer()</a>, <a href="Composer.Command.BaseCommand.html#_tryComposer">tryComposer()</a>, <a href="Composer.Command.BaseCommand.html#_setComposer">setComposer()</a>, <a href="Composer.Command.BaseCommand.html#_resetComposer">resetComposer()</a>, <a href="Composer.Command.BaseCommand.html#_isProxyCommand">isProxyCommand()</a>, <a href="Composer.Command.BaseCommand.html#_getIO">getIO()</a>, <a href="Composer.Command.BaseCommand.html#_setIO">setIO()</a>, <a href="Composer.Command.BaseCommand.html#_complete">complete()</a>, <a href="Composer.Command.BaseCommand.html#_initialize">initialize()</a>, <a href="Composer.Command.BaseCommand.html#_getPreferredInstallOptions">getPreferredInstallOptions()</a>, <a href="Composer.Command.BaseCommand.html#_getPlatformRequirementFilter">getPlatformRequirementFilter()</a>, <a href="Composer.Command.BaseCommand.html#_formatRequirements">formatRequirements()</a>, <a href="Composer.Command.BaseCommand.html#_normalizeRequirements">normalizeRequirements()</a>, <a href="Composer.Command.BaseCommand.html#_renderTable">renderTable()</a>, <a href="Composer.Command.BaseCommand.html#_getTerminalWidth">getTerminalWidth()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Composer.Command.CompletionTrait.html"><span>Composer\Command\CompletionTrait</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.Command.CompletionTrait.html#_requireComposer">requireComposer()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="versionParser" id="$versionParser">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Composer.Package.Version.VersionParser.html"><span title="Composer\Package\Version\VersionParser">VersionParser</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Command.ShowCommand.html#66-67" title="Go to source code">$versionParser</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$versionParser">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="colors" id="$colors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Command.ShowCommand.html#68-69" title="Go to source code">$colors</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$colors">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

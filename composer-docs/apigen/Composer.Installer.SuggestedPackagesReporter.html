@@ -1,0 +1,579 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Installer\SuggestedPackagesReporter |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Installer.BinaryInstaller.html">
+							BinaryInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallationManager.html">
+							InstallationManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerEvent.html">
+							InstallerEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerEvents.html">
+							InstallerEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.LibraryInstaller.html">
+							LibraryInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.MetapackageInstaller.html">
+							MetapackageInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.NoopInstaller.html">
+							NoopInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PackageEvent.html">
+							PackageEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PackageEvents.html">
+							PackageEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PluginInstaller.html">
+							PluginInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.ProjectInstaller.html">
+							ProjectInstaller
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Installer.SuggestedPackagesReporter.html">
+							SuggestedPackagesReporter
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Installer.BinaryPresenceInterface.html">
+							BinaryPresenceInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerInterface.html">
+							InstallerInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Installer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Installer.SuggestedPackagesReporter.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Installer.html">Installer</a>\<a href="Composer.Installer.SuggestedPackagesReporter.html">SuggestedPackagesReporter</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Add suggested packages from different places to output them in the end.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Installer.SuggestedPackagesReporter.html#26" title="Go to source code">Composer/Installer/SuggestedPackagesReporter.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#42-45" title="Go to source code">__construct</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPackages" id="_getPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#47-53" title="Go to source code">getPackages</a>(): array&lt;array{source: string, target: string, reason: string}&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+							<h4>Returns</h4>
+							<div><p>Suggested packages with source, target and reason keys.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPackages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addPackage" id="_addPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#55-74" title="Go to source code">addPackage</a>(<span>string <var>$source</var></span>, <span>string <var>$target</var></span>, <span>string <var>$reason</var></span>): <b><span class="active" title="Composer\Installer\SuggestedPackagesReporter">SuggestedPackagesReporter</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add suggested packages to be listed after install
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add suggested packages to be listed after install</p>
+<p>Could be used to add suggested packages both from the installer
+or from CreateProjectCommand.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$source</var>&nbsp;&nbsp;</td>
+										<td><p>Source package which made the suggestion</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$target</var>&nbsp;&nbsp;</td>
+										<td><p>Target package to be suggested</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$reason</var>&nbsp;&nbsp;</td>
+										<td><p>Reason the target package to be suggested</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addSuggestionsFromPackage" id="_addSuggestionsFromPackage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#76-91" title="Go to source code">addSuggestionsFromPackage</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>): <b><span class="active" title="Composer\Installer\SuggestedPackagesReporter">SuggestedPackagesReporter</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add all suggestions from a package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add all suggestions from a package.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addSuggestionsFromPackage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="output" id="_output">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#93-159" title="Go to source code">output</a>(<span>int <var>$mode</var></span>, <span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a>|null <var>$installedRepo</var> = <span class="php-kw">null</span></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>|null <var>$onlyDependentsOf</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Output suggested packages.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Output suggested packages.</p>
+<p>Do not list the ones already installed if installed repository provided.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$mode</var>&nbsp;&nbsp;</td>
+										<td><p>One of the MODE_* constants from this class</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$installedRepo</var>&nbsp;&nbsp;</td>
+										<td><p>If passed in, suggested packages which are installed already will be skipped</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$onlyDependentsOf</var>&nbsp;&nbsp;</td>
+										<td><p>If passed in, only the suggestions from direct dependents of that package, or from the package itself, will be shown</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_output">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="outputMinimalistic" id="_outputMinimalistic">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#161-173" title="Go to source code">outputMinimalistic</a>(<span><a href="Composer.Repository.InstalledRepository.html"><span title="Composer\Repository\InstalledRepository">InstalledRepository</span></a>|null <var>$installedRepo</var> = <span class="php-kw">null</span></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a>|null <var>$onlyDependentsOf</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Output number of new suggested packages and a hint to use suggest command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Output number of new suggested packages and a hint to use suggest command.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$installedRepo</var>&nbsp;&nbsp;</td>
+										<td><p>If passed in, suggested packages which are installed already will be skipped</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$onlyDependentsOf</var>&nbsp;&nbsp;</td>
+										<td><p>If passed in, only the suggestions from direct dependents of that package, or from the package itself, will be shown</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_outputMinimalistic">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="MODE_LIST" id="MODE_LIST">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#28" title="Go to source code">MODE_LIST</a> = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#MODE_LIST">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="MODE_BY_PACKAGE" id="MODE_BY_PACKAGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#29" title="Go to source code">MODE_BY_PACKAGE</a> = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#MODE_BY_PACKAGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="MODE_BY_SUGGESTION" id="MODE_BY_SUGGESTION">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-Composer.Installer.SuggestedPackagesReporter.html#30" title="Go to source code">MODE_BY_SUGGESTION</a> = <span class="php-num">4</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#MODE_BY_SUGGESTION">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="suggestedPackages" id="$suggestedPackages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;array{source: string, target: string, reason: string}&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.Installer.SuggestedPackagesReporter.html#32-35" title="Go to source code">$suggestedPackages</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$suggestedPackages">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

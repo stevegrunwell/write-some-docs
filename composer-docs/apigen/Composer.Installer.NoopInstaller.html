@@ -1,0 +1,702 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Installer\NoopInstaller |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Installer.BinaryInstaller.html">
+							BinaryInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallationManager.html">
+							InstallationManager
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerEvent.html">
+							InstallerEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerEvents.html">
+							InstallerEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.LibraryInstaller.html">
+							LibraryInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.MetapackageInstaller.html">
+							MetapackageInstaller
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Installer.NoopInstaller.html">
+							NoopInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PackageEvent.html">
+							PackageEvent
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PackageEvents.html">
+							PackageEvents
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.PluginInstaller.html">
+							PluginInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.ProjectInstaller.html">
+							ProjectInstaller
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.SuggestedPackagesReporter.html">
+							SuggestedPackagesReporter
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.Installer.BinaryPresenceInterface.html">
+							BinaryPresenceInterface
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Installer.InstallerInterface.html">
+							InstallerInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Installer.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Installer.NoopInstaller.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Installer.html">Installer</a>\<a href="Composer.Installer.NoopInstaller.html">NoopInstaller</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Composer.Installer.InstallerInterface.html"><span title="Composer\Installer\InstallerInterface">InstallerInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Does not install anything but marks packages installed in the repo</p>
+<p>Useful for dry runs</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Installer.NoopInstaller.html#25" title="Go to source code">Composer/Installer/NoopInstaller.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="supports" id="_supports">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#27-33" title="Go to source code">supports</a>(<span>string <var>$packageType</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Decides if the installer supports the given type
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decides if the installer supports the given type</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_supports">						<code>Composer\Installer\InstallerInterface::supports()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_supports">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isInstalled" id="_isInstalled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#35-41" title="Go to source code">isInstalled</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks that provided package is installed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks that provided package is installed.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_isInstalled">						<code>Composer\Installer\InstallerInterface::isInstalled()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isInstalled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="download" id="_download">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#43-49" title="Go to source code">download</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$prevPackage</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Downloads the files needed to later install the given package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Downloads the files needed to later install the given package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package instance in case of an update</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_download">						<code>Composer\Installer\InstallerInterface::download()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_download">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepare" id="_prepare">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#51-57" title="Go to source code">prepare</a>(<span><var>$type</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$prevPackage</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Do anything that needs to be done between all downloads have been completed and the actual operation is executed
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Do anything that needs to be done between all downloads have been completed and the actual operation is executed</p>
+<p>All packages get first downloaded, then all together prepared, then all together installed/updated/uninstalled. Therefore
+for error recovery it is important to avoid failing during install/update/uninstall as much as possible, and risky things or
+user prompts should happen in the prepare step rather. In case of failure, cleanup() will be called so that changes can
+be undone as much as possible.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>one of install/update/uninstall</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package instance in case of an update</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_prepare">						<code>Composer\Installer\InstallerInterface::prepare()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepare">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cleanup" id="_cleanup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#59-65" title="Go to source code">cleanup</a>(<span><var>$type</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>, <span>?<a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$prevPackage</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Do anything to cleanup changes applied in the prepare or install/update/uninstall steps
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Do anything to cleanup changes applied in the prepare or install/update/uninstall steps</p>
+<p>Note that cleanup will be called for all packages regardless if they failed an operation or not, to give
+all installers a change to cleanup things they did previously, so you need to keep track of changes
+applied in the installer/downloader themselves.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>one of install/update/uninstall</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$prevPackage</var>&nbsp;&nbsp;</td>
+										<td><p>previous package instance in case of an update</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_cleanup">						<code>Composer\Installer\InstallerInterface::cleanup()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cleanup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="install" id="_install">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#67-77" title="Go to source code">install</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Installs specific package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Installs specific package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_install">						<code>Composer\Installer\InstallerInterface::install()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_install">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#79-94" title="Go to source code">update</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$initial</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$target</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Updates specific package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates specific package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$initial</var>&nbsp;&nbsp;</td>
+										<td><p>already installed package version</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$target</var>&nbsp;&nbsp;</td>
+										<td><p>updated version</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_update">						<code>Composer\Installer\InstallerInterface::update()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uninstall" id="_uninstall">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#96-107" title="Go to source code">uninstall</a>(<span><a href="Composer.Repository.InstalledRepositoryInterface.html"><span title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</span></a> <var>$repo</var></span>, <span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Uninstalls specific package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Uninstalls specific package.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$repo</var>&nbsp;&nbsp;</td>
+										<td><p>repository in which to check</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$package</var>&nbsp;&nbsp;</td>
+										<td><p>package instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_uninstall">						<code>Composer\Installer\InstallerInterface::uninstall()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uninstall">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInstallPath" id="_getInstallPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Installer.NoopInstaller.html#109-117" title="Go to source code">getInstallPath</a>(<span><a href="Composer.Package.PackageInterface.html"><span title="Composer\Package\PackageInterface">PackageInterface</span></a> <var>$package</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the absolute installation path of a package.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the absolute installation path of a package.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>absolute path to install to, which MUST not end with a slash, or null if the package does not have anything installed on disk</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Composer.Installer.InstallerInterface.html#_getInstallPath">						<code>Composer\Installer\InstallerInterface::getInstallPath()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInstallPath">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

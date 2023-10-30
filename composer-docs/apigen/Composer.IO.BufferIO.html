@@ -1,0 +1,472 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\IO\BufferIO |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.IO.BaseIO.html">
+							BaseIO
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.IO.BufferIO.html">
+							BufferIO
+						</a>
+					</li>
+					<li>
+						<a href="Composer.IO.ConsoleIO.html">
+							ConsoleIO
+						</a>
+					</li>
+					<li>
+						<a href="Composer.IO.NullIO.html">
+							NullIO
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Composer.IO.IOInterface.html">
+							IOInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.IO.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.IO.BufferIO.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.IO.html">IO</a>\<a href="Composer.IO.BufferIO.html">BufferIO</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Composer.IO.ConsoleIO.html"><span title="Composer\IO\ConsoleIO">ConsoleIO</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Composer.IO.BaseIO.html"><span>Composer\IO\BaseIO</span></a>
+
+		implements
+			<a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.IO.ConsoleIO.html"><span>Composer\IO\ConsoleIO</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\IO\BufferIO</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.IO.BufferIO.html#26" title="Go to source code">Composer/IO/BufferIO.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.BufferIO.html#33-43" title="Go to source code">__construct</a>(
+	<span>string <var>$input</var> = <span class="php-str">''</span></span>,
+	<span>int <var>$verbosity</var> = <span title="Symfony\Component\Console\Output\StreamOutput">StreamOutput</span>::VERBOSITY_NORMAL</span>,
+	<span>?<span title="Symfony\Component\Console\Formatter\OutputFormatterInterface">OutputFormatterInterface</span> <var>$formatter</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$input</var>&nbsp;&nbsp;</td>
+										<td><p>The input instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$verbosity</var>&nbsp;&nbsp;</td>
+										<td><p>The output instance</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$formatter</var>&nbsp;&nbsp;</td>
+										<td><p>The helperSet instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Composer.IO.ConsoleIO.html#___construct">						<code>Composer\IO\ConsoleIO::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOutput" id="_getOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.BufferIO.html#45-68" title="Go to source code">getOutput</a>(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+							<h4>Returns</h4>
+							<div><p>output</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUserInputs" id="_setUserInputs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.IO.BufferIO.html#70-83" title="Go to source code">setUserInputs</a>(<span>string[] <var>$inputs</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUserInputs">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.IO.ConsoleIO.html"><span>Composer\IO\ConsoleIO</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.IO.ConsoleIO.html#_enableDebugging">enableDebugging()</a>, <a href="Composer.IO.ConsoleIO.html#_isInteractive">isInteractive()</a>, <a href="Composer.IO.ConsoleIO.html#_isDecorated">isDecorated()</a>, <a href="Composer.IO.ConsoleIO.html#_isVerbose">isVerbose()</a>, <a href="Composer.IO.ConsoleIO.html#_isVeryVerbose">isVeryVerbose()</a>, <a href="Composer.IO.ConsoleIO.html#_isDebug">isDebug()</a>, <a href="Composer.IO.ConsoleIO.html#_write">write()</a>, <a href="Composer.IO.ConsoleIO.html#_writeError">writeError()</a>, <a href="Composer.IO.ConsoleIO.html#_writeRaw">writeRaw()</a>, <a href="Composer.IO.ConsoleIO.html#_writeErrorRaw">writeErrorRaw()</a>, <a href="Composer.IO.ConsoleIO.html#_overwrite">overwrite()</a>, <a href="Composer.IO.ConsoleIO.html#_overwriteError">overwriteError()</a>, <a href="Composer.IO.ConsoleIO.html#_getProgressBar">getProgressBar()</a>, <a href="Composer.IO.ConsoleIO.html#_ask">ask()</a>, <a href="Composer.IO.ConsoleIO.html#_askConfirmation">askConfirmation()</a>, <a href="Composer.IO.ConsoleIO.html#_askAndValidate">askAndValidate()</a>, <a href="Composer.IO.ConsoleIO.html#_askAndHideAnswer">askAndHideAnswer()</a>, <a href="Composer.IO.ConsoleIO.html#_select">select()</a>, <a href="Composer.IO.ConsoleIO.html#_getTable">getTable()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Composer.IO.BaseIO.html"><span>Composer\IO\BaseIO</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.IO.BaseIO.html#_getAuthentications">getAuthentications()</a>, <a href="Composer.IO.BaseIO.html#_resetAuthentications">resetAuthentications()</a>, <a href="Composer.IO.BaseIO.html#_hasAuthentication">hasAuthentication()</a>, <a href="Composer.IO.BaseIO.html#_getAuthentication">getAuthentication()</a>, <a href="Composer.IO.BaseIO.html#_setAuthentication">setAuthentication()</a>, <a href="Composer.IO.BaseIO.html#_checkAndSetAuthentication">checkAndSetAuthentication()</a>, <a href="Composer.IO.BaseIO.html#_loadConfiguration">loadConfiguration()</a>, <a href="Composer.IO.BaseIO.html#_emergency">emergency()</a>, <a href="Composer.IO.BaseIO.html#_alert">alert()</a>, <a href="Composer.IO.BaseIO.html#_critical">critical()</a>, <a href="Composer.IO.BaseIO.html#_error">error()</a>, <a href="Composer.IO.BaseIO.html#_warning">warning()</a>, <a href="Composer.IO.BaseIO.html#_notice">notice()</a>, <a href="Composer.IO.BaseIO.html#_info">info()</a>, <a href="Composer.IO.BaseIO.html#_debug">debug()</a>, <a href="Composer.IO.BaseIO.html#_log">log()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Composer.IO.IOInterface.html"><span>Composer\IO\IOInterface</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Composer.IO.IOInterface.html#QUIET"><code>QUIET</code></a>, <a href="Composer.IO.IOInterface.html#NORMAL"><code>NORMAL</code></a>, <a href="Composer.IO.IOInterface.html#VERBOSE"><code>VERBOSE</code></a>, <a href="Composer.IO.IOInterface.html#VERY_VERBOSE"><code>VERY_VERBOSE</code></a>, <a href="Composer.IO.IOInterface.html#DEBUG"><code>DEBUG</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="input" id="$input">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><span title="Symfony\Component\Console\Input\StringInput">StringInput</span></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.IO.BufferIO.html#28-29" title="Go to source code">$input</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$input">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="output" id="$output">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><span title="Symfony\Component\Console\Output\StreamOutput">StreamOutput</span></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-Composer.IO.BufferIO.html#30-31" title="Go to source code">$output</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$output">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.IO.ConsoleIO.html"><span>Composer\IO\ConsoleIO</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.IO.ConsoleIO.html#$helperSet">$helperSet</a></var>, <var><a href="Composer.IO.ConsoleIO.html#$lastMessage">$lastMessage</a></var>, <var><a href="Composer.IO.ConsoleIO.html#$lastMessageErr">$lastMessageErr</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Composer.IO.BaseIO.html"><span>Composer\IO\BaseIO</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Composer.IO.BaseIO.html#$authentications">$authentications</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1118 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Composer\Command\BaseCommand |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.html">Composer</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Advisory.html">Advisory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Autoload.html">Autoload</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Composer.Command.html">Command</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Config.html">Config</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Console.html">Console</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.DependencyResolver.html">DependencyResolver</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Downloader.html">Downloader</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.EventDispatcher.html">EventDispatcher</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Exception.html">Exception</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Filter.html">Filter</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Installer.html">Installer</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.IO.html">IO</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Json.html">Json</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Package.html">Package</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.PHPStan.html">PHPStan</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Platform.html">Platform</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Plugin.html">Plugin</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Question.html">Question</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Repository.html">Repository</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Script.html">Script</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.SelfUpdate.html">SelfUpdate</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Composer.Util.html">Util</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Composer.Command.AboutCommand.html">
+							AboutCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ArchiveCommand.html">
+							ArchiveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.AuditCommand.html">
+							AuditCommand
+						</a>
+					</li>
+					<li class="active">
+						<a href="Composer.Command.BaseCommand.html">
+							BaseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BaseDependencyCommand.html">
+							BaseDependencyCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.BumpCommand.html">
+							BumpCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CheckPlatformReqsCommand.html">
+							CheckPlatformReqsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ClearCacheCommand.html">
+							ClearCacheCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ConfigCommand.html">
+							ConfigCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.CreateProjectCommand.html">
+							CreateProjectCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DependsCommand.html">
+							DependsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DiagnoseCommand.html">
+							DiagnoseCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.DumpAutoloadCommand.html">
+							DumpAutoloadCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ExecCommand.html">
+							ExecCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.FundCommand.html">
+							FundCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.GlobalCommand.html">
+							GlobalCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.HomeCommand.html">
+							HomeCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InitCommand.html">
+							InitCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.InstallCommand.html">
+							InstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.LicensesCommand.html">
+							LicensesCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.OutdatedCommand.html">
+							OutdatedCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ProhibitsCommand.html">
+							ProhibitsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ReinstallCommand.html">
+							ReinstallCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RemoveCommand.html">
+							RemoveCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RequireCommand.html">
+							RequireCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.RunScriptCommand.html">
+							RunScriptCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ScriptAliasCommand.html">
+							ScriptAliasCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SearchCommand.html">
+							SearchCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SelfUpdateCommand.html">
+							SelfUpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ShowCommand.html">
+							ShowCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.StatusCommand.html">
+							StatusCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.SuggestsCommand.html">
+							SuggestsCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.UpdateCommand.html">
+							UpdateCommand
+						</a>
+					</li>
+					<li>
+						<a href="Composer.Command.ValidateCommand.html">
+							ValidateCommand
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Composer.Command.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Composer.Command.BaseCommand.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Composer.html">Composer</a>\<a href="namespace-Composer.Command.html">Command</a>\<a href="Composer.Command.BaseCommand.html">BaseCommand</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><span title="Symfony\Component\Console\Command\Command">Command</span></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Base class for Composer commands</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<span>Symfony\Component\Console\Command\Command</span>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Composer\Command\BaseCommand</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Command.ArchiveCommand.html"><span>Composer\Command\ArchiveCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.SuggestsCommand.html"><span>Composer\Command\SuggestsCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.AuditCommand.html"><span>Composer\Command\AuditCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.SearchCommand.html"><span>Composer\Command\SearchCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.FundCommand.html"><span>Composer\Command\FundCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.BumpCommand.html"><span>Composer\Command\BumpCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.ScriptAliasCommand.html"><span>Composer\Command\ScriptAliasCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.InstallCommand.html"><span>Composer\Command\InstallCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.LicensesCommand.html"><span>Composer\Command\LicensesCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.ValidateCommand.html"><span>Composer\Command\ValidateCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.InitCommand.html"><span>Composer\Command\InitCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>, 
+			<a href="Composer.Command.PackageDiscoveryTrait.html"><span title="Composer\Command\PackageDiscoveryTrait">PackageDiscoveryTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.SelfUpdateCommand.html"><span>Composer\Command\SelfUpdateCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.RunScriptCommand.html"><span>Composer\Command\RunScriptCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.HomeCommand.html"><span>Composer\Command\HomeCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.CreateProjectCommand.html"><span>Composer\Command\CreateProjectCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.ExecCommand.html"><span>Composer\Command\ExecCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.CheckPlatformReqsCommand.html"><span>Composer\Command\CheckPlatformReqsCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.OutdatedCommand.html"><span>Composer\Command\OutdatedCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.ReinstallCommand.html"><span>Composer\Command\ReinstallCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.RemoveCommand.html"><span>Composer\Command\RemoveCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.UpdateCommand.html"><span>Composer\Command\UpdateCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.BaseDependencyCommand.html"><span>Composer\Command\BaseDependencyCommand</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Composer.Command.ProhibitsCommand.html"><span>Composer\Command\ProhibitsCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.DependsCommand.html"><span>Composer\Command\DependsCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Composer.Command.DumpAutoloadCommand.html"><span>Composer\Command\DumpAutoloadCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.ConfigCommand.html"><span>Composer\Command\ConfigCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.StatusCommand.html"><span>Composer\Command\StatusCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.ShowCommand.html"><span>Composer\Command\ShowCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>
+	</li>
+	<li>
+<a href="Composer.Command.ClearCacheCommand.html"><span>Composer\Command\ClearCacheCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.DiagnoseCommand.html"><span>Composer\Command\DiagnoseCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.AboutCommand.html"><span>Composer\Command\AboutCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.GlobalCommand.html"><span>Composer\Command\GlobalCommand</span></a>
+
+
+	</li>
+	<li>
+<a href="Composer.Command.RequireCommand.html"><span>Composer\Command\RequireCommand</span></a>
+
+
+		uses
+			<a href="Composer.Command.CompletionTrait.html"><span title="Composer\Command\CompletionTrait">CompletionTrait</span></a>, 
+			<a href="Composer.Command.PackageDiscoveryTrait.html"><span title="Composer\Command\PackageDiscoveryTrait">PackageDiscoveryTrait</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Composer.Command.BaseCommand.html#45" title="Go to source code">Composer/Command/BaseCommand.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getApplication" id="_getApplication">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#57-68" title="Go to source code">getApplication</a>(): <a href="Composer.Console.Application.html"><span title="Composer\Console\Application">Application</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the application instance for this command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the application instance for this command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getApplication">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getComposer" id="_getComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#70-85" title="Go to source code"><span class="deprecated">getComposer</span></a>(<span>bool <var>$required</var> = <span class="php-kw">true</span></span>, <span>bool|null <var>$disablePlugins</var> = <span class="php-kw">null</span></span>, <span>bool|null <var>$disableScripts</var> = <span class="php-kw">null</span></span>): <a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+							<h4>Deprecated</h4>
+							<div>
+									<p>since Composer 2.3.0 use requireComposer or tryComposer depending on whether you have $required set to true or false</p>
+
+							</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$required</var>&nbsp;&nbsp;</td>
+										<td><p>Should be set to false, or use <code>requireComposer</code> instead</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>If null, reads --no-plugins as default</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disableScripts</var>&nbsp;&nbsp;</td>
+										<td><p>If null, reads --no-scripts as default</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requireComposer" id="_requireComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#87-112" title="Go to source code">requireComposer</a>(<span>bool|null <var>$disablePlugins</var> = <span class="php-kw">null</span></span>, <span>bool|null <var>$disableScripts</var> = <span class="php-kw">null</span></span>): <a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves the default Composer\Composer instance or throws
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves the default Composer\Composer instance or throws</p>
+<p>Use this instead of getComposer if you absolutely need an instance</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>If null, reads --no-plugins as default</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disableScripts</var>&nbsp;&nbsp;</td>
+										<td><p>If null, reads --no-scripts as default</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requireComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tryComposer" id="_tryComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#114-132" title="Go to source code">tryComposer</a>(<span>bool|null <var>$disablePlugins</var> = <span class="php-kw">null</span></span>, <span>bool|null <var>$disableScripts</var> = <span class="php-kw">null</span></span>): ?<a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves the default Composer\Composer instance or null
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves the default Composer\Composer instance or null</p>
+<p>Use this instead of getComposer(false)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$disablePlugins</var>&nbsp;&nbsp;</td>
+										<td><p>If null, reads --no-plugins as default</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$disableScripts</var>&nbsp;&nbsp;</td>
+										<td><p>If null, reads --no-scripts as default</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tryComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setComposer" id="_setComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#134-140" title="Go to source code">setComposer</a>(<span><a href="Composer.Composer.html"><span title="Composer\Composer">Composer</span></a> <var>$composer</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resetComposer" id="_resetComposer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#142-151" title="Go to source code">resetComposer</a>(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes the cached composer instance
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes the cached composer instance</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resetComposer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isProxyCommand" id="_isProxyCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#153-163" title="Go to source code">isProxyCommand</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether or not this command is meant to call another command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether or not this command is meant to call another command.</p>
+<p>This is mainly needed to avoid duplicated warnings messages.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isProxyCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIO" id="_getIO">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#165-180" title="Go to source code">getIO</a>(): <a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIO">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIO" id="_setIO">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#182-188" title="Go to source code">setIO</a>(<span><a href="Composer.IO.IOInterface.html"><span title="Composer\IO\IOInterface">IOInterface</span></a> <var>$io</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIO">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="complete" id="_complete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#190-214" title="Go to source code">complete</a>(<span><span title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</span> <var>$input</var></span>, <span><span title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</span> <var>$suggestions</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_complete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initialize" id="_initialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#216-280" title="Go to source code">initialize</a>(<span><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span> <var>$input</var></span>, <span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreferredInstallOptions" id="_getPreferredInstallOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#282-338" title="Go to source code">getPreferredInstallOptions</a>(<span><a href="Composer.Config.html"><span title="Composer\Config">Config</span></a> <var>$config</var></span>, <span><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span> <var>$input</var></span>, <span>bool <var>$keepVcsRequiresPreferSource</var> = <span class="php-kw">false</span></span>): bool[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns preferSource and preferDist values based on the configuration.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns preferSource and preferDist values based on the configuration.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>An array composed of the preferSource and preferDist values</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreferredInstallOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPlatformRequirementFilter" id="_getPlatformRequirementFilter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#340-356" title="Go to source code">getPlatformRequirementFilter</a>(<span><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span> <var>$input</var></span>): <a href="Composer.Filter.PlatformRequirementFilter.PlatformRequirementFilterInterface.html"><span title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPlatformRequirementFilter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="formatRequirements" id="_formatRequirements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#358-375" title="Go to source code">formatRequirements</a>(<span>array&lt;string&gt; <var>$requirements</var></span>): array&lt;string, string&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_formatRequirements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="normalizeRequirements" id="_normalizeRequirements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#377-387" title="Go to source code">normalizeRequirements</a>(<span>array&lt;string&gt; <var>$requirements</var></span>): list&lt;array{name: string, version?: string}&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_normalizeRequirements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="renderTable" id="_renderTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#389-399" title="Go to source code">renderTable</a>(<span>array&lt;<span title="Symfony\Component\Console\Helper\TableSeparator">TableSeparator</span>|mixed[]&gt; <var>$table</var></span>, <span><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span> <var>$output</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_renderTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTerminalWidth" id="_getTerminalWidth">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Composer.Command.BaseCommand.html#401-416" title="Go to source code">getTerminalWidth</a>(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTerminalWidth">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

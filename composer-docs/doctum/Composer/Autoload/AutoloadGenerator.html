@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Autoload\AutoloadGenerator | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Composer_Autoload_AutoloadGenerator" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Autoload.html">Autoload</a></li><li class="backslash">\</li><li>AutoloadGenerator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AutoloadGenerator    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AutoloadGenerator</strong>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../Composer/EventDispatcher/EventDispatcher.html"><abbr title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr></a> $eventDispatcher, <abbr title="Composer\Autoload\Composer\IO\IOInterface">IOInterface</abbr>|null $io = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDevMode">setDevMode</a>(bool $devMode = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setClassMapAuthoritative">setClassMapAuthoritative</a>(bool $classMapAuthoritative)
+        
+                                            <p><p>Whether generated autoloader considers the class map authoritative.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setApcu">setApcu</a>(bool $apcu, string|null $apcuPrefix = null)
+        
+                                            <p><p>Whether generated autoloader considers APCu caching.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setRunScripts">setRunScripts</a>(bool $runScripts = true)
+        
+                                            <p><p>Whether to run scripts or not</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDryRun">setDryRun</a>(bool $dryRun = true)
+        
+                                            <p><p>Whether to run in drymode or not</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setIgnorePlatformRequirements">setIgnorePlatformRequirements</a>(bool|string[] $ignorePlatformReqs)
+        <small><span class="label label-danger">deprecated</span></small>
+                                            <p><p>Whether platform requirements should be ignored.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPlatformRequirementFilter">setPlatformRequirementFilter</a>(<a href="../../Composer/Filter/PlatformRequirementFilter/PlatformRequirementFilterInterface.html"><abbr title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</abbr></a> $platformRequirementFilter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\ClassMapGenerator\ClassMap">ClassMap</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dump">dump</a>(<a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config, <a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $localRepo, <a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $rootPackage, <a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager, string $targetDir, bool $scanPsrPackages = false, string|null $suffix = null, <abbr title="Composer\Autoload\Composer\Package\Locker">Locker</abbr>|null $locker = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildPackageMap">buildPackageMap</a>(<a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $rootPackage, array $packages)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_validatePackage">validatePackage</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_parseAutoloads">parseAutoloads</a>(array $packageMap, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $rootPackage, bool|string[] $filteredDevPackages = false)
+        
+                                            <p><p>Compiles an ordered list of namespace =&gt; path mappings</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Composer/Autoload/ClassLoader.html"><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createLoader">createLoader</a>(array $autoloads, string|null $vendorDir = null)
+        
+                                            <p><p>Registers an autoloader based on an autoload-map returned by parseAutoloads</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\?string">?string</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIncludePathsFile">getIncludePathsFile</a>(array $packageMap, <a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a> $filesystem, string $basePath, string $vendorPath, string $vendorPathCode, string $appBaseDirCode)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\?string">?string</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIncludeFilesFile">getIncludeFilesFile</a>(array $files, <a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a> $filesystem, string $basePath, string $vendorPath, string $vendorPathCode, string $appBaseDirCode)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPathCode">getPathCode</a>(<a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a> $filesystem, string $basePath, string $vendorPath, string $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\?string">?string</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPlatformCheck">getPlatformCheck</a>(array $packageMap, $checkPlatform, array $devPackageNames)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAutoloadFile">getAutoloadFile</a>(string $vendorPathToTargetDirCode, string $suffix)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAutoloadRealFile">getAutoloadRealFile</a>(bool $useClassMap, bool $useIncludePath, string|null $targetDirLoader, bool $useIncludeFiles, string $vendorPathCode, string $appBaseDirCode, string $suffix, bool $useGlobalIncludePath, string $prependAutoloader, bool $checkPlatform)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStaticFile">getStaticFile</a>(string $suffix, string $targetDir, string $vendorPath, string $basePath)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\array&lt;int,string&gt;">array&lt;int,string&gt;</abbr>|<abbr title="Composer\Autoload\array&lt;string,string[]&gt;">array&lt;string,string[]&gt;</abbr>|<abbr title="Composer\Autoload\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_parseAutoloadsType">parseAutoloadsType</a>(array $packageMap, string $type, <a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $rootPackage)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFileIdentifier">getFileIdentifier</a>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package, string $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_filterPackageMap">filterPackageMap</a>(array $packageMap, <a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $rootPackage)
+        
+                                            <p><p>Filters out dev-dependencies</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sortPackageMap">sortPackageMap</a>(array $packageMap)
+        
+                                            <p><p>Sorts packages by dependency weight</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 89</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Composer/EventDispatcher/EventDispatcher.html"><abbr title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr></a> $eventDispatcher, <abbr title="Composer\Autoload\Composer\IO\IOInterface">IOInterface</abbr>|null $io = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/EventDispatcher/EventDispatcher.html"><abbr title="Composer\EventDispatcher\EventDispatcher">EventDispatcher</abbr></a></td>
+                <td>$eventDispatcher</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Autoload\Composer\IO\IOInterface">IOInterface</abbr>|null</td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDevMode">
+        <div class="location">at line 100</div>
+        <code>                    void
+    <strong>setDevMode</strong>(bool $devMode = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$devMode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClassMapAuthoritative">
+        <div class="location">at line 110</div>
+        <code>                    void
+    <strong>setClassMapAuthoritative</strong>(bool $classMapAuthoritative)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Whether generated autoloader considers the class map authoritative.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$classMapAuthoritative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setApcu">
+        <div class="location">at line 120</div>
+        <code>                    void
+    <strong>setApcu</strong>(bool $apcu, string|null $apcuPrefix = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Whether generated autoloader considers APCu caching.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$apcu</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$apcuPrefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRunScripts">
+        <div class="location">at line 131</div>
+        <code>                    void
+    <strong>setRunScripts</strong>(bool $runScripts = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Whether to run scripts or not</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$runScripts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDryRun">
+        <div class="location">at line 139</div>
+        <code>                    void
+    <strong>setDryRun</strong>(bool $dryRun = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Whether to run in drymode or not</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$dryRun</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIgnorePlatformRequirements">
+        <div class="location">at line 156</div>
+        <code>                    void
+    <strong>setIgnorePlatformRequirements</strong>(bool|string[] $ignorePlatformReqs)
+        <small><span class="label label-danger">deprecated</span></small></code>
+    </h3>
+    <div class="details">    
+            <p>
+                <small><span class="label label-danger">deprecated</span></small>
+                            <tr>
+                    <td>use</td>
+                    <td>setPlatformRequirementFilter instead</td>
+                </tr>
+                    </p>
+    
+            
+
+        <div class="method-description">
+                            <p><p>Whether platform requirements should be ignored.</p></p>                <p><p>If this is set to true, the platform check file will not be generated
+If this is set to false, the platform check file will be generated with all requirements
+If this is set to string[], those packages will be ignored from the platform check file</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|string[]</td>
+                <td>$ignorePlatformReqs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPlatformRequirementFilter">
+        <div class="location">at line 166</div>
+        <code>                    void
+    <strong>setPlatformRequirementFilter</strong>(<a href="../../Composer/Filter/PlatformRequirementFilter/PlatformRequirementFilterInterface.html"><abbr title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</abbr></a> $platformRequirementFilter)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Filter/PlatformRequirementFilter/PlatformRequirementFilterInterface.html"><abbr title="Composer\Filter\PlatformRequirementFilter\PlatformRequirementFilterInterface">PlatformRequirementFilterInterface</abbr></a></td>
+                <td>$platformRequirementFilter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">at line 176</div>
+        <code>                    <abbr title="Composer\ClassMapGenerator\ClassMap">ClassMap</abbr>
+    <strong>dump</strong>(<a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a> $config, <a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a> $localRepo, <a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $rootPackage, <a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager, string $targetDir, bool $scanPsrPackages = false, string|null $suffix = null, <abbr title="Composer\Autoload\Composer\Package\Locker">Locker</abbr>|null $locker = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Config.html"><abbr title="Composer\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Repository/InstalledRepositoryInterface.html"><abbr title="Composer\Repository\InstalledRepositoryInterface">InstalledRepositoryInterface</abbr></a></td>
+                <td>$localRepo</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a></td>
+                <td>$rootPackage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a></td>
+                <td>$installationManager</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$targetDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$scanPsrPackages</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$suffix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Composer\Autoload\Composer\Package\Locker">Locker</abbr>|null</td>
+                <td>$locker</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\ClassMapGenerator\ClassMap">ClassMap</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Seld\JsonLint\ParsingException">ParsingException</abbr></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildPackageMap">
+        <div class="location">at line 495</div>
+        <code>                    
+    <strong>buildPackageMap</strong>(<a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a> $installationManager, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $rootPackage, array $packages)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Installer/InstallationManager.html"><abbr title="Composer\Installer\InstallationManager">InstallationManager</abbr></a></td>
+                <td>$installationManager</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$rootPackage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$packages</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validatePackage">
+        <div class="location">at line 518</div>
+        <code>            protected        void
+    <strong>validatePackage</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseAutoloads">
+        <div class="location">at line 550</div>
+        <code>                    array
+    <strong>parseAutoloads</strong>(array $packageMap, <a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $rootPackage, bool|string[] $filteredDevPackages = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Compiles an ordered list of namespace =&gt; path mappings</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$rootPackage</td>
+                <td><p>root package instance</p></td>
+            </tr>
+                    <tr>
+                <td>bool|string[]</td>
+                <td>$filteredDevPackages</td>
+                <td><p>If an array, the list of packages that must be removed. If bool, whether to filter out require-dev packages</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createLoader">
+        <div class="location">at line 588</div>
+        <code>                    <a href="../../Composer/Autoload/ClassLoader.html"><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></a>
+    <strong>createLoader</strong>(array $autoloads, string|null $vendorDir = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Registers an autoloader based on an autoload-map returned by parseAutoloads</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$autoloads</td>
+                <td><p>see parseAutoloads return value</p></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$vendorDir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Composer/Autoload/ClassLoader.html"><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIncludePathsFile">
+        <div class="location">at line 631</div>
+        <code>            protected        <abbr title="Composer\Autoload\?string">?string</abbr>
+    <strong>getIncludePathsFile</strong>(array $packageMap, <a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a> $filesystem, string $basePath, string $vendorPath, string $vendorPathCode, string $appBaseDirCode)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a></td>
+                <td>$filesystem</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPathCode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$appBaseDirCode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\?string">?string</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIncludeFilesFile">
+        <div class="location">at line 680</div>
+        <code>            protected        <abbr title="Composer\Autoload\?string">?string</abbr>
+    <strong>getIncludeFilesFile</strong>(array $files, <a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a> $filesystem, string $basePath, string $vendorPath, string $vendorPathCode, string $appBaseDirCode)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a></td>
+                <td>$filesystem</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPathCode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$appBaseDirCode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\?string">?string</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPathCode">
+        <div class="location">at line 725</div>
+        <code>            protected        string
+    <strong>getPathCode</strong>(<a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a> $filesystem, string $basePath, string $vendorPath, string $path)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Util/Filesystem.html"><abbr title="Composer\Util\Filesystem">Filesystem</abbr></a></td>
+                <td>$filesystem</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlatformCheck">
+        <div class="location">at line 757</div>
+        <code>            protected        <abbr title="Composer\Autoload\?string">?string</abbr>
+    <strong>getPlatformCheck</strong>(array $packageMap, $checkPlatform, array $devPackageNames)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$checkPlatform</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$devPackageNames</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\?string">?string</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoloadFile">
+        <div class="location">at line 928</div>
+        <code>            protected        string
+    <strong>getAutoloadFile</strong>(string $vendorPathToTargetDirCode, string $suffix)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$vendorPathToTargetDirCode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suffix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoloadRealFile">
+        <div class="location">at line 973</div>
+        <code>            protected        string
+    <strong>getAutoloadRealFile</strong>(bool $useClassMap, bool $useIncludePath, string|null $targetDirLoader, bool $useIncludeFiles, string $vendorPathCode, string $appBaseDirCode, string $suffix, bool $useGlobalIncludePath, string $prependAutoloader, bool $checkPlatform)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$useClassMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useIncludePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$targetDirLoader</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useIncludeFiles</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPathCode</td>
+                <td><p>unused in this method</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$appBaseDirCode</td>
+                <td><p>unused in this method</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suffix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useGlobalIncludePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$prependAutoloader</td>
+                <td>'true'|'false'</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$checkPlatform</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStaticFile">
+        <div class="location">at line 1110</div>
+        <code>            protected        string
+    <strong>getStaticFile</strong>(string $suffix, string $targetDir, string $vendorPath, string $basePath)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$suffix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$targetDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$vendorPath</td>
+                <td><p>input for findShortestPathCode</p></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePath</td>
+                <td><p>input for findShortestPathCode</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseAutoloadsType">
+        <div class="location">at line 1204</div>
+        <code>            protected        <abbr title="Composer\Autoload\array&lt;int,string&gt;">array&lt;int,string&gt;</abbr>|<abbr title="Composer\Autoload\array&lt;string,string[]&gt;">array&lt;string,string[]&gt;</abbr>|<abbr title="Composer\Autoload\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+    <strong>parseAutoloadsType</strong>(array $packageMap, string $type, <a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $rootPackage)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><p>one of: 'psr-0'|'psr-4'|'classmap'|'files'</p></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a></td>
+                <td>$rootPackage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\array&lt;int,string&gt;">array&lt;int,string&gt;</abbr>|<abbr title="Composer\Autoload\array&lt;string,string[]&gt;">array&lt;string,string[]&gt;</abbr>|<abbr title="Composer\Autoload\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileIdentifier">
+        <div class="location">at line 1297</div>
+        <code>            protected        string
+    <strong>getFileIdentifier</strong>(<a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a> $package, string $path)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Package/PackageInterface.html"><abbr title="Composer\Package\PackageInterface">PackageInterface</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterPackageMap">
+        <div class="location">at line 1308</div>
+        <code>            protected        
+    <strong>filterPackageMap</strong>(array $packageMap, <a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a> $rootPackage)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Filters out dev-dependencies</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageMap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Package/RootPackageInterface.html"><abbr title="Composer\Package\RootPackageInterface">RootPackageInterface</abbr></a></td>
+                <td>$rootPackage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortPackageMap">
+        <div class="location">at line 1362</div>
+        <code>            protected        
+    <strong>sortPackageMap</strong>(array $packageMap)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sorts packages by dependency weight</p></p>                <p><p>Packages of equal weight are sorted alphabetically</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packageMap</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
