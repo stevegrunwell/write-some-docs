@@ -24,7 +24,8 @@ Technical documentation can be a broad topic, so for the sake of narrowing the s
 
 Note:
 
-Inline documentation is the code we write in the codebase itself, and where we describe what arguments are accepted by a function, how something works, and anything people need to know in order to integrate with our code.
+* Inline documentation is the code we write in the codebase itself
+* Where we describe what arguments are accepted by a function, how something works, and anything people need to know in order to integrate with our code.
 
 ----
 
@@ -289,6 +290,11 @@ To give you a sense of how common this pattern can be, here's the same code usin
     /** So is this. */
     ```
 
+Note:
+
+* In PHP, Docblocks begin with /** and end with */
+* These can be on one line or on multiple, as long as it has those opening and closing elements
+
 ----
 
 ### Not all comments are docblocks!
@@ -306,22 +312,6 @@ To give you a sense of how common this pattern can be, here's the same code usin
 Note:
 
 It's important to understand that not all PHP comments will be parsed as docblocks, only those that start with a slash and two asterisks.
-
-----
-
-### Anatomy of a Docblock
-
-1. Summary <!-- .element: class="fragment" -->
-2. Description <!-- .element: class="fragment" -->
-3. Tags <!-- .element: class="fragment" -->
-
-Note:
-
-Regardless of the language, inline documentation generally follows this pattern:
-
-1. Summary (one-line to explain what the function does)
-2. Description (details about the implementation, optional)
-3. Tags (special information about the code)
 
 ----
 
@@ -360,11 +350,11 @@ Regardless of the language, inline documentation generally follows this pattern:
 
 Note:
 
-In practice, your docblocks will usually look something like this:
+Regardless of the language, docblocks generally follow this pattern:
 
-* Summary
-* Description
-* Tags
+1. Summary (one-line to explain what the function does)
+2. Description (details about the implementation, optional)
+3. Tags (special information about the code)
 
 Now we'll look at some of the most common tags you'll come across:
 
@@ -557,8 +547,6 @@ Note:
 
 ### Dynamic Methods
 
-@todo better example
-
 ```php
 /**
  * @method int    getAge()  Get the animal's age.
@@ -677,9 +665,9 @@ Note:
 
 Be wary anytime someone claims that they don't need to write documentation because their code is "self-documenting".
 
-Even with every argument and return type strictly-typed and every method name being as clear as possible, any non-trivial codebase will have some areas where additional context is needed. You don't need to be duplicative, but err on the side of more documentation than less.
+No matter how strict your types and well-named your methods, any non-trivial codebase will have some areas where additional context would be helpful. You don't need to be duplicative, but err on the side of more documentation than less.
 
-Remember: having documentation isn't a weakness nor point of shame, and saying your code is "self-documenting" is akin to saying "that sucks you're having problems, it works on my machine."
+Remember: having documentation isn't a weakness nor point of shame, so don't let anyone shame you into thinking otherwise.
 
 ----
 
@@ -690,41 +678,30 @@ Remember: having documentation isn't a weakness nor point of shame, and saying y
 Note:
 
 * PHPDoc is pretty common, but different projects may have different conventions for things like alignment, phrasing, or the handling of certain tags.
-    * Example: WordPress asks that you *not* use `return @void` - no return, omit the tag
-* Knowing the conventions used by your project will make documentation far less painful.
-
----
-
-## Generating API Docs
-
-Note:
-
-When you document your code using standards like PHPDoc, you gain the ability to do something really neat: generate nicely-formatted documentation for your codebase!
+    * Example: WordPress asks that you *not* use `@return void` - no return, omit the tag
+* Knowing the conventions used by your project will make reading and contributing to documentation far less painful.
 
 ----
 
 ### Generating API Docs
 
-* Well-formed inline docs can be compiled to create HTML documentation <!-- .element: class="fragment" -->
+* Well-formed inline docs can be compiled to create nicely-formatted documentation <!-- .element: class="fragment" -->
 * <!-- .element: class="fragment" --> Great for internal teams, <em>fantastic</em> for open-source projects
+* A perfect use for your CI pipeline <!-- .element: class="fragment" -->
 * Examples: <!-- .element: class="fragment" -->
 	* [WordPress Code Reference](https://developer.wordpress.org/reference/)
 	* [Laravel API docs](https://laravel.com/api/9.x/)
 
 Note:
 
-*
+One of the big advantages to using common documentation practices is the ability to generate documentation in different forms.
+
+* HTML, PDFs, and even ebook formats
+* Makes your documentation available to be searched without opening an IDE
+* Generating docs is scripted, so it fits nicely into a CI/CD workflow
 * Some examples in the wild:
     * The WordPress Codex is mostly generated from inline documentation, giving you a nice view of arguments, return values, filters, the source itself, where the code lives, and anything that calls it or relies up it for every function
     * The Laravel API docs are generated from the source code using Doctum
-
-When we're documenting often and to a standard, we're able to generate nice, user-friendly documentation as HTML or in other formats.
-
-Consider having your CI pipeline re-build docs whenever you tag a new release
-
-WordPress inline documentation efforts - arguments, return values, filters, the source itself, where the code lives, and anything else that calls it or the code depends on.
-
-Laravel: not the main docs, but digging into things like Illuminate, HTTP, etc.
 
 ----
 
