@@ -9,7 +9,8 @@
         "reveal-md": "^5.5.1"
     },
     "scripts": {
-        "dev": "npm run start -- -w",
+        "build": "reveal-md slides.md --static build --static-dirs resources",
+        "dev": "reveal-md slides.md -w",
         "start": "reveal-md slides.md"
     }
 }

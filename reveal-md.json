@@ -8,6 +8,7 @@
     "scripts": [
         "resources/scripts.js"
     ],
+    "assetsDir": "resources",
     "revealOptions": {
         "controls": true,
         "controlsTutorial": false,
