@@ -107,14 +107,16 @@ Sometimes, inline documentation is less formal. Sometimes it's an explanation wh
 
 Note:
 
-* When the documentation isn't intermingled with the code — even if it co-exists in the repository — we refer to it as "external" documentation.
+When the documentation isn't intermingled with the code — even if it co-exists in the repository — we refer to it as "external" documentation.
+
 * External documentation can take multiple forms:
     * Tutorials + user guides to help people use your product
     * API documentation to help developers integrate with your service.
 * Doesn't need to be public at all
     * README file in the repo
     * Internal wiki
-* No matter where it lives, external documentation contains important pieces of information
+
+No matter where it lives, external documentation contains important pieces of information
 
 ---
 
@@ -151,6 +153,7 @@ Note:
 Of course, this doesn't mean we can't benefit ourselves from having good documentation.
 
 * Documentation helps us remember how or why something works the way it does
+    * You six months from now will likely be in a very different headspace than you today
 * Writing documentation as we write forces us to think through our implementations
 * Improves our own writing abilities
 * It also can't be understated how many questions good documentation can deflect.
@@ -242,7 +245,8 @@ We'll take a closer look at the structure of PHPDoc in a minute.
  *
  * @return {number} The absolute value of a + b.
  */
-function absum(a, b) {
+function absum(a, b)
+{
 	return Math.abs($a + $b);
 }
 ```
@@ -462,9 +466,10 @@ function makePopcorn(Corn&Popable $kernels, Butter|Oil $fat)
 
 Note:
 
-Intersection types are represented with an ampersand: our $kernels argument must be an instance of Corn *and* implement the Popable interface.
-
-Union types are separated with a vertical pipe, meaning that $fat can accept an instance of Butter _or_ Oil.
+* Intersection types: value satisfies two or more types
+    * Intersection types are represented with an ampersand: our $kernels argument must be an instance of Corn *and* implement the Popable interface.
+* Union types: value satisfies at least one of the given types
+    * Union types are separated with a vertical pipe, meaning that $fat can accept an instance of Butter _or_ Oil.
 
 ----
 
@@ -489,7 +494,19 @@ function getUser(
 
 Note:
 
-If you have nullable arguments (or a nullable return value), you can either use "null" as a possible return type or prefix the type with a question mark; these two are equivalent.
+If you have nullable arguments (or a nullable return value), you can either use "null" as a candidate in a union type or prefix the type with a question mark; these two are equivalent.
+
+----
+
+### Taco Break!
+
+![Taco, a black cat, lying on a blue cushion and looking directly into the camera](resources/taco.jpg) <!-- .element: style="max-height: 45vh; width: auto;"-->
+
+Note:
+
+While I was rehearsing this talk, I was like "whoa, this is dense. I wish there was a picture of a cat or something"
+
+Anyway, Taco is cheering you on. We're half-way through inline documentation!
 
 ----
 
@@ -566,7 +583,11 @@ class Animal
 
 Note:
 
-Similarly, we can document dynamic methods. In this case, we're handling getter methods for known properties like: getAge(); we might also define getName(), getSpecies(), etc.
+Similarly, we can document dynamic methods.
+
+* In this case, we're handling getter methods for known properties
+    * If we don't have a getAge() nor getName() method defined on the class but someone tries to call it, we can use the __call() magic method to look for those method names and return the corresponding property
+* This can be especially useful for frameworks that make heavy use of magic methods, such as Laravel
 
 ----
 
@@ -746,19 +767,19 @@ Now that we've covered inline documentation, let's talk about all of the stuff t
 
 * Purpose, Requirements, & Installation <!-- .element: class="fragment" -->
 * How to use the software <!-- .element: class="fragment" -->
-    * What options are available? <!-- .element: class="fragment" -->
-    * Tutorials <!-- .element: class="fragment" -->
+    * What options are available?
+    * Tutorials
 * <!-- .element: class="fragment" --> <abbr title="Frequently-Asked Questions">FAQs</abbr>
 * Contributing <!-- .element: class="fragment" -->
 * &hellip;and anything else people should know <!-- .element: class="fragment" -->
 
 Note:
 
-It's easy to say "go write documentation". It's much harder to define _what_ to document. Here's a good starting point:
+It's easy to say "go write documentation". It's much harder to define _what_ to document. Here's are some of the main points you want to hit in something like a project README.
 
 * First and foremost, give your users the information they need to be successful. What problem is the software trying to solve? What are the system requirements? How can they install it?
-* Next, how do they use it? If it's a library, this would be a great place for a getting started tutorial.
-* Are there questions that you expect to pop up? Head those off at the pass with a FAQ section
+* Next, how do they use it? What options are available? If it's a library, this would be a great place for a getting started tutorial.
+* Are there questions that you expect to pop up? Head those off at the pass with a Frequently-Asked Questions section
 * If you're accepting contributions, tell people how you would like them to do so
     * GitHub and other platforms now look for a CONTRIBUTING file in the repo
 * And anything else that might be relevant.
@@ -825,15 +846,16 @@ We won't go clicking around, but here's a screenshot of the PHPUnit documentatio
 
 ----
 
-### How should I format it? <!-- .element: class="screen-reader-text" -->
+### Embrace HTML <!-- .element: class="screen-reader-text" -->
 
-![The elderly, 2015 version of Biff Tannen from the Back to the Future series with the caption "There's something very familiar about all this"](resources/biff-familiar.gif)
+![The Hulk from Avenger's Endgame, labelled as "HTML", with the caption "it's like...I was made for this".](resources/html-made-for-this.jpg)
 
 Note:
 
-Whether you're writing documentation in Markdown, Textile, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.
-
-Take advantage of all the semantic goodness we get from HTML!
+* Whether you're writing documentation in Markdown, Textile, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.
+* Remember that HTML is all about formatting a hierarchy of information
+* Take advantage of anchors, hyperlinks, etc. to make it easy to navigate
+* Documentation can be spread across multiple pages as long as it's still discoverable
 
 ----
 
@@ -935,18 +957,6 @@ Note:
 
 ----
 
-### Embrace HTML <!-- .element: class="screen-reader-text" -->
-
-![The Hulk from Avenger's Endgame, labelled as "HTML", with the caption "it's like...I was made for this".](resources/html-made-for-this.jpg)
-
-Note:
-
-* Remember that HTML is all about formatting a hierarchy of information
-* Take advantage of anchors, hyperlinks, etc. to make it easy to navigate
-* Documentation can be spread across multiple pages as long as it's still discoverable
-
-----
-
 ### Detail Prerequisite Knowledge
 
 * People don't usually read docs cover-to-cover <!-- .element: class="fragment" -->
@@ -972,18 +982,13 @@ Now that you have a sense of the tools and standards out there, I'd like to shar
 
 * As (or even before!) you write your code <!-- .element: class="fragment" -->
 * When questions are raised or bugs found <!-- .element: class="fragment" -->
-* When refactoring <!-- .element: class="fragment" -->
 * Whenever documentation is insufficient <!-- .element: class="fragment" -->
 
 Note:
 
-Ideally, documentation should be written before you write any code. This forces you to think about your approach, and sometimes saying it out loud (or typing it) can help you catch logical errors.
-
-Then, if bugs or stress-cases are found, make sure these are documented! Learn from these mistakes!
-
-When refactoring code, make sure the documentation stays up-to-date.
-
-If you find yourself having to read the code to figure out what a function does, that's a sign that the documentation isn't doing it's job. Take what you've learned and write it down!
+* Ideally, documentation should be written before you write any code. This forces you to think about your approach, and sometimes saying it out loud (or typing it) can help you catch logical errors.
+* Then, if bugs or stress-cases are found, make sure these are documented! Learn from these mistakes!
+* If you find yourself having to read the code to figure out what a function does, that's a sign that the documentation isn't doing it's job. Take what you've learned and write it down!
 
 ----
 
@@ -1092,7 +1097,7 @@ If it's too hard to explain,<br>it may be too complicated!
 Note:
 
 * In the same way that code being hard to test can be an indication of a larger architectural issue, code being hard to document can also be a strong signal that something's funky.
-* Difficulty of writing documentation => litmus test for code quality
+* Difficulty of writing documentation => litmus test for code quality - if you can't explain it, do you fully understand it yourself?
 
 ----
 
@@ -1139,7 +1144,7 @@ Easy to write, easy to share!
 Note:
 
 * Whether it's within your company or shared with millions of users, contributing documentation should not be a large hurdle.
-* Good litmus test: how many clicks does it take to fix a single typo in a README?
+* Good litmus test: how many clicks does it take to fix a single typo in a README? How many hurdles does someone have to clear in order to help me write this?
 
 This leads into my next point...
 
@@ -1151,7 +1156,7 @@ Maintainers would <u>love</u> for you to know<br>this one simple trick!
 
 Note:
 
-* If you're looking for ways to get move involved with a project, writing documentation is a great first step, as it's an area where a lot of projects need serious help.
+* If you're looking for ways to get more involved with a project, writing documentation is a great first step, as it's an area where a lot of projects need serious help.
 * Writing documentation forces you to understand the code better, helps other people, and is very likely to be accepted and greatly appreciated.
 * Looking to give back or get involved? Writing documentation will help make you the maintainer's favorite person
 
