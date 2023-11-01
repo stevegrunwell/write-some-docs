@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>I'd Like to Write the World Some Docs</title>
+    <meta property="og:title" content="I'd Like to Write the World Some Docs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://stevegrunwell.github.io/write-some-docs//featured-slide.jpg" />
+    <meta property="og:url" content="https://stevegrunwell.github.io/write-some-docs/" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/a11y-dark.css" />
+
+    <link rel="stylesheet" href="./resources/resources/styles.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="dark-bg title-slide" data-background-image="resources/coke-darken.jpg" data-background-position="center center" data-background-size="cover" data-hide-footer -->
+# I'd Like to Write the World Some Docs
+
+Steve Grunwell <!-- .element: class="byline" -->
+[@stevegrunwell@phpc.social](https://phpc.social/@stevegrunwell)
+[stevegrunwell.com/slides/write-some-docs](https://stevegrunwell.com/slides/write-some-docs)
+</script></section><section ><section data-markdown><script type="text/template">
+## What is<br>Documentation?
+
+<aside class="notes"><p>In order to write great documentation, we need to first define what we intend to write.</p>
+<p>Technical documentation can be a broad topic, so for the sake of narrowing the scope we&#39;ll group documentation into two groups: inline and external documentation.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Inline Documentation
+
+* Documentation within the code itself, written for a developer audience <!-- .element: class="fragment" -->
+* Describes what everything does, function inputs/outputs, contextual information, etc. <!-- .element: class="fragment" -->
+
+<aside class="notes"><ul>
+<li>Inline documentation is the code we write in the codebase itself</li>
+<li>Where we describe what arguments are accepted by a function, how something works, and anything people need to know in order to integrate with our code.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Inline Documentation
+
+```php
+/**
+ * Validate an email address.
+ *
+ * @param string $email The email address to validate.
+ *
+ * @return bool True if the email is valid, false otherwise.
+ */
+function validateEmail(string $email): bool
+{
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+```
+
+<aside class="notes"><ul>
+<li>Typical example of a DocBlock for a PHP function (more on this later)</li>
+<li>Summarize what the method does, what arguments it takes, what it returns, and what that return value means</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Inline Documentation
+
+```php
+/**
+ * Definition for the Person class.
+ *
+ * @package MyPackage
+ * @author  ACME, Inc.
+ * @license MIT
+ */
+
+namespace ACME\MyPackage;
+
+class Person
+{
+    // ...
+}
+```
+
+<aside class="notes"><ul>
+<li>Can also create file or class-level docblocks to help provide context</li>
+<li>What package does it belong to? Who wrote it? What&#39;s the license?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Inline Documentation
+
+```php
+/*
+ * I have no idea what this bit of code does,
+ * and the person who wrote it retired and is
+ * now raising goats or something.
+ *
+ * Please please please be careful!
+ */
+```
+
+<aside class="notes"><p>Sometimes, inline documentation is less formal. Sometimes it&#39;s an explanation why something was done a certain way, a warning, or an apology.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### External Documentation
+
+* <!-- .element: class="fragment" --> Public-facing documentation
+	* User guides
+	* API documentation
+* <!-- .element: class="fragment" --> Internal documentation
+	* README files
+	* Wikis, Confluence, et al
+
+<aside class="notes"><p>When the documentation isn&#39;t intermingled with the code — even if it co-exists in the repository — we refer to it as &quot;external&quot; documentation.</p>
+<ul>
+<li>External documentation can take multiple forms:<ul>
+<li>Tutorials + user guides to help people use your product</li>
+<li>API documentation to help developers integrate with your service.</li>
+</ul>
+</li>
+<li>Doesn&#39;t need to be public at all<ul>
+<li>README file in the repo</li>
+<li>Internal wiki</li>
+</ul>
+</li>
+</ul>
+<p>No matter where it lives, external documentation contains important pieces of information</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Why Do We Write Documentation?
+
+<aside class="notes"><p>Now that we understand the &quot;What&quot; of documentation, let&#39;s take a look at the &quot;Why&quot;.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### We Document For Others
+
+The greatest software is that which can be used
+
+<aside class="notes"><ul>
+<li>Obvious answer, but worth reiterating<ul>
+<li>Our job is to write software that people can use, and that means making the barrier of entry as low as possible.</li>
+</ul>
+</li>
+<li>Whether end users or teammates, documentation exists to make other peoples&#39; lives easier.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### We Document For Ourselves
+
+* Help us remember how and why something works <!-- .element: class="fragment" -->
+* Catch issues with our approach before writing any code <!-- .element: class="fragment" -->
+* Strengthen our own writing skills <!-- .element: class="fragment" -->
+* Better documentation → fewer questions <!-- .element: class="fragment" -->
+
+
+<aside class="notes"><p>Of course, this doesn&#39;t mean we can&#39;t benefit ourselves from having good documentation.</p>
+<ul>
+<li>Documentation helps us remember how or why something works the way it does<ul>
+<li>You six months from now will likely be in a very different headspace than you today</li>
+</ul>
+</li>
+<li>Writing documentation as we write forces us to think through our implementations</li>
+<li>Improves our own writing abilities</li>
+<li>It also can&#39;t be understated how many questions good documentation can deflect.<ul>
+<li>Fewer questions means less context switching.</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### RTFM!
+
+Read The F'ing Manual <!-- .element: class="fragment"-->
+
+<aside class="notes"><p>Generally speaking, I&#39;d recommend against using this exact phrase. However, it&#39;s hard to tell someone to &quot;RTFM&quot; if there&#39;s no &quot;FM&quot; for them to &quot;R&quot;.</p>
+<ul>
+<li>Well-written documentation is your first line of defense against answering the same questions over and over again<ul>
+<li>You don&#39;t get to complain about people distracting you with questions all the time if you haven&#39;t given them a better channel</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+> Documentation is a love letter that you write to your future self. <footer>—Damian Conway</footer>
+
+<aside class="notes"><ul>
+<li>Damian Conway, Aussie member of the Perl community.</li>
+<li>It was once pointed out to me that bad documentation can also be hate-mail from previous developers, though in my experience that usually comes in the form of terrible architecture and an absence of tests</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Writing Inline Documentation
+
+<aside class="notes"><ul>
+<li>Covered the what and why, so let&#39;s talk about how to write documentation.</li>
+<li>Will start with inline docs</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Meet the Docblock
+
+* Specially-formatted comment <!-- .element: class="fragment" -->
+    * Will vary across languages
+* Document files, functions, methods,<br>variables, and more <!-- .element: class="fragment" -->
+* Parsed by IDEs & static code analysis <!-- .element: class="fragment" -->
+
+<aside class="notes"><ul>
+<li>Each programming language has its own terminology, but generally speaking there&#39;s some concept of a &quot;docblock&quot;, which is a specially-formatted comment.</li>
+<li>These can generally exist at the file-level or be for specific functions, methods, variables, etc.</li>
+<li>In addition to helping developers understand how the code works, this documentation is also consumed by IDEs (Intellisense), static code analysis tools like PHPStan, Phan, et al, and more</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### PHPDoc
+
+```php
+/**
+ * Add two numbers and return the absolute value.
+ *
+ * @param int $a The first number.
+ * @param int $b The second number.
+ *
+ * @return int The absolute value of $a + $b.
+ */
+function absum(int $a, int $b): int
+{
+	return abs($a + $b);
+}
+```
+
+<aside class="notes"><p>While there isn&#39;t an official format, PHPDoc is the most common form you&#39;ll see in the PHP ecosystem.</p>
+<p>There is a draft PSR (PSR-5) to adopt PHPDoc as the official format, but efforts seem to have stalled.</p>
+<p>We&#39;ll take a closer look at the structure of PHPDoc in a minute.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### JSDoc
+
+```js
+/**
+ * Add two numbers and return the absolute value.
+ *
+ * @param {number} a The first number.
+ * @param {number} b The second number.
+ *
+ * @return {number} The absolute value of a + b.
+ */
+function absum(a, b)
+{
+	return Math.abs($a + $b);
+}
+```
+
+<aside class="notes"><p>Very similar to PHPDoc, but uses curly-braces around the types.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Javadoc
+
+```java
+import java.lang.Math;
+
+/**
+ * Add two numbers and return the absolute value.
+ *
+ * @param int a The first number.
+ * @param int b The second number.
+ *
+ * @return The absolute value of a + b.
+ */
+int absum(int a, int b)
+{
+	return Math.abs(a + b);
+}
+```
+
+<aside class="notes"><p>To give you a sense of how common this pattern can be, here&#39;s the same code using the Javadoc standard.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Docblock comments
+
+* <!-- .element: class="fragment" --> Docblocks begin with <code>/**</code> and end with <code>*/</code>
+* <!-- .element: class="fragment" --> Can be single or multi-line
+    ```php
+    /**
+     * This is a docblock.
+     */
+
+    /** So is this. */
+    ```
+
+<aside class="notes"><ul>
+<li>In PHP, Docblocks begin with /** and end with */</li>
+<li>These can be on one line or on multiple, as long as it has those opening and closing elements</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Not all comments are docblocks!
+
+```php
+# This isn't a docblock.
+
+// Neither is this.
+
+/*
+ * Close, but this only has one asterisk at the opening.
+ */
+```
+
+<aside class="notes"><p>It&#39;s important to understand that not all PHP comments will be parsed as docblocks, only those that start with a slash and two asterisks.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Anatomy of a Docblock
+
+<pre class="fragment-replace"><code class="fragment hljs php fade-out" data-fragment-index="0">/**
+ *
+ *
+ *
+ *
+ *
+ *
+ */</code><code class="fragment hljs php" data-fragment-index="0">/**
+ * This is the summary.
+ *
+ *
+ *
+ *
+ *
+ */</code><code class="fragment hljs php" data-fragment-index="1">/**
+ * This is the summary.
+ *
+ * This is the description. We can get a little more
+ * in-depth here.
+ *
+ *
+ */</code><code class="fragment hljs php" data-fragment-index="2">/**
+ * This is the summary.
+ *
+ * This is the description. We can get a little more
+ * in-depth here.
+ *
+ * @return string This is an example of a tag.
+ */</code>
+</pre>
+
+<aside class="notes"><p>Regardless of the language, docblocks generally follow this pattern:</p>
+<ol>
+<li>Summary (one-line to explain what the function does)</li>
+<li>Description (details about the implementation, optional)</li>
+<li>Tags (special information about the code)</li>
+</ol>
+<p>Now we&#39;ll look at some of the most common tags you&#39;ll come across:</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### `@param`
+
+`<type> <name> [<description>]`
+
+```php
+/**
+ * @param string  $name    The customer's name.
+ * @param Address $address The customer's address.
+ */
+function saveAddress(string $name, Address $address)
+{
+    // ...
+}
+```
+
+<aside class="notes"><p>Describes a function or method argument</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### `@return`
+
+`<type> [<description>]`
+
+```php
+/**
+ * Retrieve the currently logged-in user.
+ *
+ * @return User The current User instance.
+ */
+public function getCurrentUser(): User
+{
+    // ...
+}
+```
+
+<aside class="notes"><p>Documents the return type of the function or method.</p>
+<p>Note that it follows the same format as @param except that it doesn&#39;t include the variable name.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### `@var`
+
+`<type> <name> [<description>]`
+
+```php
+/**
+ * @var string $name The customer's name.
+ */
+protected string $name;
+```
+
+<aside class="notes"><p>The @var tag takes the same shape as @param, but is used for documenting variables and class properties.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### `@throws`
+
+`<type> [<description>]`
+
+```php
+/**
+ * @throws InvalidUserException If no user with the given ID
+ *                              can be found.
+ */
+public function getUserById(int $id): User
+{
+    // ...
+}
+```
+
+<aside class="notes"><p>If the code you&#39;re writing can throw exceptions, it&#39;s great to identify which types of exceptions are thrown under different conditions.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Intersection & Union Types
+
+Used to further narrow types.
+
+```php
+/**
+ * @param Corn&Popable $kernels The kernels must be corn and
+ *                              pop-able.
+ * @param Butter|Oil   $fat     Popcorn can be made with
+ *                              either butter or oil.
+ */
+function makePopcorn(Corn&Popable $kernels, Butter|Oil $fat)
+{
+    // ...
+}
+```
+
+<aside class="notes"><ul>
+<li>Intersection types: value satisfies two or more types<ul>
+<li>Intersection types are represented with an ampersand: our $kernels argument must be an instance of Corn <em>and</em> implement the Popable interface.</li>
+</ul>
+</li>
+<li>Union types: value satisfies at least one of the given types<ul>
+<li>Union types are separated with a vertical pipe, meaning that $fat can accept an instance of Butter <em>or</em> Oil.</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Nullable Types
+
+```php
+/**
+ * @param int|null $id         The user ID. If $id is null,
+ *                             default to the current user.
+ * @param ?string  $connection The connection identifier.
+ *
+ * @return ?User The corresponding user, or null if no user
+ *               was found.
+ */
+function getUser(
+    ?int $id = null,
+    ?string $connection = null
+): ?User {
+    // ...
+}
+```
+
+<aside class="notes"><p>If you have nullable arguments (or a nullable return value), you can either use &quot;null&quot; as a candidate in a union type or prefix the type with a question mark; these two are equivalent.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Taco Break!
+
+![Taco, a black cat, lying on a blue cushion and looking directly into the camera](resources/taco.jpg) <!-- .element: style="max-height: 45vh; width: auto;"-->
+
+<aside class="notes"><p>While I was rehearsing this talk, I was like &quot;whoa, this is dense. I wish there was a picture of a cat or something&quot;</p>
+<p>Anyway, Taco is cheering you on. We&#39;re half-way through inline documentation!</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Array Shapes
+
+<pre class="fragment-replace"><code class="fragment hljs php fade-out" data-fragment-index="0">/**
+ * @var array
+ */
+private array $address;</code><span class="fragment fade-out" data-fragment-index="1"><code class="fragment hljs php" data-fragment-index="0">/**
+ * @var array&lt;string, mixed>
+ */
+private array $address;</code></span><code class="fragment hljs php" data-fragment-index="1">/**
+ * @var array{
+ *      street_address:string,
+ *      street_address2?:string,
+ *      city:string,
+ *      state:string,
+ *      postal_code:string,
+ *      country:string
+ *  }
+ */
+private array $address;</code></pre>
+
+<aside class="notes"><p>Array shapes can be extremely helpful, especially if you&#39;re working in a codebase where associative arrays are being used everywhere instead of value objects.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Dynamic Properties
+
+```php
+/**
+ * @property      string $name The animal's name.
+ * @property-read int    $age  The animal's age in years.
+ */
+class Animal
+{
+    private array $props = [];
+
+    public function __get($prop)
+    {
+        return $this->props[$prop] ?? null;
+    }
+}
+```
+
+<aside class="notes"><ul>
+<li>If you rely on magic properties via the __get() magic method, you may document these properties with @property, @property-read, and @property-write</li>
+<li>@property indicates read/write access</li>
+<li>@property-read and @property-write imply read- or write-only, respectively</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Dynamic Methods
+
+```php
+/**
+ * @method int    getAge()  Get the animal's age.
+ * @method string getName() Get the animal's name.
+ */
+class Animal
+{
+    private int $age;
+    private string $name;
+
+    public function __call($method, $args)
+    {
+        // Look for "get{$prop}" method calls, return the prop.
+    }
+}
+```
+
+<aside class="notes"><p>Similarly, we can document dynamic methods.</p>
+<ul>
+<li>In this case, we&#39;re handling getter methods for known properties<ul>
+<li>If we don&#39;t have a getAge() nor getName() method defined on the class but someone tries to call it, we can use the __call() magic method to look for those method names and return the corresponding property</li>
+</ul>
+</li>
+<li>This can be especially useful for frameworks that make heavy use of magic methods, such as Laravel</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Linking to Relevant Content
+
+```php
+/**
+ * We can also suggest that people {@see some_function()}
+ * within our docs.
+ *
+ * @see some_other_function() For an example implementation.
+ *
+ * @link https://example.com/some-link
+ */
+```
+
+<aside class="notes"><p>Two ways to link to other content:</p>
+<ol>
+<li>@see is generally used to point to other parts of the codebase, but can technically support URLs</li>
+<li>@link is used for absolute URLs, like external sites, GitHub READMEs, etc.</li>
+</ol>
+</aside></script></section><section data-markdown><script type="text/template">
+### `@todo`
+
+`<description>`
+
+```php
+/**
+ * @todo (stevegrunwell) Finish implementing this!
+ * @todo https://jira.example.com/browse/APP-123
+ */
+```
+
+<aside class="notes"><p>The @todo tag lets developers flag pieces of code that still need to be worked on.</p>
+<p>While the tag technically accepts any description, it&#39;s strongly recommended to link to a relevant ticket if one exists: not only does this give future-you more context, but makes it easier to see if the comment is out-of-date.</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Leveling Up Your Inline Documentation
+
+<aside class="notes"><p>At this point, we&#39;ve covered the basic semantics for inline documentation. Now let&#39;s talk about how to make yours stand out among the rest.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### What, How, and Why?
+
+Good documentation will explain not only **what** something does, but **how** and **why**.
+
+<aside class="notes"><p>When you&#39;re writing inline documentation, you&#39;re generally writing for a developer audience. As developers, we often want to know three things:</p>
+<ol>
+<li>What does it do?</li>
+<li>How do I use it?</li>
+<li>Why does it work the way it does?</li>
+</ol>
+<p>At the very least, this generally means you&#39;ll want to document all function and method arguments, return types, any globals that are in-play, and side-effects of different functions.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Documentation should be useful!
+
+<pre class="fragment-replace"><code class="fragment fade-out hljs php" data-fragment-index="0">/**
+ * Handle Ajax requests for user profile data.
+ *
+ * The $_POST['fields'] key, if set, will contain a
+ * comma-separated list of keys to retrieve. If left
+ * empty, all keys will be returned.
+ *
+ * @return array An associative array of profile fields,
+ *               optionally filtered by $_POST['fields'].
+ */</code><code class="fragment hljs php" data-fragment-index="0">// Ajax stuff</code></pre>
+
+<aside class="notes"><p>We&#39;re not writing documentation for our health, it should have a purpose.</p>
+<ul>
+<li>This version gives us context as to what&#39;s happening in the function</li>
+<li>Whereas this version tells us nothing</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### "But my code is<br>self-documenting!"
+
+![Meme where Dr. Evil is using air quotes with the caption "self-documenting"](resources/self-documenting.jpg)
+
+<aside class="notes"><p>Be wary anytime someone claims that they don&#39;t need to write documentation because their code is &quot;self-documenting&quot;.</p>
+<p>No matter how strict your types and well-named your methods, any non-trivial codebase will have some areas where additional context would be helpful. You don&#39;t need to be duplicative, but err on the side of more documentation than less.</p>
+<p>Remember: having documentation isn&#39;t a weakness nor point of shame, so don&#39;t let anyone shame you into thinking otherwise.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Be Aware of Project Standards
+
+![Scene from Avengers: Infinity War where King T'Challa of Wakanda telling Bruce Banner "we don't do that here" after Banner bows to the king](resources/we-dont-do-that-here.jpg)
+
+<aside class="notes"><ul>
+<li>PHPDoc is pretty common, but different projects may have different conventions for things like alignment, phrasing, or the handling of certain tags.<ul>
+<li>Example: WordPress asks that you <em>not</em> use <code>@return void</code> - no return, omit the tag</li>
+</ul>
+</li>
+<li>Knowing the conventions used by your project will make reading and contributing to documentation far less painful.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Generating API Docs
+
+* Well-formed inline docs can be compiled to create nicely-formatted documentation <!-- .element: class="fragment" -->
+* <!-- .element: class="fragment" --> Great for internal teams, <em>fantastic</em> for open-source projects
+* A perfect use for your CI pipeline <!-- .element: class="fragment" -->
+* Examples: <!-- .element: class="fragment" -->
+	* [WordPress Code Reference](https://developer.wordpress.org/reference/)
+	* [Laravel API docs](https://laravel.com/api/9.x/)
+
+<aside class="notes"><p>One of the big advantages to using common documentation practices is the ability to generate documentation in different forms.</p>
+<ul>
+<li>HTML, PDFs, and even ebook formats</li>
+<li>Makes your documentation available to be searched without opening an IDE</li>
+<li>Generating docs is scripted, so it fits nicely into a CI/CD workflow</li>
+<li>Some examples in the wild:<ul>
+<li>The WordPress Codex is mostly generated from inline documentation, giving you a nice view of arguments, return values, filters, the source itself, where the code lives, and anything that calls it or relies up it for every function</li>
+<li>The Laravel API docs are generated from the source code using Doctum</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Tools for Generating API Docs
+
+* [phpDocumentor](https://www.phpdoc.org) ([example](./composer-docs/phpdocumentor/index.html))
+* [ApiGen](https://github.com/ApiGen/ApiGen) ([example](./composer-docs/apigen/index.html))
+* [Doctum](https://github.com/code-lts/doctum) ([example](./composer-docs/doctum/index.html))
+
+<aside class="notes"><ul>
+<li>Number of great documentation generators out there, but here are some of the most popular in the PHP ecosystem (I&#39;ve almost certainly missed someone&#39;s favorite)</li>
+<li>Examples, each generated from the same commit of Composer using phars of each tool</li>
+<li>Each tool has its own configurations, letting you apply themes, specify what is (or is not) included, and more.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Generate Docs Often
+
+* Identify gaps <!-- .element: class="fragment" -->
+* Detect duplication or spaghetti code <!-- .element: class="fragment" -->
+
+<aside class="notes"><p>Even if your codebase isn&#39;t being distributed, regularly generating documentation can have some benefits:</p>
+<p>Generated docs will help highlight areas of the codebase that don&#39;t have documentation and could benefit from more attention. Several of the tools include reports for areas that are either missing or don&#39;t have sufficient coverage.</p>
+<p>Getting a high-level view of your app can also help you recognize possible code organization issues and find things like duplicated functionality or features you had forgotten about.</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## External Documentation
+
+<aside class="notes"><p>Now that we&#39;ve covered inline documentation, let&#39;s talk about all of the stuff that&#39;s outside of the codebase.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### What should be documented?
+
+* Purpose, Requirements, & Installation <!-- .element: class="fragment" -->
+* How to use the software <!-- .element: class="fragment" -->
+    * What options are available?
+    * Tutorials
+* <!-- .element: class="fragment" --> <abbr title="Frequently-Asked Questions">FAQs</abbr>
+* Contributing <!-- .element: class="fragment" -->
+* &hellip;and anything else people should know <!-- .element: class="fragment" -->
+
+<aside class="notes"><p>It&#39;s easy to say &quot;go write documentation&quot;. It&#39;s much harder to define <em>what</em> to document. Here&#39;s are some of the main points you want to hit in something like a project README.</p>
+<ul>
+<li>First and foremost, give your users the information they need to be successful. What problem is the software trying to solve? What are the system requirements? How can they install it?</li>
+<li>Next, how do they use it? What options are available? If it&#39;s a library, this would be a great place for a getting started tutorial.</li>
+<li>Are there questions that you expect to pop up? Head those off at the pass with a Frequently-Asked Questions section</li>
+<li>If you&#39;re accepting contributions, tell people how you would like them to do so<ul>
+<li>GitHub and other platforms now look for a CONTRIBUTING file in the repo</li>
+</ul>
+</li>
+<li>And anything else that might be relevant.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Where should it live?
+
+* In the repository (docs/) <!-- .element: class="fragment" -->
+* Internal site (Confluence, intranet, etc.)  <!-- .element: class="fragment" -->
+* External site (website, GitHub Pages, etc.)  <!-- .element: class="fragment" -->
+* Third-party platform (Read The Docs, et al)  <!-- .element: class="fragment" -->
+* <!-- .element: class="fragment" --> <strong>Not</strong> in Discord, Slack, etc.
+
+<aside class="notes"><p>When we&#39;re writing documentation that isn&#39;t necessarily part of our code, we have to decide where to put it.</p>
+<ul>
+<li>The easiest solution is often in the repository itself, in a docs/ directory (or similar).</li>
+<li>If the documentation is only for your company, you might house it in something like Confluence or another similar internal documentation platform.</li>
+<li>Meanwhile, public documentation could live on your site, on a separate website (docs.example.com)...</li>
+<li>...or even on a third-party platform like Read The Docs.</li>
+<li>No matter where it ends up, it should be some place that is searchable and persistent. Don&#39;t write up a couple posts in Slack or Discord and expect people to be able to find id.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Build & Host Documentation
+
+* [Read The Docs](https://readthedocs.com)
+* [ReadMe](http://readme.io/)
+* [Daux.io](https://daux.io/)
+* [Sphinx](https://www.sphinx-doc.org/en/master/)
+* [GitHub Pages](https://pages.github.com/)
+
+<aside class="notes"><p>Depending on your needs, there&#39;s a variety of places to publicly host your documentation.</p>
+<p>If at all possible, I&#39;d encourage you to host on a subdomain of your company or project&#39;s site (e.g. docs.example.com), but alternatives exist (especially if you don&#39;t want to maintain a domain for your work)</p>
+</aside></script></section><section data-markdown><script type="text/template">
+<!-- .slides: data-background-image="resources/read-the-docs.png" data-background-size="cover" -->
+### Read The Docs <!-- .element: class="screen-reader-text" -->
+
+[![A screenshot of the "Writing Tests for PHPUnit" page of the PHPUnit documentation, hosted on Read the Docs and written in reStructuredText](resources/read-the-docs.png)](https://docs.phpunit.de/en/10.4/writing-tests-for-phpunit.html)
+
+[docs.phpunit.de](https://docs.phpunit.de)
+<!-- .element: class="image-caption"-->
+
+<aside class="notes"><p>We won&#39;t go clicking around, but here&#39;s a screenshot of the PHPUnit documentation just to give you a taste.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### How should I format it?
+
+* Headings (H1–H6) <!-- .element: class="fragment" -->
+* Ordered v unordered lists <!-- .element: class="fragment" -->
+* Definition lists <!-- .element: class="fragment" -->
+* Tables (for tabular data) <!-- .element: class="fragment" -->
+* Code blocks, blockquotes, etc. <!-- .element: class="fragment" -->
+</script></section><section data-markdown><script type="text/template">
+### Embrace HTML <!-- .element: class="screen-reader-text" -->
+
+![The Hulk from Avenger's Endgame, labelled as "HTML", with the caption "it's like...I was made for this".](resources/html-made-for-this.jpg)
+
+<aside class="notes"><ul>
+<li>Whether you&#39;re writing documentation in Markdown, Textile, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.</li>
+<li>Remember that HTML is all about formatting a hierarchy of information</li>
+<li>Take advantage of anchors, hyperlinks, etc. to make it easy to navigate</li>
+<li>Documentation can be spread across multiple pages as long as it&#39;s still discoverable</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Markdown
+
+```md
+## This will become a <h2>
+
+Here's a paragraph of text. This is **bold**.
+
+* This is a list
+* With multiple points
+    * This one even has a sub-point!
+
+[Here's a link](https://example.com) to learn more.
+```
+
+<aside class="notes"><ul>
+<li>Markup language that&#39;s meant to be easy to read and write, which has become pretty ubiquitous</li>
+<li>Many different implementations (CommonMark, GFM, Markdown Extra, etc.)</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### reStructuredText <!-- .element: style="text-transform: none;" -->
+
+```rst
+This will become a <h2>
+=======================
+
+Here's a paragraph of text. This is **bold**.
+
+* This is a list
+* With multiple points
+    * This one even has a sub-point!
+
+`Here's a link<https://example.com>`_ to learn more.
+```
+
+<aside class="notes"><ul>
+<li>reStructuredText is similar, but comes out of the Python community</li>
+<li>However, it&#39;s also picking up more converts, including the Linux kernel</li>
+<li>When paired with a tool like Sphinx, it can build complex documentation across multiple formats</li>
+<li>Support for custom directives (think: macros)</li>
+<li>Notable PHP ecosystem users include PHPUnit and Symfony</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Improving External Documentation
+
+<aside class="notes"><p>For a lot of people, external documentation is where it gets scary. Where do you start?</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Start with an outline
+
+<pre class="fragment-replace"><code class="fragment fade-out hljs md" data-fragment-index="0"># My Neat Project
+
+* What does it do?
+* Getting started
+    * Installation
+        * Composer
+        * Phar
+    * Initial setup
+* ...</code><code class="fragment hljs md" data-fragment-index="0"># My Neat Project
+
+## What does it do?
+
+## Getting started
+
+### Installation
+
+#### Composer
+
+#### Phar
+
+### Initial setup</code></pre>
+
+<aside class="notes"><ul>
+<li>Writing a document from scratch can be overwhelming</li>
+<li>Start with a rough outline of what you want to get across, using nested headings</li>
+<li>As you fill out the sections, don&#39;t be afraid to add new ones</li>
+<li>Just like with code, it&#39;s okay to mark things as <code>@todo</code></li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Include a Table of Contents
+
+Let users jump to the sections that interest them.
+
+<aside class="notes"><ul>
+<li>Many platforms will generate this for you automatically, using the document outline</li>
+<li>Even if you have to maintain this manually, it&#39;s extremely useful for readers</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Detail Prerequisite Knowledge
+
+* People don't usually read docs cover-to-cover <!-- .element: class="fragment" -->
+* If this section builds on a previous topic,<br>let the reader know! <!-- .element: class="fragment" -->
+
+<aside class="notes"><ul>
+<li>It&#39;s unreasonable to assume that everyone will read your documentation from start to finish<ul>
+<li>Usually searching for a specific error code or how to do a specific thing</li>
+</ul>
+</li>
+<li>If someone needs to understand (for example) your plugin system before they can understand some add-on, add something to the effect of &quot;This feature utilizes our plugin system, which is detailed over here.&quot;</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## General Tips
+
+<aside class="notes"><p>Now that you have a sense of the tools and standards out there, I&#39;d like to share a few tips on writing the best documentation you can.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### When should I write my documentation?
+
+* As (or even before!) you write your code <!-- .element: class="fragment" -->
+* When questions are raised or bugs found <!-- .element: class="fragment" -->
+* Whenever documentation is insufficient <!-- .element: class="fragment" -->
+
+<aside class="notes"><ul>
+<li>Ideally, documentation should be written before you write any code. This forces you to think about your approach, and sometimes saying it out loud (or typing it) can help you catch logical errors.</li>
+<li>Then, if bugs or stress-cases are found, make sure these are documented! Learn from these mistakes!</li>
+<li>If you find yourself having to read the code to figure out what a function does, that&#39;s a sign that the documentation isn&#39;t doing it&#39;s job. Take what you&#39;ve learned and write it down!</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Preventing "Doc-rot"
+
+* Code changes should always include relevant changes to documentation <!-- .element: class="fragment" -->
+* Protects documentation from falling behind <!-- .element: class="fragment" -->
+* Forces team to write docs for new features <!-- .element: class="fragment" -->
+
+<aside class="notes"><p>Out-of-date documentation can be as bad or worse than no documentation at all!</p>
+<ul>
+<li>Make documentation part of code review: new arguments added but not documented? Send it back!</li>
+<li>This ensures that your existing docs don&#39;t fall behind</li>
+<li>Apply this same practice to new functionality, too: new code can&#39;t get in until it&#39;s documented</li>
+</ul>
+<p>For external documentation, make the updates an explicit part of your release plan: it&#39;s not &quot;done&quot; until the docs have been updated, too.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Make Docs Discoverable
+
+If they're hard to find, nobody will read them!
+
+![John Travolta in Pulp Fiction, looking around the room wondering what's going on](resources/travolta-wondering.gif)
+
+<aside class="notes"><ul>
+<li>Think of anywhere someone might look for documentation, then sprinkle breadcrumbs back to wherever the docs live<ul>
+<li>Example: support and/or help pages on your website that link to the relevant documentation</li>
+<li>Leverage the &quot;support&quot; property in composer.json to link to docs, issue tracker, etc.</li>
+</ul>
+</li>
+<li>The easier someone can find your docs the better their experience</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Watch your assumptions!
+
+* Write for the intended audience (or just below) <!-- .element: class="fragment" -->
+* Spell out acronyms the first time they're used <!-- .element: class="fragment" -->
+* Link to relevant documentation for context <!-- .element: class="fragment" -->
+
+<aside class="notes"><p>It&#39;s important to write our documentation in a way that we&#39;re not assuming the reader has intimate knowledge of the entire codebase. We don&#39;t want to talk-down, either, but imagine the person understands the language but only has high-level knowledge of the concept.</p>
+<ul>
+<li>Put simply, write for the intended audience or someone who is on the way to becoming part of the intended audience</li>
+<li>One easy way to do this is by spelling out an acronym the first time we use it.<ul>
+<li>Gives readers terms they can search for</li>
+</ul>
+</li>
+<li>If additional information is necessary, point people in the right direction.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Watch your assumptions!
+
+<pre class="fragment-replace"><code class="fragment fade-out hljs php" data-fragment-index="0">/**
+ * Push the file to GCS and handle any errors.
+ */</code><code class="fragment hljs php" data-fragment-index="0">/**
+ * Move the file to Google Cloud Storage (GCS) and handle
+ * any transport exceptions that might arise.
+ *
+ * GCS documentation and possible error codes are available
+ * at {@link https://example.com/gcs-documentation}.
+ */</code></pre>
+
+<aside class="notes"><p>For someone new to this codebase, they might not immediately know what &quot;GCS&quot; stands for. What kinds of errors are we dealing with?</p>
+<p>With minor adjustments, we can clarify that GCS is &quot;Google Cloud Storage&quot; and provide a link to relevant documentation.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### It's okay to repeat yourself (sometimes)
+
+* Callbacks (with links) to previous sections <!-- .element: class="fragment" -->
+* Repetition supports memorization <!-- .element: class="fragment" -->
+* Repetition supports memorization <!-- .element: class="fragment" -->
+
+<aside class="notes"><p>When writing software, we say &quot;Don&#39;t Repeat Yourself&quot; (DRY), but it&#39;s okay if your documentation is a little damp</p>
+<ul>
+<li>Reintroducing ideas with a sentence or two can help provide context, and you can link back to the main source for that information</li>
+<li>Repeating an idea can also help people retain it</li>
+<li>It also helps people remember if they see or hear it more than once</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Be consistent in your language
+
+Is it a plugin, extension, or module? 🤔
+
+<aside class="notes"><ul>
+<li>A common problem, especially when multiple authors are involved, is different words being used to describe the same thing.<ul>
+<li>Plugin? Extension? Module? Add-on? Mix-in?</li>
+</ul>
+</li>
+<li>I love my thesaurus as much as the next nerd, but try to establish a ubiquitous language for your codebase.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Hard to document?
+
+If it's too hard to explain,<br>it may be too complicated!
+
+<aside class="notes"><ul>
+<li>In the same way that code being hard to test can be an indication of a larger architectural issue, code being hard to document can also be a strong signal that something&#39;s funky.</li>
+<li>Difficulty of writing documentation =&gt; litmus test for code quality - if you can&#39;t explain it, do you fully understand it yourself?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Write for Humans
+
+* Write in short, concise sentences <!-- .element: class="fragment" -->
+* Make liberal use of whitespace <!-- .element: class="fragment" -->
+* Be careful with idioms! <!-- .element: class="fragment" -->
+* Inject a bit of personality (if you can) <!-- .element: class="fragment" -->
+
+<aside class="notes"><p>At the end of the day, there&#39;s a human being trying to use or contribute to your software. Your goal should be to give them the information they need to be successful in that task.</p>
+<ul>
+<li>Short, concise sentences help people follow along.</li>
+<li>Whitespace gives readers a chance to breathe</li>
+<li>Avoid using idioms that may not translate well across different cultures</li>
+<li>An active voice helps the reader feel like they&#39;re in it with you, not just a passive observer</li>
+</ul>
+<p>Not only do we want to make sure all points are covered, but we want the documentation to be easy to digest. These aren&#39;t five-paragraph essays: feel free to break things up and try to make it (dare I say?) fun to read.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Examples should be<br>interesting & inclusive
+
+* Avoid "foo", "bar", "Bob", and "Alice" <!-- .element: class="fragment" -->
+* Save the alcohol for happy hour <!-- .element: class="fragment" -->
+* Pop-culture, food, and animals are<br>generally safe <!-- .element: class="fragment" -->
+
+<aside class="notes"><ul>
+<li>Foo and bar have been done to death, so have Bob and Alice. Try fresh names and variables that mean something</li>
+<li>Good to remember that not everyone drinks, so using beer or whisky in your examples can be othering</li>
+<li>Instead, I like to use tacos, cats + dogs, coffee, and other relatable things<ul>
+<li>Pop-culture references can be a great way to share your favorite media</li>
+<li>The number of times John, Paul, George, and Ringo have showed up in my examples is embarrassing</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Make it easy to contribute
+
+Easy to write, easy to share!
+
+<aside class="notes"><ul>
+<li>Whether it&#39;s within your company or shared with millions of users, contributing documentation should not be a large hurdle.</li>
+<li>Good litmus test: how many clicks does it take to fix a single typo in a README? How many hurdles does someone have to clear in order to help me write this?</li>
+</ul>
+<p>This leads into my next point...</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Documentation & FOSS
+
+Maintainers would <u>love</u> for you to know<br>this one simple trick!
+
+<aside class="notes"><ul>
+<li>If you&#39;re looking for ways to get more involved with a project, writing documentation is a great first step, as it&#39;s an area where a lot of projects need serious help.</li>
+<li>Writing documentation forces you to understand the code better, helps other people, and is very likely to be accepted and greatly appreciated.</li>
+<li>Looking to give back or get involved? Writing documentation will help make you the maintainer&#39;s favorite person</li>
+</ul>
+</aside></script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-hide-footer -->
+
+## Thank You!
+
+Steve Grunwell<br>
+Staff Software Engineer, Mailchimp
+
+[stevegrunwell.com/slides/write-some-docs](https://stevegrunwell.com/slides/write-some-docs)<!-- .element: class="slides-link" -->
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"controlsTutorial":false,"pause":true,"progress":false,"slideNumber":false,"transition":"none"}, queryOptions);
+    </script>
+
+    <script src="./resources/resources/scripts.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
