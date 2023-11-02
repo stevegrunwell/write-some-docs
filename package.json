@@ -6,11 +6,13 @@
         "url": "git@github.com:stevegrunwell/write-some-docs.git"
     },
     "devDependencies": {
+        "open-cli": "^7.2.0",
         "reveal-md": "^5.5.1"
     },
     "scripts": {
         "build": "reveal-md slides.md --static build --static-dirs resources --assets-dir \"\"",
         "dev": "reveal-md slides.md -w",
+        "export": "open-cli http://localhost:1948/slides.md?print-pdf",
         "start": "reveal-md slides.md"
     }
 }

@@ -13,6 +13,7 @@
         "controls": true,
         "controlsTutorial": false,
         "pause": true,
+        "pdfSeparateFragments": false,
         "progress": false,
         "slideNumber": false,
         "transition": "none"
