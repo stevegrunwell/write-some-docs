@@ -9,7 +9,7 @@
         "reveal-md": "^5.5.1"
     },
     "scripts": {
-        "build": "reveal-md slides.md --static build --static-dirs resources",
+        "build": "reveal-md slides.md --static build --static-dirs resources --assets-dir \"\"",
         "dev": "reveal-md slides.md -w",
         "start": "reveal-md slides.md"
     }
