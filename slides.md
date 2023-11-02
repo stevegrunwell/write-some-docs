@@ -562,35 +562,6 @@ Note:
 
 ----
 
-### Dynamic Methods
-
-```php
-/**
- * @method int    getAge()  Get the animal's age.
- * @method string getName() Get the animal's name.
- */
-class Animal
-{
-    private int $age;
-    private string $name;
-
-    public function __call($method, $args)
-    {
-        // Look for "get{$prop}" method calls, return the prop.
-    }
-}
-```
-
-Note:
-
-Similarly, we can document dynamic methods.
-
-* In this case, we're handling getter methods for known properties
-    * If we don't have a getAge() nor getName() method defined on the class but someone tries to call it, we can use the __call() magic method to look for those method names and return the corresponding property
-* This can be especially useful for frameworks that make heavy use of magic methods, such as Laravel
-
-----
-
 ### Linking to Relevant Content
 
 ```php
@@ -763,26 +734,41 @@ Now that we've covered inline documentation, let's talk about all of the stuff t
 
 ----
 
-### What should be documented?
+### Where do I start?
 
-* Purpose, Requirements, & Installation <!-- .element: class="fragment" -->
-* How to use the software <!-- .element: class="fragment" -->
-    * What options are available?
-    * Tutorials
-* <!-- .element: class="fragment" --> <abbr title="Frequently-Asked Questions">FAQs</abbr>
-* Contributing <!-- .element: class="fragment" -->
-* &hellip;and anything else people should know <!-- .element: class="fragment" -->
+<pre class="fragment fragment-replace" data-fragment-index="0"><code class="fragment fade-out hljs md" data-fragment-index="1"># My Neat Project
+
+* What does it do?
+* Getting started
+    * Installation
+        * Composer
+        * Phar
+    * Initial setup
+* ...</code><code class="fragment hljs md" data-fragment-index="1"># My Neat Project
+
+## What does it do?
+
+## Getting started
+
+### Installation
+
+#### Composer
+
+#### Phar
+
+### Initial setup</code></pre>
 
 Note:
 
-It's easy to say "go write documentation". It's much harder to define _what_ to document. Here's are some of the main points you want to hit in something like a project README.
+It's easy to say "go write documentation". It's much harder to define _what_ to document, and starting from scratch can be overwhelming
 
-* First and foremost, give your users the information they need to be successful. What problem is the software trying to solve? What are the system requirements? How can they install it?
-* Next, how do they use it? What options are available? If it's a library, this would be a great place for a getting started tutorial.
-* Are there questions that you expect to pop up? Head those off at the pass with a Frequently-Asked Questions section
-* If you're accepting contributions, tell people how you would like them to do so
-    * GitHub and other platforms now look for a CONTRIBUTING file in the repo
-* And anything else that might be relevant.
+* Start with a rough outline of what you want to get across, using nested headings
+    * What does this app do?
+    * How do I install it? What are the system requirements?
+    * How do I run it? What options are available?
+    * FAQs, contribution guidelines, and anything else that might be relevant
+* As you fill out the sections, don't be afraid to add new ones
+* Just like with code, it's okay to mark things as `@todo`
 
 ----
 
@@ -852,7 +838,7 @@ We won't go clicking around, but here's a screenshot of the PHPUnit documentatio
 
 Note:
 
-* Whether you're writing documentation in Markdown, Textile, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.
+* Whether you're writing documentation in Markdown, reStructuredText, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.
 * Remember that HTML is all about formatting a hierarchy of information
 * Take advantage of anchors, hyperlinks, etc. to make it easy to navigate
 * Documentation can be spread across multiple pages as long as it's still discoverable
@@ -913,39 +899,6 @@ For a lot of people, external documentation is where it gets scary. Where do you
 
 ----
 
-### Start with an outline
-
-<pre class="fragment-replace"><code class="fragment fade-out hljs md" data-fragment-index="0"># My Neat Project
-
-* What does it do?
-* Getting started
-    * Installation
-        * Composer
-        * Phar
-    * Initial setup
-* ...</code><code class="fragment hljs md" data-fragment-index="0"># My Neat Project
-
-## What does it do?
-
-## Getting started
-
-### Installation
-
-#### Composer
-
-#### Phar
-
-### Initial setup</code></pre>
-
-Note:
-
-* Writing a document from scratch can be overwhelming
-* Start with a rough outline of what you want to get across, using nested headings
-* As you fill out the sections, don't be afraid to add new ones
-* Just like with code, it's okay to mark things as `@todo`
-
-----
-
 ### Include a Table of Contents
 
 Let users jump to the sections that interest them.
@@ -967,6 +920,7 @@ Note:
 * It's unreasonable to assume that everyone will read your documentation from start to finish
     * Usually searching for a specific error code or how to do a specific thing
 * If someone needs to understand (for example) your plugin system before they can understand some add-on, add something to the effect of "This feature utilizes our plugin system, which is detailed over here."
+    * You can also give a brief refresher on a past topic, then link back to it
 
 ---
 
@@ -1056,25 +1010,9 @@ It's important to write our documentation in a way that we're not assuming the r
 
 Note:
 
-For someone new to this codebase, they might not immediately know what "GCS" stands for. What kinds of errors are we dealing with?
+For someone new to this codebase, they might not immediately know what "GCS" stands for. Grunwell Cool School? What kinds of errors are we dealing with?
 
 With minor adjustments, we can clarify that GCS is "Google Cloud Storage" and provide a link to relevant documentation.
-
-----
-
-### It's okay to repeat yourself (sometimes)
-
-* Callbacks (with links) to previous sections <!-- .element: class="fragment" -->
-* Repetition supports memorization <!-- .element: class="fragment" -->
-* Repetition supports memorization <!-- .element: class="fragment" -->
-
-Note:
-
-When writing software, we say "Don't Repeat Yourself" (DRY), but it's okay if your documentation is a little damp
-
-* Reintroducing ideas with a sentence or two can help provide context, and you can link back to the main source for that information
-* Repeating an idea can also help people retain it
-* It also helps people remember if they see or hear it more than once
 
 ----
 

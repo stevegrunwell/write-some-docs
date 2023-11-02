@@ -8,7 +8,6 @@
     "scripts": [
         "resources/scripts.js"
     ],
-    "assetsDir": "resources",
     "absoluteUrl": "https://stevegrunwell.github.io/write-some-docs/",
     "revealOptions": {
         "controls": true,
