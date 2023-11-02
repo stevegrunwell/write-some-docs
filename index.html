@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/a11y-dark.css" />
 
-    <link rel="stylesheet" href="./resources/resources/styles.css" />
+    <link rel="stylesheet" href="./_assets/resources/styles.css" />
 
   </head>
   <body>
@@ -503,34 +503,6 @@ class Animal
 <li>@property-read and @property-write imply read- or write-only, respectively</li>
 </ul>
 </aside></script></section><section data-markdown><script type="text/template">
-### Dynamic Methods
-
-```php
-/**
- * @method int    getAge()  Get the animal's age.
- * @method string getName() Get the animal's name.
- */
-class Animal
-{
-    private int $age;
-    private string $name;
-
-    public function __call($method, $args)
-    {
-        // Look for "get{$prop}" method calls, return the prop.
-    }
-}
-```
-
-<aside class="notes"><p>Similarly, we can document dynamic methods.</p>
-<ul>
-<li>In this case, we&#39;re handling getter methods for known properties<ul>
-<li>If we don&#39;t have a getAge() nor getName() method defined on the class but someone tries to call it, we can use the __call() magic method to look for those method names and return the corresponding property</li>
-</ul>
-</li>
-<li>This can be especially useful for frameworks that make heavy use of magic methods, such as Laravel</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template">
 ### Linking to Relevant Content
 
 ```php
@@ -665,26 +637,41 @@ Good documentation will explain not only **what** something does, but **how** an
 
 <aside class="notes"><p>Now that we&#39;ve covered inline documentation, let&#39;s talk about all of the stuff that&#39;s outside of the codebase.</p>
 </aside></script></section><section data-markdown><script type="text/template">
-### What should be documented?
+### Where do I start?
 
-* Purpose, Requirements, & Installation <!-- .element: class="fragment" -->
-* How to use the software <!-- .element: class="fragment" -->
-    * What options are available?
-    * Tutorials
-* <!-- .element: class="fragment" --> <abbr title="Frequently-Asked Questions">FAQs</abbr>
-* Contributing <!-- .element: class="fragment" -->
-* &hellip;and anything else people should know <!-- .element: class="fragment" -->
+<pre class="fragment fragment-replace" data-fragment-index="0"><code class="fragment fade-out hljs md" data-fragment-index="1"># My Neat Project
 
-<aside class="notes"><p>It&#39;s easy to say &quot;go write documentation&quot;. It&#39;s much harder to define <em>what</em> to document. Here&#39;s are some of the main points you want to hit in something like a project README.</p>
+* What does it do?
+* Getting started
+    * Installation
+        * Composer
+        * Phar
+    * Initial setup
+* ...</code><code class="fragment hljs md" data-fragment-index="1"># My Neat Project
+
+## What does it do?
+
+## Getting started
+
+### Installation
+
+#### Composer
+
+#### Phar
+
+### Initial setup</code></pre>
+
+<aside class="notes"><p>It&#39;s easy to say &quot;go write documentation&quot;. It&#39;s much harder to define <em>what</em> to document, and starting from scratch can be overwhelming</p>
 <ul>
-<li>First and foremost, give your users the information they need to be successful. What problem is the software trying to solve? What are the system requirements? How can they install it?</li>
-<li>Next, how do they use it? What options are available? If it&#39;s a library, this would be a great place for a getting started tutorial.</li>
-<li>Are there questions that you expect to pop up? Head those off at the pass with a Frequently-Asked Questions section</li>
-<li>If you&#39;re accepting contributions, tell people how you would like them to do so<ul>
-<li>GitHub and other platforms now look for a CONTRIBUTING file in the repo</li>
+<li>Start with a rough outline of what you want to get across, using nested headings<ul>
+<li>What does this app do?</li>
+<li>How do I install it? What are the system requirements?</li>
+<li>How do I run it? What options are available?</li>
+<li>FAQs, contribution guidelines, and anything else that might be relevant</li>
 </ul>
 </li>
-<li>And anything else that might be relevant.</li>
+<li>As you fill out the sections, don&#39;t be afraid to add new ones</li>
+<li>Just like with code, it&#39;s okay to mark things as <code>@todo</code></li>
 </ul>
 </aside></script></section><section data-markdown><script type="text/template">
 ### Where should it live?
@@ -738,7 +725,7 @@ Good documentation will explain not only **what** something does, but **how** an
 ![The Hulk from Avenger's Endgame, labelled as "HTML", with the caption "it's like...I was made for this".](resources/html-made-for-this.jpg)
 
 <aside class="notes"><ul>
-<li>Whether you&#39;re writing documentation in Markdown, Textile, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.</li>
+<li>Whether you&#39;re writing documentation in Markdown, reStructuredText, Wikitext, or even just plain old HTML, chances are this is eventually going to be viewed in a browser.</li>
 <li>Remember that HTML is all about formatting a hierarchy of information</li>
 <li>Take advantage of anchors, hyperlinks, etc. to make it easy to navigate</li>
 <li>Documentation can be spread across multiple pages as long as it&#39;s still discoverable</li>
@@ -790,37 +777,6 @@ Here's a paragraph of text. This is **bold**.
 
 <aside class="notes"><p>For a lot of people, external documentation is where it gets scary. Where do you start?</p>
 </aside></script></section><section data-markdown><script type="text/template">
-### Start with an outline
-
-<pre class="fragment-replace"><code class="fragment fade-out hljs md" data-fragment-index="0"># My Neat Project
-
-* What does it do?
-* Getting started
-    * Installation
-        * Composer
-        * Phar
-    * Initial setup
-* ...</code><code class="fragment hljs md" data-fragment-index="0"># My Neat Project
-
-## What does it do?
-
-## Getting started
-
-### Installation
-
-#### Composer
-
-#### Phar
-
-### Initial setup</code></pre>
-
-<aside class="notes"><ul>
-<li>Writing a document from scratch can be overwhelming</li>
-<li>Start with a rough outline of what you want to get across, using nested headings</li>
-<li>As you fill out the sections, don&#39;t be afraid to add new ones</li>
-<li>Just like with code, it&#39;s okay to mark things as <code>@todo</code></li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template">
 ### Include a Table of Contents
 
 Let users jump to the sections that interest them.
@@ -840,7 +796,10 @@ Let users jump to the sections that interest them.
 <li>Usually searching for a specific error code or how to do a specific thing</li>
 </ul>
 </li>
-<li>If someone needs to understand (for example) your plugin system before they can understand some add-on, add something to the effect of &quot;This feature utilizes our plugin system, which is detailed over here.&quot;</li>
+<li>If someone needs to understand (for example) your plugin system before they can understand some add-on, add something to the effect of &quot;This feature utilizes our plugin system, which is detailed over here.&quot;<ul>
+<li>You can also give a brief refresher on a past topic, then link back to it</li>
+</ul>
+</li>
 </ul>
 </aside></script></section></section><section ><section data-markdown><script type="text/template">
 ## General Tips
@@ -916,21 +875,8 @@ If they're hard to find, nobody will read them!
  * at {@link https://example.com/gcs-documentation}.
  */</code></pre>
 
-<aside class="notes"><p>For someone new to this codebase, they might not immediately know what &quot;GCS&quot; stands for. What kinds of errors are we dealing with?</p>
+<aside class="notes"><p>For someone new to this codebase, they might not immediately know what &quot;GCS&quot; stands for. Grunwell Cool School? What kinds of errors are we dealing with?</p>
 <p>With minor adjustments, we can clarify that GCS is &quot;Google Cloud Storage&quot; and provide a link to relevant documentation.</p>
-</aside></script></section><section data-markdown><script type="text/template">
-### It's okay to repeat yourself (sometimes)
-
-* Callbacks (with links) to previous sections <!-- .element: class="fragment" -->
-* Repetition supports memorization <!-- .element: class="fragment" -->
-* Repetition supports memorization <!-- .element: class="fragment" -->
-
-<aside class="notes"><p>When writing software, we say &quot;Don&#39;t Repeat Yourself&quot; (DRY), but it&#39;s okay if your documentation is a little damp</p>
-<ul>
-<li>Reintroducing ideas with a sentence or two can help provide context, and you can link back to the main source for that information</li>
-<li>Repeating an idea can also help people retain it</li>
-<li>It also helps people remember if they see or hear it more than once</li>
-</ul>
 </aside></script></section><section data-markdown><script type="text/template">
 ### Be consistent in your language
 
@@ -1060,7 +1006,7 @@ Staff Software Engineer, Mailchimp
       var options = extend(defaultOptions, {"controls":true,"controlsTutorial":false,"pause":true,"progress":false,"slideNumber":false,"transition":"none"}, queryOptions);
     </script>
 
-    <script src="./resources/resources/scripts.js"></script>
+    <script src="./_assets/resources/scripts.js"></script>
 
     <script>
       Reveal.initialize(options);
