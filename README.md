@@ -10,7 +10,7 @@ Luckily, good documentation lives on outside your codebase. By following common 
 
 ## Presentation History
 
-* [Longhorn PHP 2023](https://longhornphp.com) — November 3, 2023 ([joind.in](https://joind.in/talk/a402b))
+* [Longhorn PHP 2023](https://longhornphp.com) — November 3, 2023 ([PDF](https://github.com/stevegrunwell/write-some-docs/releases/download/longhorn-php-2023/slides.pdf), [joind.in](https://joind.in/talk/a402b))
 * [Beer City Code 2017](http://beercitycode.com/) — June 10, 2017
 * [Lone Star PHP 2017](http://lonestarphp.com/) - April 22, 2017 ([joind.in](https://joind.in/talk/b68e9))
 
