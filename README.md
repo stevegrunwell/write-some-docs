@@ -22,16 +22,27 @@ Luckily, good documentation lives on outside your codebase. By following common 
 * [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) - Documentation for reStructuredText
 * [The composer.json schema (support)](https://getcomposer.org/doc/04-schema.md#support) - Details for the "support" property within the composer.json schema
 
-### Tools and Services
+### Tools & Services
+
+#### Generating API Documentation from Inline Code
 
 * [ApiGen](https://github.com/ApiGen/ApiGen)
-* [Daux.io](https://daux.io/)
 * [Doctum](https://github.com/code-lts/doctum)
-* [GitHub Pages](https://pages.github.com/)
 * [phpDocumentor](https://www.phpdoc.org)
+
+#### Building & Hosting External Documentation
+
+* [Daux.io](https://daux.io/)
+* [GitHub Pages](https://pages.github.com/)
 * [Read The Docs](https://readthedocs.com)
 * [ReadMe](http://readme.io/)
 * [Sphinx](https://www.sphinx-doc.org/en/master/)
+
+#### Documenting HTTP APIs
+
+* [API Blueprint](https://apiblueprint.org/)
+* [OpenAPI](https://www.openapis.org/) (née Swagger, start here!)
+* [RAML](https://raml.org/)
 
 ## Notes
 

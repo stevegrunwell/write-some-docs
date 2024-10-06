@@ -659,6 +659,8 @@ Be wary anytime someone claims that they don't need to write documentation becau
 
 No matter how strict your types and well-named your methods, any non-trivial codebase will have some areas where additional context would be helpful. You don't need to be duplicative, but err on the side of more documentation than less.
 
+A good smell test: could someone who doesn't write PHP but understands JavaScript follow your code without getting lost? The two languages have a lot of commonalities, but are still distinct languages with their own idiosyncracies. Plus, as a PHP developer there's a good chance you're having to interface with some JS folks.
+
 Remember: having documentation isn't a weakness nor point of shame, so don't let anyone shame you into thinking otherwise.
 
 ----
@@ -888,6 +890,24 @@ Note:
 * When paired with a tool like Sphinx, it can build complex documentation across multiple formats
 * Support for custom directives (think: macros)
 * Notable PHP ecosystem users include PHPUnit and Symfony
+
+----
+
+### (HTTP) API Docs
+
+* [OpenAPI (née Swagger)](https://www.openapis.org/)
+* [RAML](https://raml.org/)
+* [API Blueprint](https://apiblueprint.org/)
+
+Note:
+
+We discussed API docs a moment ago, but in the context of how the individual classes and methods of your application work.
+
+There's another form of API documentation, and that's around any sort of publicly-exposed HTTP APIs (REST, RPC, etc.).
+
+Documenting HTTP APIs is a topic in itself, but all of the principles are the same: we want to make sure that we're providing our consumers with detailed, accurate, and useful information about our application and how it works. Relying on established specifications also gives you a lot of great tooling that lets you generate HTTP requests right from the docs.
+
+OpenAPI is the most widely-used specification these days, but there are also alternatives including the RESTful API Modeling Language (RAML) and API Blueprint. They all have their strengths and weaknesses, but unless you have very specific needs not met by OpenAPI, I'd start there.
 
 ---
 
