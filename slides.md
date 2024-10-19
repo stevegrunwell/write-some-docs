@@ -790,7 +790,7 @@ When we're writing documentation that isn't necessarily part of our code, we hav
 * If the documentation is only for your company, you might house it in something like Confluence or another similar internal documentation platform.
 * Meanwhile, public documentation could live on your site, on a separate website (docs.example.com)...
 * ...or even on a third-party platform like Read The Docs.
-* No matter where it ends up, it should be some place that is searchable and persistent. Don't write up a couple posts in Slack or Discord and expect people to be able to find id.
+* No matter where it ends up, it should be some place that is searchable and persistent. Don't write up a couple posts in Slack or Discord and expect people to be able to find it.
 
 ----
 
@@ -820,7 +820,7 @@ If at all possible, I'd encourage you to host on a subdomain of your company or 
 
 Note:
 
-We won't go clicking around, but here's a screenshot of the PHPUnit documentation just to give you a taste.
+We won't go clicking around, but here's a screenshot of the PHPUnit documentation (hosted on Read the Docs) just to give you a taste.
 
 ----
 
@@ -831,6 +831,10 @@ We won't go clicking around, but here's a screenshot of the PHPUnit documentatio
 * Definition lists <!-- .element: class="fragment" -->
 * Tables (for tabular data) <!-- .element: class="fragment" -->
 * Code blocks, blockquotes, etc. <!-- .element: class="fragment" -->
+
+Note:
+
+If only there was some sort of hypertext markup language we could use here...
 
 ----
 
@@ -885,7 +889,7 @@ Here's a paragraph of text. This is **bold**.
 
 Note:
 
-* reStructuredText is similar, but comes out of the Python community
+* reStructuredText (RST) is similar, but comes out of the Python community
 * However, it's also picking up more converts, including the Linux kernel
 * When paired with a tool like Sphinx, it can build complex documentation across multiple formats
 * Support for custom directives (think: macros)
@@ -995,7 +999,7 @@ Note:
 * Think of anywhere someone might look for documentation, then sprinkle breadcrumbs back to wherever the docs live
     * Example: support and/or help pages on your website that link to the relevant documentation
     * Leverage the "support" property in composer.json to link to docs, issue tracker, etc.
-* The easier someone can find your docs the better their experience
+* The easier someone can find your docs, the better their experience
 
 ----
 
@@ -1011,7 +1015,8 @@ It's important to write our documentation in a way that we're not assuming the r
 
 * Put simply, write for the intended audience or someone who is on the way to becoming part of the intended audience
 * One easy way to do this is by spelling out an acronym the first time we use it.
-    * Gives readers terms they can search for
+    * Example: instead of just AST, write out Abstract Syntax Tree the first time it's used
+    * This gives readers terms they can search for
 * If additional information is necessary, point people in the right direction.
 
 ----
@@ -1055,7 +1060,7 @@ If it's too hard to explain,<br>it may be too complicated!
 Note:
 
 * In the same way that code being hard to test can be an indication of a larger architectural issue, code being hard to document can also be a strong signal that something's funky.
-* Difficulty of writing documentation => litmus test for code quality - if you can't explain it, do you fully understand it yourself?
+* Difficulty of writing documentation can be a litmus test for code quality - if you can't explain it, do you fully understand it yourself?
 
 ----
 
@@ -1088,8 +1093,8 @@ Not only do we want to make sure all points are covered, but we want the documen
 Note:
 
 * Foo and bar have been done to death, so have Bob and Alice. Try fresh names and variables that mean something
-* Good to remember that not everyone drinks, so using beer or whisky in your examples can be othering
-* Instead, I like to use tacos, cats + dogs, coffee, and other relatable things
+* Good to remember that not everyone drinks alcohol, so using beer or whisky in your examples can be othering
+* Instead, I like to use tacos, pizza, animals, and other relatable things
     * Pop-culture references can be a great way to share your favorite media
     * The number of times John, Paul, George, and Ringo have showed up in my examples is embarrassing
 
