@@ -577,6 +577,7 @@ Good documentation will explain not only **what** something does, but **how** an
 
 <aside class="notes"><p>Be wary anytime someone claims that they don&#39;t need to write documentation because their code is &quot;self-documenting&quot;.</p>
 <p>No matter how strict your types and well-named your methods, any non-trivial codebase will have some areas where additional context would be helpful. You don&#39;t need to be duplicative, but err on the side of more documentation than less.</p>
+<p>A good smell test: could someone who doesn&#39;t write PHP but understands JavaScript follow your code without getting lost? The two languages have a lot of commonalities, but are still distinct languages with their own idiosyncracies. Plus, as a PHP developer there&#39;s a good chance you&#39;re having to interface with some JS folks.</p>
 <p>Remember: having documentation isn&#39;t a weakness nor point of shame, so don&#39;t let anyone shame you into thinking otherwise.</p>
 </aside></script></section><section data-markdown><script type="text/template">
 ### Be Aware of Project Standards
@@ -688,7 +689,7 @@ Good documentation will explain not only **what** something does, but **how** an
 <li>If the documentation is only for your company, you might house it in something like Confluence or another similar internal documentation platform.</li>
 <li>Meanwhile, public documentation could live on your site, on a separate website (docs.example.com)...</li>
 <li>...or even on a third-party platform like Read The Docs.</li>
-<li>No matter where it ends up, it should be some place that is searchable and persistent. Don&#39;t write up a couple posts in Slack or Discord and expect people to be able to find id.</li>
+<li>No matter where it ends up, it should be some place that is searchable and persistent. Don&#39;t write up a couple posts in Slack or Discord and expect people to be able to find it.</li>
 </ul>
 </aside></script></section><section data-markdown><script type="text/template">
 ### Build & Host Documentation
@@ -710,7 +711,7 @@ Good documentation will explain not only **what** something does, but **how** an
 [docs.phpunit.de](https://docs.phpunit.de)
 <!-- .element: class="image-caption"-->
 
-<aside class="notes"><p>We won&#39;t go clicking around, but here&#39;s a screenshot of the PHPUnit documentation just to give you a taste.</p>
+<aside class="notes"><p>We won&#39;t go clicking around, but here&#39;s a screenshot of the PHPUnit documentation (hosted on Read the Docs) just to give you a taste.</p>
 </aside></script></section><section data-markdown><script type="text/template">
 ### How should I format it?
 
@@ -719,7 +720,9 @@ Good documentation will explain not only **what** something does, but **how** an
 * Definition lists <!-- .element: class="fragment" -->
 * Tables (for tabular data) <!-- .element: class="fragment" -->
 * Code blocks, blockquotes, etc. <!-- .element: class="fragment" -->
-</script></section><section data-markdown><script type="text/template">
+
+<aside class="notes"><p>If only there was some sort of hypertext markup language we could use here...</p>
+</aside></script></section><section data-markdown><script type="text/template">
 ### Embrace HTML <!-- .element: class="screen-reader-text" -->
 
 ![The Hulk from Avenger's Endgame, labelled as "HTML", with the caption "it's like...I was made for this".](resources/html-made-for-this.jpg)
@@ -766,12 +769,23 @@ Here's a paragraph of text. This is **bold**.
 ```
 
 <aside class="notes"><ul>
-<li>reStructuredText is similar, but comes out of the Python community</li>
+<li>reStructuredText (RST) is similar, but comes out of the Python community</li>
 <li>However, it&#39;s also picking up more converts, including the Linux kernel</li>
 <li>When paired with a tool like Sphinx, it can build complex documentation across multiple formats</li>
 <li>Support for custom directives (think: macros)</li>
 <li>Notable PHP ecosystem users include PHPUnit and Symfony</li>
 </ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### (HTTP) API Docs
+
+* [OpenAPI (née Swagger)](https://www.openapis.org/)
+* [RAML](https://raml.org/)
+* [API Blueprint](https://apiblueprint.org/)
+
+<aside class="notes"><p>We discussed API docs a moment ago, but in the context of how the individual classes and methods of your application work.</p>
+<p>There&#39;s another form of API documentation, and that&#39;s around any sort of publicly-exposed HTTP APIs (REST, RPC, etc.).</p>
+<p>Documenting HTTP APIs is a topic in itself, but all of the principles are the same: we want to make sure that we&#39;re providing our consumers with detailed, accurate, and useful information about our application and how it works. Relying on established specifications also gives you a lot of great tooling that lets you generate HTTP requests right from the docs.</p>
+<p>OpenAPI is the most widely-used specification these days, but there are also alternatives including the RESTful API Modeling Language (RAML) and API Blueprint. They all have their strengths and weaknesses, but unless you have very specific needs not met by OpenAPI, I&#39;d start there.</p>
 </aside></script></section></section><section ><section data-markdown><script type="text/template">
 ## Improving External Documentation
 
@@ -844,7 +858,7 @@ If they're hard to find, nobody will read them!
 <li>Leverage the &quot;support&quot; property in composer.json to link to docs, issue tracker, etc.</li>
 </ul>
 </li>
-<li>The easier someone can find your docs the better their experience</li>
+<li>The easier someone can find your docs, the better their experience</li>
 </ul>
 </aside></script></section><section data-markdown><script type="text/template">
 ### Watch your assumptions!
@@ -857,7 +871,8 @@ If they're hard to find, nobody will read them!
 <ul>
 <li>Put simply, write for the intended audience or someone who is on the way to becoming part of the intended audience</li>
 <li>One easy way to do this is by spelling out an acronym the first time we use it.<ul>
-<li>Gives readers terms they can search for</li>
+<li>Example: instead of just AST, write out Abstract Syntax Tree the first time it&#39;s used</li>
+<li>This gives readers terms they can search for</li>
 </ul>
 </li>
 <li>If additional information is necessary, point people in the right direction.</li>
@@ -896,7 +911,7 @@ If it's too hard to explain,<br>it may be too complicated!
 
 <aside class="notes"><ul>
 <li>In the same way that code being hard to test can be an indication of a larger architectural issue, code being hard to document can also be a strong signal that something&#39;s funky.</li>
-<li>Difficulty of writing documentation =&gt; litmus test for code quality - if you can&#39;t explain it, do you fully understand it yourself?</li>
+<li>Difficulty of writing documentation can be a litmus test for code quality - if you can&#39;t explain it, do you fully understand it yourself?</li>
 </ul>
 </aside></script></section><section data-markdown><script type="text/template">
 ### Write for Humans
@@ -923,8 +938,8 @@ If it's too hard to explain,<br>it may be too complicated!
 
 <aside class="notes"><ul>
 <li>Foo and bar have been done to death, so have Bob and Alice. Try fresh names and variables that mean something</li>
-<li>Good to remember that not everyone drinks, so using beer or whisky in your examples can be othering</li>
-<li>Instead, I like to use tacos, cats + dogs, coffee, and other relatable things<ul>
+<li>Good to remember that not everyone drinks alcohol, so using beer or whisky in your examples can be othering</li>
+<li>Instead, I like to use tacos, pizza, animals, and other relatable things<ul>
 <li>Pop-culture references can be a great way to share your favorite media</li>
 <li>The number of times John, Paul, George, and Ringo have showed up in my examples is embarrassing</li>
 </ul>
